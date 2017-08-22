@@ -15,7 +15,7 @@ gulp.task('sass-dev', function () {
 
 // Watch Tasks
 gulp.task('watch', function () {
-    gulp.watch('./static/scss/*.scss', ['sass-dev']);    
+    gulp.watch('./static/scss/**/*.scss', ['sass-dev']);    
 });
 
 //Default task
