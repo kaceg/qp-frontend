@@ -1,0 +1,49 @@
+.cd-top {
+    color: $white !important;
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    background: $red;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    z-index: 9999;
+
+	.fa {
+	    line-height: 36px;
+	}
+	
+	&.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
+	    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+	    transition: opacity .3s 0s, visibility 0s 0s;
+	}
+	
+	&.cd-is-visible {
+	    visibility: visible;
+	    opacity: 1;
+	}
+	
+	&.cd-fade-out {
+	    opacity: .5;
+	}
+	
+	&:hover {
+	    opacity: 1;
+	}
+	
+	i.fa {
+	    margin-right: 0;
+	    font-size: initial;
+	}
+	
+	.fa-angle-up:before {
+	    content: "\f106"
+	}
+}

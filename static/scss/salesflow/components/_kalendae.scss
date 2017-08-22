@@ -1,0 +1,301 @@
+/** Base container **/
+.kalendae {
+  background:$color-white;
+  border:1px solid $color-gamma;
+  cursor:default;
+  display:inline-block;
+  margin-left:-1.5em;
+  position:relative;
+
+  &:before,
+  &:after {
+    border-color:transparent;
+    border-style:solid;
+    border-top-color:$color-gamma;
+    border-width:1.5em;
+    content:"";
+    display:block;
+    height:0;
+    left:50%;
+    margin-left:-1.5em;
+    position:absolute;
+    top:100%;
+    width:0;
+  }
+
+  &:after {
+    border-top-color:$color-white;
+    margin-top:-1px;
+  }
+
+  /** Popup Container for Kalendae.Input **/
+  &.k-floating {
+    left:0;
+    margin:0 0 0 -1.5em;
+    position:absolute;
+    top:0;
+    z-index:100000;
+  }
+
+  &.k-floating--inside {
+    margin-left:1.5em;
+
+    &:before,
+    &:after {
+      left:100%;
+      margin-left:-4.5em;
+    }
+
+  }
+
+  &.k-floating--below {
+
+    &:before,
+    &:after {
+      border-top-color:transparent;
+      border-top-width:0;
+      border-bottom-color:$color-white;
+      top:-1.5em;
+    }
+
+    &:before {
+      margin-top:1px;
+      z-index:1;
+    }
+
+    &:after {
+      border-bottom-color:$color-gamma;
+    }
+
+  }
+
+  /** Kalendae.Input's popup close button **/
+  .k-btn-close {
+    background:white;
+    cursor:pointer;
+    display:none;
+    height:16px;
+    position:absolute;
+    right:-8px;
+    text-align:center;
+    text-decoration:none;
+    top:-8px;
+    width:16px;
+  }
+
+  .k-btn-close:after {
+    content:"\2716";
+  }
+
+  .k-btn-close:hover {
+
+  }
+
+  /** Month Container **/
+  .k-calendar {
+    display:inline-block;
+    vertical-align:top;
+  }
+
+  /** Month Separator **/
+  .k-separator {
+    background:#ddd;
+    display:inline-block;
+    height:155px;
+    width:10px;
+    vertical-align:top;
+  }
+
+  /** Month Title Row **/
+  .k-title {
+    position:relative;
+    text-align:center;
+    white-space:nowrap;
+  }
+
+  .k-caption {
+    @extend %font-size-delta;
+    font-weight:bold;
+    line-height:3em;
+  }
+
+  /** Month and Year Buttons **/
+  .k-btn-previous-month,
+  .k-btn-next-month,
+  .k-btn-previous-year,
+  .k-btn-next-year {
+    @extend %font-size-extra-small;
+    color:$color-primary;
+    cursor:pointer;
+    margin-top:-1em;
+    position:absolute;
+    text-decoration:none;
+    top:50%;
+    width:16px;
+  }
+
+  .k-btn-previous-year {  left:0;}
+  .k-btn-previous-month { left:1em;}
+  .k-btn-next-month {     right:1em;}
+  .k-btn-next-year {      right:0;}
+
+  .k-btn-previous-month:after { content:"\25C0";}
+  .k-btn-next-month:after {     content:"\25B6";}
+
+  .k-btn-previous-year,
+  .k-btn-next-year {
+    display:none;
+  }
+
+  .k-btn-previous-year:after,
+  .k-btn-next-year:after {
+    letter-spacing:-.5em;
+  }
+
+  .k-btn-previous-year:after {  content:"\25C0 \25C0";}
+  .k-btn-next-year:after {      content:"\25B6 \25B6"; letter-spacing:-.35em; }
+
+  .k-btn-previous-month:hover,
+  .k-btn-next-month:hover {
+
+  }
+
+  .k-btn-previous-year:hover,
+  .k-btn-next-year:hover {
+
+  }
+
+  /** Remove extra buttons when calendar shows multiple months **/
+  .k-first-month .k-btn-next-month,
+  .k-middle-month .k-btn-next-month,
+  .k-middle-month .k-btn-previous-month,
+  .k-last-month .k-btn-previous-month,
+  .k-first-month .k-btn-next-year,
+  .k-middle-month .k-btn-next-year,
+  .k-middle-month .k-btn-previous-year,
+  .k-last-month .k-btn-previous-year {
+    display:none;
+  }
+
+  /** Disable year nav option **/
+  .k-title.k-disable-year-nav .k-btn-next-year,
+  .k-title.k-disable-year-nav .k-btn-previous-year {
+    display:none;
+  }
+
+  .k-title.k-disable-year-nav .k-btn-next-month {
+    right:0;
+  }
+
+  .k-title.k-disable-year-nav .k-btn-previous-month {
+    left:0;
+  }
+
+  /** Force specific width for month container contents **/
+  .k-title,
+  .k-header,
+  .k-days {
+    display:block;
+    overflow:hidden;
+    width:14em;
+  }
+
+  .k-header {
+    background:$color-epsilon;
+  }
+
+
+  /** Hide unusable buttons **/
+  &.k-disable-next-month-btn .k-btn-next-month,
+  &.k-disable-previous-month-btn .k-btn-previous-month,
+  &.k-disable-next-year-btn .k-btn-next-year,
+  &.k-disable-previous-year-btn .k-btn-previous-year {
+    display:none;
+  }
+
+
+  /** Week columns and day cells **/
+  .k-header span,
+  .k-days span {
+    float:left;
+  }
+
+  .k-header span {
+    font-weight:bold;
+    line-height:2em;
+    text-align:center;
+    width:2em;
+  }
+
+  .k-days span {
+    box-sizing:border-box;
+    border:1px solid transparent;
+    line-height:2em;
+    text-align:center;
+    width:2em;
+  }
+
+  /** Today **/
+  .k-days .k-today {
+    border-color:$color-gamma;
+  }
+
+  /** Days outside of the month view (before the first day of the month, after the last day of the month) **/
+  .k-days span.k-out-of-month,
+  .k-days span.k-in-month{
+    color:$color-gamma;
+  }
+
+  /** Days inside of the month view **/
+  .k-days span.k-in-month.k-active {
+    color:$color-alpha;
+  }
+
+  /** Selectable  **/
+  .k-days span.k-active {
+    cursor:pointer;
+  }
+
+  /** Selected day, when outside the selectable area **/
+  .k-days span.k-selected {
+    background-color:$color-primary;
+    border-color:$color-primary;
+    color:$color-white !important;
+    font-weight: bold;
+  }
+
+  /** Selected day, when inside the selectable area **/
+  .k-days span.k-selected.k-active {
+
+  }
+
+  /** Days between the start and end points on a range, outside of the selectable area **/
+  .k-days span.k-range {
+    background:none;
+
+  }
+
+  /** Days between the start and end points on a range, inside of the selectable area **/
+  .k-days span.k-range.k-in-month {
+
+  }
+
+  /** Selectable day, hovered **/
+  .k-days span.k-active:hover {
+
+  }
+
+  /** Selectable week, hovered **/
+  .k-week:hover span.k-active {
+  }
+
+  .clearfix:after { 
+    visibility:hidden; 
+    display:block;
+    font-size:0;
+    content:"";
+    clear:both;
+    height:0;
+  }
+  
+}

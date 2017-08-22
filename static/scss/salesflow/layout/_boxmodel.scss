@@ -1,0 +1,6 @@
+// Bootstrap puts this on all elements. We just put it on the bootstrap elements. 
+
+[class^="col-"],
+.bootstrap-datetimepicker-widget * {
+    @include box-sizing(border-box);
+} 

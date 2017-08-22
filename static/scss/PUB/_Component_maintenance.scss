@@ -1,0 +1,77 @@
+﻿.maintenance.qtopnav__line {
+    top: 0 !important;
+    bottom: initial;
+    border-bottom: 4px solid $red;
+    padding: 0 !important;
+}
+
+.maintenance {
+	.logo {
+	    margin-right: 1.5em;
+	    padding-right: 1.5em;
+	    border-right: 1px solid $gray-lightest;
+	    
+	    img {
+			width: 90%;
+			height: auto; 
+	    }
+	    
+	}
+	h1 {
+	    font-size: 1.75em;
+	    color: $black;
+	    width: 80%;
+	    margin-bottom: 1.25em;
+	    
+	    strong {
+			font-family: $font-family-sans-serif-bold;
+		    font-weight: normal;
+		    color: $red;
+		}
+	}
+	h2 {
+	    color: $gray-light-worm;
+	    font-size: 1.15em;
+	    font-family: $font-family-sans-serif-bold;
+	}
+	.langblock {
+	    margin-bottom: 1.5em;
+	    width: 90%;
+	}
+	.matchheight {
+	    padding-top: 40px;
+	}
+	.btn {
+	    margin-bottom: 2em;
+	}
+}
+
+@media screen and (max-width: $screen-md-max) {
+    .maintenance {
+	    h1 {
+	        width: 100%;
+	    }
+	    .langblock {
+	        width: 100%;
+	    }
+	}
+}
+
+@media screen and (max-width: $screen-sm-max) {
+    .maintenance {
+        padding: 50px 0 !important;
+
+	    .matchheight {
+	        padding: 0 !important;
+	        height: auto !important;
+	        border: none;
+	    }
+	    .logo {
+	        width: 200px;
+	        margin: 0 0 30px;
+	    }
+	    .btn {
+	        margin-bottom: 0;
+	    }
+    }
+}

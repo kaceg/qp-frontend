@@ -1,0 +1,90 @@
+﻿.btn { text-decoration: none; white-space: normal; padding: 8px 18px; max-width: 100%; overflow: hidden;margin-bottom: 2px; font-weight: normal; font-family: $font-family-sans-serif-bold;
+    &.text-left { text-align: left; }
+    .fa { margin-left: 10px; margin-right: 0; font-size: 1.2em; vertical-align: text-top; }
+    .fa.btn__iconLeft { margin-right: 10px; margin-left: -4px; }
+}
+.btn-inactive,
+a[disabled],
+button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm; color: $white !important; pointer-events: none; }
+.btn-sm { padding: 5px 10px;}
+.btn-nowrap { white-space: nowrap; }
+.btn-link { font-family: $font-family-sans-serif-bold; }
+.btn-link, .btn-info { text-decoration: underline; }
+.btn-noHoriPadd { padding-left:0; padding-right:0;
+   .fa.btn__iconLeft {margin-left:0;}
+}
+
+.has-darkBg {
+    .btn-primary { border-color: $white; }
+    .btn-info {color: $white; }
+    .btn-link, .btn-info {
+        &:focus, &:hover { color: inherit; }
+    }
+}
+
+// svg icon
+.btn__icon { position: relative; display: inline-block; margin-right: 10px; margin-left: -4px; margin-top: -0.5em; line-height: 2em; margin-bottom: -0.5em;
+    &:before { content: "-----"; color: transparent; }
+    svg { display: block; position: absolute; left: 0; top: 50%; max-height: 100%; max-width: 100%; transform: translate(0, -50%); }
+    path { fill: currentColor;}
+}
+
+
+// only icon in button
+.btn-icononly { padding: 8px 12px;
+    &.btn-sm { padding: 5px 8px; }
+    .fa { margin: 0; }
+    .btn__icon {margin-left:0; margin-right:0}
+}
+
+ 
+
+
+//////////////////////////////////////////////
+// States of a button: hover, focus and active
+.btn { transition: all 0.1s linear} 
+.btn:hover, .btn:focus { 
+        .text-info { color: currentColor; }
+}
+.btn:focus { outline: 0 none }
+
+.btn-success:hover, .btn-success:focus{ color: $white;background-color: $lime_dark;border-color: transparent;}
+.btn-success:active, .btn-success:active:hover { color: $white;background-color: $lime_dark;border:none; box-shadow: inset 0px 0px 0px 2px $white}
+
+.btn-info:hover, .btn-info:focus { color: #666; }
+.btn-info:active:hover {  box-shadow: none}
+
+.btn-primary:hover, .btn-primary:focus  { color: $white; background-color: $lime_dark; border-color: transparent;}
+.btn-primary:active, .btn-primary:active:hover {  color: $white; background-color: $lime_dark; border: none; box-shadow: inset 0px 0px 0px 2px $white}
+
+.btn-line { background: $white; }
+.btn-line:hover { color: $white !important; }
+.btn-danger.btn-line { color: $red; }
+
+.btn-secondary {
+    color: #8bb611;
+    background-color: #fff;
+    border-color: #8bb611;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    border-color: #8bb611;
+    color: #7CA30F;
+}
+
+.btn-half {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: $screen-sm-min) {
+    .btn-half {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .btn-half:nth-child(2) {
+        float: right;
+    }
+}

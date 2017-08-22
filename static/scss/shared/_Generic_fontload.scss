@@ -1,0 +1,25 @@
+﻿@font-face {
+  font-family: FutT;
+  src: url("/static/assets/fonts/Futura-Book.eot?4892989");
+  src: url("/static/assets/fonts/Futura-Book.eot?4892989") format('embedded-opentype'),
+  url("/static/assets/fonts/Futura-Book.woff?4892989") format("woff"),
+  url('/static/assets/fonts/Futura-Book.svg?4892989#futuraregular') format('svg');;
+}
+@font-face {
+  font-family: FutTDem;
+  src: url("/static/assets/fonts/Futura-Demi.eot?4892989");
+  src: url("/static/assets/fonts/Futura-Demi.eot?4892989") format('embedded-opentype'),
+  url("/static/assets/fonts/Futura-Demi.woff?4892989") format("woff"),
+  url('/static/assets/fonts/Futura-Demi.svg?4892989#futurademiregular') format('svg');
+}
+
+/* TMP */
+
+@font-face {
+  font-family: FutT;
+  font-weight: bold;
+  src: url("/static/assets/fonts/Futura-Demi.eot?4892989");
+  src: url("/static/assets/fonts/Futura-Demi.eot?4892989") format('embedded-opentype'),
+  url("/static/assets/fonts/Futura-Demi.woff?4892989") format("woff"),
+  url('/static/assets/fonts/Futura-Demi.svg?4892989#futurademiregular') format('svg');
+}

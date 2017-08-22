@@ -1,0 +1,114 @@
+/* Box
+----------------------------------------*/
+
+.box {
+
+    display:block;
+    margin-bottom:1.5em;
+    position:relative;
+
+    &:after {
+        clear:both;
+        content:"";
+        display:table;
+    }
+
+    > *:last-child {
+        margin-bottom:0;
+    }
+
+}
+
+/* Boxes with inner padding
+----------------------------------------*/
+.box__inner,
+.box--inner {
+    padding:1.5em;
+
+    > *:last-child {
+        margin-bottom:0;
+    }
+}
+
+/* Boxes with large inner padding
+----------------------------------------*/
+.box__inner__large,
+.box--inner--large {
+    padding:2.5em;
+
+    > *:last-child {
+        margin-bottom:0;
+    }
+}
+
+
+/* Boxes with a border (only a white box is allowed to have a border!)
+----------------------------------------*/
+
+.box--border {
+    border: 2px solid $color-delta;
+}
+
+.box--border-collapsed {
+    margin-bottom: 0;
+    border: 2px solid $color-delta;
+    border-bottom: none;
+
+    &:last-child {
+        border-bottom: 2px solid $color-delta;
+    }
+}
+
+         
+
+/* Boxes in various colours
+----------------------------------------*/
+
+.box--primary,
+.box--secondary,
+.box--alpha,
+.box--beta,
+.box--gamma {
+    color:$color-white;
+}
+
+.box--primary {
+    background-color:$color-primary;
+}
+
+.box--secondary {
+    background-color:$color-secondary;
+}
+
+.box--alpha {
+    background-color:$color-alpha;
+}
+
+.box--beta {
+    background-color:$color-beta;
+}
+
+.box--gamma {
+    background-color:$color-gamma;
+}
+
+.box--delta {
+    background-color:$color-delta;
+}
+
+.box--epsilon {
+    background-color:$color-epsilon;
+}
+
+.box--eta {
+    background-color:$color-eta;
+}
+
+/* new component, looks like ".box.box--epsilon", except for the padding */
+.Qwell {background-color: $color-epsilon;
+clear: both;
+margin-top: 1em;} 
+.Qwell-inner {padding: 1em 2em;}
+@media (max-width: $breakpoint-s) { //480
+    .Qwell-inner {padding: 1em 1em;}
+}

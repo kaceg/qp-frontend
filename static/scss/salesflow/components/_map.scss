@@ -1,0 +1,19 @@
+.map {
+  height:15em;
+}
+
+.gm-style {
+  img {
+    max-width:none;
+  }
+}
+
+.gm-style-iw {
+  color:$color-alpha;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+
+  h3,
+  p {
+    margin-bottom:0;
+  }
+}

@@ -1,0 +1,108 @@
+﻿/* 
+    Project: "Qpark Public Website"
+    Framework: Bootstrap v3.3.7 
+    Methodology: This project uses ITCSS and (a bit of) BEM-methodology.
+*/
+    
+// Settings : contain font, colors definitions, etc.
+// --------------------------------------------------
+@import "PUB/_Settings_variables.scss";   
+@import "shared/_Settings_variables_fontawesome.scss";    
+
+// Tools : globally used mixins and functions. These do not output CSS. 
+// --------------------------------------------------
+@import "vendor/bootstrap/mixins"; 
+@import "shared/_Tools_mixins.scss";  
+
+// Generic : Normalize + some usefull styles 
+// --------------------------------------------------
+@import "vendor/bootstrap/normalize";
+@import "vendor/bootstrap/print";
+//@import "vendor/bootstrap/glyphicons";
+@import "shared/_Generic_fontload.scss";   
+@import "PUB/_Generic_print.scss";   
+
+// Elements : styling for bare HTML elements 
+// --------------------------------------------------
+@import "vendor/bootstrap/scaffolding";
+@import "vendor/bootstrap/type";
+//@import "vendor/bootstrap/code";
+@import "PUB/_Elements_type.scss";    
+
+// Objects : contains design patterns and layout 
+// --------------------------------------------------
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/utilities";
+@import "vendor/bootstrap/responsive-utilities";
+@import "PUB/_Object_mainlayout.scss";    
+
+// Components : standalone components  
+// --------------------------------------------------
+@import "vendor/Fontawesome/font-awesome.scss";
+//@import "vendor/bootstrap/tables";
+@import "vendor/bootstrap/forms";
+@import "vendor/bootstrap/buttons";
+@import "PUB/_Component_buttons.scss";
+@import "vendor/bootstrap/component-animations";
+@import "vendor/bootstrap/dropdowns";
+@import "vendor/bootstrap/button-groups";
+@import "vendor/bootstrap/input-groups"; 
+@import "vendor/bootstrap/navs";
+@import "vendor/bootstrap/navbar";
+@import "PUB/_Component_formelements.scss";
+@import "PUB/_Component_dropdowns.scss";
+//@import "vendor/bootstrap/breadcrumbs";
+//@import "vendor/bootstrap/pagination";
+//@import "vendor/bootstrap/pager";
+//@import "vendor/bootstrap/labels";
+//@import "vendor/bootstrap/badges";
+//@import "vendor/bootstrap/jumbotron";
+//@import "vendor/bootstrap/thumbnails";
+@import "vendor/bootstrap/alerts";
+//@import "vendor/bootstrap/progress-bars";
+//@import "vendor/bootstrap/media";
+//@import "vendor/bootstrap/list-group";
+//@import "vendor/bootstrap/panels";
+//@import "vendor/bootstrap/responsive-embed";
+//@import "vendor/bootstrap/modals";
+@import "vendor/bootstrap/tooltip";
+@import "PUB/_Component_tooltip.scss";
+//@import "vendor/bootstrap/popovers";
+//@import "vendor/bootstrap/carousel";
+@import "vendor/bootstrap/close"; 
+@import "PUB/_Component_wells.scss"; // This is a customisation of : "vendor/bootstrap/wells";
+
+@import "PUB/_Component_ankeilers.scss";
+@import "PUB/_Component_cookiebar.scss";
+@import "PUB/_Component_faq.scss";
+@import "PUB/_Component_newslist.scss";
+@import "PUB/_Component_pagefooter.scss"; 
+@import "PUB/_Component_pagetitles.scss";
+@import "PUB/_Component_socialshare.scss";
+@import "PUB/_Component_table.scss";
+@import "PUB/_Component_topnav.scss";
+@import 'PUB/_Component_video.scss';
+
+// Components w/ JavaScript
+// --------------------------------------------------
+
+@import 'PUB/_Component_back-to-top.scss';
+@import 'PUB/_Component_breadcrumb';
+@import 'PUB/_Component_card';
+@import 'PUB/_Component_corner-ribbon';
+@import 'PUB/_Component_gmap.scss';
+@import 'PUB/_Component_inpage-nav.scss';
+@import 'PUB/_Component_maintenance.scss';
+@import 'PUB/_Component_mapinfo-cta';
+@import 'PUB/_Component_results-filter.scss';
+@import 'PUB/_Helpers.scss';
+
+// Components My Q-Park (make separate file?)
+// --------------------------------------------------
+
+@import 'PUB/_Component_amountboxes.scss';
+@import 'PUB/_Component_table_overview.scss';
+
+// Temporary Overrides (dev team)
+// --------------------------------------------------
+@import 'PUB/__TmpOverrides.scss';

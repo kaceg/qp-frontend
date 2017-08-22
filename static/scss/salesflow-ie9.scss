@@ -1,0 +1,25 @@
+﻿@charset "UTF-8";
+
+/* Import mixins
+=============================================================================*/
+@import 'salesflow/mixins/old-ie';
+@import 'salesflow/mixins/respond';
+@import 'salesflow/mixins/helpers';
+@import 'salesflow/mixins/generated-content';
+@import 'salesflow/mixins/rem';
+@import 'salesflow/mixins/gridset';
+@import 'salesflow/base/constants';
+
+.select-wrapper {
+    &:after {
+        display: none;
+    }
+}
+
+form.line-edit {
+    .select-wrapper {
+        select {
+            padding-right: 0;
+        }
+    }
+}

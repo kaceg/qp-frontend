@@ -1,0 +1,74 @@
+﻿@charset "UTF-8";
+$fix-mqs:false;
+
+
+/* Import mixins
+=============================================================================*/
+@import 'salesflow/mixins/old-ie';
+@import 'salesflow/mixins/respond';
+@import 'salesflow/mixins/helpers';
+@import 'salesflow/mixins/generated-content';
+@import 'salesflow/mixins/rem';
+@import 'salesflow/mixins/gridset';
+@import 'vendor/bootstrap/_mixins.scss'; 
+
+
+/* Import variables
+=============================================================================*/
+@import 'salesflow/base/constants';
+@import 'salesflow/layout/_variablesBootstrap.scss'; 
+
+
+/* Import core 
+=============================================================================*/
+@import 'salesflow/base/normalize';
+@import 'salesflow/base/helpers';
+@import 'shared/_Generic_fontload.scss';
+@import 'salesflow/base/typography';
+@import 'salesflow/base/forms';
+@import 'salesflow/base/lists';
+@import 'salesflow/base/boxes';
+@import 'salesflow/base/_generics.scss';
+
+/* Import layout 
+=============================================================================*/
+@import 'salesflow/layout/_boxmodel.scss';  
+@import 'salesflow/layout/_grid.scss';  
+@import 'vendor/bootstrap/_grid.scss'; 
+@import 'vendor/bootstrap/_component-animations.scss';
+@import 'vendor/bootstrap/_dropdowns.scss';
+@import 'vendor/bootstrap/_tables.scss';
+@import 'vendor/bootstrap/_utilities.scss';
+
+@import 'salesflow/base/_table-addon.scss';
+@import 'salesflow/layout/_layout.scss';
+@import 'salesflow/layout/_layoutfluid.scss';
+
+/* Import component 
+=============================================================================*/
+@import 'salesflow/components/buttons';
+@import 'salesflow/base/_Component_icons.scss'; // can be refactored to:  @import "vendor/Fontawesome/font-awesome.scss";  @import "shared/_Settings_variables_fontawesome.scss";    
+@import 'salesflow/components/map';
+@import 'salesflow/components/navigation';
+@import 'salesflow/components/products';
+@import 'salesflow/components/dialog';
+@import 'salesflow/components/step-indicator';
+@import 'salesflow/components/kalendae';
+@import 'salesflow/components/cookie';
+@import 'salesflow/components/search';
+@import 'salesflow/components/carousel';
+@import 'salesflow/components/misc';
+@import 'salesflow/components/quantity-selector';
+@import 'salesflow/components/landlords';
+@import 'salesflow/components/loadingIndicator.scss';
+@import 'vendor/bootstrap-datetimepicker/_bootstrap-datetimepicker.scss';
+@import 'salesflow/components/_datetimepicker-custom.scss';
+@import 'salesflow/components/corner-ribbon';
+
+// redesign  
+@import 'salesflow/redesign/_flow-navigation.scss'; 
+
+ // utilities
+ @import "vendor/bootstrap/responsive-utilities";
+
+
