@@ -1,0 +1,137 @@
+/* Lists
+----------------------------------------------- */
+ol, ul { margin: 0 0 1.5em;
+    ol, ul { margin-bottom: 0; }
+    p + & { margin-top: -1.5em; }
+}
+dl { margin: 0 0 1.5em; }
+
+/* Unordered List
+----------------------------------------------- */
+ul, ol { list-style: none none outside; padding: 0;
+    > li {
+        padding-left: 1.5em;
+        position: relative;
+
+        @include before { background: $color-primary; color: $color-primary; content: ""; display: block; height: 1.0em; left: 0; position: absolute; top: .25em; width: .25em; }
+    }
+}
+
+ul {
+    ul > li {
+        @include before { background-color: $color-alpha; }
+        ul > li {
+            @include before { background-color: $color-gamma; }
+        }
+    }
+}
+
+/* Ordered List
+----------------------------------------------- */
+
+ol { counter-reset: ol;
+    > li {
+        @include before { color: $color-beta; content: counter(ol) "."; counter-increment: ol; background-color: transparent; height: auto; text-align: right; top: 0; width: auto; }
+
+        ol li {
+            @include before { content: counter(ol,lower-alpha) "."; }
+        }
+    }
+}
+
+/* Inline List
+----------------------------------------------- */
+.inline-list {
+    > li {
+        display: inline-block;
+        margin-left: 0;
+        padding-left: 0;
+
+        @include before { display: none; }
+
+        + li { margin-left: .5em; }
+    }
+    &.inline-list--separator {
+        > li { padding-right: 1.5em; }
+        > li + li { border-left-style: solid; border-left-width: .15em; margin-left: 0; padding-left: 1.5em; }
+    }
+    &.inline-list--no-separator {
+        > li { margin-right: 2em; }
+        > li + li { margin-left: 0; }
+    }
+}
+
+
+/* Definition List
+----------------------------------------------- */
+dl {
+    dd { font-weight: normal; margin-left: 0; }
+    dt { font-weight: bold; }
+    dd + dt { margin-top: .75em; }
+    dd.screenreader + dt { margin-top: 0; }
+}
+
+/* Definition List
+----------------------------------------------- */
+.dl--inline {
+    dt,
+    dd { display: inline-block; }
+    dd { margin-left: 0; }
+    dd + dd {
+        @include before { content: ", "; margin-left: -.2em; }
+    }
+    dd + dt { margin-left: 1.5em; margin-top: 0; }
+}
+
+/* Blank list
+----------------------------------------------- */
+.blank-list { list-style: none none outside;
+    > li {
+        padding-left: 0;
+        position: static;
+
+        @include before { display: none; }
+    }
+}
+
+/* Border-list
+-------------------------------------------------------*/
+.border-list { border-top: 1px solid $color-delta;
+
+    > li { border-bottom: 1px solid $color-delta; }
+
+    &.border-list--spacing {
+        > li { padding-bottom: 1.5em; padding-top: 1.5em; }
+    }
+}
+
+/* Matrix list list
+---------------------------------------------------------*/
+
+.matrix-list { margin-top: -1.5em; overflow: visible; position: relative;
+
+    > li { box-sizing: border-box; display: inline-block; vertical-align: top; width: 100%;
+
+        > * { margin-top: 1.5em; }
+    }
+}
+
+/* Thumbnail list
+---------------------------------------------------------*/
+.thumbnail-list { margin-top: 0;
+
+    li { padding: 0.75em; border-bottom: 1px solid $color-delta;
+
+        &:first-child { border-top: 1px solid $color-delta; }
+
+        img { display: inline-block; vertical-align: middle; padding: 0; margin: 0 0.75em 0 0; }
+    }
+}
+
+
+/* Multi column list
+---------------------------------------------------------*/
+.multi-column-list {
+
+    @include respond-min($breakpoint-s) { column-count: 2; column-gap: 1.5em; }
+}

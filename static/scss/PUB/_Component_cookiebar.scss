@@ -1,0 +1,13 @@
+﻿.cookiebar { background: $gray-dark; margin-bottom:10px}
+.cookiebar__inner__first p { margin-bottom:0 }
+
+
+@media (min-width: $screen-sm-min) {
+   .cookiebar__inner { display:flex;justify-content: space-between;align-items: center; padding: 20px 0 20px }
+   .cookiebar__inner__first { padding-right: 40px; }
+}
+@media (max-width: $screen-xs-max) {
+    .cookiebar__inner { padding: 10px 0 20px }
+    .cookiebar__inner__first { padding-bottom: 10px; }
+}
+

@@ -1,0 +1,5 @@
+﻿.faqanswer { padding-top: 10px;
+    > *:last-child { margin-bottom:0} // otherwise, the collapse jumps when the webeditor has inputted a p-tag.
+}
+.faqcategorylist { }
+

@@ -1,0 +1,143 @@
+﻿.bootstrap-datetimepicker-widget {
+
+    ul {
+        li {
+            padding-left: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .datepicker {
+        &:after {
+            display: none;
+        }
+    }
+
+    table th.dow {
+        background: $color-epsilon;
+        color: $color-black;
+        border-radius: 0;
+    }
+
+    table th.picker-switch {
+        color: $color-black;
+    }
+
+    table.table-condensed tbody tr:last-child {
+        border-bottom: 0 none;
+    }
+
+    table td.old:not(:hover), table td.new:not(:hover) {
+        color: $color-gamma;
+    }
+
+    th.prev, th.next {
+        color: $color-primary;
+    }
+
+    table td.old.active, table td.new.active {
+        color: $color-white;
+    }
+
+    table td, table .month, table .year, table .decade, .timepicker-hour, .timepicker-minute, .hour, {
+        position: relative;
+    }
+
+    table td.day:after,
+    table .month:after,
+    table .year:after,
+    table .decade:after,
+    table .timepicker-hour:after,
+    table .timepicker-minute:after,
+    table .minute:after,
+    table .hour:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        top: 1px;
+        width: 28px;
+        height: 28px;
+        margin-top:-14px;
+        border-radius: 50px;
+        background: $color-delta;
+        margin: 0 0 0 -14px;
+        z-index: -1;
+        transform: scale(0.1);
+        transition: 0.2s ease all;
+        opacity: 0;
+    }
+
+    table td.day:hover:after,
+    table .month:hover:after,
+    table .year:hover:after,
+    table .decade:hover:after,
+    table .timepicker-hour:hover:after,
+    table .timepicker-minute:hover:after,
+    table .minute:hover:after,
+    table .hour:hover:after {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    table td.day.active:after,
+    table .month.active:after,
+    table .year.active:after,
+    table .decade.active:after {
+        transform: scale(1);
+        opacity: 1;
+        background: $color-secondary;
+    }
+
+   
+
+    table .month:after,
+    table .year:after,
+    table .decade:after {
+        top: 2px;
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 -25px;
+    }
+
+    table .timepicker-hour:after, table .timepicker-minute:after {
+        top: 12px;
+    }
+
+    table .minute:after {
+        top: 14px;
+    }
+
+    table .hour:after {
+        top: 0;
+    }
+
+
+    table .decade {
+        position: relative;
+        line-height: 16px;
+        padding-top: 11px;
+    }
+
+    table td.today:before {
+        border-bottom-color: $color-beta;
+    }
+
+    table td.active.today::before {
+        border-bottom-color: transparent;
+    }
+
+     table .disabled:after { opacity: 0 !important;} 
+     table td.disabled.old, table td.disabled.new {color:$bs-datetimepicker-disabled-color ; } 
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {z-index:1700; max-width: 290px;}
+
+@include respond-min($breakpoint-sm) {
+    .bootstrap-datetimepicker-widget {font-size:16px}
+    .bootstrap-datetimepicker-widget table td.day {height: 1.4em; line-height: 1.4em;}
+}

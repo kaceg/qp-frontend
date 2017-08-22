@@ -1,0 +1,19 @@
+﻿form { margin: 0; }
+.form-control:focus { box-shadow:none !important;}
+.form-group:not(.form-group--boxed) .form-control { padding-left: 0; padding-right: 0; border-left: 0 none; border-right: 0 none; border-top: 1px solid transparent; box-shadow: none;}
+.form-group.form-group--nobottomborder .form-control { border-bottom: 1px solid transparent;}
+
+.selectwrapper { position: relative;display:block;
+    &:after { position: absolute; pointer-events: none; right: 10px; top: 50%; margin-top: -12px; color: currentColor; height: 24px; width: 24px; line-height: 24px; font-family: "FontAwesome"; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-align: center; font-size: 20px; z-index: 4; content:"\f107"; }
+    select {  /* autoprefixer: off */ padding-right: 40px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+    select::-ms-expand { /* autoprefixer: off */  display: none;}
+    option {  padding: 7px 14px; background: $white }
+}
+
+.form-group.has-error .selectwrapper:after { color: $red;}
+ 
+.form-group:not(.form-group--boxed) .selectwrapper:after { right: -2px; }
+.form-group:not(.form-group--boxed) select.form-control { padding-right: 20px;}
+.form-group-lg select.form-control, .form-group-sm select.form-control { padding-right: 40px;}
+
+select:focus, input:focus, textarea:focus { background: $white}

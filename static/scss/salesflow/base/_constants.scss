@@ -1,0 +1,85 @@
+/* Grids
+----------------------------------------*/
+
+$grid-gutter:1.875em;
+
+/* Breakpoints
+----------------------------------------*/
+
+$breakpoint-xs:20em; /* 320 */
+$breakpoint-s:30em; /* 480 */
+$breakpoint-sm:40em; /* 640 */
+$breakpoint-m:48em; /* 768 */
+$breakpoint-l:61.85em; /* 990 */
+$breakpoint-xl:80em; /* 1280 */
+
+/* Colors
+----------------------------------------*/
+
+$color-primary: #d90327; /* red */
+$color-secondary: #8bb611; /* green */
+
+$color-black:#000000;
+$color-white:#FFFFFF;
+
+$color-alpha:#000000;
+$color-beta:#666666;
+$color-gamma:#B2B2B2;
+$color-delta:#E5E5E5;
+$color-jota:#AEAEAE;
+$color-epsilon:#F2F2F2;
+$color-zeta:#FFFFFF;
+$color-eta:#F9F9F9;
+
+
+$color-9F: #9F9E9E;
+$color-44: #444444;
+
+/* Font-scale
+----------------------------------------*/
+
+%font-size-alpha {
+  font-size:1.8889em; /* 34px / 18 */
+  line-height:1.588235em; /* 54px */
+}
+
+%font-size-beta {
+  font-size: 1.5em; /* 27px */
+  line-height:1.5em; /* 40.5/27 */
+}
+
+%font-size-gamma {
+  font-size:1.3333em; /* 24px */
+  line-height:1.6875em; /* 40.5/24px */
+}
+
+%font-size-delta {
+  font-size:1.111em; /* 20px */
+  line-height:1.35em; /* 27px */
+}
+
+%margin-bottom-alpha {
+  margin-bottom:.79411em; /* 34/27 */
+}
+
+%margin-bottom-beta {
+  margin-bottom:1em; /* 27/27 */
+}
+
+%margin-bottom-gamma {
+  margin-bottom:1.125em; /* 27/24 */
+}
+
+%margin-bottom-delta {
+  margin-bottom:1.35em; /* 27/20 */
+}
+
+%font-size-small {
+  font-size:.875em; /* 14/16 */
+  line-height:1.7142857em; /* 24/14 */
+}
+
+%font-size-extra-small {
+  font-size:.75em; /* 12/16 */
+  line-height:2em; /* 24/12 */
+}

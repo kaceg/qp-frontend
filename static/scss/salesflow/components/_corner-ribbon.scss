@@ -1,0 +1,77 @@
+﻿.corner-ribbon {
+    width: 100%;
+    position: relative;
+    background: #8bb611;
+    color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /*
+    span { }
+
+    &.shadow { }
+
+    &.green {
+        background: #8bb611;
+    }
+    */
+    &.red {
+        background: #d90327;
+    }
+
+    @media screen and (min-width: $breakpoint-l) {
+        width: 200px;
+        position: absolute;
+        z-index: 99999;
+
+        &.sticky {
+            position: fixed;
+        }
+
+        &.top-left {
+            top: 25px;
+            bottom: auto;
+            left: -50px;
+            right: auto;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        &.top-right {
+            top: 25px;
+            bottom: auto;
+            left: auto;
+            right: -50px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        &.small-text {
+            font-size: 75%;
+        }
+
+        /*&.bottom-left {
+            top: auto;
+            bottom: 25px;
+            left: -50px;
+            right: auto;
+            -webkit-transform: rotate(45deg); 
+            -ms-transform: rotate(45deg); 
+            transform: rotate(45deg);
+        }
+
+        &.bottom-right {
+            top: auto;
+            bottom: 25px;
+            left: auto;
+            right: -50px;
+            -webkit-transform: rotate(-45deg); 
+            -ms-transform: rotate(-45deg); 
+            transform: rotate(-45deg);
+        }*/
+    }
+}

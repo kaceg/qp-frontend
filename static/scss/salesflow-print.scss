@@ -1,0 +1,362 @@
+﻿@charset "UTF-8";
+
+@import 'salesflow.scss';
+
+
+
+.page-footer,
+nav.page-section,
+.page-navigation,
+.cookie-msg,
+.link-list,
+.quick-nav{
+    display:none;
+}
+
+.book-now {
+    margin-bottom:1.5em;
+}
+
+/* Margins
+----------------------------------------*/
+
+p, img,
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5{
+    margin-bottom: 1em;
+}
+
+p + ol, p + ul {
+    margin-top: -1em;
+}
+
+
+/* Logo
+----------------------------------------*/
+
+.logo {
+    display:block;
+    height:1.75em;
+    max-width:50%;
+    margin-bottom: 0.5em;
+}
+
+.page-header {
+    border-bottom:.25em solid $color-primary;
+    margin-bottom:1.5em;
+    //position: relative;
+
+    //.wrapper {
+    //    &:before {
+    //        content:"";
+    //        position:absolute;
+    //        display:block;
+    //        width:204px;
+    //        left:0;
+    //        bottom:-.25em;
+    //        border-bottom:.25em solid $color-alpha;
+    //    }
+    //}
+}
+
+.page-header .screenreader {
+    display:none;
+}
+
+*,
+*:before,
+*:after {
+    text-shadow:none !important;
+}
+
+body {
+    margin:1em auto 0;
+    max-width:62em;
+    padding:0 2em;
+}
+
+a,
+a:visited {
+    text-decoration:underline;
+}
+
+/* a[href]:after {
+  content: " (" attr(href) ")";
+} */
+
+abbr[title] {
+    border-bottom-width:0;
+}
+
+/* abbr[title]:after {
+  content: " (" attr(title) ")";
+} */
+
+/*
+ * Don't show links that are fragment identifiers,
+ * or use the `javascript:` pseudo protocol
+ */
+
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+    content:"";
+}
+
+pre,
+blockquote {
+    border:1px solid #999;
+    page-break-inside:avoid;
+}
+
+thead {
+    display:table-header-group; /* h5bp.com/t */
+}
+
+tr,
+img {
+    page-break-inside:avoid;
+}
+
+img {
+    margin-bottom:1.5em;
+    max-width:100% !important;
+}
+
+p,
+h2,
+h3 {
+    orphans:3;
+    widows:3;
+}
+
+h2,
+h3 {
+    page-break-after:avoid;
+}
+
+/* Order details
+----------------------------------------------- */
+.order-details {
+    margin-bottom:0;
+    overflow:hidden;
+    position:relative;
+
+    dt,
+    dd {
+        display:inline-block;
+        vertical-align:top;
+        width:gs-width(da, 1, 2, false, true);
+    }
+
+    dt {
+        margin-top:0;
+    }
+
+    dd {
+        margin-bottom:1.5em;
+        margin-left:-#{gs-width(da, 1, 2, false, false) + '%'};
+        margin-right:gs-gutter(da, false, true);
+        padding-top:1.5em;
+    }
+
+    dt:nth-of-type(2n) + dd {
+        margin-right:gs-gutter(da, false, true);
+    }
+
+    dt:nth-of-type(3n) + dd {
+        margin-right:0;
+    }
+
+}
+
+/* Address details
+----------------------------------------------- */
+.address-details {
+
+    .address-details__zip + dd {
+        float:left;
+        margin-right:.5em;
+    }
+
+    .address-details__bank {
+        clear:left;
+        float:left;
+        margin-top:0;
+        margin-right:.25em;
+    }
+
+    .address-details__bank,
+    .address-details__bank + dd {
+        margin-top:1em;
+    }
+
+    .address-details__bank ~ .address-details__bank,
+    .address-details__bank ~ .address-details__bank + dd {
+        margin-top:0;
+    }
+
+}
+
+/* Invoice
+----------------------------------------*/
+.address-details--qpark {
+    @include gs-span(da, 1, 4, false, false);
+}
+
+.address-details--customer {
+    @include gs-span(da, 5, 8, false, false);
+}
+
+/* Hide print button
+----------------------------------------*/
+.print {
+    display:none;
+}
+
+/* Order overview
+----------------------------------------*/
+
+.order-overview {
+
+    .order-overview__product-name {
+        width:17em;
+    }
+
+    .order-overview__product-amount,
+    .order-overview__product-price,
+    .order-overview__product-total-price,
+    .order-overview__product-vat,
+    .order-overview__product-price-vat,
+    .order-overview__product-total-price-vat {
+        text-align:right;
+        width:9em;
+    }
+
+    .order-overview__product-price {
+        width:9em;
+    }
+
+    .order-overview__product-vat {
+        width:6em;
+    }
+
+    .order-overview__product-amount {
+        text-align:center;
+        width:2em;
+    }
+
+    tr {
+        border-top:2px solid $color-delta;
+    }
+
+    td,
+    th {
+        padding:.75em;
+        vertical-align:top;
+    }
+
+    .order-overview__product,
+    .order-overview__total {
+        position:relative;
+    }
+
+    .order-overview__product-name {
+        @extend %font-size-delta;
+        font-weight:bold;
+
+        span {
+            display:block;
+            font-weight:normal;
+        }
+
+    }
+
+    .order-overview__product-price-vat,
+    .order-overview__product-total-price-vat {
+        text-align:right;
+    }
+
+    td.order-overview__product-price-vat,
+    td.order-overview__product-total-price-vat {
+        @extend %font-size-gamma;
+        line-height:1;
+    }
+
+    .order-overview__total {
+
+        .order-overview__product-total-price-vat {
+            font-weight:bold;
+        }
+
+    }
+
+    .order-overview__product-total-price-vat dl {
+
+        margin-bottom:0;
+
+        dt, dd {
+            display:inline-block;
+            margin-right:-4px;
+            width:50%;
+            font-size:0.667em;
+            font-weight:normal;
+        }
+
+        dt:last-of-type, dd:last-of-type {
+            font-size:1em;
+            font-weight:bold;
+        }
+
+    }
+
+}
+
+/* Ticket
+----------------------------------------*/
+.ticket-pf {
+
+    display:none;
+
+    img {
+        display:none;
+    }
+
+    /*h3.screenreader {
+        position:static;
+        clear:inherit;
+        width:auto;
+        height:auto;
+        margin-bottom:0.75em;
+    }*/
+}
+
+.ticket {
+    border:2px solid $color-delta;
+    display:table;
+    margin-bottom:3em;
+    table-layout:fixed;
+
+    .ticket__details {
+        background:$color-epsilon;
+        border-right:2px solid $color-delta;
+        display:table-cell;
+        padding:1.5em;
+        vertical-align:middle;
+        width:60%;
+    }
+
+    .ticket__qrcode {
+        display:table-cell;
+        padding:1.5em;
+        text-align:center;
+        vertical-align:middle;
+        width:40%;
+
+        p {
+            margin-bottom:0;
+            text-align:left;
+        }
+
+    }
+
+}

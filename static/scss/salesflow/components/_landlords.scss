@@ -1,0 +1,552 @@
+.landlord-wrapper {
+
+    h1, h2 {
+        margin-bottom: -0.2em;
+        float: left;
+    }
+
+    h1 {
+        color: #1a1a1a;
+        font-weight: bold;
+        position: relative;
+    }
+
+    h2 {
+        color: #B2B2B2;
+        margin-top: 0.32em;
+        margin-left: 0.4em;
+        font-weight: 400;
+    }
+
+    .landlord-validation-error {
+        color: $color-primary;
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    /**search field**/
+    .commands,
+    .form-landlord {
+        input {
+            &::-webkit-input-placeholder {
+                color: $color-gamma;
+            }
+
+            &:-moz-placeholder {
+                color: $color-gamma;
+            }
+
+            &::-moz-placeholder {
+                color: $color-gamma;
+            }
+
+            &:-ms-input-placeholder {
+                color: $color-gamma;
+            }
+        }
+
+        .search-wrapper {
+            input[type="search"] {
+                height:2.5em;
+            }
+        }
+    }
+
+    
+    .landlord-header-wrapper {
+        @extend %clearfix;
+
+        .landlord-header-title h2 {
+            font-weight: 800;
+            color: $color-primary;
+            margin-left:0;
+        }
+
+        .commands {
+            float: right;
+            border: none;
+            margin-bottom: 0;
+
+            input, button {
+                line-height: 2.5em;
+                padding: 0 1em;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input {
+                background-color: $color-eta;
+                border: 1px solid $color-epsilon;
+                padding-right: 2em;
+            }
+
+            button {
+                position: relative;
+                margin-left: .5em;
+                overflow: visible;
+
+                &.active {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -1em;
+                        left: 50%;
+                        margin-left: -1em;
+                        border-left: 1em solid transparent;
+                        border-right: 1em solid transparent;
+                        border-top: 1em solid $color-secondary;
+                    }
+                }
+            }
+            
+
+            .icon {
+                margin-left: -2em;
+                margin-right: 1em;
+                color: $color-beta;
+            }
+        }
+
+        #EditWhitelistErrors {
+                float: left;
+                margin-top: 20px;
+        }
+    }
+
+    .form-landlord {
+        margin-top: 1em;
+
+        form {
+            @extend %clearfix;
+            margin-bottom: 0;
+        }
+
+        .cell {
+            margin-bottom: 1.5em;
+
+            .cell-wrapper {
+                select,
+                input {
+                    width: 100%;
+                }
+            }
+
+
+            .error {
+                border-color: $color-primary;
+            }
+        }
+    }
+
+    .form-landlord-add-permit,
+    .form-landlord-do-export,
+    .form-landlord-add-order {
+        .submit {
+            padding-top: 1em;
+            float: right;
+        }
+    }
+
+    .form-landlord-do-export {
+        .cell {
+            &.active-inactive-cell {
+                width: 50%;
+                padding-top: 1em;
+
+                .cell-wrapper {
+                    .checkbox-wrapper {
+                        margin-right: 1em;
+
+                        input {
+                            width: 1.5em;
+                            height: 1.5em;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+    /**landlords MyPlaces**/
+    .myplaces-list {
+        margin-top: 1em;
+        clear: both;
+
+        ul.link-list-myplaces {
+            width: 100%;
+
+            li.list-myplaces-items {
+                border: 1px solid $color-epsilon;
+                border-bottom: none;
+                padding: .75em;
+
+                &:before {
+                    display: none;
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid $color-epsilon;
+                }
+
+                a.link-list-myplaces-items {
+                    padding: 1em .5em;
+                    font-weight: 800;
+                    color: $color-black;
+                    text-decoration: none;
+                    display: block;
+                    font-size: 130%;
+                }
+
+                span.cityoption {
+                    color: $color-gamma;
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .my-places-left-wrapper {
+        width: 20%;
+        float: left;
+        margin-top: 1em;
+
+        .subnavigation {
+            padding-right: 2em;
+
+            ul.zone-numbers {
+                clear: both;
+                border-bottom: 1px solid $color-delta;
+
+                li.zone-number {
+                    padding: 0.5em 0;
+                    border-top: 1px solid $color-delta;
+                    font-weight: bold;
+
+                    &.active a {
+                        color: $color-primary;
+                    }
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    /**landlords MyWhitelists**/
+    .mywhitelists {
+        width: 80%;
+        float: left;
+        position: relative;
+        padding-bottom: 100px;
+
+        .mywhitelists-filter {
+            text-align: right;
+
+            .select-wrapper {
+                select {
+                    padding: .25em 1em .25em .25em;
+                    font-weight: bold;
+                    
+                }
+
+                &:after {
+                    right: .5em;
+                }
+            }
+        }
+
+        .mywhitelists-results {
+            overflow: auto;
+
+            ul.results-table {
+                margin: 0;
+                padding-right: 6%;
+                
+
+                li.results-row {
+                    position: inherit;
+
+                    .results-cell {
+                        font-size: .8em;
+
+                        input {
+                            width: auto;
+                            min-width: 100%;
+                            color: $color-black;
+
+                            &:disabled {
+                                border-bottom: none;
+                            }
+
+                            &.error {
+                                color:$color-primary;
+                            }
+                        }
+
+                        select[disabled] {
+                            border: none;
+                        }
+
+                        &.results-cell--licenseplate {
+                            font-size: .9em;
+
+                            .licenseplate {
+                                    max-width: 65%;
+                                    display: inline-block;
+
+                                    input {
+                                        font-weight: bold;
+                                        max-width: 100%;
+                                    }
+                            }                            
+
+                            select {
+                                min-width: 35%;
+                            }
+                        }
+                        //ref
+                        &:nth-child(2) {
+                            width: 5%;
+                        }
+                        //numberplate
+                        &:nth-child(3) {
+                            width: 5%;
+                        }
+                        //firstname
+                        &:nth-child(4) {
+                            width: 10%;
+                        }
+                        //lastname
+                        &:nth-child(5) {
+                            width: 10%;
+                        }
+                        //email
+                        &:nth-child(6) {
+                            width: 15%;
+                        }
+                        //phone
+                        &:nth-child(7) {
+                            width: 10%;
+                        }
+                        //product
+                        &:nth-child(8) {
+                            width: 10%;
+                        }
+                        //from
+                        &:nth-child(9) {
+                            width: 15%;
+                        }
+                        //to
+                        &:nth-child(10) {
+                            width: 15%;
+                        }
+
+                        &:nth-child(11) {
+                            width: 5%;
+                            position: absolute;
+                            right: 0;
+                            border-bottom: none;
+                            font-size: 1em;
+                            padding: .5em .5em 0;
+                            margin-top: -1.6em;
+
+                            //webkit hack
+                            &:not(*:root) {
+                                margin-top:0;
+                            }
+                        }
+                    }
+
+                    .message-cell {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        padding: .5em 6em 0 .5em;
+                        background-color: $color-epsilon;
+                        min-height: 2em;
+                        z-index: 20;
+                        margin-top: -1.6em;
+
+                        //webkit hack
+                        &:not(*:root) {
+                            margin-top:0;
+                        }
+
+                        .message {
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+
+                        .confirm {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            padding: .5em .5em;
+
+                            .no,
+                            .yes {
+                                color: $color-white;
+                                text-decoration: none;
+                                padding: .25em .5em;
+                            }
+
+                            .no {
+                                background-color: $color-primary;
+                            }
+
+                            .yes {
+                                background-color: $color-secondary;
+                            }
+                        }
+                    }
+
+                    &.head-row {
+                        .results-cell {
+                            &:nth-child(11) {
+                                background-color: $color-white;
+
+                                button:before {
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                    }
+
+                    &.data-row {
+                        .results-cell {
+                            &:nth-child(11) {
+                                background-color: $color-epsilon;
+                                height: 2em;
+                                box-shadow: -3px 0 3px 0 $color-gamma;
+                            }
+                        }
+
+                        .message-cell {
+                            border-bottom: 2px solid $color-white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mywhitelists-pager {
+            width: 100%;
+            margin-top: .5em;
+            overflow:hidden;
+
+          
+
+            .pager {
+                text-align: center;
+
+                a.previous,
+                a.next {
+                    margin: 0 .5em;
+                    text-decoration: none;
+                }
+
+                input {
+                    width: 2em;
+                    text-align: center;
+                }
+
+                .back,
+                .current,
+                .forth {
+                    white-space: nowrap;
+                }
+            }
+
+            .items-per-page {
+                text-align: right;
+            }
+
+            a {
+                color: $color-black;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-s) {
+        .button-group {
+            width: 100%;
+            text-align: center;
+
+            .button--secondary {
+                width: 46%;
+            }
+
+            :first-child {
+                margin-right: 1.2em;
+            }
+        }
+
+        .page-search-buttons {
+            float: none;
+            clear: both;
+        }
+
+        h2 {
+            margin-left: 0;
+        }
+
+
+        .my-places-left-wrapper {
+            width: 100%;
+
+            .subnavigation {
+                width: auto;
+                margin-top: 1em;
+                /*margin-left: -3%;
+                padding-right: 6%;*/
+                overflow: auto;
+                border: 1px solid $color-gamma;
+                box-shadow: 8px 0 10px -6px $color-gamma inset, -8px 0 8px -6px $color-gamma inset;
+
+                ul.zone-numbers {
+                    margin: .5em;
+                    width: 100%;
+                    white-space: nowrap;
+                    border: none;
+
+                    li.zone-number {
+                        display: inline;
+                        padding: 0 1em;
+                        overflow: hidden;
+                        border: none;
+
+                        &.active {
+                            color: $color-primary;
+                        }
+                    }
+
+                    a.link-zone-number {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .mywhitelists {
+            width: 100%;
+        }
+
+        .form-landlord .cell, .form-landlord .cell.numberplate, .form-landlord .cell.date {width: 100%; clear:both;}
+        .form-landlord-add-permit .cell .cell-wrapper .search-input-to-wrapper {
+            input, span {width: 100%;}
+        }
+    } 
+
+    @media (max-width: $breakpoint-l) { //990 =md 
+   .mywhitelists  .mywhitelists-pager .items-per-page {padding-top: 0.5em;text-align:center}
+    }
+
+
+}

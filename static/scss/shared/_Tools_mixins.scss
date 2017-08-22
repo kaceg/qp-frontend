@@ -1,0 +1,72 @@
+﻿
+// ===============================================
+//   Custom Mixins
+// ===============================================
+
+@mixin BDboxmodel() { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+@mixin BDboxmodelreset() { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; -o-box-sizing: content-box; -ms-box-sizing: content-box; box-sizing: content-box; }
+
+@mixin BDcenterBlockElem() { float: left; position: relative;  width: 100%;
+    > div {clear: left;float: right;position: relative;right: 50%;text-align: center;
+           > * {display:block; float: left; left: 50%;position: relative;}
+    }
+}
+@mixin verticalCenter() { display:table; width: 100%;height: 100%;
+    > * {display: table-cell;vertical-align: middle; }
+}
+
+@mixin BDiconBox($mixinSize, $mixinBordercolor) { 
+    height: $mixinSize; width: $mixinSize;text-align:center; display:block;  background: #fff; @include border-radius($mixinSize/2);  line-height: ($mixinSize - 2px); font-size: ($mixinSize - 2px); border: 1px solid $mixinBordercolor;
+}
+
+
+@mixin BDtransition($mixinvalue: all 0.2s ease-in-out) { 
+    -webkit-transition: $mixinvalue;
+    -moz-transition: $mixinvalue;
+    transition: $mixinvalue;
+}
+
+@mixin BDpseudo() {
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+@mixin BDcsstriangle($triangle-size, $triangle-color, $triangle-direction) {
+	
+	@include BDpseudo();
+	
+	width: 0;
+	height: 0;
+	border: solid $triangle-size;
+	
+	@if ($triangle-direction == top) {
+		border-color: $triangle-color transparent transparent transparent;
+	}
+	@if ($triangle-direction == bottom) {
+		border-color: transparent transparent $triangle-color transparent;
+	}
+	@if ($triangle-direction == left) {
+		border-color: transparent transparent transparent $triangle-color;
+	}
+	@if ($triangle-direction == right) {
+		border-color: transparent $triangle-color transparent transparent;
+	}
+}
+
+
+@mixin BDcompleteOverlay() {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+// @source - [@Stephn-R](https://github.com/sass/sass/issues/1395#issuecomment-57483844)
+// @description converts 1 or more characters into a unicode
+// @markup {scss}
+// unicode("e655"); // "\e655"
+@function unicode($str) {
+    @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}

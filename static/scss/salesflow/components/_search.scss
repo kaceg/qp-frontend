@@ -1,0 +1,173 @@
+/* Search
+----------------------------------------------- */
+
+.search {
+
+    .form-item {
+        padding-left:0;
+        margin-bottom:1em;
+    }
+
+    legend {
+        margin-bottom:0;
+    }
+
+    label {
+        top:0;
+        float:none;
+        margin-left:0;
+    }
+
+}
+
+.city-selection {
+
+    overflow:visible!important;
+
+    &:after {
+        content:"";
+        position:absolute;
+        left:-1.5em;
+        right:-1.5em;
+        bottom:-1.5em;
+        height:1px;
+        background-color:$color-delta;
+    }
+
+    label {
+        margin-bottom:0.5em;
+    }
+
+}
+
+.search-items {
+    @extend %clearfix;
+
+    padding-top:1em;
+
+    label {
+        margin-bottom:0.5em;
+        color:$color-beta;
+    }
+
+    .comfortcard {
+        float:right;
+        line-height:2.5em;
+    }
+}
+
+.search-results-list {
+
+    p+ul {
+        margin-top:0;
+    }
+
+    .error {
+        font-weight:bold;
+        color:$color-primary;
+    }
+
+    .img-wrapper {
+        display:none;
+    }
+
+    img {
+        margin-bottom:0;
+    }
+
+    .poi-distance {
+        color:$color-beta;
+    }
+
+    .thumbnail-list {
+
+        margin:1.5em 1.5em 1.5em 0;
+
+        li {
+            border:0;
+            padding:0;
+            margin:0 0.5em 0.5em 0;
+        }
+
+        img {
+            margin-right:0;
+        }
+
+    }
+
+    .button {
+        margin: 0 .5em 1em 0;
+    }
+
+    .unavailable-message {
+        color:$color-primary;
+        font-weight:bold;
+    }
+
+    @include respond-min($breakpoint-sm) {
+
+        .thumbnail-list,
+        .button-list {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+        .thumbnail-list {
+            margin: 0;
+        }
+        .inline-list + .button-list {
+            text-align: right;
+            margin-left: -.3em;
+        }
+
+        .content-wrapper {
+            max-width:50%;
+        }
+
+        .button-list {
+            position:absolute;
+            right:1em;
+            top:1em;
+            max-width:40%;
+            text-align:right;
+        }
+    }
+
+    @include respond-min($breakpoint-m) {
+
+        .unavailable-message {
+            position:absolute;
+            top:1.5em;
+            right:1.5em;
+            max-width:200px;
+        }
+
+    }
+
+    @include respond-min($breakpoint-xl) {
+
+        .box__inner,
+        .box--inner {
+            display:table;
+            width:100%;
+            box-sizing:border-box;
+        }
+
+        .img-wrapper, .content-wrapper {
+            display:table-cell;
+            vertical-align:top;
+        }
+
+        .img-wrapper {
+            padding-right:1.5em;
+            width:294px;
+            max-width:294px;
+        }
+
+        h3 {
+            margin-top:-0.556em;
+        }
+
+    }
+
+}
