@@ -12,7 +12,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 // Webserver packages
-var webserver = require('gulp-webserver');
+var browserSync = require('browser-sync').create();
 
 // Stylesheet Tasks
 gulp.task('sass-dev', function () {
@@ -20,26 +20,18 @@ gulp.task('sass-dev', function () {
         './static/scss/*.scss',
       ])
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./static/css'));
+      .pipe(gulp.dest('./static/css'))
+      .pipe(browserSync.stream());      
 });
 
-// Webserver Tasks
-gulp.task('webserver', function() {
-    gulp.src( '.' )
-      .pipe(webserver({
-        host:             server.host,
-        port:             server.port,
-        https:            server.https,
-        directoryListing: false
-      }));
-  });
-
 // Watch Tasks
-gulp.task('watch', function () {
-    gulp.watch('./static/scss/**/*.scss', ['sass-dev']);    
+gulp.task('watch',['sass-dev'], function () {
+    browserSync.init({
+        server: "."
+    });
+    gulp.watch('./static/scss/**/*.scss', ['sass-dev']);
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 //Default task
-gulp.task('default', ['dev','webserver','watch']);
-gulp.task('dev',['sass-dev']);
-
+gulp.task('default', ['watch']);
