@@ -1,0 +1,21 @@
+{
+  "name": "qp-frontend",
+  "version": "1.0.0",
+  "description": "Q-Park Front End SLN",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaceg/qp-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaceg/qp-frontend/issues"
+  },
+  "homepage": "https://github.com/kaceg/qp-frontend#readme"
+}
