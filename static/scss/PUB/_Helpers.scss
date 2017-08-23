@@ -374,3 +374,10 @@ ul.check-list.cta li:before {
         display: block;
     }
 }
+
+
+/* Boxing */
+.gray-content-box{
+    background-color: $gray-lighter;
+    padding: $grid-gutter-width;
+}
