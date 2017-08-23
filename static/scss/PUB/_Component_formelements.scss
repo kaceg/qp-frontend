@@ -17,3 +17,28 @@
 .form-group-lg select.form-control, .form-group-sm select.form-control { padding-right: 40px;}
 
 select:focus, input:focus, textarea:focus { background: $white}
+
+
+/**************************************
+	NEW DESIGN - NOT YET VISIBLE
+**************************************/
+.myqp-new {
+    form {
+        // Clear custom CSS defined above. Can be removed when new design is accepted.
+        .form-group:not(.form-group--boxed) {
+            .form-control {
+                padding: .5rem .75rem;
+                border: 1px solid rgba(0, 0, 0, .15);
+                box-shadow: none;
+            }
+        }
+        // End clear custom CSS
+
+        .form-group {
+            .form-control {
+                border: 1px solid $gray-light-worm !important;
+                color: $black;
+            }
+        }
+    }
+}
