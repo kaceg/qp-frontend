@@ -30,7 +30,7 @@ gulp.task('watch',['sass-dev'], function () {
         server: "."
     });
     gulp.watch('./static/scss/**/*.scss', ['sass-dev']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch("./**/*.html").on('change', browserSync.reload);
 });
 
 //Default task
