@@ -33,6 +33,7 @@ span.link {
 	color: $lime;
 }
 
+.grey,
 .link-grey {
 	color: $gray-dark;
 }
@@ -372,4 +373,11 @@ ul.check-list.cta li:before {
     .mobile-block {
         display: block;
     }
+}
+
+
+/* Boxing */
+.gray-content-box{
+    background-color: $gray-lighter;
+    padding: $grid-gutter-width;
 }
