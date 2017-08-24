@@ -23,7 +23,7 @@ select:focus, input:focus, textarea:focus { background: $white}
 	NEW DESIGN - NOT YET VISIBLE
 **************************************/
 .myqp-new {
-    form {
+    .form {
         // Clear custom CSS defined above. Can be removed when new design is accepted.
         .form-group:not(.form-group--boxed) {
             .form-control {
@@ -35,9 +35,36 @@ select:focus, input:focus, textarea:focus { background: $white}
         // End clear custom CSS
 
         .form-group {
+            margin-bottom: 25px;
+
+            label {
+                font-weight: normal;
+                padding-top: 10px;
+            }
             .form-control {
                 border: 1px solid $gray-light-worm !important;
                 color: $black;
+            }
+        }
+
+        .license-plate {
+            .country-prefix {
+                float: left;
+                width: 25%;
+            }
+
+            .plate-number {
+                float: left;
+                width: 75%;
+                margin-left: -1px;
+            }
+        }
+
+        .form-save {
+            margin-top: 25px;
+
+            .cancel {
+                margin-left: 20px;
             }
         }
     }

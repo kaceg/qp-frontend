@@ -287,7 +287,20 @@ $(document).ready(function($) {
 
 	$(".datepicker").datetimepicker({
 		format: "DD/MM/YYYY",
-		debug: true
+		minDate: new Date(),
+		useCurrent: false,
+		icons: {
+			time: 'fa fa-clock-o',
+			date: 'fa fa-calendar',
+			up: 'fa fa-chevron-up',
+			down: 'fa fa-chevron-down',
+			previous: 'fa fa-chevron-left',
+			next: 'fa fa-chevron-right',
+			today: 'fa fa-camera',
+			clear: 'fa fa-trash',
+			close: 'fa fa-times'
+		},
+		//debug: true
 	});
 });
 

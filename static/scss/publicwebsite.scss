@@ -70,6 +70,8 @@
 //@import "vendor/bootstrap/popovers";
 //@import "vendor/bootstrap/carousel";
 @import "vendor/bootstrap/close"; 
+@import 'vendor/bootstrap-datetimepicker/_bootstrap-datetimepicker.scss';
+@import "PUB/_Component_datetimepicker.scss";
 @import "PUB/_Component_wells.scss"; // This is a customisation of : "vendor/bootstrap/wells";
 
 @import "PUB/_Component_ankeilers.scss";
@@ -86,7 +88,6 @@
 // Components w/ JavaScript
 // --------------------------------------------------
 
-@import "PUB/_Component_datetimepicker.scss";
 @import 'PUB/_Component_back-to-top.scss';
 @import 'PUB/_Component_breadcrumb';
 @import 'PUB/_Component_card';
