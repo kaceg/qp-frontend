@@ -1,6 +1,6 @@
 .overview-table {
 	h3 {
-		display: inline;
+		display: inline-block;
 	}
 	table#overview {
 		color: #333;
@@ -273,17 +273,6 @@
 	
 			&:hover {
 				color: $gray-dark;
-			}
-		}
-	
-		.plus-icon {
-			position: relative;
-	
-			&:before {
-				content: "+";
-				display: inline-block;
-				font-size: 1.2em;
-				margin-right: 0.5em;
 			}
 		}
 	}

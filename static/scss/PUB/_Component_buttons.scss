@@ -60,6 +60,8 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 .btn-line { background: $white; }
 .btn-line:hover { color: $white !important; }
 .btn-danger.btn-line { color: $red; }
+.btn-success.btn-line { color: $lime-dark; }
+.btn-line.double { border-width: 2px; text-transform: uppercase; }
 
 .btn-secondary {
     color: #8bb611;

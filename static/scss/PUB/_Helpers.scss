@@ -61,6 +61,17 @@ input[type="checkbox"] + i.fa {
   margin-right: 0;
 }
 
+.plus-icon {
+	position: relative;
+
+	&:before {
+		content: "+";
+		display: inline-block;
+		font-size: 1.2em;
+		margin-right: 0.5em;
+	}
+}
+
 /* Telephone Link */
 
 .tel-link {

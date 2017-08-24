@@ -145,38 +145,10 @@
 						<div class="col-xs-12">
 							
 							<h3>Permits</h3>
-							<a href="#" class="btn btn-grey btn-line small">Export</a>
+							<!-- <a href="#" class="btn btn-grey btn-line small">Export</a> -->
 						
 							<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="overview">
 								<thead>
-									<tr class="form border-top filter">
-										<td class="form-group">
-											<input type="text" placeholder="Permit" class="form-control" />
-										</td>
-										<td class="form-group">
-											<select>
-												<option>24x5</option>
-											</select>
-										</td>
-										<td class="form-group" colspan="2">
-											<select>
-												<option>Customer</option>
-											</select>
-										</td>
-										<td class="form-group">
-											<div class="datepicker">
-												<input type="text" class="form-control" id="input-start-date">
-											</div>
-										</td>
-										<td class="form-group">
-											<div class="datepicker">
-												<input type="text" class="form-control" id="input-end-date">
-											</div>
-										</td>
-										<td class="vertical-middle right">
-											<a href="#" class="add-entry">Filter</a>
-										</td>
-									</tr>
 									<tr>
 										<th class="sortable">
 											Permit nr
@@ -224,6 +196,76 @@
 									</tr>
 								</thead>
 								<tbody>
+									<tr class="form links filter">
+										<td class="form-group">
+											<input type="text" placeholder="Permit" class="form-control" />
+										</td>
+										<td class="form-group">
+											<select>
+												<option>24x5</option>
+											</select>
+										</td>
+										<td class="form-group" colspan="2">
+											<select>
+												<option>Customer</option>
+											</select>
+										</td>
+										<td class="form-group">
+											<div class="datepicker">
+												<input type="text" class="form-control" id="input-start-date">
+											</div>
+										</td>
+										<td class="form-group">
+											<div class="datepicker">
+												<input type="text" class="form-control" id="input-end-date">
+											</div>
+										</td>
+										<td class="vertical-middle right">
+											<a href="#" class="add-entry">Filter</a>
+										</td>
+									</tr>
+									<tr>
+										<td>0000015</td>
+										<td>24x7</td>
+										<td>
+											<div>Jan Johansen</div>
+											<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
+										</td>
+										<td>N-012-ABC</td>
+										<td>
+											<div>01/09/17</div>
+											<div class="grey">08:00</div>
+										</td>
+										<td>
+											<div>30/09/17</div>
+											<div class="grey">23:45</div>
+										</td>
+										<td class="icons">
+											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
+											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
+										</td>
+									</tr>
+									<tr>
+										<td>0000015</td>
+										<td>24x7</td>
+										<td>
+											<div>Jan Johansen</div>
+											<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
+										</td>
+										<td>N-012-ABC</td>
+										<td>
+											<div>01/09/17</div>
+											<div class="grey">08:00</div>
+										</td>
+										<td>
+											<div>30/09/17</div>
+											<div class="grey">23:45</div>
+										</td>
+										<td class="icons">
+											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
+											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
+										</td>
+									</tr>
 									<tr>
 										<td>0000015</td>
 										<td>24x7</td>
@@ -279,7 +321,7 @@
 							</ul>
 						</div>
 						<div class="col-md-4 right">
-							<a href="#" class="btn btn-green btn-line">Add permit</a>
+							<a href="#" class="btn btn-success btn-line double"><span class="plus-icon">Add permit</span></a>
 						</div>
 					</div>
 				</div>
