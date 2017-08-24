@@ -1,0 +1,237 @@
+<html lang="en">
+
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<title>Places - Add permit | My Q-Park</title>
+		
+		<link rel="stylesheet" href="/static/css/publicwebsite.css">
+		
+		<script src="/static/js/jquery.2.2.4.min.js"></script>
+		<script src="/static/js/jquery-ui.min.js"></script>
+		<script src="/static/js/bootstrap.js"></script>
+		<script src="/static/js/moment.js"></script>
+		<script src="/static/js/jquery.matchHeight-min.js"></script>
+		<script src="/static/js/selectboxit.min.js"></script>
+		<script src="/static/js/bootstrap-datetimepicker.js"></script>
+		<script src="/static/js/custom.js"></script>
+    </head>
+    
+	<body id="body" class="myqp-new">
+
+		<!-- COOKIE -->
+		<!-- <div id="cookieInc"></div> -->
+		<!-- COOKIE -->
+
+		<!-- NAV -->
+		<div id="navIncMyQP"></div>
+		<!-- NAV -->
+
+		<!-- BIGSEARCH -->
+		<!-- <div id="bigsearchInc"></div> -->
+		<!-- BIGSEARCH -->
+
+		<!-- CONTENT -->
+		<div class="qcontentpane">
+            
+			<section class="breadnav">
+				<div class="container">
+					<div class="row bread">
+						<div class="col-xs-12">
+							<nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
+								<ol>
+							    	<li>
+                                        <a href="/" title="Home">Home</a>
+							    		<ol>
+								    		<li>
+								    			<a href="#" title="Places">Places</a>
+								    			<ol>
+									    			<li>
+                                                        <a href="#">Armauer Hansegate Outside</a>
+                                                        <ol>
+                                                            <li class="is-current">Add permit</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                                            
+								    		</li>
+								    	</ol>
+								    </li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+            </section>
+            
+			<section class="pageintro">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+	
+							<h1 class="strong big-h1 no-margin">Add permit</h1>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<hr class="invisible-small">
+			
+			<section class="form">
+				<div class="container">
+                    <div class="form-group row">
+                        <label for="select-place" class="col-form-label col-sm-12 col-md-2">Place</label>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <select class="form-control" id="select-place">
+                                <option>Armauer Hansegate Outside</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="select-service-profile" class="col-form-label col-sm-12 col-md-2">Service profile</label>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <select class="form-control" id="select-service-profile">
+                                <option>24x5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-form-label col-xs-12 col-md-2">Start date</label>
+                        <div class="col-xs-8 col-md-4 col-lg-3">
+                            <div class="datepicker">
+                                <input type="text" class="form-control" id="input-start-date">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-md-2 col-lg-1">
+                            <input type="text" class="form-control" id="input-start-time">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-form-label col-xs-12 col-md-2">End date</label>
+                        <div class="col-xs-8 col-md-4 col-lg-3">
+                            <div class="datepicker">
+                                <input type="text" class="form-control" id="input-end-date">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-md-2 col-lg-1">
+                            <input type="text" class="form-control" id="input-end-time">
+                        </div>
+                    </div>
+				</div>
+            </section>
+            
+            <hr class="invisible">
+            
+            <section class="unregistered-customers">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <table id="overview">
+                                <thead>
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>Email</th>
+                                        <th>License plate</th>
+                                        <th>Telephone number</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="customer">
+                                        <td><span class="firstname">John</span> <span class="lastname">Doe</span></td>
+                                        <td><span class="email">john.doe@sony.com</span></td>
+                                        <td><span class="license-plate">N-345-DEF</span></td>
+                                        <td><span class="telephone">+44 123 45 67 89</span></td>
+                                        <td class="icons">Icons</td>
+                                    </tr>
+                                    <tr class="customer">
+                                        <td><span class="firstname">Olav</span> <span class="lastname">Erikson</span></td>
+                                        <td><span class="email">olav.erikson@siemans.com</span></td>
+                                        <td><span class="license-plate">N-678-GHI</span></td>
+                                        <td><span class="telephone">+44 123 45 67 90</span></td>
+                                        <td class="icons">Icons</td>
+                                    </tr>
+                                    <tr class="form">
+                                        <td class="form-group">
+                                            <div class="inline-form-controls">
+                                                <input type="text" class="form-control" placeholder="First name">
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                            </div>
+                                        </td>
+                                        <td class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email">
+                                        </td>
+                                        <td class="form-group">
+                                            <div class="license-plate clearfix">
+                                                <div class="country-prefix">
+                                                    <select class="form-control" id="select-country-prefix">
+                                                        <option>BE</option>
+                                                        <option>GB</option>
+                                                        <option selected>N</option>
+                                                    </select>
+                                                </div>
+                                                <div class="plate-number">
+                                                    <input type="text" class="form-control" id="input-license-plate">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="form-group">
+                                            <input type="tel" class="form-control" placeholder="Telephone number">
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success save">Save</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <div class="pull-right">
+                                                <a href="#" class="add-entry">Add unregistered customer</a>
+                                                <a href="#" class="add-entry">Add registered customer</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="invisible">
+            
+            <section class="form-save">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button type="submit" class="btn btn-success save">Save</button>
+                            <a href="#" class="cancel">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+		<!-- TOOLTIP -->
+		<div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
+
+		<!-- BACK TO TOP -->
+		<a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+		<!-- CONTENT -->
+
+
+		<!-- FOOTER -->
+		<div id="footerIncMyQP"></div>
+		<!-- FOOTER -->
+
+		</script>
+
+	</body>
+</html>

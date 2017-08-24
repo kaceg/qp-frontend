@@ -41,9 +41,18 @@ select:focus, input:focus, textarea:focus { background: $white}
                 font-weight: normal;
                 padding-top: 10px;
             }
+
             .form-control {
                 border: 1px solid $gray-light-worm !important;
                 color: $black;
+            }
+
+            .inline-form-controls {
+                .form-control {
+                    display: inline-block;
+                    width: 45%;
+                    margin-right: 5px;
+                }
             }
         }
 
@@ -87,14 +96,14 @@ select:focus, input:focus, textarea:focus { background: $white}
                 pointer-events: none;
 
             }
-        }
+        }        
+    }
 
-        .form-save {
-            margin-top: 25px;
+    .form-save {
+        margin-top: 25px;
 
-            .cancel {
-                margin-left: 20px;
-            }
+        .cancel {
+            margin-left: 20px;
         }
     }
 }
