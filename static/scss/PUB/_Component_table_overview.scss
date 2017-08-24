@@ -79,6 +79,9 @@ table#overview {
 		td:nth-child(1) {
 			color: inherit;
 		}
+		&.no-border {
+			border: none;
+		}
 		&.links {
 			background: $gray-ultralight;
 			color: $gray-light-worm !important;
