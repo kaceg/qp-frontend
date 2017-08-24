@@ -47,7 +47,6 @@ select:focus, input:focus, textarea:focus { background: $white}
                 border: 1px solid $gray-light-worm !important;
                 color: $black;
             }
-<<<<<<< HEAD
 
             .inline-form-controls {
                 .form-control {
@@ -55,7 +54,8 @@ select:focus, input:focus, textarea:focus { background: $white}
                     width: 45%;
                     margin-right: 5px;
                 }
-=======
+            }
+            
             .no-edit {
 	            color: $gray-dark;
 	            display: inline-block;
@@ -82,7 +82,6 @@ select:focus, input:focus, textarea:focus { background: $white}
 				    	color: $gray-dark;
 			    	}
 		        }
->>>>>>> 6c4e347ad81e404c34ccff9f2f042222080dff61
             }
         }
 
