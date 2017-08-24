@@ -61,6 +61,12 @@ select:focus, input:focus, textarea:focus { background: $white}
 	            color: $gray-dark;
 	            display: inline-block;
             }
+
+            .extra-info {
+                display: block;
+                padding-top: 10px;
+                text-align: center;
+            }
             
             .managers .item {
 	            margin-top: 1em;
