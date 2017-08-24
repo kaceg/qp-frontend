@@ -302,7 +302,7 @@ $(document).ready(function($) {
 			clear: 'fa fa-trash',
 			close: 'fa fa-times'
 		},
-		debug: true
+		debug: false
 	});
 });
 

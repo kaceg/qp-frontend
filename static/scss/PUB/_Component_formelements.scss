@@ -83,6 +83,9 @@ select:focus, input:focus, textarea:focus { background: $white}
                     
                 background-repeat: no-repeat;
                 background-image: url("/static/assets/svg/icon_date.svg");
+     
+                pointer-events: none;
+
             }
         }
 
