@@ -242,4 +242,29 @@ table#overview {
 	.payment {
 		padding: 30px 0;
 	}
+
+	.add-entry {
+		display: inline-block;
+		font-family: $font-family-sans-serif-bold;
+		font-size: 0.9em;
+		margin-left: 2em;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $gray;
+
+		&:hover {
+			color: $gray-dark;
+		}
+	}
+
+	.plus-icon {
+		position: relative;
+
+		&:before {
+			content: "+";
+			display: inline-block;
+			font-size: 1.2em;
+			margin-right: 0.5em;
+		}
+	}
 }
