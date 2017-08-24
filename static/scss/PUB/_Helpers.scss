@@ -1,4 +1,6 @@
-﻿/* Titles & Lead */
+﻿* { -webkit-font-smoothing: antialiased; }
+
+/* Titles & Lead */
 
 h1, .h1, h2, .h2, h3, .h3, b, strong, .strong {
 	font-family: $font-family-sans-serif-bold;
@@ -36,6 +38,7 @@ span.link {
 .grey,
 .link-grey {
 	color: $gray-dark;
+	text-decoration: none;
 }
 
 .bg-lightgrey {

@@ -37,7 +37,8 @@ select:focus, input:focus, textarea:focus { background: $white}
         .form-group {
             margin-bottom: 25px;
 
-            label {
+            label,
+            .no-edit {
                 font-weight: normal;
                 padding-top: 10px;
             }
@@ -46,6 +47,7 @@ select:focus, input:focus, textarea:focus { background: $white}
                 border: 1px solid $gray-light-worm !important;
                 color: $black;
             }
+<<<<<<< HEAD
 
             .inline-form-controls {
                 .form-control {
@@ -53,6 +55,34 @@ select:focus, input:focus, textarea:focus { background: $white}
                     width: 45%;
                     margin-right: 5px;
                 }
+=======
+            .no-edit {
+	            color: $gray-dark;
+	            display: inline-block;
+            }
+            
+            .managers .item {
+	            margin-top: 1em;
+	            color: $gray-dark;
+	            
+	            .name {
+		            color: $black;
+		            font-family: $font-family-sans-serif-bold;
+	            }
+	            
+	            .title {
+			    	color: $red;
+		        }
+				
+				.tel,
+		        .email {
+			    	display: block;
+			    	
+			    	a {
+				    	color: $gray-dark;
+			    	}
+		        }
+>>>>>>> 6c4e347ad81e404c34ccff9f2f042222080dff61
             }
         }
 

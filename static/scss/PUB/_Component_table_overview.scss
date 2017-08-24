@@ -56,6 +56,22 @@ table#overview {
 			font-size: 1em;
 			margin: 0;
 		}
+		&.icons {
+			text-align: right;
+			white-space: nowrap;
+			
+			a {
+				display: inline-block;
+				
+				&.delete {
+					padding-top: 2px;
+					width: 22px;
+				}
+				&.edit {
+					width: 24px;
+				}
+			}
+		}
 	}
 	
 	tr {

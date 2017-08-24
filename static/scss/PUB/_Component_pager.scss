@@ -1,0 +1,34 @@
+.pager-add {
+	font-size: 1em;
+	
+	.pager-label {
+		color: $gray-light-worm;
+		font-size: 0.8em;
+		padding: 0 5px;
+	}
+	
+	ul,
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		padding: 0 5px;
+		
+		a {
+			text-decoration: none;
+			color: $gray-light-worm;
+
+			&:hover,
+			&.active {
+				color: $red;
+			}
+			
+			&.active {
+				font-family: $font-family-sans-serif-bold;
+			}
+		}
+	}
+}
