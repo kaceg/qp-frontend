@@ -285,6 +285,8 @@ $(document).ready(function($) {
 		}
 	});
 
+	$(".myqp-new select").selectBoxIt();
+
 	$(".datepicker").datetimepicker({
 		format: "DD/MM/YYYY",
 		minDate: new Date(),
