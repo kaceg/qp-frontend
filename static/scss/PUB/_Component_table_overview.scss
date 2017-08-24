@@ -93,6 +93,9 @@
 			&.no-border {
 				border: none;
 			}
+			&.border-top {
+				border-top: 1px solid $gray-lightest;
+			}
 			&.links {
 				background: $gray-ultralight;
 				color: $gray-light-worm !important;
@@ -104,6 +107,11 @@
 					&:hover {
 						color: $red;
 					}
+				}
+			}
+			&.filter {
+				.add-entry {
+					margin: 0;
 				}
 			}
 			&.clickable {

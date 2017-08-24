@@ -11,8 +11,12 @@
 		<link rel="stylesheet" href="/static/css/publicwebsite.css">
 		
 		<script src="/static/js/jquery.2.2.4.min.js"></script>
+		<script src="/static/js/jquery-ui.min.js"></script>
 		<script src="/static/js/bootstrap.js"></script>
+		<script src="/static/js/moment.js"></script>
 		<script src="/static/js/jquery.matchHeight-min.js"></script>
+		<script src="/static/js/selectboxit.min.js"></script>
+		<script src="/static/js/bootstrap-datetimepicker.js"></script>
 		<script src="/static/js/custom.js"></script>
 	</head>
 
@@ -145,6 +149,34 @@
 						
 							<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="overview">
 								<thead>
+									<tr class="form border-top filter">
+										<td class="form-group">
+											<input type="text" placeholder="Permit" class="form-control" />
+										</td>
+										<td class="form-group">
+											<select>
+												<option>24x5</option>
+											</select>
+										</td>
+										<td class="form-group" colspan="2">
+											<select>
+												<option>Customer</option>
+											</select>
+										</td>
+										<td class="form-group">
+											<div class="datepicker">
+												<input type="text" class="form-control" id="input-start-date">
+											</div>
+										</td>
+										<td class="form-group">
+											<div class="datepicker">
+												<input type="text" class="form-control" id="input-end-date">
+											</div>
+										</td>
+										<td class="vertical-middle right">
+											<a href="#" class="add-entry">Filter</a>
+										</td>
+									</tr>
 									<tr>
 										<th class="sortable">
 											Permit nr

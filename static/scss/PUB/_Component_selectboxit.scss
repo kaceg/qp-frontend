@@ -1,62 +1,86 @@
 .selectboxit-container {
+	width: 100%;
+	
 	*,
 	*:hover {
 		font-size: 1em;
-		background: #ffffff;
 		border-radius: 0;
 	}
-	
-	width: 100%;
-
 	
 	.selectboxit {
 		border-radius: 0;
+		border: 1px solid $gray-light-worm !important;
 		width: auto !important;
-		background: #ffffff;
+		background: none;
+		width: inherit;
+		padding: .5rem 1.25rem !important;
+		
+		&:hover,
+		&.selectboxit-focus {
+			background: $gray-ultralightest;
+		}
 	}
 	span {
 		height: auto;
+		line-height: 31px;
 	}
-}
-
-.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
-	top: 50%;
-	margin-top: -2px;
-	margin-right: 8px;
-	border-top-color: #000000;
-}
-
-.selectboxit-text {
-	font-family: $font-family-sans-serif;
-	color: #000000;
-	margin-right: 8px;
-	margin-top: 1px;
-}
-
-.selectboxit-arrow-container {
-	width: 15px;
-}
-.selectboxit-options {
-	border-radius: 0 !important;
-	background-color: #fff !important;
-	border: none !important;
-}
-.selectboxit-option {
-	background: #ffffff;
-	float: none;
-	display: list-item;
-	border: 1px solid $gray-light-worm;
-	margin-top: -1px;
-}
-
-.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:focus {
-	font-family: $font-family-sans-serif;	
-	color: $black;
-	text-decoration: none;
-}
-.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:focus {
-	background-color: $gray-ultralightest;
-	background-image: none;
-	color: $black;
-	text-decoration: none;
+	.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+		top: 50%;
+		margin-top: -2px;
+		margin-right: 8px;
+		border-top-color: #000000;
+	}
+	
+	.selectboxit-text {
+		font-family: $font-family-sans-serif;
+		color: #000000;
+		margin-right: 8px;
+		margin-top: 1px;
+		text-indent: 0;
+	}
+	
+	.selectboxit-arrow-container {
+		right: 6px;
+		margin-top: 15px;
+		
+		i {
+			height: 5px;
+			width: 9px;
+			border: 0;
+			background: url("/static/assets/svg/icon_arrowdown.svg") no-repeat;
+		}
+	}
+	.selectboxit-options {
+		border-radius: 0 !important;
+		background-color: #fff !important;
+		border: none !important;
+		width: 100% !important;
+		min-width: 0 !important;
+	}
+	
+	.selectboxit-option {
+		background: #ffffff;
+		float: none;
+		display: list-item;
+		border: 1px solid $gray-light-worm !important;
+		margin-top: -1px;
+		line-height: 30px !important;
+	}
+	
+	.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:focus {
+		font-family: $font-family-sans-serif;	
+		color: $black;
+		text-decoration: none;
+		line-height: 30px;
+	}
+	.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:focus {
+		background-color: $gray-ultralightest;
+		background-image: none;
+		color: $black;
+		text-decoration: none;
+	}
+	
+	.selectboxit-btn {
+		border-bottom-color: $gray-light-worm;
+	}
 }
