@@ -226,6 +226,16 @@
 			color: $gray-dark;
 		}
 		
+        .license-plate {
+            .country-prefix {
+                width: 35%;
+            }
+
+            .plate-number {
+                width: 65%;
+            }
+        }
+		
 		.btn {
 			width: 90px;
 			padding: 5px 0;
