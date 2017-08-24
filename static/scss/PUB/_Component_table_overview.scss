@@ -1,3 +1,7 @@
+.overview-table {
+	h3 {
+		display: inline;
+	}
 table#overview {
 	color: #333;
 	font-size: 1em;
@@ -62,13 +66,17 @@ table#overview {
 			
 			a {
 				display: inline-block;
+				margin-left: 5px;
 				
 				&.delete {
-					padding-top: 2px;
 					width: 22px;
+									
+					img {
+						margin-top: 2px;
+					}
 				}
 				&.edit {
-					width: 24px;
+					width: 23.8px;
 				}
 			}
 		}
@@ -242,6 +250,7 @@ table#overview {
 	.payment {
 		padding: 30px 0;
 	}
+<<<<<<< HEAD
 
 	.add-entry {
 		display: inline-block;
@@ -267,4 +276,7 @@ table#overview {
 			margin-right: 0.5em;
 		}
 	}
+=======
+}
+>>>>>>> 0200919739032912b83f9440c117c5e4d24cc589
 }
