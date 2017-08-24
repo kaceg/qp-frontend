@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-18961.469 5155.854 14 15.045">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #666;
+      }
+
+      .cls-2 {
+        fill: #666;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_78_5" data-name="Symbol 78 – 5" transform="translate(-20090 4499)">
+    <g id="Rectangle_4574" data-name="Rectangle 4574" class="cls-1" transform="translate(1128.531 657.899)">
+      <rect class="cls-3" width="14" height="14"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="13" height="13"/>
+    </g>
+    <rect id="Rectangle_4558" data-name="Rectangle 4558" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1131.126 663.907)"/>
+    <rect id="Rectangle_4570" data-name="Rectangle 4570" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1131.126 660.494)"/>
+    <rect id="Rectangle_4575" data-name="Rectangle 4575" class="cls-2" width="1.267" height="1.917" rx="0.634" transform="translate(1138.516 656.854)"/>
+    <rect id="Rectangle_4577" data-name="Rectangle 4577" class="cls-2" width="1.267" height="1.917" rx="0.634" transform="translate(1134.867 656.854)"/>
+    <rect id="Rectangle_4576" data-name="Rectangle 4576" class="cls-2" width="1.267" height="1.917" rx="0.634" transform="translate(1130.846 656.854)"/>
+    <rect id="Rectangle_4565" data-name="Rectangle 4565" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1131.126 667.321)"/>
+    <rect id="Rectangle_4559" data-name="Rectangle 4559" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1134.54 663.907)"/>
+    <rect id="Rectangle_4571" data-name="Rectangle 4571" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1134.54 660.494)"/>
+    <rect id="Rectangle_4564" data-name="Rectangle 4564" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1134.54 667.321)"/>
+    <rect id="Rectangle_4560" data-name="Rectangle 4560" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1137.954 663.907)"/>
+    <rect id="Rectangle_4572" data-name="Rectangle 4572" class="cls-2" width="1.862" height="1.862" rx="0.931" transform="translate(1137.954 660.494)"/>
+  </g>
+</svg>

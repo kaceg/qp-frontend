@@ -60,6 +60,32 @@ select:focus, input:focus, textarea:focus { background: $white}
             }
         }
 
+        .datepicker {
+            position: relative;
+
+            > input {
+                padding-right: 45px !important;
+            }
+
+            &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                
+                height: $icon-field-svg-height;
+                width: $icon-field-svg-height;
+
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                    
+                background-repeat: no-repeat;
+                background-image: url("/static/assets/svg/icon_date.svg");
+            }
+        }
+
         .form-save {
             margin-top: 25px;
 

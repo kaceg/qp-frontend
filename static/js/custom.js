@@ -287,7 +287,7 @@ $(document).ready(function($) {
 
 	$(".myqp-new select").selectBoxIt();
 
-	$(".datepicker").datetimepicker({
+	$(".datepicker > input").datetimepicker({
 		format: "DD/MM/YYYY",
 		minDate: new Date(),
 		useCurrent: false,
@@ -302,7 +302,7 @@ $(document).ready(function($) {
 			clear: 'fa fa-trash',
 			close: 'fa fa-times'
 		},
-		//debug: true
+		debug: true
 	});
 });
 
