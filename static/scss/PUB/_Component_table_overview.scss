@@ -2,12 +2,13 @@
 	h3 {
 		display: inline-block;
 	}
+
 	table#overview {
 		color: #333;
 		font-size: 1em;
 		width: 100%;
 	
-		th {
+		> thead > tr > th {
 			background: $gray;
 			color: #ffffff;
 			font-weight: normal !important;
@@ -45,8 +46,9 @@
 				}
 			}
 		}
-		th,
-		td {
+
+		> thead > tr > th,
+		> tbody > tr > td {
 			padding: 17px 20px 15px;
 			text-align: left;
 			vertical-align: top;
@@ -85,7 +87,8 @@
 			}
 		}
 		
-		tr {
+		> thead > tr,
+		> tbody > tr {
 			border-bottom: 1px solid $gray-lightest;
 			td:nth-child(1) {
 				color: inherit;
@@ -214,12 +217,15 @@
 				}
 			}
 		}
+
 		.right {
 			text-align: right;
 		}
+
 		.date {
 			color: $gray-dark;
 		}
+		
 		.btn {
 			width: 90px;
 			padding: 5px 0;
