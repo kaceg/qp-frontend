@@ -28,7 +28,7 @@ select:focus, input:focus, textarea:focus { background: $white}
         .form-group:not(.form-group--boxed) {
             .form-control {
                 padding: .5rem .75rem;
-                border: 1px solid rgba(0, 0, 0, .15);
+                border: 1px solid $gray-light-worm;
                 box-shadow: none;
             }
         }

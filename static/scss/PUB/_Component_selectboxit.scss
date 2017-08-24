@@ -1,0 +1,59 @@
+.selectboxit-container {
+	*,
+	*:hover {
+		font-size: 1em;
+		background: #ffffff;
+		border-radius: 0;
+	}
+	
+	width: 100%;
+
+	
+	.selectboxit {
+		border-radius: 0;
+		width: auto !important;
+		background: #ffffff;
+	}
+}
+
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+	top: 50%;
+	margin-top: -2px;
+	margin-right: 8px;
+	border-top-color: #000000;
+}
+
+.selectboxit-text {
+	font-family: $font-family-sans-serif;
+	color: #000000;
+	margin-right: 8px;
+	margin-top: 1px;
+}
+
+.selectboxit-arrow-container {
+	width: 15px;
+}
+.selectboxit-options {
+	border-radius: 0 !important;
+	background-color: #fff !important;
+	border: none !important;
+}
+.selectboxit-option {
+	background: #ffffff;
+	float: none;
+	display: list-item;
+	border: 1px solid $gray-light-worm;
+	margin-top: -1px;
+}
+
+.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:focus {
+	font-family: $font-family-sans-serif;	
+	color: $black;
+	text-decoration: none;
+}
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:focus {
+	background-color: $gray-ultralightest;
+	background-image: none;
+	color: $black;
+	text-decoration: none;
+}
