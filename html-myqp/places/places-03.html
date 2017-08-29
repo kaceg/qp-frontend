@@ -157,7 +157,10 @@
 							</div>
 							<div class="col-xs-12 service-profile-hours"> <!-- hidden toevoegen -->
 								
-								<div class="timetable"></div>
+								<div class="timetable_wrapper">
+									<h3>Service profile <span class="primary-color">24x5</span></h3>
+									<div class="timetable"></div>
+								</div>
 
 							    <script src="/static/js/service-profile.js"></script>
 							
@@ -170,15 +173,15 @@
 							      timetable.addLocations(['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag']);
 							
 								  // Dynamic - blokken per dag
-							      timetable.addEvent('', 'Maandag', new Date(2015,7,17,9,00), new Date(2015,7,17,11,30), { class: 'time-entry' });
-							      timetable.addEvent('13:30 <i>-</i> 17:15', 'Maandag', new Date(2015,7,17,12), new Date(2015,7,17,13), { class: 'time-entry' });
-							      timetable.addEvent('13:30 <i>-</i> 17:15', 'Dinsdag', new Date(2015,7,17,13,30), new Date(2015,7,17,15), { class: 'time-entry' });
-							      timetable.addEvent('', 'Woensdag', new Date(2015,7,17,17,45), new Date(2015,7,17,19,30), { class: 'time-entry' });
-							      timetable.addEvent('', 'Donderdag', new Date(2015,7,17,21), new Date(2015,7,18,1,30), { class: 'time-entry' });
-							      timetable.addEvent('13:30 <i>-</i> 17:15', 'Vrijdag', new Date(2015,7,17,11,30), new Date(2015,7,17,20), { class: 'time-entry' });
-							      timetable.addEvent('', 'Zaterdag', new Date(2015,7,17,12,30), new Date(2015,7,17,16,15), { class: 'time-entry' });
-							      timetable.addEvent('', 'Zondag', new Date(2015,7,17,9,30), new Date(2015,7,17,11,45), { class: 'time-entry' });
-							      timetable.addEvent('', 'Zondag', new Date(2015,7,18,00,00), new Date(2015,7,18,02,00), { class: 'time-entry' });
+							      timetable.addEvent('08:00 <i>-</i> 17:30', 'Maandag', new Date(2015,7,17,8,00), new Date(2015,7,17,17,30), { class: 'time-entry' });
+							      timetable.addEvent('08:00 <i>-</i> 17:30', 'Dinsdag', new Date(2015,7,17,8,00), new Date(2015,7,17,17,30), { class: 'time-entry' });
+							      timetable.addEvent('08:00 <i>-</i> 17:30', 'Woensdag', new Date(2015,7,17,8,00), new Date(2015,7,17,17,30), { class: 'time-entry' });
+							      timetable.addEvent('08:00 <i>-</i> 17:30', 'Donderdag', new Date(2015,7,17,8,00), new Date(2015,7,17,17,30), { class: 'time-entry' });
+							      timetable.addEvent('08:00 <i>-</i> 17:30', 'Vrijdag', new Date(2015,7,17,8,00), new Date(2015,7,17,17,30), { class: 'time-entry' });
+							      timetable.addEvent('00:00 <i>-</i> 08:00', 'Zaterdag', new Date(2015,7,17,0,00), new Date(2015,7,17,08,00), { class: 'time-entry' });
+							      timetable.addEvent('17:30 <i>-</i> 24:00', 'Zaterdag', new Date(2015,7,17,17,30), new Date(2015,7,17,24,00), { class: 'time-entry' });
+							      timetable.addEvent('00:00 <i>-</i> 08:00', 'Zondag', new Date(2015,7,17,0,00), new Date(2015,7,17,08,00), { class: 'time-entry' });
+							      timetable.addEvent('17:30 <i>-</i> 24:00', 'Zondag', new Date(2015,7,17,17,30), new Date(2015,7,17,24,00), { class: 'time-entry' });
 							
 							      var renderer = new Timetable.Renderer(timetable);
 							      renderer.draw('.timetable');

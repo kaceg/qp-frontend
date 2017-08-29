@@ -9,20 +9,22 @@
 $timetable-hour-column-width: 40px !default;
 $timetable-hour-row-height: 40px !default;
 $timetable-heading-height: auto !default;
-$timetable-breakpoint: "only screen and (max-width: 960px)" !default;
 
 // colors & decoration
-$timetable-grid-color: #E5E5E5 !default;
+$timetable-grid-color: $white !default;
 $timetable-grid: 1px solid $timetable-grid-color !default;
+
+$timetable-hour-marker: $gray-lighter;
+$timetable-halfhour-marker: $gray-lightest;
 
 $timetable-row-header-padding: 15px !default;
 $timetable-row-header-color: #EFEFEF !default;
 
-$timetable-legend-row-separator: 1px solid white !default;
+$timetable-legend-row-separator: 0px solid white !default;
 $timetable-entry-row-separator: none !default;
-$timetable-row-header-gap: 5px solid transparent !default;
-$timetable-row-uneven-color: #FDFDFD !default;
-$timetable-row-even-color: #F4F4F4 !default;
+$timetable-row-header-gap: 0px solid transparent !default;
+$timetable-row-uneven-color: $white !default;
+$timetable-row-even-color: $gray-ultralightest !default;
 
 $timetable-entry-color: $lime !default;
 $timetable-entry-color-hover: $lime-dark !default;
@@ -65,12 +67,16 @@ $timetable-entry-padding: 0 !default;
  * Timetable
  * ========================================================================== */
 
-.timetable {
+.timetable_wrapper {
   margin: 30px 0 0;
-  padding: 10px 0 30px 0;
+  padding: 30px;
   box-sizing: border-box;
   border: 1px solid $gray-lightest;
   background: $gray-ultralightest;
+}
+
+.timetable {
+  box-sizing: border-box;
 
   @include clearfix;
 
@@ -98,7 +104,7 @@ $timetable-entry-padding: 0 !default;
     border-right: $timetable-row-header-gap;
 
     li {
-      padding: 0 $timetable-row-header-padding;
+      padding: 0;
       //background-color: $timetable-row-header-color;
       line-height: $timetable-hour-row-height;
 
@@ -227,12 +233,12 @@ $timetable-entry-padding: 0 !default;
       }
 
       &:before {
-        background-image: linear-gradient(to right, $timetable-grid-color 1px, transparent 1px);
-        background-size: ($timetable-hour-column-width / 4) auto;
+        background-image: linear-gradient(to right, $timetable-halfhour-marker 1px, transparent 1px);
+        background-size: ($timetable-hour-column-width / 2) auto;
       }
 
       &:after {
-        background-image: linear-gradient(to right, $timetable-grid-color, $timetable-grid-color 1px, $timetable-row-even-color 1px, $timetable-row-even-color 2px, $timetable-grid-color 2px, $timetable-grid-color 3px, transparent 3px, transparent);
+        background-image: linear-gradient(to right, $timetable-grid-color, $timetable-grid-color 1px, $timetable-hour-marker 1px, $timetable-grid-color 2px, $timetable-grid-color 2px, $timetable-grid-color 3px, transparent 3px, transparent);
         background-size: $timetable-hour-column-width auto;
         background-position: (-2px) 0;
       }
