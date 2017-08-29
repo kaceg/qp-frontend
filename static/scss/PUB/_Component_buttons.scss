@@ -48,7 +48,7 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 }
 .btn:focus { outline: 0 none }
 
-.btn-success:hover, .btn-success:focus{ color: $white;background-color: $lime_dark;border-color: transparent;}
+.btn-success:hover, .btn-success:focus { color: $white;background-color: $lime_dark;border-color: transparent;}
 .btn-success:active, .btn-success:active:hover { color: $white;background-color: $lime_dark;border:none; box-shadow: inset 0px 0px 0px 2px $white}
 
 .btn-info:hover, .btn-info:focus { color: #666; }
@@ -57,11 +57,30 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 .btn-primary:hover, .btn-primary:focus  { color: $white; background-color: $lime_dark; border-color: transparent;}
 .btn-primary:active, .btn-primary:active:hover {  color: $white; background-color: $lime_dark; border: none; box-shadow: inset 0px 0px 0px 2px $white}
 
-.btn-line { background: $white; }
+.btn-line { background: $white;
+    &:active,
+    &:focus,
+    &:active:hover {
+        border: 1px solid;
+        box-shadow: none;
+    }
+
+    &:active,
+    &:focus {
+        background: $white;
+    }
+}
 .btn-line:hover { color: $white !important; }
 .btn-danger.btn-line { color: $red; }
-.btn-success.btn-line { color: $lime-dark; }
-.btn-line.double { border-width: 2px; text-transform: uppercase; }
+.btn-success.btn-line {
+    color: $lime;
+
+    &:active:hover {
+        border-color: transparent;
+    }
+}
+
+.btn-line.double, .btn-line.double:hover { border-width: 2px; text-transform: uppercase; }
 
 .btn-secondary {
     color: #8bb611;
