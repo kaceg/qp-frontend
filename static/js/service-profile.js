@@ -105,7 +105,8 @@ Timetable.Renderer = function(tt) {
 
 	function prettyFormatHour(hour) {
 		var prefix = hour < 10 ? '0' : '';
-		return prefix + hour + ':00';
+		//return prefix + hour + ':00';
+		return prefix + hour + '<i>00</i>';
 	}
 
 	Timetable.Renderer.prototype = {
@@ -145,7 +146,7 @@ Timetable.Renderer = function(tt) {
 					var liNode = headerULNode.appendChild(document.createElement('li'));
 					var spanNode = liNode.appendChild(document.createElement('span'));
 					spanNode.className = 'time-label';
-					spanNode.textContent = prettyFormatHour(hour);
+					spanNode.innerHTML = prettyFormatHour(hour);
 
 					if (hour === timetable.scope.hourEnd && (timetable.scope.hourStart !== timetable.scope.hourEnd || looped)) {
 						completed = true;
@@ -199,7 +200,7 @@ Timetable.Renderer = function(tt) {
 				aNode.className = hasAdditionalClass ? 'time-entry ' + event.options.class : 'time-entry';
 				aNode.style.width = computeEventBlockWidth(event);
 				aNode.style.left = computeEventBlockOffset(event);
-				smallNode.textContent = event.name;
+				smallNode.innerHTML = event.name;
 			}
 			function computeEventBlockWidth(event) {
 				var start = event.startDate;

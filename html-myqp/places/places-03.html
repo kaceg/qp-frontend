@@ -155,7 +155,35 @@
 							<div class="col-xs-4 col-md-2 col-lg-1">
 								<a href="#" class="togglehide extra-info" data-target="service-profile-hours">Details</a>
 							</div>
-							<div class="col-xs-12 service-profile-hours hidden">
+							<div class="col-xs-12 service-profile-hours"> <!-- hidden toevoegen -->
+								
+								<div class="timetable"></div>
+
+							    <script src="/static/js/service-profile.js"></script>
+							
+							    <script>
+							      var timetable = new Timetable();
+							
+							      timetable.setScope(0,24);	
+								  
+								  // Fixed - dagen van de week
+							      timetable.addLocations(['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag']);
+							
+								  // Dynamic - blokken per dag
+							      timetable.addEvent('', 'Maandag', new Date(2015,7,17,9,00), new Date(2015,7,17,11,30), { class: 'time-entry' });
+							      timetable.addEvent('13:30 <i>-</i> 17:15', 'Maandag', new Date(2015,7,17,12), new Date(2015,7,17,13), { class: 'time-entry' });
+							      timetable.addEvent('13:30 <i>-</i> 17:15', 'Dinsdag', new Date(2015,7,17,13,30), new Date(2015,7,17,15), { class: 'time-entry' });
+							      timetable.addEvent('', 'Woensdag', new Date(2015,7,17,17,45), new Date(2015,7,17,19,30), { class: 'time-entry' });
+							      timetable.addEvent('', 'Donderdag', new Date(2015,7,17,21), new Date(2015,7,18,1,30), { class: 'time-entry' });
+							      timetable.addEvent('13:30 <i>-</i> 17:15', 'Vrijdag', new Date(2015,7,17,11,30), new Date(2015,7,17,20), { class: 'time-entry' });
+							      timetable.addEvent('', 'Zaterdag', new Date(2015,7,17,12,30), new Date(2015,7,17,16,15), { class: 'time-entry' });
+							      timetable.addEvent('', 'Zondag', new Date(2015,7,17,9,30), new Date(2015,7,17,11,45), { class: 'time-entry' });
+							      timetable.addEvent('', 'Zondag', new Date(2015,7,18,00,00), new Date(2015,7,18,02,00), { class: 'time-entry' });
+							
+							      var renderer = new Timetable.Renderer(timetable);
+							      renderer.draw('.timetable');
+							    </script>
+								
 							</div>
 						</div>
 
