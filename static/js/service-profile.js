@@ -217,6 +217,12 @@ Timetable.Renderer = function(tt) {
 				var hoursBeforeEvent =  getDurationHours(scopeStartHours, eventStartHours);
 				return hoursBeforeEvent / scopeDurationHours * 100 + '%';
 			}
+			function scrollToCenter() {
+				var outerContent = $(".timetable > section");
+				var innerContent = $(".timetable > section > time");
+
+				outerContent.scrollLeft( (innerContent.width() - outerContent.width()) / 2);
+			}
 
 			var timetable = this.timetable;
 			var scopeDurationHours = getDurationHours(timetable.scope.hourStart, timetable.scope.hourEnd);
@@ -225,6 +231,7 @@ Timetable.Renderer = function(tt) {
 			emptyNode(container);
 			appendTimetableAside(container);
 			appendTimetableSection(container);
+			scrollToCenter();
 		}
 	};
 
