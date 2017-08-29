@@ -4,8 +4,8 @@
 
 var Timetable = function() {
 	this.scope = {
-		hourStart: 9,
-		hourEnd: 17
+		hourStart: 0,
+		hourEnd: 24
 	};
 	this.locations = [];
 	this.events = [];
@@ -29,7 +29,7 @@ Timetable.Renderer = function(tt) {
 		return number === parseInt(number, 10);
 	}
 	function isInHourRange(number) {
-		return number >= 0 && number < 24;
+		return number >= 0 && number <= 24;
 	}
 	function locationExistsIn(loc, locs) {
 		return locs.indexOf(loc) !== -1;
@@ -150,8 +150,8 @@ Timetable.Renderer = function(tt) {
 					if (hour === timetable.scope.hourEnd && (timetable.scope.hourStart !== timetable.scope.hourEnd || looped)) {
 						completed = true;
 					}
-					if (++hour === 24) {
-						hour = 0;
+					if (++hour === 25) {
+						hour = 1;
 						looped = true;
 					}
 				}
