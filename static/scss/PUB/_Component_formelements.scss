@@ -97,12 +97,16 @@ select:focus, input:focus, textarea:focus { background: $white}
             .country-prefix {
                 float: left;
                 width: 25%;
+                position: relative;
+                z-index: 0;
             }
 
             .plate-number {
                 float: left;
                 width: 75%;
                 margin-left: -1px;
+                position: relative;
+                z-index: 1;
             }
         }
 
@@ -133,7 +137,13 @@ select:focus, input:focus, textarea:focus { background: $white}
                 pointer-events: none;
 
             }
-        }        
+        }
+        
+        .error {
+            .form-control {
+                border-color: $red !important;
+            }
+        }
     }
 
     .form-save {
