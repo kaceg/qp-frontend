@@ -183,16 +183,6 @@ $timetable-entry-padding: 0 !default;
     }
   }
 
-  @media #{$timetable-breakpoint} {
-    aside {
-      width: 10%;
-    }
-
-    section {
-      width: 90%;
-    }
-  }
-
   ul.room-timeline {
     border-left: none;
     position: relative;
