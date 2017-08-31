@@ -16,6 +16,7 @@
 		<script src="/static/js/moment.js"></script>
 		<script src="/static/js/jquery.matchHeight-min.js"></script>
 		<script src="/static/js/selectboxit.min.js"></script>
+		<script src="/static/js/multiselect-dropdown.js"></script>
 		<script src="/static/js/bootstrap-datetimepicker.js"></script>
 		<script src="/static/js/custom.js"></script>
     </head>
@@ -91,6 +92,35 @@
 									<option>Registered customer</option>
 									<option selected>Unregistered customer</option>
 								</select>
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Multiselect</label>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								
+								<dl class="multiselect-dropdown"> 
+								    <dt>
+									    <a href="#">
+										  <div class="arrow-container"></div>
+									      <span class="hida"> </span>    
+									      <p class="multiSel"></p>  
+									    </a>
+								    </dt>
+								    <dd>
+								        <div class="multiSelect">
+								            <ul>
+								                <li><input type="checkbox" value="Armauer Hansegate Inside" />Armauer Hansegate Inside</li>
+								                <li><input type="checkbox" value="Armauer Hansegate Outside" />Armauer Hansegate Outside</li>
+								                <li><input type="checkbox" value="Football Stadium Inside" />Football Stadium Inside</li>
+								                <li><input type="checkbox" value="Football Stadium Outside" />Football Stadium Outside</li>
+								                <li><input type="checkbox" value="Green Park" />Green Park</li>
+								                <li><input type="checkbox" value="Town Square" />Town Square</li>
+								            </ul>
+								        </div>
+								    </dd>
+								</dl>
+								
 							</div>
 						</div>
 
