@@ -199,7 +199,7 @@ function initialize() {
 }
 
 $(document).ready(function($) {
-
+	
 	console.log('load includes');
     $("#cookieInc").load("/inc/cookie.html", function() {
     	console.log('Cookie notification was loaded');
