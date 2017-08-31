@@ -1,0 +1,75 @@
+.myqp-new {
+    .role-select {
+        .role-select-button {
+            position: relative;
+            display: block;
+            width: 100%;
+            background-color: $white;
+            border: 1px solid $gray-light-worm;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 0;
+
+            .icon {
+                background-color: $gray-ultralightest;
+
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 20%;
+
+                img {
+                    width: 1.343em;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .info {
+                margin-left: 20%;
+                margin-right: 35px;
+                padding: 15px 15px;
+                padding-right: 0;
+
+                .role,
+                .user {
+                    text-align: left;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .role {
+                    color: $red;
+                    font-size: 0.722em;
+                }
+
+                .user {
+                    font-family: $font-family-sans-serif-bold;
+                }
+            }
+        }
+
+        .delete-role {
+            position: absolute;
+            padding: 10px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+
+            .icon {
+                width: 10px;
+            }
+
+            &:hover {
+                .icon svg line {
+                    stroke: $red;
+                }
+            }
+        }
+    }
+}
