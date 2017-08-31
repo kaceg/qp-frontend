@@ -150,7 +150,17 @@ select:focus, input:focus, textarea:focus { background: $white}
         margin-top: 25px;
 
         .cancel {
-            margin-left: 20px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+
+    @media(min-width: $screen-sm-min) {
+        .form-save {
+            .cancel {
+                margin-top: 0;
+                margin-left: 20px;
+            }
         }
     }
 

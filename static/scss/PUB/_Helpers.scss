@@ -395,3 +395,49 @@ ul.check-list.cta li:before {
     background-color: $gray-lighter;
     padding: $grid-gutter-width;
 }
+
+
+
+.myqp-new {
+    .no-account {
+        .no-account-info {
+            padding-top: 10px;
+
+            .check-list {
+                margin-bottom: 25px;
+            }
+        }
+
+        .btn {
+            margin-bottom: 5px;
+        }
+    }
+
+    ul.check-list {
+        text-indent: initial;
+
+        li {
+            position: relative;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding-left: 1.75em;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                margin-right: 0;
+                font-size: 1em;
+                color: $lime;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .no-account {
+            .btn {
+                margin-right: 15px;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

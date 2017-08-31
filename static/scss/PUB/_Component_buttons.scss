@@ -109,3 +109,39 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         float: right;
     }
 }
+
+.myqp-new {
+    .btn {
+        width: 100%;
+    }
+
+    .btn-info {
+        color: $white;
+        background-color: $gray-dark;
+        border-color: $gray-dark;
+        text-decoration: none;
+
+        &:active {
+            box-shadow: none;
+
+            &:focus {
+                color: $white;
+                background-color: $gray-dark;
+                border-color: $gray-dark;
+            }
+        }
+
+        &:hover,
+        &:active:hover {
+            color: $white;
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+
+    @media(min-width: $screen-sm-min) {
+        .btn {
+            width: auto;
+        }
+    }
+}
