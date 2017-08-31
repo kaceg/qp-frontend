@@ -16,6 +16,7 @@
 		<script src="/static/js/moment.js"></script>
 		<script src="/static/js/jquery.matchHeight-min.js"></script>
 		<script src="/static/js/selectboxit.min.js"></script>
+		<script src="/static/js/bootstrap-datetimepicker.js"></script>
 		<script src="/static/js/custom.js"></script>
     </head>
     
@@ -76,19 +77,21 @@
                             <h3>Ik heb een account</h3>
                             
                             <div class="form">
-                                <div class="form-group row">
-                                    <label class="col-xs-12">E-mail</label>
-                                    <div class="col-xs-12 col-md-10">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-xs-12">Wachtwoord</label>
-                                    <div class="col-xs-12 col-md-10">
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
+								<div class="matchheight">
+									<div class="form-group row">
+										<label class="col-xs-12">E-mail</label>
+										<div class="col-xs-12 col-md-10">
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="form-group row">
+										<label class="col-xs-12">Wachtwoord</label>
+										<div class="col-xs-12 col-md-10">
+											<input type="password" class="form-control">
+										</div>
+									</div>
+								</div>
                                 
                                 <div class="form-group row">
                                     <div class="col-xs-12">
@@ -101,20 +104,29 @@
                             </div>
                         </div>
 
+						<hr class="invisible visible-xs visible-sm col-xs-12">
+
                         <div class="col-xs-12 col-md-6">
                             
                             <h3>Ik heb nog geen account</h3>
                             
-                            <div>
-								Uw persoonlijke gegevens worden opgeslagen, zodat u in de toekomst sneller een parkeerplek kan reserveren.
-								<ul class="check-list">
-									<li>Een handige beheerstool met al uw bestellingen, facturen, etc. op één plek</li>
-									<li>Sneller bestellen met uw bewaarde gegevens</li>
-								</ul>
+                            <div class="no-account">
+								<div class="no-account-info matchheight">
+									<div>
+										<p>Uw persoonlijke gegevens worden opgeslagen, zodat u in de toekomst sneller een parkeerplek kan reserveren.</p>
+									</div>
+									<ul class="check-list">
+										<li>
+											Een handige beheerstool met al uw bestellingen, facturen,<br />
+											etc. op één plek
+										</li>
+										<li>Sneller bestellen met uw bewaarde gegevens</li>
+									</ul>
+								</div>
 
-								<div>
-									<a href="#" class="btn">Account aanmaken</a>
-									<a href="#" class="btn">Ik heb een brief ontvangen</a>
+								<div class="form-save">
+									<a href="#" class="btn btn-info">Account aanmaken</a>
+									<a href="#" class="btn btn-info">Ik heb een brief ontvangen</a>
 								</div>
                             </div>
                         </div>
