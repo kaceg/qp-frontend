@@ -399,6 +399,10 @@ ul.check-list.cta li:before {
 
 
 .myqp-new {
+    .subtitle {
+        font-family: $font-family-sans-serif-bold;
+    }
+
     .no-account {
         .no-account-info {
             padding-top: 10px;

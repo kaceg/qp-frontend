@@ -149,15 +149,40 @@ select:focus, input:focus, textarea:focus { background: $white}
     .form-save {
         margin-top: 25px;
 
-        .cancel {
+        .cancel,
+        .delete {
             display: inline-block;
-            margin-top: 20px;
+        }
+
+        .delete {
+            text-decoration: none;
+
+            .icon {
+                display: inline-block;
+                width: 10px;
+                margin-left: 5px;
+            }
+
+            &:hover,
+            &:focus {
+                .icon svg line {
+                    stroke: $black;
+                }
+            }
+        }
+
+        button {
+            + .cancel,
+            + .delete {
+                margin-top: 20px;
+            }
         }
     }
 
     @media(min-width: $screen-sm-min) {
         .form-save {
-            .cancel {
+            .cancel,
+            .delete {
                 margin-top: 0;
                 margin-left: 20px;
             }
