@@ -399,10 +399,6 @@ ul.check-list.cta li:before {
 
 
 .myqp-new {
-    .subtitle {
-        font-family: $font-family-sans-serif-bold;
-    }
-
     .no-account {
         .no-account-info {
             padding-top: 10px;
@@ -432,6 +428,33 @@ ul.check-list.cta li:before {
                 margin-right: 0;
                 font-size: 1em;
                 color: $lime;
+            }
+        }
+    }
+
+    .creditcard {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 15px;
+        padding-right: 30px;
+        border: 1px solid $gray-light-worm;
+
+        .delete {
+            position: absolute;
+            width: 10px;
+            padding: 10px;
+            top: 0;
+            right: 10;
+
+            .icon {
+                width: 10px;
+            }
+            
+            &:hover {
+                .icon svg line {
+                    stroke: $red;
+                }
             }
         }
     }
