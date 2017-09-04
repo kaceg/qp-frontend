@@ -1,0 +1,185 @@
+@import "PUB/_Settings_variables.scss";
+@import "shared/_Generic_fontload.scss";
+
+/* START RESET */
+* {
+    font-family: initial !important;
+    font-size: initial !important;
+    font-weight: initial !important;
+    text-align: initial !important;
+}
+
+table {
+    border-spacing: 0 !important;
+    border-collapse: initial !important;
+}
+
+table,
+table th,
+table td {
+    width: auto !important;
+}
+
+table table,
+table th,
+table td {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: initial !important;
+    background: initial !important;
+}
+
+a,
+a:visited {
+    color: initial !important;
+}
+
+.button,
+.button:hover {
+    background-color: initial;
+    color: initial;
+    font-weight: initial;
+    border: initial;
+}
+
+/* END RESET */
+
+* {
+    font-family: $font-family-sans-serif !important;
+    font-size: $font-size-base !important;
+}
+
+b {
+    font-family: $font-family-sans-serif-bold !important;
+    font-weight: normal !important;
+}
+
+body > div > table {
+    width: 95% !important;
+
+    > tbody {
+        > tr {
+            > td:nth-child(1) {
+                width: 75% !important;
+            }
+
+            > td:last-child {
+                width: 25% !important;
+                
+                background-color: $gray-lightest !important;
+                padding: 0 20px !important;
+            }
+
+            table {
+                width: 100% !important;
+            }
+        }
+
+        > tr + tr {
+            display: none;
+        }
+    }
+}
+
+// Main table
+.list {
+    tr {
+        th,
+        td {
+            padding: 17px 20px 15px !important;
+            text-align: left !important;
+            vertical-align: top;
+            line-height: 1.75em;
+        }
+
+        th {
+            background: $gray !important;
+            color: $white !important;
+            font-weight: normal !important;
+            font-family: $font-family-sans-serif-bold !important;
+            font-size: 0.9em !important;
+        }
+
+        td {
+            border-bottom: 1px solid $gray-lightest !important;
+        }
+    }
+}
+
+// Form
+input,
+select {
+    display: block;
+    width: calc(100% - 26px);
+    height: calc(#{$input-height-base} - 12px); // 44px - border-top - padding-top - padding-bottom - border-bottom
+    font-size: $font-size-base !important;
+    line-height: $line-height-base;
+    background-image: none;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 5px 12px !important;
+    border: 1px solid $gray-light-worm !important;
+    color: $black;
+    background: $white;
+    box-shadow: none;
+}
+
+b {
+    display: inline-block;
+    padding: 25px 0 10px;
+}
+
+select {
+    width: 100%;
+    height: $input-height-base;
+}
+
+.button {
+    display: inline-block;
+    text-align: center !important;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border : 1px solid transparent;
+    font-size: $font-size-base !important;
+    line-height: $line-height-base;
+    border-radius: 0 !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    width: auto !important;
+    height: auto;
+    text-decoration: none;
+    white-space: normal;
+    padding: 8px 18px !important;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 2px !important;
+    font-weight: normal !important;    
+    font-family: $font-family-sans-serif-bold !important;
+    transition: all 0.1s linear;
+
+    color: $white;
+    background-color: $lime;
+    border-color: $lime !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+
+    &:hover {
+        color: $white;
+        background-color: $lime_dark;
+        border: 1px solid;
+        border-color: transparent !important;
+    }
+}
