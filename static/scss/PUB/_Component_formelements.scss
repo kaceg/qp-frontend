@@ -138,6 +138,10 @@ select:focus, input:focus, textarea:focus { background: $white}
 
             }
         }
+
+        .required {
+            color: $red;
+        }
         
         .error {
             .form-control {
