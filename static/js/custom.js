@@ -286,25 +286,29 @@ $(document).ready(function($) {
 		}
 	});
 
-	$(".myqp-new select").selectBoxIt();
-
-	$(".datepicker > input").datetimepicker({
-		format: "DD/MM/YYYY",
-		minDate: new Date(),
-		useCurrent: false,
-		icons: {
-			time: 'fa fa-clock-o',
-			date: 'fa fa-calendar',
-			up: 'fa fa-chevron-up',
-			down: 'fa fa-chevron-down',
-			previous: 'fa fa-chevron-left',
-			next: 'fa fa-chevron-right',
-			today: 'fa fa-camera',
-			clear: 'fa fa-trash',
-			close: 'fa fa-times'
-		},
-		debug: false
-	});
+	if($(".myqp-new select").length){
+		$(".myqp-new select").selectBoxIt();
+	}
+	
+	if($(".datepicker").length){
+		$(".datepicker > input").datetimepicker({
+			format: "DD/MM/YYYY",
+			minDate: new Date(),
+			useCurrent: false,
+			icons: {
+				time: 'fa fa-clock-o',
+				date: 'fa fa-calendar',
+				up: 'fa fa-chevron-up',
+				down: 'fa fa-chevron-down',
+				previous: 'fa fa-chevron-left',
+				next: 'fa fa-chevron-right',
+				today: 'fa fa-camera',
+				clear: 'fa fa-trash',
+				close: 'fa fa-times'
+			},
+			debug: false
+		});
+	}
 });
 
 
