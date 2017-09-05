@@ -1,0 +1,36 @@
+//:not(.navbar-nav):not(.inpagenav-list):not(.pager-items):not(.check-list):not(.selectboxit-list):not(.multiSelect-list):not(.list-unstyled):not(.list-inline):not(.list--lined)
+.qp-rte {
+    ul {
+        &,
+        & + p {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        & {
+            list-style-type: none;
+        }
+
+        & + p {
+            padding-bottom: 1em;
+        }
+
+        & > li {
+            position: relative;
+            margin: 9px 0 9px -17px;
+            padding-left: 17px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                background-color: $red;
+
+                position: absolute;
+                width: 4px;
+                height: 0.9em;
+                top: 0.2em;
+                left: 0;
+            }
+        }  
+    }
+}
