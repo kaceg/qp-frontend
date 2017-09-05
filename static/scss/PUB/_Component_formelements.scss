@@ -52,6 +52,10 @@ select:focus, input:focus, textarea:focus { background: $white}
                 border: 1px solid $gray-light-worm !important;
                 color: $black;
                 background: $white;
+                
+                -webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
             }
 
             .inline-form-controls {

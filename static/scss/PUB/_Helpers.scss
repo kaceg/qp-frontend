@@ -436,16 +436,15 @@ ul.check-list.cta li:before {
         position: relative;
         margin-top: 15px;
         margin-bottom: 15px;
-        padding: 15px;
+        padding: 20px;
         padding-right: 30px;
-        border: 1px solid $gray-light-worm;
+        border: 1px solid $gray-lighter;
 
         .delete {
             position: absolute;
-            width: 10px;
             padding: 10px;
-            top: 0;
-            right: 10;
+            top: 10px;
+            right: 10px;
 
             .icon {
                 width: 10px;
