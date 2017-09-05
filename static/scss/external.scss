@@ -103,6 +103,12 @@ body > div > table {
         td {
             border-bottom: 1px solid $gray-lightest !important;
         }
+
+        td,
+        a,
+        a:hover {
+            color: $black;
+        }
     }
 }
 
