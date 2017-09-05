@@ -72,38 +72,4 @@
             }
         }
     }
-
-    ul.role-list {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-
-        li {
-            margin-bottom: -1px;
-            border: 1px solid $gray-lightest;
-            border-right: none;
-            border-left: none;
-
-            a {
-                position: relative;
-                display: block;
-                padding: 1em 0 1em 3em;
-                font-family: $font-family-sans-serif-bold;
-                color: $black;
-                text-decoration: none;
-
-                &.active {
-                    color: $red;
-                }
-
-                .icon {
-                    position: absolute;
-                    width: 1em;
-                    top: 50%;
-                    left: 1em;
-                    transform: translateY(-50%);
-                }
-            }
-        }
-    }
 }
