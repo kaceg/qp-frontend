@@ -432,13 +432,17 @@ ul.check-list.cta li:before {
         }
     }
 
-    .creditcard {
-        position: relative;
+    .creditcard,
+    .order {
         margin-top: 15px;
         margin-bottom: 15px;
         padding: 20px;
-        padding-right: 30px;
         border: 1px solid $gray-lighter;
+    }
+
+    .creditcard {
+        position: relative;
+        padding-right: 30px;
 
         .delete {
             position: absolute;
@@ -456,7 +460,7 @@ ul.check-list.cta li:before {
                 }
             }
         }
-    }
+    }    
 
     @media (min-width: $screen-sm-min) {
         .no-account {
@@ -464,6 +468,16 @@ ul.check-list.cta li:before {
                 margin-right: 15px;
                 margin-bottom: 2px;
             }
+        }
+    }
+
+    .md-right {
+        text-align: left
+    }
+
+    @media (min-width: $screen-md-min) {
+        .md-right {
+            text-align: right;
         }
     }
 }
