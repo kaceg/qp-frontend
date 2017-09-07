@@ -19,6 +19,7 @@ function resizeContent() {
 	jQuery(".scroll-match-height").matchHeight();
 	jQuery(".maintenance .matchheight").matchHeight();
 	$(".login .matchheight").matchHeight();
+	$(".white-card .matchheight").matchHeight();
 	$(".fake-table .fake-header").matchHeight();
 	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent();
 	jQuery(".vertical-align").vAlign();

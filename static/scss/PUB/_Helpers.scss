@@ -477,8 +477,29 @@ ul.check-list.cta li:before {
     }
 
     .fake-table {
-        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0 15px;
         background-color: $gray-ultralight;
+
+        .fake-column {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .fake-header {
+            font-family: $font-family-sans-serif-bold;
+        }
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
     @media (min-width: $screen-sm-min) {

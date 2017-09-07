@@ -3,7 +3,7 @@
 		display: inline-block;
 	}
 
-	table#overview {
+	table {
 		color: #333;
 		font-size: 1em;
 		width: 100%;
@@ -226,15 +226,17 @@
 			color: $gray-dark;
 		}
 		
-        .license-plate {
-            .country-prefix {
-                width: 35%;
-            }
+        .form {
+				.license-plate {
+				.country-prefix {
+					width: 35%;
+				}
 
-            .plate-number {
-                width: 65%;
-            }
-        }
+				.plate-number {
+					width: 65%;
+				}
+			}
+		}
 		
 		.btn {
 			width: 90px;
@@ -289,6 +291,31 @@
 	
 			&:hover {
 				color: $gray-dark;
+			}
+		}
+
+		&.light-header {
+			> thead > tr {
+				border: none;
+
+				> th {
+					background-color: transparent;
+					color: $gray-dark;
+				}
+			}
+
+			> thead > tr > th,
+			> tbody > tr > td {
+				padding-top: 0;
+				padding-bottom: 5px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
 			}
 		}
 	}
