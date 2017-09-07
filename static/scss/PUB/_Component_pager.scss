@@ -32,3 +32,19 @@
 		}
 	}
 }
+
+@media (max-width: $screen-sm-max) {
+
+	.pager-add {
+		
+		.mobileright {
+			text-align: right;
+		}
+		
+		.btn {
+			width: 100%;
+			margin-top: 1em;
+		}
+	}
+
+}

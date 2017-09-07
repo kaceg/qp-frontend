@@ -68,7 +68,6 @@
 	.qtopnav__willleave { float: none !important;clear: both;text-align: center;}
 	.qtopnav__willleave .navbar-nav { margin-top:0;margin-bottom:0;}
 	.qtopnav__willleave .navbar-nav > li > a  { padding: 14px; border-bottom: 1px solid $gray-worm; border-left: 0 none;}
-	.qtopnav__willleave .navbar-nav > li:last-child a{border-bottom: 0 none; }
 	.qtopnav__line {bottom: auto; top: 60px; }
 	.qtopnav__overlapline { bottom: auto; top: 60px; }
 }
@@ -166,12 +165,13 @@
             background-color: $white;
             border: 1px solid $gray-lighter;
             z-index: 100;
-            padding: 5px 15px;
+            padding: 5px 10px;
             box-shadow: 0px 1px 4px 1px $gray-lighter;
             
             ul {
 	            margin: 0;
 	            padding: 0;
+	            list-style-type: none;
 	            
 	            li {
 		            margin: 0;
@@ -187,7 +187,11 @@
 			            font-family: $font-family-sans-serif;
 			            color: $black;
 			            padding: 15px 5px;
-			            line-height: 1em;
+			            line-height: 1.2em;
+			            white-space: nowrap;
+			            overflow: hidden;
+			            text-overflow: ellipsis;
+			            font-size: 0.9em;
 			            
 			            &:hover {
 				            color: $red;
@@ -197,12 +201,48 @@
 				            display: inline-block;
 				            height: 20px;
 				            width: 20px;
-				            background: yellow;
 				            margin-right: 15px;
+				            
+				            &.account {
+					            background: url("/static/assets/svg/icon_navpopup_account.svg") no-repeat center center;
+				            }
+				            &.financial {
+					            background: url("/static/assets/svg/icon_navpopup_financial.svg") no-repeat center center;
+				            }
+				            &.credentials {
+					            background: url("/static/assets/svg/icon_navpopup_credentials.svg") no-repeat center center;
+				            }
+				            &.switch {
+					            background: url("/static/assets/svg/icon_navpopup_switch.svg") no-repeat center center;
+				            }
+				            &.logout {
+					            background: url("/static/assets/svg/icon_navpopup_logout.svg") no-repeat center center;
+				            }
 			            }
 		            }
 	            }
             }
+		}
+	}
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		ul.nav.navbar-nav li a { padding: 24px 12px; font-size: 0.9em; }
+	}
+
+	@media (max-width: $screen-sm-max) {
+		.qtopnav__willleave ul.navbar-nav {
+			padding: 0px;
+		}
+		.qtopnav__willleave ul.navbar-nav.nav-account {
+			margin-bottom: 20px;
+			background: $gray-ultralightest;
+
+			li {
+				a {
+					font-family: $font-family-sans-serif !important;
+					color: $black;
+				}
+			}
 		}
 	}
 }

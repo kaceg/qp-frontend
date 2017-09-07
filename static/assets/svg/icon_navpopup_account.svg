@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-20573 -18107 24 22.238">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d90327;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #666;
+        stroke-width: 1.2px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Subtraction_1" data-name="Subtraction 1" class="cls-1" d="M24,22.239H0V0H9.748A8.521,8.521,0,0,0,3.082,8.153,8.691,8.691,0,0,0,12,16.577a8.691,8.691,0,0,0,8.918-8.424A8.522,8.522,0,0,0,14.252,0H24V22.239Z" transform="translate(-0.669)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1356" data-name="Group 1356" transform="translate(-21360 -18304)">
+    <g id="Ellipse_24" data-name="Ellipse 24" class="cls-2" transform="translate(791.722 197.846)">
+      <circle class="cls-4" cx="7.367" cy="7.367" r="7.367"/>
+      <circle class="cls-5" cx="7.367" cy="7.367" r="6.767"/>
+    </g>
+    <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-3" transform="translate(787.67 197)">
+      <path id="Path_233" data-name="Path 233" class="cls-2" d="M11.6.6a11,11,0,1,1-11,11A11,11,0,0,1,11.6.6Z" transform="translate(-0.272 12.073)"/>
+    </g>
+  </g>
+</svg>
