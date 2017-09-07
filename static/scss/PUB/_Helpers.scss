@@ -432,12 +432,20 @@ ul.check-list.cta li:before {
         }
     }
 
-    .creditcard,
-    .order {
+    .white-card {
         margin-top: 15px;
         margin-bottom: 15px;
         padding: 25px;
         border: 1px solid $gray-lighter;
+
+        .subtitle {
+            color: $gray-light-worm;
+            text-transform: uppercase;
+        }
+        
+        &-details {
+            margin-top: 25px;
+        }
     }
 
     .creditcard {
@@ -463,12 +471,6 @@ ul.check-list.cta li:before {
     }
     
     .order {
-        .product {
-            color: $gray-light-worm;
-            text-transform: uppercase;
-        }
-
-        .order-details,
         .order-cancel {
             margin-top: 25px;
         }
