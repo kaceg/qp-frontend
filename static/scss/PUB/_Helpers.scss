@@ -432,13 +432,25 @@ ul.check-list.cta li:before {
         }
     }
 
-    .creditcard {
-        position: relative;
+    .white-card {
         margin-top: 15px;
         margin-bottom: 15px;
-        padding: 20px;
-        padding-right: 30px;
+        padding: 25px;
         border: 1px solid $gray-lighter;
+
+        .subtitle {
+            color: $gray-light-worm;
+            text-transform: uppercase;
+        }
+        
+        &-details {
+            margin-top: 25px;
+        }
+    }
+
+    .creditcard {
+        position: relative;
+        padding-right: 30px;
 
         .delete {
             position: absolute;
@@ -457,6 +469,38 @@ ul.check-list.cta li:before {
             }
         }
     }
+    
+    .order {
+        .order-cancel {
+            margin-top: 25px;
+        }
+    }
+
+    .fake-table {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        background-color: $gray-ultralight;
+
+        .fake-column {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .fake-header {
+            font-family: $font-family-sans-serif-bold;
+        }
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 
     @media (min-width: $screen-sm-min) {
         .no-account {
@@ -464,6 +508,16 @@ ul.check-list.cta li:before {
                 margin-right: 15px;
                 margin-bottom: 2px;
             }
+        }
+    }
+
+    .md-right {
+        text-align: left
+    }
+
+    @media (min-width: $screen-md-min) {
+        .md-right {
+            text-align: right;
         }
     }
 }
