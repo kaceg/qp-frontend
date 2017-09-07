@@ -436,7 +436,7 @@ ul.check-list.cta li:before {
     .order {
         margin-top: 15px;
         margin-bottom: 15px;
-        padding: 20px;
+        padding: 25px;
         border: 1px solid $gray-lighter;
     }
 
@@ -460,7 +460,24 @@ ul.check-list.cta li:before {
                 }
             }
         }
-    }    
+    }
+    
+    .order {
+        .product {
+            color: $gray-light-worm;
+            text-transform: uppercase;
+        }
+
+        .order-details,
+        .order-cancel {
+            margin-top: 25px;
+        }
+    }
+
+    .fake-table {
+        padding: 15px;
+        background-color: $gray-ultralight;
+    }
 
     @media (min-width: $screen-sm-min) {
         .no-account {
