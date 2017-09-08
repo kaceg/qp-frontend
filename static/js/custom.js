@@ -236,6 +236,10 @@ $(document).ready(function($) {
 	        jQuery(".resultsFilter #all")[0].checked = false;
         }
 	});
+	
+	jQuery(".test").click(function() {
+		alert("test");
+	});
 
 	jQuery(".togglehide").click(function() {
 		var target = "." + $(this).attr('data-target')
