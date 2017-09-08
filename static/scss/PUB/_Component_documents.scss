@@ -1,0 +1,76 @@
+.upload-documents {
+
+    .color-primary {
+        color: $red !important;
+    }
+
+    .color-secondary {
+        color: $lime !important;
+    }
+    
+    .fa,
+    .flat-list li,
+    .flat-list li a {
+        color: $gray-dark;
+    }
+
+    &.paddBtm1em {
+        padding-bottom: 1em !important;
+    }
+
+    .paddTop0em5 {
+        padding-top: 0.5em;
+    }
+
+    .paddBtm0em5 {
+        padding-bottom: 0.5em;
+    }
+
+    .file-upload {
+        min-height: 5em;
+        border: 1px dashed $gray-lighter;
+        margin-bottom: 0;
+        
+        &.single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .upload-icon {
+            width: 20%;
+            display: inline-block;
+
+            svg {
+                fill: $gray-lighter;
+            }
+        }
+    }
+
+    .file-list {
+        border-top-width: 0;
+        padding: 1em;
+
+        .remove-icon {
+            float: right;
+        }
+    }
+
+    .flat-list {
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none none outside;
+
+        li {
+            padding-left: 0;
+
+            &:before {
+                content: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

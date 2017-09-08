@@ -49,6 +49,7 @@
 @import "vendor/bootstrap/input-groups"; 
 @import "vendor/bootstrap/navs";
 @import "vendor/bootstrap/navbar";
+@import "PUB/_Component_icons.scss";
 @import "PUB/_Component_formelements.scss";
 @import "PUB/_Component_dropdowns.scss";
 @import "PUB/_Component_rte.scss";
@@ -90,6 +91,7 @@
 @import "PUB/_Component_topnav.scss";
 @import 'PUB/_Component_video.scss';
 @import "PUB/_Component_loading.scss";
+@import "PUB/_Component_documents.scss";
 
 // Components w/ JavaScript
 // --------------------------------------------------
@@ -108,6 +110,7 @@
 // Components My Q-Park (make separate file?)
 // --------------------------------------------------
 
+@import "PUB/_Components_whitecards.scss";
 @import 'PUB/_Component_amountboxes.scss';
 @import 'PUB/_Component_table_overview.scss';
 @import 'PUB/_Component_pager.scss';

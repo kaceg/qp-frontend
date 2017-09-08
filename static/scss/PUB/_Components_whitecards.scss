@@ -1,0 +1,22 @@
+.white-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 25px;
+    border: 1px solid $gray-lighter;
+
+    .title,
+    .subtitle,
+    .price {
+        font-family: $font-family-sans-serif-bold;
+        font-size: 1.222em;
+    }
+
+    .subtitle {
+        color: $gray-light-worm;
+        text-transform: uppercase;
+    }
+    
+    &-details {
+        margin-top: 25px;
+    }
+}

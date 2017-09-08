@@ -76,190 +76,185 @@
 			<hr class="invisible-small">
 			
 			<section class="whitelists">
-                <div class="container">
+                <div class="container">                            
                     <div class="row">
                         <div class="col-xs-12">
-                            
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="whitelist white-card">
-										<div class="row">
-											<div class="col-xs-12 col-md-8">
-												<div class="title"><strong><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></strong></div>
-												<div class="subtitle"><strong>@whitelist.ServiceProfileName</strong></div>
-											</div>
-											<div class="col-xs-6 matchheight">
-												@whitelist.StartDateTime - @whitelist.EndDateTime
-											</div>
-											<div class="col-xs-6 right">
-                                                <div class="matchheight relative">                                                    
-                                                    <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230527">More details</a>
-                                                </div>
-                                            </div>                                            
-                                            <div class="col-xs-12">
-                                                <div id="whitelist-details-230527" class="white-card-details collapse">
-
-                                                    <h3>Landlord</h3>
-                                                    <div class="fake-table">
-                                                        <div class="row fake-row">
-                                                            <div class="fake-column col-md-4">
-                                                                <div class="fake-header">[Landlord Account Name]</div>
-                                                                <div class="fake-cell">@whitelist.LandlordAccountName</div>
-                                                            </div>
-                                                            
-                                                            <div class="fake-column col-md-4">
-                                                                <div class="fake-header">[Landlord Account Email Address]</div>
-                                                                <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
-                                                            </div>
-                                                            
-                                                            <div class="fake-column col-md-4">
-                                                                <div class="fake-header">[Notes]</div>
-                                                                <div class="fake-cell">@whitelist.Notes</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <hr class="invisible-small" />
-
-                                                    <h3>Driver</h3>
-                                                    <div class="overview-table">
-                                                        <table class="light-header">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>First name</th>
-                                                                    <th>Last name</th>
-                                                                    <th>Email</th>
-                                                                    <th>License plate</th>
-                                                                    <th>Telephone number</th>
-                                                                    <th>&nbsp;</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="form no-border">
-                                                                    <td class="form-group">
-                                                                        <input class="form-control" placeholder="@whitelist.DriverFirstName">
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <input class="form-control" placeholder="@whitelist.DriverLastName">
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <input class="form-control" placeholder="@whitelist.DriverEmailAddress">
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <div class="license-plate clearfix">
-                                                                            <div class="country-prefix">
-                                                                                <select class="form-control" id="select-country-prefix">
-                                                                                    <option value="BE">BE</option>
-                                                                                    <option value="GB">GB</option>
-                                                                                    <option selected="" value="N">N</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="plate-number">
-                                                                                <input class="form-control" placeholder="@whitelist.LicensePlateNumber">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <input class="form-control" placeholder="@whitelist.DriverMobilePhoneNumber">
-                                                                    </td>
-                                                                    <td class="icons vertical-middle">
-                                                                        <button type="button" class="btn btn-success">Save</button>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-										</div>
+                            <div class="whitelist white-card">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="title"><strong><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></strong></div>
+                                        <div class="subtitle"><strong>@whitelist.ServiceProfileName</strong></div>
                                     </div>
-                                    
-									<div class="whitelist white-card">
-										<div class="row">
-											<div class="col-xs-12 col-md-8">
-												<div class="title"><strong><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></strong></div>
-												<div class="subtitle"><strong>@whitelist.ServiceProfileName</strong></div>
-											</div>
-											<div class="col-xs-6 matchheight">
-												@whitelist.StartDateTime - @whitelist.EndDateTime
-											</div>
-											<div class="col-xs-6 right">
-                                                <div class="matchheight relative">                                                    
-                                                    <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230528">More details</a>
-                                                </div>
-                                            </div>                                            
-                                            <div class="col-xs-12">
-                                                <div id="whitelist-details-230528" class="white-card-details collapse">
+                                    <div class="col-xs-6 matchheight">
+                                        @whitelist.StartDateTime - @whitelist.EndDateTime
+                                    </div>
+                                    <div class="col-xs-6 right">
+                                        <div class="matchheight relative">                                                    
+                                            <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230527">More details</a>
+                                        </div>
+                                    </div>                                            
+                                    <div class="col-xs-12">
+                                        <div id="whitelist-details-230527" class="white-card-details collapse">
 
-                                                    <h3>Landlord</h3>
-                                                    <div class="fake-table">
-                                                        <div class="row fake-row">
-                                                            <div class="fake-column col-md-4">
-                                                                <div class="fake-header">[Landlord Account Name]</div>
-                                                                <div class="fake-cell">@whitelist.LandlordAccountName</div>
-                                                            </div>
-                                                            
-                                                            <div class="fake-column col-md-4">
-                                                                <div class="fake-header">[Landlord Account Email Address]</div>
-                                                                <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
-                                                            </div>
-                                                            
-                                                            <div class="fake-column col-md-4">
-                                                                <div class="fake-header">[Notes]</div>
-                                                                <div class="fake-cell">@whitelist.Notes</div>
-                                                            </div>
-                                                        </div>
+                                            <h3>Landlord</h3>
+                                            <div class="fake-table">
+                                                <div class="row fake-row">
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Name]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountName</div>
                                                     </div>
                                                     
-                                                    <hr class="invisible-small" />
-
-                                                    <h3>Driver</h3>
-                                                    <div class="overview-table">
-                                                        <table class="light-header">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>First name</th>
-                                                                    <th>Last name</th>
-                                                                    <th>Email</th>
-                                                                    <th>License plate</th>
-                                                                    <th>Telephone number</th>
-                                                                    <th>&nbsp;</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="form no-border">
-                                                                    <td class="form-group">
-                                                                        <span>John</span>
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <span>Doe</span>
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <span>john.doe@sony.com</span>
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <span>N-345-DEF</span>
-                                                                    </td>
-                                                                    <td class="form-group">
-                                                                        <span>+44 123 45 67 89</span>
-                                                                    </td>
-                                                                    <td class="icons vertical-middle">
-                                                                        <div class="svg-icon">
-                                                                            <a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg"></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Email Address]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
                                                     </div>
-
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Notes]</div>
+                                                        <div class="fake-cell">@whitelist.Notes</div>
+                                                    </div>
                                                 </div>
                                             </div>
-										</div>
-									</div>
+                                            
+                                            <hr class="invisible-small" />
+
+                                            <h3>Driver</h3>
+                                            <div class="overview-table">
+                                                <table class="light-header">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Email</th>
+                                                            <th>License plate</th>
+                                                            <th>Telephone number</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="form no-border">
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverFirstName">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverLastName">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverEmailAddress">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <div class="license-plate clearfix">
+                                                                    <div class="country-prefix">
+                                                                        <select class="form-control" id="select-country-prefix">
+                                                                            <option value="BE">BE</option>
+                                                                            <option value="GB">GB</option>
+                                                                            <option selected="" value="N">N</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="plate-number">
+                                                                        <input class="form-control" placeholder="@whitelist.LicensePlateNumber">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverMobilePhoneNumber">
+                                                            </td>
+                                                            <td class="icons vertical-middle">
+                                                                <button type="button" class="btn btn-success">Save</button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-							</div>
+                            </div>
+                            
+                            <div class="whitelist white-card">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="title"><strong><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></strong></div>
+                                        <div class="subtitle"><strong>@whitelist.ServiceProfileName</strong></div>
+                                    </div>
+                                    <div class="col-xs-6 matchheight">
+                                        @whitelist.StartDateTime - @whitelist.EndDateTime
+                                    </div>
+                                    <div class="col-xs-6 right">
+                                        <div class="matchheight relative">                                                    
+                                            <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230528">More details</a>
+                                        </div>
+                                    </div>                                            
+                                    <div class="col-xs-12">
+                                        <div id="whitelist-details-230528" class="white-card-details collapse">
+
+                                            <h3>Landlord</h3>
+                                            <div class="fake-table">
+                                                <div class="row fake-row">
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Name]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountName</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Email Address]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Notes]</div>
+                                                        <div class="fake-cell">@whitelist.Notes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="invisible-small" />
+
+                                            <h3>Driver</h3>
+                                            <div class="overview-table">
+                                                <table class="light-header">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Email</th>
+                                                            <th>License plate</th>
+                                                            <th>Telephone number</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="form no-border">
+                                                            <td class="form-group">
+                                                                <span>John</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>Doe</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>john.doe@sony.com</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>N-345-DEF</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>+44 123 45 67 89</span>
+                                                            </td>
+                                                            <td class="icons vertical-middle">
+                                                                <div class="svg-icon">
+                                                                    <a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg"></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
