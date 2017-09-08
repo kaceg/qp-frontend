@@ -178,7 +178,6 @@
 												<hr class="invisible-small" />
 												
 												<h3>Access Devices</h3>
-
 												<div class="fake-table">
 													<div class="row fake-row">
 														<div class="fake-column col-md-3">
@@ -397,57 +396,60 @@
 												
 												<hr class="invisible-small" />
 
-												<h3>Documents</h3>
-
-												<div class="upload-documents paddBtm1em paddLeft1em paddRight1em">
-													<div>
-														<div class="file-upload pointer single">
-															<div class="text-right col-sm-4">
-																<div class="upload-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.812 23c-7.812 0-7.812-8-7.812-8h-3l4.979-4 5.021 4h-3s-.812 6.094 3.812 8zm1.667-14.908c-.212-3.951-3.473-7.092-7.479-7.092s-7.267 3.141-7.479 7.092c-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h3.302c-.275-.717-.46-1.404-.578-2h-2.724c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78 3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-2.518c.062.62.21 1.329.499 2h2.019c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408z"/></svg>
+												<h3>Documents</h3>												
+												<div class="row">
+													<div class="">
+														<div class="upload-documents paddBtm1em paddLeft1em paddRight1em">
+															<div>
+																<div class="file-upload pointer single">
+																	<div class="text-right col-sm-4">
+																		<div class="upload-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.812 23c-7.812 0-7.812-8-7.812-8h-3l4.979-4 5.021 4h-3s-.812 6.094 3.812 8zm1.667-14.908c-.212-3.951-3.473-7.092-7.479-7.092s-7.267 3.141-7.479 7.092c-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h3.302c-.275-.717-.46-1.404-.578-2h-2.724c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78 3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-2.518c.062.62.21 1.329.499 2h2.019c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408z"/></svg>
+																		</div>
+																	</div>
+																	<div class="paddTop0em5 paddBtm0em5 col-sm-8">
+																		<strong class="color-primary">Name</strong>&nbsp;<i class="fa fa-info-circle pointer"></i>
+																		<p>
+																			Om in aanmerking te komen voor dit tarief dient de aanvrager een bewijs dat hij of zij in dienst is van Vodafone te overleggen
+																		</p>
+																		Drop here or browse
+																	</div>
+																	<div class="clearfix"></div>
 																</div>
+
+																<div class="file-list">
+																	<ul class="flat-list">
+																		<li>
+																			<i class="fa fa-file-o color-secondary">&nbsp;</i>
+																			<a target="_new">Document Name 1</a>
+																		</li>
+																	</ul>
+																	
+																	<ul class="flat-list">
+																		<li>
+																			<i class="fa fa-file-o">&nbsp;</i>
+																			<span data-bind="text:Name">File Name 1</span>
+																			<span data-bind="text:FormattedSize">1MB</span>
+																			<i class="fa fa-times pointer remove-icon">&nbsp;</i>
+																		</li>
+																	</ul>
+																</div>
+
+																<input type="file" class="hidden" multiple="multiple">
+																<span class="hidden color-primary">
+																	It’s not possible to upload a document of this format. Please use one of the allowed formats (doc, docx, gif, jpg, jpeg, bmp, pdf, txt, png)
+																</span>
+																<span class="hidden color-primary">The size of this document is too large and can’t be uploaded</span>
 															</div>
-															<div class="paddTop0em5 paddBtm0em5 col-sm-8">
-																<strong class="color-primary">Name</strong>&nbsp;<i class="fa fa-info-circle pointer"></i>
-																<p>
-																	Om in aanmerking te komen voor dit tarief dient de aanvrager een bewijs dat hij of zij in dienst is van Vodafone te overleggen
-																</p>
-																Drop here or browse
-															</div>
-															<div class="clearfix"></div>
-														</div>
 
-														<div class="file-list">
-															<ul class="flat-list">
-																<li>
-																	<i class="fa fa-file-o color-secondary">&nbsp;</i>
-																	<a target="_new">Document Name 1</a>
-																</li>
-															</ul>
-															
-															<ul class="flat-list">
-																<li>
-																	<i class="fa fa-file-o">&nbsp;</i>
-																	<span data-bind="text:Name">File Name 1</span>
-																	<span data-bind="text:FormattedSize">1MB</span>
-																	<i class="fa fa-times pointer remove-icon">&nbsp;</i>
-																</li>
-															</ul>
-														</div>
+															<input type="hidden">
 
-														<input type="file" class="hidden" multiple="multiple">
-														<span class="hidden color-primary">
-															It’s not possible to upload a document of this format. Please use one of the allowed formats (doc, docx, gif, jpg, jpeg, bmp, pdf, txt, png)
-														</span>
-														<span class="hidden color-primary">The size of this document is too large and can’t be uploaded</span>
-													</div>
-
-													<input type="hidden">
-
-													<div class="hidden">
-														<div class="box stacked">
-															<div class="box__inner">
-																Om in aanmerking te komen voor dit tarief dient de aanvrager een bewijs dat hij of zij in dienst is van Vodafone te overleggen
+															<div class="hidden">
+																<div class="box stacked">
+																	<div class="box__inner">
+																		Om in aanmerking te komen voor dit tarief dient de aanvrager een bewijs dat hij of zij in dienst is van Vodafone te overleggen
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -548,7 +550,6 @@
 												<hr class="invisible-small" />
 												
 												<h3>Access Devices</h3>
-
 												<div class="fake-table">
 													<div class="row fake-row">
 														<div class="fake-column col-md-3">
@@ -583,7 +584,6 @@
 												<hr class="invisible-small" />
 												
 												<h3>Documents</h3>
-
 												<div class="row">
 													<div>
 														<div class="upload-documents paddBtm1em">

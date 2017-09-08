@@ -15,8 +15,19 @@
         color: $gray-light-worm;
         text-transform: uppercase;
     }
+
+    .action-link {
+        display: block;
+        margin: 15px 15px 15px 0;
+    }
     
     &-details {
         margin-top: 25px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        .action-link {
+            display: inline-block;
+        }
     }
 }
