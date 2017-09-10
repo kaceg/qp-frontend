@@ -1,0 +1,9 @@
+.myqp-new {
+    dl {
+        margin-bottom: 0;
+
+        dd + dt {
+            margin-top: 1em;
+        }
+    }
+}
