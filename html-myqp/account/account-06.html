@@ -1,0 +1,281 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<title>Account - Whitelists | My Q-Park</title>
+		
+		<link rel="stylesheet" href="/static/css/publicwebsite.css">
+		
+		<script src="/static/js/jquery.2.2.4.min.js"></script>
+		<script src="/static/js/jquery-ui.min.js"></script>
+		<script src="/static/js/bootstrap.js"></script>
+		<script src="/static/js/moment.js"></script>
+		<script src="/static/js/jquery.matchHeight-min.js"></script>
+		<script src="/static/js/selectboxit.min.js"></script>
+		<script src="/static/js/bootstrap-datetimepicker.js"></script>
+		<script src="/static/js/custom.js"></script>
+	</head>
+
+	<body id="body" class="myqp-new">
+
+		<!-- COOKIE -->
+		<!-- <div id="cookieInc"></div> -->
+		<!-- COOKIE -->
+
+		<!-- NAV -->
+		<div id="navIncMyQP"></div>
+		<!-- NAV -->
+
+		<!-- BIGSEARCH -->
+		<!-- <div id="bigsearchInc"></div> -->
+		<!-- BIGSEARCH -->
+
+		<!-- CONTENT -->
+		<div class="qcontentpane">
+		
+			<section class="breadnav">
+				<div class="container">
+					<div class="row bread">
+						<div class="col-xs-12">
+							<nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
+								<ol>
+							    	<li><a href="/" title="Home">Home</a>
+							    		<ol>
+								    		<li>
+								    			<a href="/html-myqp/account/account-07.html" title="My Q-Park">My Q-Park</a>
+								    			<ol>
+									    			<li class="is-current">Whitelists</li>
+									    		</ol>
+								    		</li>
+								    	</ol>
+								    </li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="pageintro">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+	
+							<h4 class="strong text-uppercase primary-color no-margin">My Q-park</h4>
+							<h1 class="strong big-h1 no-margin">Whitelists</h1>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<hr class="invisible-small">
+			
+			<section class="whitelists">
+                <div class="container">                            
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="whitelist white-card">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="title"><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></div>
+                                        <div class="subtitle">@whitelist.ServiceProfileName</div>
+                                    </div>
+                                    <div class="col-xs-6 matchheight">
+                                        @whitelist.StartDateTime - @whitelist.EndDateTime
+                                    </div>
+                                    <div class="col-xs-6 right">
+                                        <div class="matchheight relative">                                                    
+                                            <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230527">More details</a>
+                                        </div>
+                                    </div>                                            
+                                    <div class="col-xs-12">
+                                        <div id="whitelist-details-230527" class="white-card-details collapse">
+
+                                            <h3>Landlord</h3>
+                                            <div class="fake-table">
+                                                <div class="row fake-row">
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Name]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountName</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Email Address]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Notes]</div>
+                                                        <div class="fake-cell">@whitelist.Notes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="invisible-small" />
+
+                                            <h3>Driver</h3>
+                                            <div class="overview-table">
+                                                <table class="light-header">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Email</th>
+                                                            <th>License plate</th>
+                                                            <th>Telephone number</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="form no-border">
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverFirstName">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverLastName">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverEmailAddress">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <div class="license-plate clearfix">
+                                                                    <div class="country-prefix">
+                                                                        <select class="form-control" id="select-country-prefix">
+                                                                            <option value="BE">BE</option>
+                                                                            <option value="GB">GB</option>
+                                                                            <option selected="" value="N">N</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="plate-number">
+                                                                        <input class="form-control" placeholder="@whitelist.LicensePlateNumber">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverMobilePhoneNumber">
+                                                            </td>
+                                                            <td class="icons vertical-middle">
+                                                                <button type="button" class="btn btn-success">Save</button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="whitelist white-card">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="title"><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></div>
+                                        <div class="subtitle">@whitelist.ServiceProfileName</div>
+                                    </div>
+                                    <div class="col-xs-6 matchheight">
+                                        @whitelist.StartDateTime - @whitelist.EndDateTime
+                                    </div>
+                                    <div class="col-xs-6 right">
+                                        <div class="matchheight relative">                                                    
+                                            <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230528">More details</a>
+                                        </div>
+                                    </div>                                            
+                                    <div class="col-xs-12">
+                                        <div id="whitelist-details-230528" class="white-card-details collapse">
+
+                                            <h3>Landlord</h3>
+                                            <div class="fake-table">
+                                                <div class="row fake-row">
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Name]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountName</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Email Address]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Notes]</div>
+                                                        <div class="fake-cell">@whitelist.Notes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="invisible-small" />
+
+                                            <h3>Driver</h3>
+                                            <div class="overview-table">
+                                                <table class="light-header">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Email</th>
+                                                            <th>License plate</th>
+                                                            <th>Telephone number</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="form no-border">
+                                                            <td class="form-group">
+                                                                <span>John</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>Doe</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>john.doe@sony.com</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>N-345-DEF</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>+44 123 45 67 89</span>
+                                                            </td>
+                                                            <td class="icons vertical-middle">
+                                                                <div class="svg-icon">
+                                                                    <a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg"></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+		</div>
+
+		<!-- TOOLTIP -->
+		<div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
+
+		<!-- BACK TO TOP -->
+		<a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+		<!-- CONTENT -->
+
+
+		<!-- FOOTER -->
+		<div id="footerIncMyQP"></div>
+		<!-- FOOTER -->
+
+		</script>
+
+	</body>
+</html>

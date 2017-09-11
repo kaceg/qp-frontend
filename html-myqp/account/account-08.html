@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
-		<title>Account - Account | My Q-Park</title>
+		<title>Account - Financial Profile | My Q-Park</title>
 		
 		<link rel="stylesheet" href="/static/css/publicwebsite.css">
 		
@@ -46,7 +46,7 @@
 							    		<ol>
                                             <li><a href="/">My Q-Park</a>
                                                 <ol>
-								    		        <li class="is-current">Account</li>
+								    		        <li class="is-current">Financial Profile</li>
                                                 </ol>
                                             </li>
 								    	</ol>
@@ -64,7 +64,7 @@
 						<div class="col-sm-12">
 	
 							<h4 class="strong text-uppercase primary-color no-margin">My Q-park</h4>
-							<h1 class="strong big-h1 no-margin">Account</h1>
+							<h1 class="strong big-h1 no-margin">Financial Profile</h1>
 
 						</div>
 					</div>
@@ -73,231 +73,150 @@
             
             <hr class="invisible-small">
 
-            <section class="account">
-                <form class="form">
-                    <div class="container">
-
-                        <div class="personal-information">
-                            <h3>Personal information</h3>
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-sm-12 col-md-2">Title</label>
-                                <div class="col-sm-12 col-md-6 col-lg-4">
-                                    <select class="form-control">
-                                        <option selected>Mr.</option>
-                                        <option>Mrs.</option>
-                                        <option>Miss</option>
-                                        <option>Ms.</option>
-                                        <option>Mr./Mrs.</option>
-                                        <option>Dr.</option>
-                                        <option>Prof.</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">First name<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Last name<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">E-mail address<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="email" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Phone</label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="tel" class="form-control">
-                                </div>
-                            </div>
-
+            <section class="form">
+                <div class="container">
+                    <div class="form-group row">
+                        <label class="col-form-label col-xs-12 col-md-2">Preferred payment method</label>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <span class="no-edit">Others</span>
                         </div>
-
-                        <hr class="invisible">
-
-                        <div class="general-address">
-                            <h3>General address</h3>
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Address line 1<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Address line 2</label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Postal code<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">City<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-sm-12 col-md-2">Country <span class="required">*</span></label>
-                                <div class="col-sm-12 col-md-6 col-lg-4">
-                                    <select class="form-control">
-                                        <option selected>Belgium</option>
-                                        <option>Denmark</option>
-                                        <option>Germany</option>
-                                        <option>Finland</option>
-                                        <option>France</option>
-                                        <option>Ireland</option>
-                                        <option>The Netherlands</option>
-                                    </select>
-                                </div>
-                            </div>
-
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-form-label col-xs-12 col-md-2">Invoice e-mail</label>
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <input class="form-control">
                         </div>
-
-                        <hr class="invisible">
-
-                        <div class="shipping-address">
-                            <h3>Shipping address</h3>
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12">
-                                    <input type="checkbox"> Same as general address
-                                </label>
-                            </div>
-
-                            <div class="repeat-address">
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 1<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 2</label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Postal code<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">City<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-sm-12 col-md-2">Country<span class="required">&nbsp;*</span></label>
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <select class="form-control">
-                                            <option selected>Belgium</option>
-                                            <option>Denmark</option>
-                                            <option>Germany</option>
-                                            <option>Finland</option>
-                                            <option>France</option>
-                                            <option>Ireland</option>
-                                            <option>The Netherlands</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="invisible">
-
-                        <div class="billing-address">
-                            <h3>Billing address</h3>
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12">
-                                    <input type="checkbox" checked="checked"> Same as general address
-                                </label>
-                            </div>
-                            
-                            <div class="repeat-address hidden">
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 1<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 2</label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Postal code<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">City<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-sm-12 col-md-2">Country<span class="required">&nbsp;*</span></label>
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <select class="form-control">
-                                            <option selected>Belgium</option>
-                                            <option>Denmark</option>
-                                            <option>Germany</option>
-                                            <option>Finland</option>
-                                            <option>France</option>
-                                            <option>Ireland</option>
-                                            <option>The Netherlands</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <div class="form-save">
-                                    <button type="submit" class="btn btn-success save">Save</button>
-                                </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <div class="form-save">
+                                <button type="submit" class="btn btn-success save">Save</button>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
+            </section>
+            
+            <hr class="invisible">
+            
+            <section class="creditcard-information">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <h3>Creditcard information</h3>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-8">
+                                    <div class="subtitle">This can be used in the Q-Park mobile app This can be used in the Q-Park mobile app This can be used in the Q-Park mobile app This can be used in the Q-Park mobile app</div>
+                                    <div class="no-results">No creditcards available</div>
+                                </div>
+                            </div>
+
+                            <div class="creditcard-list">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8 col-lg-6">
+                                        <div class="creditcard white-card">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-4"><span class="grey">Type</span></div>
+                                                <div class="col-xs-6 col-sm-8">
+                                                    <span  class="no-edit"><span class="primary-color strong">MasterCard</span></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-4"><span class="grey">Number</span></div>
+                                                <div class="col-xs-6 col-sm-8">
+                                                    <span class="no-edit">0123****89</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-4"><span class="grey">Expire Date</span></div>
+                                                <div class="col-xs-6 col-sm-8">
+                                                    <span class="no-edit">02/22</span>
+                                                </div>
+                                            </div>
+
+                                            <a href="#" class="delete">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-22098.23 -19364.23 10.463 10.463">
+                                                        <defs>
+                                                            <style>
+                                                            .cls-1 {
+                                                                fill: none;
+                                                                stroke: #d3d3d3;
+                                                                stroke-width: 1.2px;
+                                                            }
+                                                            </style>
+                                                        </defs>
+                                                        <g id="Group_1040" data-name="Group 1040" transform="translate(-22526 -19758)">
+                                                            <line id="Line_1173" data-name="Line 1173" class="cls-1" x1="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+                                                            <line id="Line_1174" data-name="Line 1174" class="cls-1" x2="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8 col-lg-6">
+                                        <div class="creditcard white-card">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-4"><span class="grey">Type</span></div>
+                                                <div class="col-xs-6 col-sm-8">
+                                                    <span  class="no-edit"><span class="primary-color strong">Visa</span></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-4"><span class="grey">Number</span></div>
+                                                <div class="col-xs-6 col-sm-8">
+                                                    <span class="no-edit">9876****10</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-4"><span class="grey">Expire Date</span></div>
+                                                <div class="col-xs-6 col-sm-8">
+                                                    <span class="no-edit">12/19</span>
+                                                </div>
+                                            </div>
+
+                                            <a href="#" class="delete">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-22098.23 -19364.23 10.463 10.463">
+                                                        <defs>
+                                                            <style>
+                                                            .cls-1 {
+                                                                fill: none;
+                                                                stroke: #d3d3d3;
+                                                                stroke-width: 1.2px;
+                                                            }
+                                                            </style>
+                                                        </defs>
+                                                        <g id="Group_1040" data-name="Group 1040" transform="translate(-22526 -19758)">
+                                                            <line id="Line_1173" data-name="Line 1173" class="cls-1" x1="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+                                                            <line id="Line_1174" data-name="Line 1174" class="cls-1" x2="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-save">
+                                <button type="button" class="btn btn-success">Add creditcard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>

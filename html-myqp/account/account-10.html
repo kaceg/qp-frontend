@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
-		<title>Account - Change Credentials | My Q-Park</title>
+		<title>Account - Switch Account | My Q-Park</title>
 		
 		<link rel="stylesheet" href="/static/css/publicwebsite.css">
 		
@@ -44,11 +44,7 @@
 								<ol>
 							    	<li><a href="/" title="Home">Home</a>
 							    		<ol>
-                                            <li><a href="/">My Q-Park</a>
-                                                <ol>
-								    		        <li class="is-current">Change Credentials</li>
-                                                </ol>
-                                            </li>
+								    		<li class="is-current">Aanmelden</li>
 								    	</ol>
 								    </li>
 								</ol>
@@ -64,98 +60,120 @@
 						<div class="col-sm-12">
 	
 							<h4 class="strong text-uppercase primary-color no-margin">My Q-park</h4>
-							<h1 class="strong big-h1 no-margin">Change Credentials</h1>
+							<h1 class="strong big-h1 no-margin">Please choose one of your Q-Park accounts or roles</h1>
 
 						</div>
 					</div>
 				</div>
             </section>
             
-            <hr class="invisible-small">
-
-            <section class="change-username">
+            <section class="role-select">
                 <div class="container">
-                    <form class="form">
-                        <h3>Change username</h3>
-                        
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">Current username<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="text" class="form-control">
-                            </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="role-card">
+								<form>
+									<button type="submit" class="role-select-button">
+										<div class="icon">
+											<img src="/static/assets/svg/icon-role_personal.svg" />
+										</div>
+										<div class="info" class="role-select-button">
+											<div class="role">Personal</div>
+											<div class="user">Maximilian Frederiksen</div>
+										</div>
+									</button>
+								</form>
+							</div>
                         </div>
                         
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">Password<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="password" class="form-control">
-                            </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="role-card">
+								<form>
+									<button type="submit" class="role-select-button">
+										<div class="icon">
+											<img src="/static/assets/svg/icon-role_landlord.svg" />
+										</div>
+										<div class="info">
+											<div class="role">Landlord administrator for</div>
+											<div class="user">University Campus Stockholm</div>
+										</div>
+									</button>
+									<a href="#" class="delete-role">
+										<div class="icon">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="-22098.23 -19364.23 10.463 10.463">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: none;
+														stroke: #d3d3d3;
+														stroke-width: 1.2px;
+													}
+													</style>
+												</defs>
+												<g id="Group_1040" data-name="Group 1040" transform="translate(-22526 -19758)">
+													<line id="Line_1173" data-name="Line 1173" class="cls-1" x1="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+													<line id="Line_1174" data-name="Line 1174" class="cls-1" x2="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+												</g>
+											</svg>
+										</div>
+									</a>
+								</form>
+							</div>
                         </div>
                         
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">New username<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="text" class="form-control">
-                            </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="role-card">
+								<form>
+									<button type="submit" class="role-select-button">
+										<div class="icon">
+											<img src="/static/assets/svg/icon-role_administrator.svg" />
+										</div>
+										<div class="info">
+											<div class="role">Parking facility manager for</div>
+											<div class="user">Tjuvholmen P-Hus</div>
+										</div>
+									</button>
+									<a href="#" class="delete-role">
+										<div class="icon">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="-22098.23 -19364.23 10.463 10.463">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: none;
+														stroke: #d3d3d3;
+														stroke-width: 1.2px;
+													}
+													</style>
+												</defs>
+												<g id="Group_1040" data-name="Group 1040" transform="translate(-22526 -19758)">
+													<line id="Line_1173" data-name="Line 1173" class="cls-1" x1="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+													<line id="Line_1174" data-name="Line 1174" class="cls-1" x2="9.615" y2="9.615" transform="translate(428.193 394.193)"/>
+												</g>
+											</svg>
+										</div>
+									</a>
+								</form>
+							</div>
+						</div>
+						
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="role-card">
+								<form>
+									<button type="submit" class="role-select-button">
+										<div class="icon">
+											<img src="/static/assets/svg/icon-role_professional.svg" />
+										</div>
+										<div class="info">
+											<div class="role">Professional</div>
+											<div class="user">Grand Hôtel Stockholm</div>
+										</div>
+									</button>
+								</form>
+							</div>
                         </div>
-                        
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">Repeat new username<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <div class="form-save">
-                                    <button type="submit" class="btn btn-success">Change username</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </section>
-            
-            <hr class="invisible">
-            
-            <section class="change-password">
-                <div class="container">
-                    <form class="form">
-                        <h3>Change password</h3>
-
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">Old password<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="password" class="form-control">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">New password<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="password" class="form-control">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row">
-                            <label class="col-form-label col-xs-12 col-md-2">Repeat new password<span class="required">&nbsp;*</span></label>
-                            <div class="col-xs-12 col-md-6 col-lg-4">
-                                <input type="password" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <div class="form-save">
-                                    <button type="submit" class="btn btn-success">Change password</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
         </div>
 
 		<!-- TOOLTIP -->

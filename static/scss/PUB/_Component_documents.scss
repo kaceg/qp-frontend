@@ -74,3 +74,23 @@
         }
     }
 }
+
+.myqp-new {
+    .document {
+        .document-detail {
+            margin-top: 30px;
+
+            button {
+                width: 100%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .document .document-detail button {
+            margin: 0;
+        }
+    }
+}
