@@ -500,8 +500,15 @@ ul.check-list.cta li:before {
         }
     }
 
+    .sm-right,
     .md-right {
         text-align: left
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .sm-right {
+            text-align: right;
+        }
     }
 
     @media (min-width: $screen-md-min) {
