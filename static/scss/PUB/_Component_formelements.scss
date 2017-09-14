@@ -160,6 +160,26 @@ select:focus, input:focus, textarea:focus { background: $white}
                 border-color: $red !important;
             }
         }
+
+        .hide-activated {
+            &.toggle--activated {
+                display: none;
+            }
+
+            &.toggle--deactivated {
+                display: block;
+            }
+        }
+
+        .hide-deactivated {
+            &.toggle--activated {
+                display: block;
+            }
+
+            &.toggle--deactivated {
+                display: none;
+            }
+        }
     }
 
     .form-save {
