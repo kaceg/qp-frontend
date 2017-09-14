@@ -1,0 +1,245 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Control Fee | Q-Park</title>
+
+    <link rel="stylesheet" href="/static/css/publicwebsite.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+    <script src="/static/js/jquery.2.2.4.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.js"></script>
+</head>
+
+<body id="body">
+
+
+    <div class="qcontentpane">
+        <section class="overview-table">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <table data-role="table" class="display responsive no-wrap" id="overview" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th class="min">&nbsp;</th>
+                                    <th class="sortable">
+                                        Reference
+                                        <span class="sort">
+												<div class="active"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+											</span>
+                                    </th>
+                                    <th class="sortable" data-priority="2">
+                                        Type
+                                        <div class="sort">
+                                            <div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                                            <div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        </div>
+                                    </th>
+                                    <th class="sortable" data-priority="3">
+                                        Date
+                                        <div class="sort">
+                                            <div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                                            <div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        </div>
+                                    </th>
+                                    <th class="sortable" data-priority="4">
+                                        Expiration date
+                                        <div class="sort">
+                                            <div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                                            <div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        </div>
+                                    </th>
+                                    <th class="sortable" data-priority="1" class="right">
+                                        Amount due
+                                        <div class="sort">
+                                            <div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                                            <div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                        </div>
+                                    </th>
+                                    <th data-priority="5">&nbsp;</th>
+                                </tr>
+                                <tr class="links">
+                                    <td colspan="7">
+                                        <a href="#" title="Select all">Select all (8)</a><span class="divider">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                                        <a href="#" title="Deselect all">Deselect all</a>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox1" /><label for="checkbox1">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox2" /><label for="checkbox2">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="no-pay tooltip-trigger" data-notice="This amount is scheduled to be paid automatically on expiration date.">
+                                    <td>&nbsp;</td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox3" /><label for="checkbox3">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="pending tooltip-trigger" data-notice="We're awaiting the completion of this payment.">
+                                    <td>&nbsp;</td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right">
+                                        <div class="btn btn-inactive">Pending</div>
+                                    </td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox4" /><label for="checkbox4">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox5" /><label for="checkbox5">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox6" /><label for="checkbox6">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox7" /><label for="checkbox7">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td><input type="checkbox" id="checkbox8" /><label for="checkbox8">Check</label></td>
+                                    <td><span class="link">QH2016-1045</span></td>
+                                    <td>Invoice</td>
+                                    <td class="date">08/08/2017</td>
+                                    <td class="date">08/09/2017</td>
+                                    <td class="right text-nowrap">&euro; 50,00</td>
+                                    <td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- <table id="overview" class="responsive no-wrap">
+                            <thead>
+                                <tr>
+                                    <td>Header 1</td>
+                                    <td>Header 2</td>
+                                    <td>Header 3</td>
+                                    <td>Header 4</td>
+                                    <td>Header 5</td>
+                                    <td>Header 6</td>
+                                    <td>Header 7</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Column 1</td>
+                                    <td>Column 2</td>
+                                    <td>Column 3</td>
+                                    <td>Column 4</td>
+                                    <td>Column 5</td>
+                                    <td>Column 6</td>
+                                    <td>Column 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Column 1</td>
+                                    <td>Column 2</td>
+                                    <td>Column 3</td>
+                                    <td>Column 4</td>
+                                    <td>Column 5</td>
+                                    <td>Column 6</td>
+                                    <td>Column 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Column 1</td>
+                                    <td>Column 2</td>
+                                    <td>Column 3</td>
+                                    <td>Column 4</td>
+                                    <td>Column 5</td>
+                                    <td>Column 6</td>
+                                    <td>Column 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Column 1</td>
+                                    <td>Column 2</td>
+                                    <td>Column 3</td>
+                                    <td>Column 4</td>
+                                    <td>Column 5</td>
+                                    <td>Column 6</td>
+                                    <td>Column 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Column 1</td>
+                                    <td>Column 2</td>
+                                    <td>Column 3</td>
+                                    <td>Column 4</td>
+                                    <td>Column 5</td>
+                                    <td>Column 6</td>
+                                    <td>Column 7</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overview').dataTable();
+        });
+    </script>
+</body>
+
+</html>
