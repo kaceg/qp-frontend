@@ -139,6 +139,15 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         }
     }
 
+    .btn-link {
+        margin: 0;
+        padding: 0;
+
+        &.normal {
+            font-family: $font-family-sans-serif;
+        }
+    }
+
     @media(min-width: $screen-sm-min) {
         .btn {
             width: auto;

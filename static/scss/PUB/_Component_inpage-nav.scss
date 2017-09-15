@@ -10,7 +10,8 @@
 		    
 		    li {
 			    padding: .25em 1em .25em 0;
-			    display: inline;
+				display: inline;
+				white-space: nowrap;
 	
 			    @media (max-width: 795px) {
 			        padding: .25em 1.5em .25em 0;
