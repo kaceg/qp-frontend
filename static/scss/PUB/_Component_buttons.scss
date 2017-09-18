@@ -49,7 +49,22 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 .btn:focus { outline: 0 none }
 
 .btn-success:hover, .btn-success:focus { color: $white;background-color: $lime_dark;border-color: transparent;}
-.btn-success:active, .btn-success:active:hover { color: $white;background-color: $lime_dark;border:none; box-shadow: inset 0px 0px 0px 2px $white}
+//.btn-success:active, .btn-success:active:hover { color: $white;background-color: $lime_dark;border:none; box-shadow: inset 0px 0px 0px 2px $white}
+.btn-success {
+    &:active,
+    &:active:hover {
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    &:active {
+        background-color: $lime;
+    }
+
+    &:active:hover {
+        background-color: $lime_dark;
+    }
+}
 
 .btn-info:hover, .btn-info:focus { color: #666; }
 .btn-info:active:hover {  box-shadow: none}
