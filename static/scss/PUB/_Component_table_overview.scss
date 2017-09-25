@@ -3,7 +3,8 @@
 		display: inline-block;
 	}
 
-	table {
+	> table,
+	> .container >.row > [class*="col-"] > table {
 		color: #333;
 		font-size: 1em;
 		width: 100%;

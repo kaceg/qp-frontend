@@ -2,12 +2,16 @@
 	font-family: $font-family-sans-serif-bold;
     width: 100%;
     position: relative;
-    background: #8bb611;
-    color: #f0f0f0;
+    background: $lime;
+    color: $white;
     text-align: center;
     line-height: 50px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    &.red {
+        background: $red;
+    }
 
     @media screen and (min-width: $screen-sm-min) {
         width: 200px;
@@ -17,6 +21,10 @@
         &.sticky {
             position: fixed;
         }
+        
+        &.small-text {
+            font-size: 0.75em;
+        }
 
         &.top-left {
             top: 25px;
@@ -24,6 +32,16 @@
             left: -50px;
             right: auto;
             transform: rotate(-45deg);
+        }
+        
+        &.top-right {
+            top: 25px;
+            bottom: auto;
+            left: auto;
+            right: -50px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
         }
     }
 }
