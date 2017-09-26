@@ -1,12 +1,12 @@
 <html lang="en">
 
-    <head>
+	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
-		<title>Account - Account | My Q-Park</title>
+		<title>Account - Whitelists | My Q-Park</title>
 		
 		<link rel="stylesheet" href="/static/css/publicwebsite.css">
 		
@@ -18,8 +18,8 @@
 		<script src="/static/js/selectboxit.min.js"></script>
 		<script src="/static/js/bootstrap-datetimepicker.js"></script>
 		<script src="/static/js/custom.js"></script>
-    </head>
-    
+	</head>
+
 	<body id="body" class="myqp-new">
 
 		<!-- COOKIE -->
@@ -36,6 +36,7 @@
 
 		<!-- CONTENT -->
 		<div class="qcontentpane">
+		
 			<section class="breadnav">
 				<div class="container">
 					<div class="row bread">
@@ -44,11 +45,12 @@
 								<ol>
 							    	<li><a href="/" title="Home">Home</a>
 							    		<ol>
-                                            <li><a href="/">My Q-Park</a>
-                                                <ol>
-								    		        <li class="is-current">Account</li>
-                                                </ol>
-                                            </li>
+								    		<li>
+								    			<a href="/html-myqp/account/account-07.html" title="My Q-Park">My Q-Park</a>
+								    			<ol>
+									    			<li class="is-current">Whitelists</li>
+									    		</ol>
+								    		</li>
 								    	</ol>
 								    </li>
 								</ol>
@@ -56,251 +58,209 @@
 						</div>
 					</div>
 				</div>
-            </section>
-            
+			</section>
+			
 			<section class="pageintro">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 	
 							<h4 class="strong text-uppercase primary-color no-margin">My Q-park</h4>
-							<h1 class="strong big-h1 no-margin">Account</h1>
+							<h1 class="strong big-h1 no-margin">Whitelists</h1>
 
 						</div>
 					</div>
 				</div>
-            </section>
-            
-            <hr class="invisible-small">
+			</section>
+			
+			<hr class="invisible-small">
+			
+			<section class="whitelists">
+                <div class="container">                            
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="whitelist white-card">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="title"><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></div>
+                                        <div class="subtitle">@whitelist.ServiceProfileName</div>
+                                    </div>
+                                    <div class="col-xs-6 matchheight">
+                                        @whitelist.StartDateTime - @whitelist.EndDateTime
+                                    </div>
+                                    <div class="col-xs-6 right">
+                                        <div class="matchheight relative">                                                    
+                                            <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230527">More details</a>
+                                        </div>
+                                    </div>                                            
+                                    <div class="col-xs-12">
+                                        <div id="whitelist-details-230527" class="white-card-details collapse">
 
-            <section class="account">
-                <form class="form">
-                    <div class="container">
+                                            <h3>Landlord</h3>
+                                            <div class="fake-table">
+                                                <div class="row fake-row">
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Name]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountName</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Email Address]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Notes]</div>
+                                                        <div class="fake-cell">@whitelist.Notes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="invisible-small" />
 
-                        <div class="personal-information">
-                            <h3>Personal information</h3>
+                                            <h3>Driver</h3>
+                                            <div class="overview-table">
+                                                <table class="light-header">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Email</th>
+                                                            <th>License plate</th>
+                                                            <th>Telephone number</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="form no-border">
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverFirstName">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverLastName">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverEmailAddress">
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <div class="license-plate clearfix">
+                                                                    <div class="country-prefix">
+                                                                        <select class="form-control" id="select-country-prefix">
+                                                                            <option value="BE">BE</option>
+                                                                            <option value="GB">GB</option>
+                                                                            <option selected="" value="N">N</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="plate-number">
+                                                                        <input class="form-control" placeholder="@whitelist.LicensePlateNumber">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <input class="form-control" placeholder="@whitelist.DriverMobilePhoneNumber">
+                                                            </td>
+                                                            <td class="icons vertical-middle">
+                                                                <button type="button" class="btn btn-success">Save</button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
 
-                            <div class="form-group row">
-                                <label class="col-form-label col-sm-12 col-md-2">Title</label>
-                                <div class="col-sm-12 col-md-6 col-lg-4">
-                                    <select class="form-control">
-                                        <option selected>Mr.</option>
-                                        <option>Mrs.</option>
-                                        <option>Miss</option>
-                                        <option>Ms.</option>
-                                        <option>Mr./Mrs.</option>
-                                        <option>Dr.</option>
-                                        <option>Prof.</option>
-                                    </select>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">First name<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Last name<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">E-mail address<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="email" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Phone</label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="tel" class="form-control">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <hr class="invisible">
-
-                        <div class="general-address">
-                            <h3>General address</h3>
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Address line 1<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Address line 2</label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">Postal code<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12 col-md-2">City<span class="required">&nbsp;*</span></label>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                                <label class="col-form-label col-sm-12 col-md-2">Country <span class="required">*</span></label>
-                                <div class="col-sm-12 col-md-6 col-lg-4">
-                                    <select class="form-control">
-                                        <option selected>Belgium</option>
-                                        <option>Denmark</option>
-                                        <option>Germany</option>
-                                        <option>Finland</option>
-                                        <option>France</option>
-                                        <option>Ireland</option>
-                                        <option>The Netherlands</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <hr class="invisible">
-
-                        <div class="shipping-address">
-                            <h3>Shipping address</h3>
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12">
-                                    <input type="checkbox"> Same as general address
-                                </label>
-                            </div>
-
-                            <div class="repeat-address">
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 1<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
+                            <div class="whitelist white-card">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="title"><span>@whitelist.PlaceName</span>, <span>@whitelist.PlaceCity</span></div>
+                                        <div class="subtitle">@whitelist.ServiceProfileName</div>
                                     </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 2</label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
+                                    <div class="col-xs-6 matchheight">
+                                        @whitelist.StartDateTime - @whitelist.EndDateTime
                                     </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Postal code<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">City<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-sm-12 col-md-2">Country<span class="required">&nbsp;*</span></label>
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <select class="form-control">
-                                            <option selected>Belgium</option>
-                                            <option>Denmark</option>
-                                            <option>Germany</option>
-                                            <option>Finland</option>
-                                            <option>France</option>
-                                            <option>Ireland</option>
-                                            <option>The Netherlands</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="col-xs-6 right">
+                                        <div class="matchheight relative">                                                    
+                                            <a href="javascript:void(0);" class="bottom-right" data-toggle="collapse" data-target="#whitelist-details-230528">More details</a>
+                                        </div>
+                                    </div>                                            
+                                    <div class="col-xs-12">
+                                        <div id="whitelist-details-230528" class="white-card-details collapse">
 
-                        <hr class="invisible">
+                                            <h3>Landlord</h3>
+                                            <div class="fake-table">
+                                                <div class="row fake-row">
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Name]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountName</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Landlord Account Email Address]</div>
+                                                        <div class="fake-cell">@whitelist.LandlordAccountEmailAddress</div>
+                                                    </div>
+                                                    
+                                                    <div class="fake-column col-md-4">
+                                                        <div class="fake-header">[Notes]</div>
+                                                        <div class="fake-cell">@whitelist.Notes</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="invisible-small" />
 
-                        <div class="billing-address">
-                            <h3>Billing address</h3>
+                                            <h3>Driver</h3>
+                                            <div class="overview-table">
+                                                <table class="light-header">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Email</th>
+                                                            <th>License plate</th>
+                                                            <th>Telephone number</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="form no-border">
+                                                            <td class="form-group">
+                                                                <span>John</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>Doe</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>john.doe@sony.com</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>N-345-DEF</span>
+                                                            </td>
+                                                            <td class="form-group">
+                                                                <span>+44 123 45 67 89</span>
+                                                            </td>
+                                                            <td class="icons vertical-middle">
+                                                                <div class="svg-icon">
+                                                                    <a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg"></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
 
-                            <div class="form-group row">
-                                <label class="col-form-label col-xs-12">
-                                    <input type="checkbox" checked="checked"> Same as general address
-                                </label>
-                            </div>
-                            
-                            <div class="repeat-address hidden">
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 1<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Address line 2</label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">Postal code<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-xs-12 col-md-2">City<span class="required">&nbsp;*</span></label>
-                                    <div class="col-xs-12 col-md-6 col-lg-4">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-form-label col-sm-12 col-md-2">Country<span class="required">&nbsp;*</span></label>
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <select class="form-control">
-                                            <option selected>Belgium</option>
-                                            <option>Denmark</option>
-                                            <option>Germany</option>
-                                            <option>Finland</option>
-                                            <option>France</option>
-                                            <option>Ireland</option>
-                                            <option>The Netherlands</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <div class="form-save">
-                                    <button type="submit" class="btn btn-success save">Save</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </section>
 
-        </div>
+		</div>
 
 		<!-- TOOLTIP -->
 		<div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
