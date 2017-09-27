@@ -171,9 +171,16 @@
 							margin-left: 20px;
 						}
 
-						.current-location:hover {
-							svg path {
-								fill: $red;
+						.current-location {
+							&.svg-icon svg {
+								width: 28px;
+								height: 28px;
+							}
+
+							&:hover {
+								svg path {
+									fill: $red;
+								}
 							}
 						}
 	
