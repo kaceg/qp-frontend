@@ -78,3 +78,140 @@
 		.pane .bar { display: none; }
 	}
 }
+
+
+
+
+
+
+
+
+
+
+.google-maps-search {
+	.google-maps-search-input {
+		position: relative;
+		padding-top: 25px;
+		background-color: $gray-ultralight;
+		
+		.google-maps-search-buttons-wrapper {
+			margin-top: 25px;
+		}
+
+		.search-messages {
+			margin-bottom: 25px;
+		}
+	}
+
+	.google-maps {
+		max-height: 528px;
+	}
+}
+
+.google-maps-search-results {
+	.city-results {
+		background-color: $gray-lightest;
+	}
+
+	.close-results {
+		display: inline-block;
+		margin-bottom: 30.5px;
+		font-family: $font-family-sans-serif-bold;
+		font-size: 1.5em;
+		color: $gray-light-worm;
+		text-decoration: none;
+
+		.qp-icon {
+			margin-left: 23px;
+			font-weight: bold;
+		}
+		
+		&:hover {
+			color: $red;
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.google-maps-search {
+		position: relative;
+		min-height: 501px;
+
+		.google-maps-search-input {
+			padding: 0;
+			background-color: transparent;
+
+			.google-maps-search-input-control {
+				position: absolute;
+				width: 100%;
+				top: 50px;
+
+				input.form-control {
+					height: 88px;
+					padding-left: 30px !important;
+					font-family: $font-family-sans-serif-bold;
+					font-size: 1.222em;
+					color: $gray-dark;
+				}
+
+				.google-maps-search-buttons-wrapper {
+					position: absolute;
+					top: 15px;
+					right: 30px;
+					margin: 0;
+
+					.google-maps-search-buttons {
+						display: flex;
+						align-items: center;
+
+						.current-location,
+						.search {
+							display: inline-block;
+							vertical-align: top;
+							margin-left: 20px;
+						}
+
+						.current-location:hover {
+							svg path {
+								fill: $red;
+							}
+						}
+	
+						.search {
+							height: 58px;
+						}
+					}
+				}
+			}
+			
+			.search-messages {
+				margin-top: 203px;
+				font-family: $font-family-sans-serif-bold;
+				font-size: 1.444em;
+
+				.search-message {
+					display: inline-block;
+					max-width: 50%;
+					color: $white;
+				}
+			}
+		}
+		
+		.google-maps {
+			max-height: 695px;
+		}
+	}
+
+	.google-maps-search-results {
+		border-bottom: 1px solid $gray-lightest;
+
+		&,
+		.city-results {
+			background-color: $gray-ultralightest;
+		}
+
+		.parking-facility-results {
+			padding-top: 90px;
+		}
+	}
+}

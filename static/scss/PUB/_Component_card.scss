@@ -1,21 +1,23 @@
-﻿.card {
+﻿.card,
+.card--image--small {
   background-color: $white;
 }
 
 .card,
-.card--image {
+.card--image,
+.card--image--small {
 	margin-bottom: 1em;
 }
 
-.card--image .card-banner,
-.card .card-banner {
+.card .card-banner,
+.card--image .card-banner {
   position: absolute;
   top: 15px;
   left: 0;
   background: $lime;
   padding: .25em .75em;
   color: white;
-  font-size: .85em;
+  font-size: 1em;
 
   a {
     color: inherit;
@@ -25,6 +27,7 @@
 
 .card .card-heading,
 .card--image .card-heading,
+.card--image--small .card-heading,
 .card--small .card-heading {
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -32,11 +35,16 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   font-family: $font-family-sans-serif-bold;
   font-size: 1em;
   padding: .5em 1.15em .15em;
   width: 100%;
   color: $lighter-black;
+}
+
+.card--image--small .card-heading {
+  width: auto;
 }
 
 .card .card-body,
@@ -52,6 +60,28 @@
 	height: auto;
 }
 
+.card--image--small {
+  position: relative;
+
+  .card-heading {
+    .card-title {
+      font-size: 1.111em;
+    }
+
+    .card-subtitle {
+      font-size: 0.833em;
+    }
+  }
+}
+
+.card--image--small .img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+}
+
 .card-body:last-child {
   border-bottom: none
 }
@@ -64,8 +94,31 @@
 }
 
 .card--image .card-heading,
-.card--image .card-footer {
+.card--image .card-footer,
+.card--image--small .card-heading,
+.card--image--small .card-footer {
   padding-left: 0;
+}
+
+.card--image--small .card-heading,
+.card--image--small .card-footer {
+  margin-left: 127px;
+}
+
+.card--image .card-heading .card-title,
+.card--image .card-heading .card-subtitle,
+.card--image--small .card-heading .card-title,
+.card--image--small .card-heading .card-subtitle {
+  flex: 0 0 100%;
+}
+
+.card--image .card-heading .card-title {
+  font-size: 1.444em;
+}
+
+.card--image .card-heading .card-subtitle,
+.card--image--small .card-heading .card-subtitle {
+  color: $red;
 }
 
 .card--small .card-body {
