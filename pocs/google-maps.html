@@ -407,11 +407,11 @@
         /* End custom q-park marker */
 
         function getCityFromPlace(place) {
-            var cityAddressComponent = place.address_components.filter(function (element, index) {
+            /* var cityAddressComponent = place.address_components.filter(function (element, index) {
                 return element.types.includes("locality");
             })[0];
 
-            return cityAddressComponent ? cityAddressComponent.long_name : undefined;
+            return cityAddressComponent ? cityAddressComponent.long_name : undefined; */
         }
 
         function getParkingFacilitesForCity(city) {
