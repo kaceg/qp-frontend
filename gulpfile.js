@@ -7,10 +7,12 @@ var server = {
 
 // Global Packages
 var gulp = require('gulp');
+var rename = require('gulp-rename');
 
 // Stylesheet Packages
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 // Webserver packages
 var browserSync = require('browser-sync').create();
@@ -21,16 +23,27 @@ gulp.task('sass-dev', function () {
         './static/scss/*.scss',
       ])
       .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('./static/css/cache')) 
+});
+
+// Post CSS Task
+gulp.task('post-css',['sass-dev'], function () {
+    return gulp.src([
+        './static/css/cache/*.css',
+      ])
+      .pipe(postcss([ autoprefixer() ]))
       .pipe(gulp.dest('./static/css'))
       .pipe(browserSync.stream());      
 });
 
+
+
 // Watch Tasks
-gulp.task('watch',['sass-dev'], function () {
+gulp.task('watch',['post-css'], function () {
     browserSync.init({
         server: "."
     });
-    gulp.watch('./static/scss/**/*.scss', ['sass-dev']);
+    gulp.watch('./static/scss/**/*.scss', ['post-css']);
     gulp.watch("./**/*.html").on('change', browserSync.reload);
 });
 
