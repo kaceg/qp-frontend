@@ -10,6 +10,7 @@ var gulp = require('gulp');
 
 // Stylesheet Packages
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Webserver packages
 var browserSync = require('browser-sync').create();
