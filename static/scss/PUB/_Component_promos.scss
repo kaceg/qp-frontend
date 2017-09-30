@@ -1,0 +1,9 @@
+.promo-list {
+    margin: 0 -15px;
+}
+
+@media (min-width: $screen-md-min) {
+    .promo-list {
+        margin: 0;
+    }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16760.732 -23165.5 18.355 30.5">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.393;
+      }
+
+      .cls-2 {
+        fill: #d90327;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_21_11" data-name="Symbol 21 – 11" transform="translate(-17353 -23739)">
+    <ellipse id="Ellipse_418" data-name="Ellipse 418" class="cls-1" cx="5.5" cy="3" rx="5.5" ry="3" transform="translate(596 598)"/>
+    <path id="Path_3947" data-name="Path 3947" class="cls-2" d="M9.178,0c5.069,0,9.178,3.612,9.178,8.068S13.743,19.03,9.178,27.48C4.152,18.8,0,12.525,0,8.068S4.109,0,9.178,0Z" transform="translate(592.268 573.5)"/>
+    <circle id="Ellipse_417" data-name="Ellipse 417" class="cls-3" cx="2.377" cy="2.377" r="2.377" transform="translate(598.804 579.967)"/>
+  </g>
+</svg>

@@ -110,16 +110,11 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 }
 
 .btn-half {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 49%;
 }
 
 @media (min-width: $screen-sm-min) {
-    .btn-half {
-        display: inline-block;
-        width: 49%;
-    }
-
     .btn-half:nth-child(2) {
         float: right;
     }

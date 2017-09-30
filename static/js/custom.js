@@ -328,6 +328,7 @@ $(document).ready(function($) {
 			$(value).css("background-color", "#333");
 			$(value).css("background-image", backgroundImage);
 			$(value).css("background-repeat", "no-repeat");
+            $(value).css("background-position", "center center");
 			$(value).css("background-size", "cover");
 		}
 	});
