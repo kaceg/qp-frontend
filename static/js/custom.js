@@ -323,13 +323,9 @@ $(document).ready(function($) {
 		var url = $(value).data("background-image");
 
 		if (url) {
-			var backgroundImage = $(value).hasClass("bg-gradient") ? "linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url('" + url + "')" : "url('" + url + "')";
+			var backgroundImage = $(value).hasClass("bg-gradient") ? "linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url('" + url + "')" : "";
 
-			$(value).css("background-color", "#333");
-			$(value).css("background-image", backgroundImage);
-			$(value).css("background-repeat", "no-repeat");
-            $(value).css("background-position", "center center");
-			$(value).css("background-size", "cover");
+			$(value).css("background-image", "url('" + url + "')");
 		}
 	});
 });

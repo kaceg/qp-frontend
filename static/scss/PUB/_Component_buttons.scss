@@ -84,6 +84,10 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
     &:focus {
         background: $white;
     }
+
+    &.transparent {
+        background-color: transparent
+    }
 }
 .btn-line:hover { color: $white !important; }
 .btn-danger.btn-line { color: $red; }
@@ -122,12 +126,21 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 
 .myqp-new {
     .btn {
-        width: 100%;
+        // Reset the buttons behavior
+        // End reset        
     }
     
     .btn-half {
         display: block;
         width: 100%;
+    }
+
+    .btn-line {
+        background-color: $white;
+
+        &.btn-success {
+            color: $lime;
+        }
     }
 
     .btn-info {
