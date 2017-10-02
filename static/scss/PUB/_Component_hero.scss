@@ -37,6 +37,8 @@
 
         .hero-body {
             margin-top: 55px;
+            max-height: calc(1em * #{$line-height-base} * 6);
+            overflow-y: hidden;
             font-size: 1.222em;
         }
 
