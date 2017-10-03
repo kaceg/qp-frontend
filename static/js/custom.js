@@ -323,8 +323,6 @@ $(document).ready(function($) {
 		var url = $(value).data("background-image");
 
 		if (url) {
-			var backgroundImage = $(value).hasClass("bg-gradient") ? "linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url('" + url + "')" : "";
-
 			$(value).css("background-image", "url('" + url + "')");
 		}
 	});
