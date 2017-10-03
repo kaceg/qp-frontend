@@ -41,6 +41,7 @@
 		overflow: hidden;
 		width: 100%;
 		white-space: nowrap;
+		min-height: 31px;
 	}
 	
 	.selectboxit .selectboxit-option-icon-container {
@@ -97,5 +98,18 @@
 		line-height: 30px !important;
 		color: $black !important;
 		text-decoration: none;
+	}
+
+	.selectboxit.big {
+		&,
+		&.form-control,
+		 {
+			font-size: 1.222em;
+		}
+
+		&,
+		&.form-control {
+			padding: 20px !important;
+		}
 	}
 }
