@@ -1,0 +1,30 @@
+.control-fee-wizard {
+    .offense-number {
+        padding: 60px 0 30px;
+        background-color: $gray-ultralightest;
+        text-align: center;
+
+        &-title,
+        &-text a {
+            font-family: $font-family-sans-serif-bold;
+        }
+        
+        &-title {
+            font-size: 1.778em;
+        }
+
+        &-text a {
+            color: $red;
+            text-decoration: none;
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        &-select {
+            margin-top: 44px;
+            color: $gray-dark;
+        }
+    }
+}
