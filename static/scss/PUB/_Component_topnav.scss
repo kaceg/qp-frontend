@@ -229,6 +229,18 @@
 		ul.nav.navbar-nav li a { padding: 24px 12px; font-size: 0.9em; }
 	}
 
+	@media (min-width: $screen-md-min) {
+		.qtopnav__willleave ul.nav.navbar-nav {
+			max-width: 550px;
+		}
+	}
+	
+	@media (min-width: $screen-md-min) {
+		.qtopnav__willleave ul.nav.navbar-nav {
+			max-width: 730px;
+		}
+	}
+
 	@media (max-width: $screen-sm-max) {
 		.qtopnav__willleave ul.navbar-nav {
 			padding: 0px;

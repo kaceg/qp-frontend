@@ -67,24 +67,30 @@
 						</ul>
 					</div>
 				</li>
+				<!-- TODO: Language Selector -->
+				<li class="nav navbar-nav hidden-xs hidden-sm">
+					<select class="navigate-select">
+						<option value="#" selected="selected">En</option>
+						<option value="#">Nl</option>
+						<option value="#">Fr</option>
+                    </select>
+				</li>
 				<li>
 					<button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
-								<span class="sr-only">WebsiteNavigationToggleNavigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
+						<span class="sr-only">WebsiteNavigationToggleNavigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</li>
 			</ul>
 			<div class="collapse navbar-collapse qtopnav__willleave" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="#" title="Home">Home</a></li>
-					<li><a href="#" title="Orders">Orders</a></li>
-					<li><a href="#" title="Vehicles">Vehicles</a></li>
-					<li><a href="#" title="Relations">Relations</a></li>
-					<li><a href="#" title="Places">Places</a></li>
-					<li><a href="#" title="Balance" class="active">Balance</a></li>
-					<li><a href="#" title="Documents">Documents</a></li>
+					<li><a href="#" title="Orders">Overzicht van mijn bestellingen</a></li>
+					<li><a href="#" title="Vehicles">MyVehicles</a></li>
+					<li><a href="#" title="Relations" class="active">MyBalance</a></li>
+					<li><a href="#" title="Places">Goedkeuringen</a></li>
+					<li><a href="#" title="Balance">Mijn facturen</a></li>
 				</ul>
 				<ul class="nav navbar-nav nav-account hidden-md hidden-lg">
 					<li><a href="/html-myqp/account/account-07.html" title="Account">Account</a></li>
@@ -92,6 +98,17 @@
 					<li><a href="/html-myqp/account/account-09.html" title="Change Credentials">Change Credentials</a></li>
 					<li><a href="/html-myqp/account/account-10.html	" title="Switch Account">Switch Account</a></li>
 					<li><a href="/html-myqp/account/account-01.html	" title="Log out">Log out</a></li>
+
+					<!-- TODO: Language Selector -->
+					<li class="col-xs-12">
+						<div>&nbsp;</div>
+						<select class="navigate-select">
+							<option value="#" selected="selected">En</option>
+							<option value="#">Nl</option>
+							<option value="#">Fr</option>
+                        </select>
+						<div>&nbsp;</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -101,3 +118,9 @@
 	</nav>
 </div>
 <!-- NAV -->
+
+<script>
+	$(document).ready(function() {
+		$(".qtopnav.new select").selectBoxIt();
+	});
+</script>
