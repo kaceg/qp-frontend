@@ -3,9 +3,10 @@
 .card--big {
     display: block;
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: 1.667em;
     background-color: $gray-ultralightest;
-    color: $black;
+    color: $black;    
+    text-decoration: none;
 
     .card__image {
         width: 100%;
@@ -43,18 +44,6 @@
     }
 }
 
-a {
-    &.card-v2,
-    &.card-v2--small,
-    &.card--big {
-        text-decoration: none;
-
-        &:hover {
-            background-color: $gray-ultralight;
-        }
-    }
-}
-
 .card-v2,
 .card-v2--small {
     .card__inner {
@@ -89,6 +78,10 @@ a {
             overflow-y: hidden;
         }
     }
+    
+    &:hover {
+        background-color: $gray-ultralight;
+    }
 }
 
 .card--big {
@@ -102,7 +95,7 @@ a {
         padding: 15px;
 
         .card__title {
-            font-size: 1.667em;
+            font-size: 1.4em;
         }
 
         .card__body,
@@ -122,6 +115,30 @@ a {
 }
 
 .side-by-side-cards {
+    // Align buttons
+    > .container > .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+
+            .card--big,
+            .card__wrapper,
+            .card__wrapper .card__inner {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+
+            .card__wrapper,
+            .card__wrapper .card__body {
+                flex-grow: 1;
+            }
+        }
+    }
+
     .card--big {
         margin-bottom: 60px;
     }
@@ -264,6 +281,10 @@ a {
                 margin: 75px 0 75px 65px;
             }
         }
+    }
+
+    .side-by-side-cards .card--big {
+        margin-bottom: 0;
     }
 
     .card-list {
