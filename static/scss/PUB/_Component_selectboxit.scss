@@ -6,6 +6,10 @@
 		font-size: 1em;
 		border-radius: 0;
 	}
+
+	select {
+		max-width: 100% !important;
+	}
 	
 	.selectboxit {
 		border-radius: 0;
@@ -42,6 +46,8 @@
 		width: 100%;
 		white-space: nowrap;
 		min-height: 31px;
+
+		max-width: 100% !important;
 	}
 	
 	.selectboxit .selectboxit-option-icon-container {
@@ -111,5 +117,15 @@
 		&.form-control {
 			padding: 20px !important;
 		}
+	}
+}
+
+.gradient-bg {
+	.selectboxit-text {
+		color: $white;
+	}
+
+	.selectboxit-arrow-container i {
+		background: url("/static/assets/svg/icon_arrowdown-white.svg") no-repeat;
 	}
 }

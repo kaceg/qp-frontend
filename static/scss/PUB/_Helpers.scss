@@ -82,16 +82,26 @@ input[type="checkbox"] + i.fa {
 	}
 }
 
-.chrevron-right-icon {
-    position: relative;
+.chrevron-left-icon,
+.chrevron-right-icon {    
+    position: relative;    
 
+    &:before,
     &:after {
-        content: "\f054";
         display: inline-block;
-		margin-left: 0.556em;
         font-family: 'FontAwesome';
 		font-size: 0.8em;
     }
+}
+
+.chrevron-left-icon:before {
+    content: "\f053";
+    margin-right: 0.556em;
+}
+
+.chrevron-right-icon:after {
+    content: "\f054";
+    margin-left: 0.556em;
 }
 
 /* Telephone Link */

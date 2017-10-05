@@ -1,0 +1,13 @@
+.wizard {
+    margin-top: 50px;
+
+    &__header {
+        margin: 15px 0 30px;
+        font-family: $font-family-sans-serif-bold;
+        font-size: 1.667em;
+    }
+
+    &__footer {
+        margin-top: 60px;
+    }
+}

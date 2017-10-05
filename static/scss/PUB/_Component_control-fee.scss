@@ -1,6 +1,7 @@
 .control-fee-wizard {
     .offense-number {
-        padding: 60px 0 30px;
+        margin: 0 -15px;
+        padding: 30px 15px 15px;
         background-color: $gray-ultralightest;
         text-align: center;
 
@@ -25,6 +26,15 @@
         &-select {
             margin-top: 44px;
             color: $gray-dark;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .control-fee-wizard {
+        .offense-number {
+            margin: 0;
+            padding: 60px 0 30px;
         }
     }
 }

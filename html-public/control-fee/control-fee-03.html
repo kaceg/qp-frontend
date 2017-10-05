@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Control Fee - Landing Page | Q-Park</title>
+    <title>Control Fee - Complaint Wizard (Step 2) | Q-Park</title>
 
     <link rel="stylesheet" href="/static/css/publicwebsite.css">
 
@@ -44,7 +44,11 @@
                             <ol>
                                 <li><a href="/" title="Home">Home</a>
                                     <ol>
-                                        <li class="is-current">Control Fee</li>
+                                        <li><a href="control-fee-01.hml">Control Fee</a>
+                                            <ol>
+                                                <li class="is-current">Why have I received a fine?</li>
+                                            </ol>
+                                        </li>
                                     </ol>
                                 </li>
                             </ol>
@@ -60,7 +64,7 @@
                     <div class="col-sm-12">
 
                         <h4 class="strong text-uppercase primary-color no-margin">Control Fee</h4>
-                        <h1 class="strong big-h1 no-margin">Keeping parking safe</h1>
+                        <h1 class="strong big-h1 no-margin">Why have I received a fine?</h1>
 
                     </div>
                 </div>
@@ -69,7 +73,7 @@
 
         <hr class="invisible-small">
 
-        <section class="card--hero img-bg bg-gradient-half" data-background-image="http://www.q-park-resa.fr/uploader/img_dyna/g-photo_park-car_park_boulogne_billancourt_bois-en-291.jpg">
+        <section class="card--hero--small img-bg bg-gradient-half" data-background-image="http://www.q-park-resa.fr/uploader/img_dyna/g-photo_park-car_park_boulogne_billancourt_bois-en-291.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
@@ -78,16 +82,13 @@
                                 <div class="card__header">
                                     <span class="card__title">Why have I received a fine?</span>
                                 </div>
-                                <div class="card__body">
+                                <div class="card__body max-height">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius euismod mi a blandit. Donec non orci non urna vestibulum
                                     luctus. Pellentesque egestas eget tortor ac viverra. Donec gravida ipsum eget ipsum malesuada
                                     rutrum. Vivamus tincidunt, ipsum vitae tempor ultrices, augue libero tempor ligula, non
                                     facilisis orci nisl in metus. Cras quis magna sit amet sapien gravida ultricies. Vivamus
                                     pulvinar viverra ornare. Ut sodales odio sit amet nunc bibendum, sed condimentum urna
                                     feugiat.
-                                </div>
-                                <div class="card__footer">
-                                    <a href="control-fee-02.html" class="btn btn-success btn-line double transparent">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -96,47 +97,62 @@
             </div>
         </section>
 
-        <hr class="invisible">
-
-        <section class="side-by-side-cards">
+        <section class="control-fee-wizard myqp-new">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <section class="card--big">
-                            <div class="card__image img-bg" data-background-image="http://landwehrlawmn.com/wp-content/uploads/2015/03/law-wallpapers-hd-1080p-1920x1080-desktop-02.jpg"></div>
-                            <div class="card__wrapper clearfix">
-                                <div class="card__inner">
-                                    <div class="card__header">
-                                        <span class="card__title">Parking &amp; the law.</span>
-                                    </div>
-                                    <div class="card__body grey">
-                                        The Q-Park loyalty app that rewards you! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut quam tellus. Donec augue velit, mollis
-                                    </div>
-                                    <div class="card__footer">
-                                        <a href="#" class="btn btn-success btn-line double transparent pull-right">More info</a>
-                                    </div>
-                                </div>
+                <div class="offense-number form">
+                    <div class="form-group row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                            <div class="offense-number-title">
+                                Select the offense number the tax has been issued for
                             </div>
-                        </section>
+                            <div class="offense-number-text">
+                                Please read <a href="#">this</a> page if you need help finding your control fee number.
+                            </div>
+                            <div class="offense-number-select">
+                                <select class="form-control big text-left">
+                                    <option>Select a value</option>
+                                    <option selected="selected">12 - P-disc unredable / No P-disc</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-xs-12 col-md-6">
-                        <section class="card--big">
-                            <div class="card__image img-bg" data-background-image="http://boredomfiles.com/wp-content/uploads/2016/05/30-parking-fails.png"></div>
-                            <div class="card__wrapper clearfix">
-                                <div class="card__inner">
-                                    <div class="card__header">
-                                        <span class="card__title">Why does Q-Park write tickets?</span>
-                                    </div>
-                                    <div class="card__body grey">
-                                        The Q-Park loyalty app that rewards you! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut quam tellus. Donec augue velit, mollis
-                                    </div>
-                                    <div class="card__footer">
-                                        <a href="#" class="btn btn-success btn-line double transparent pull-right">More info</a>
-                                    </div>
+                <div class="wizard">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                            <div class="wizard__inner">
+                                <div class="wizard__body qp-rte">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus
+                                        euismod finibus quis nibh. Ut vehicula a tortor et iaculis. Integer vel euismod quam.
+                                        In volutpat condimentum felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu
+                                        convallis augue, in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum,
+                                        vehicula metus ut, bibendum tortor.
+                                    </p>
+                                    <ul>
+                                        <li>I was not aware of the signage</li>
+                                        <li>I did not realize that the rules also applied on Sundays and public holidays</li>
+                                        <li>My electronic P-plate was set correctly when I left the car, but this was not the case
+                                            when I got back to the car</li>
+                                        <li>I have just changed my windshield and have not yet put a new P-disk in</li>
+                                        <li>The arrow on my P-disk was broken and I had not added a note that indicated the arrival
+                                            time instead</li>
+                                        <li>My P-disc is loose in the car and had fallen down</li>
+                                    </ul>
+                                    <p></p>
+                                    <p>
+                                        These and similar objections are not sufficient for the control fee to be canceled. We understand that it is anxious to get
+                                        a control fee. However, it is your responsibility as a driver to inform you of applicable
+                                        rules before making your parking.
+                                    </p>
+                                </div>
+
+                                <div class="wizard__footer clearfix">
+                                    <a href="control-fee-01.html" class="btn btn-link btn-half text-uppercase no-underline text-left chrevron-left-icon pull-left">Back</a>
+                                    <a href="control-fee-04.html" class="btn btn-link btn-half text-uppercase no-underline text-right chrevron-right-icon pull-right">Continue</a>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>

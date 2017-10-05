@@ -16,7 +16,7 @@
     @media screen and (min-width: $screen-sm-min) {
         width: 200px;
         position: absolute;
-        z-index: 99999;
+        z-index: 1500;
 
         &.sticky {
             position: fixed;

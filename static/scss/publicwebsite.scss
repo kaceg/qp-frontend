@@ -67,7 +67,7 @@
 //@import "vendor/bootstrap/list-group";
 //@import "vendor/bootstrap/panels";
 //@import "vendor/bootstrap/responsive-embed";
-//@import "vendor/bootstrap/modals";
+@import "vendor/bootstrap/modals";
 @import "vendor/bootstrap/tooltip";
 @import "PUB/_Component_tooltip.scss";
 //@import "vendor/bootstrap/popovers";
@@ -79,6 +79,7 @@
 @import "PUB/_Component_datetimepicker.scss";
 @import "PUB/_Component_wells.scss"; // This is a customisation of : "vendor/bootstrap/wells";
 
+@import "PUB/_Component_overlay.scss";
 @import "PUB/_Component_background-images.scss";
 @import "PUB/_Component_roles.scss";
 @import "PUB/_Component_ankeilers.scss";
@@ -94,6 +95,7 @@
 @import 'PUB/_Component_video.scss';
 @import "PUB/_Component_loading.scss";
 @import "PUB/_Component_documents.scss";
+@import "PUB/_Component_wizard.scss";
 @import "PUB/_Component_control-fee.scss";
 
 // Components w/ JavaScript
