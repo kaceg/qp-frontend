@@ -34,23 +34,12 @@
             display: block;
         }
 
+        .card__title {
+            font-size: 1.2em;
+        }
+
         .card__subtitle {
             color: $red;
-        }
-    }
-
-    .card__body {
-        font-size: 1.111em;
-    }
-}
-
-.card-v2,
-.card-v2--small {
-    .card__inner {
-        .card__header {    
-            .card__title {
-                font-size: 1.444em;
-            }
         }
     }
 }
