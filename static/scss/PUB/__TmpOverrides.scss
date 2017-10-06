@@ -5,3 +5,7 @@
 [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
     display: none;
 }
+
+.primary-color-important {
+    color: $red !important;
+}
