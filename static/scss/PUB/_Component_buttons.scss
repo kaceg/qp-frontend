@@ -72,7 +72,10 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 .btn-primary:hover, .btn-primary:focus  { color: $white; background-color: $lime_dark; border-color: transparent;}
 .btn-primary:active, .btn-primary:active:hover {  color: $white; background-color: $lime_dark; border: none; box-shadow: inset 0px 0px 0px 2px $white}
 
-.btn-line { background: $white;
+.btn-line {
+    //background: $white;
+    background-color: transparent;
+
     &:active,
     &:focus,
     &:active:hover {
@@ -82,11 +85,8 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 
     &:active,
     &:focus {
-        background: $white;
-    }
-
-    &.transparent {
-        background-color: transparent
+        //background: $white;
+        background-color: transparent;
     }
 }
 .btn-line:hover { color: $white !important; }
@@ -132,10 +132,17 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
     }
 
     .btn-line {
-        background-color: $white;
+        //background-color: $white;
+        background-color: transparent;
 
         &.btn-success {
             color: $lime;
+            
+            &:hover,
+            &:active:hover {
+                background-color: $lime_dark;
+                border-color: transparent;
+            }
         }
     }
 
