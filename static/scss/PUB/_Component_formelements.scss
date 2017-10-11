@@ -235,6 +235,12 @@ select:focus, input:focus, textarea:focus { background: $white}
             .infotext {
                 color: $white;
             }
+        
+            .error {
+                .form-control {
+                    border-color: $red !important;
+                }
+            }
         }
 
         .form-save {
