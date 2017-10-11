@@ -179,7 +179,7 @@
         }
 
         .card__body.max-height {
-            max-height: calc(1em * #{$line-height-base} * 6);
+            height: calc(1em * #{$line-height-base} * 6);
             overflow-y: hidden;
         }
     
