@@ -42,11 +42,23 @@
             color: $red;
         }
     }
+
+    &.no-bg {
+        background-color: transparent;
+    }
 }
 
 .card-v2 {
     .card__image {
         height: 235px;
+    }
+
+    .card__inner {
+        padding: 25px;
+
+        &.no-padding {
+            padding: 0;
+        }
     }
 
     .card__body {
@@ -126,6 +138,7 @@
     }
 }
 
+.card-grid,
 .side-by-side-cards,
 .three-column-cards {
     // Align buttons
@@ -137,6 +150,7 @@
             display: flex;
             flex-direction: column;
 
+            .card-v2,
             .card--big,
             .card--extra-small,
             .card__wrapper,

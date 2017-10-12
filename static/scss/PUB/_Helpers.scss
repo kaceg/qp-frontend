@@ -43,11 +43,19 @@ span.link {
 .grey,
 .link-grey {
 	color: $gray-dark;
-	text-decoration: none;
+    text-decoration: none;
+    
+    &.underline {
+        text-decoration: underline;
+    }
 }
 
 .bg-lightgrey {
 	background: $gray-lightest;
+}
+
+.bg-ultralight-grey {
+    background-color: $gray-ultralightest;
 }
 
 /* Font */
@@ -215,6 +223,11 @@ hr.primary.short {
 	  padding-bottom: 2em;
 	  min-height: auto;
 	}
+}
+
+/* Jump to */
+.jump-to-navigation {
+    color: $gray-dark;
 }
 
 /* Lists */
@@ -465,6 +478,22 @@ ul.check-list.cta li:before {
                 margin-right: 0;
                 font-size: 1em;
                 color: $lime;
+            }
+        }
+
+        &.no-margin {
+            margin: 0;
+            
+            li {
+                margin-left: 0;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }

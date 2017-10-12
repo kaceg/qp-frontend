@@ -712,3 +712,12 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+
+//== Whitespaces
+// --------------------------------------------------
+$whitespace-xs:             18px !default;
+$whitespace-sm:             $whitespace-xs * 2;     // 36px
+$whitespace-md:             $whitespace-xs * 2.5;   // 45px
+$whitespace-lg:             $whitespace-xs * 3;     // 54px
+$whitespace-xl:             $whitespace-xs * 5;     // 90px
