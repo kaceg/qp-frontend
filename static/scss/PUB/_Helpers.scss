@@ -44,10 +44,6 @@ span.link {
 .link-grey {
 	color: $gray-dark;
     text-decoration: none;
-    
-    &.underline {
-        text-decoration: underline;
-    }
 }
 
 .bg-lightgrey {
@@ -149,6 +145,9 @@ input[type="checkbox"] + i.fa {
 .text-capitalize {
 	text-transform: capitalize;
 }
+.text-underline {
+    text-decoration: underline;
+}
 
 /* Floats */
 
@@ -228,6 +227,18 @@ hr.primary.short {
 /* Jump to */
 .jump-to-navigation {
     color: $gray-dark;
+
+    & .jump-to-navigation__items {
+        a {
+            &:after {
+                content: " - ";
+            }
+
+            &:last-child:after {
+                content: none;
+            }
+        }
+    }
 }
 
 /* Lists */
