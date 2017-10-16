@@ -189,7 +189,7 @@ select:focus, input:focus, textarea:focus { background: $white}
 
     .form-save {
         margin-top: 25px;
-
+		
         .cancel,
         .delete {
             display: inline-block;
@@ -252,13 +252,16 @@ select:focus, input:focus, textarea:focus { background: $white}
         }
     }
 
+	.cancel,
+   	.delete {
+            margin-top: 0;
+            margin-left: 8px;
+    }
+
     @media(min-width: $screen-sm-min) {
-        .form-save {
-            .cancel,
-            .delete {
-                margin-top: 0;
+	   .cancel,
+       .delete {
                 margin-left: 20px;
-            }
         }
     }
 

@@ -107,7 +107,7 @@
 					<div class="row">
 						<div class="col-xs-12">
 						
-							<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="overview">
+							<table data-role="table" data-mode="columntoggle" class="ui-responsive tbl-overview">
 								<thead>
 									<tr>
 										<th class="min">&nbsp;</th>
@@ -179,8 +179,8 @@
 									
 									<tr class="spacer"></tr>									
 									
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox1" /><label for="checkbox1">Check</label></td>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox1" /><label for="checkbox1">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
@@ -188,8 +188,8 @@
 										<td class="right">&euro; 50,00</td>
 										<td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
 									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox2" /><label for="checkbox2">Check</label></td>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox2" /><label for="checkbox2">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
@@ -197,35 +197,17 @@
 										<td class="right">&euro; 50,00</td>
 										<td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
 									</tr>
-									<tr class="no-pay tooltip-trigger" data-notice="This amount is scheduled to be paid automatically on expiration date.">
-										<td>&nbsp;</td>
+									<tr class="mobile-labels no-pay tooltip-trigger" data-notice="This amount is scheduled to be paid automatically on expiration date.">
+										<td class="mobile-hide">&nbsp;</td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
 										<td class="date">08/09/2017</td>
 										<td class="right">&euro; 50,00</td>
-										<td>&nbsp;</td>
+										<td><div class="notice hidden-md hidden-lg">This amount is scheduled to be paid automatically on expiration date.</div></td>
 									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox3" /><label for="checkbox3">Check</label></td>
-										<td><span class="link">QH2016-1045</span></td>
-										<td>Invoice</td>
-										<td class="date">08/08/2017</td>
-										<td class="date">08/09/2017</td>
-										<td class="right">&euro; 50,00</td>
-										<td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
-									</tr>
-									<tr class="pending tooltip-trigger" data-notice="We're awaiting the completion of this payment.">
-										<td>&nbsp;</td>
-										<td><span class="link">QH2016-1045</span></td>
-										<td>Invoice</td>
-										<td class="date">08/08/2017</td>
-										<td class="date">08/09/2017</td>
-										<td class="right">&euro; 50,00</td>
-										<td class="right"><div class="btn btn-inactive">Pending</div></td>
-									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox4" /><label for="checkbox4">Check</label></td>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox3" /><label for="checkbox3">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
@@ -233,8 +215,29 @@
 										<td class="right">&euro; 50,00</td>
 										<td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
 									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox5" /><label for="checkbox5">Check</label></td>
+									<tr class="mobile-labels pending tooltip-trigger" data-notice="We're awaiting the completion of this payment.">
+										<td class="mobile-hide">&nbsp;</td>
+										<td><span class="link">QH2016-1045</span></td>
+										<td>Invoice</td>
+										<td class="date">08/08/2017</td>
+										<td class="date">08/09/2017</td>
+										<td class="right">&euro; 50,00</td>
+										<td class="right">
+											<div class="btn btn-inactive">Pending</div>
+											<div class="notice hidden-md hidden-lg">We're awaiting the completion of this payment.</div>
+										</td>
+									</tr>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox4" /><label for="checkbox4">Check</label></td>
+										<td><span class="link">QH2016-1045</span></td>
+										<td>Invoice</td>
+										<td class="date">08/08/2017</td>
+										<td class="date">08/09/2017</td>
+										<td class="right">&euro; 50,00</td>
+										<td class="right"><a href="#" class="btn btn-danger">Pay</a></td>
+									</tr>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox5" /><label for="checkbox5">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>

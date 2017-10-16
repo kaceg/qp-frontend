@@ -259,6 +259,28 @@ $(document).ready(function($) {
 	});
 	
 	/*************************
+		MOBILE TABLES
+	*************************/
+	
+	var headertext = [],
+	headers = document.querySelectorAll("table.tbl-overview th"),
+	tablerows = document.querySelectorAll("table.tbl-overview th"),
+	tablebody = document.querySelector("table.tbl-overview tbody");
+	
+	for(var i = 0; i < headers.length; i++) {
+	  var current = headers[i];
+	  var ctexxtcontent = current.textContent || current.innerText;;
+	  headertext.push(ctexxtcontent.replace(/\r?\n|\r/,""));
+	} 
+	for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	  if(row.classList.contains("mobile-labels")) {
+		  for (var j = 0, col; col = row.cells[j]; j++) {
+		    col.setAttribute("data-th", headertext[j]);
+		  } 
+	  }
+	}
+	
+	/*************************
 		TOOLTIP
 	*************************/
 
