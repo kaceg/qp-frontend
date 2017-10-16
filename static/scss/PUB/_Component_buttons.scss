@@ -99,7 +99,11 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
     }
 }
 
-.btn-line.double, .btn-line.double:hover { border-width: 2px; text-transform: uppercase; }
+.btn-line.double, .btn-line.double:hover { border-width: 2px; text-transform: uppercase;
+    &.no-transform {
+        text-transform: none;
+    }
+}
 
 .btn-secondary {
     color: #8bb611;

@@ -21,7 +21,7 @@ function resizeContent() {
 	$(".login .matchheight").matchHeight();
 	$(".white-card .matchheight").matchHeight();
 	$(".fake-table .fake-header").matchHeight();
-	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent();
+	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent({offset_top: 10});
 	jQuery(".vertical-align").vAlign();
 }
 
