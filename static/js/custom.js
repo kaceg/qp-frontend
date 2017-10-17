@@ -263,23 +263,46 @@ $(document).ready(function($) {
 		MOBILE TABLES
 	*************************/
 	
-	var headertext = [],
-	headers = document.querySelectorAll("table.tbl-overview th"),
-	tablerows = document.querySelectorAll("table.tbl-overview th"),
-	tablebody = document.querySelector("table.tbl-overview tbody");
-	
-	for(var i = 0; i < headers.length; i++) {
-	  var current = headers[i];
-	  var ctexxtcontent = current.textContent || current.innerText;;
-	  headertext.push(ctexxtcontent.replace(/\r?\n|\r/,""));
-	} 
-	for (var i = 0, row; row = tablebody.rows[i]; i++) {
-	  if(row.classList.contains("mobile-labels")) {
-		  for (var j = 0, col; col = row.cells[j]; j++) {
-		    col.setAttribute("data-th", headertext[j]);
-		  } 
-	  }
+	function responsiveTable() {
+		var tables = $("table.tbl-overview");
+
+		if (!tables || !tables.length) {
+			return false;
+		}
+
+		$.each(tables, function (index, table) {
+			var headerText = [],
+				headers = $(table).find("thead th"),
+				tableBody = $(table).find("tbody")[0];
+
+			if (!tableBody) {
+				return false;
+			}
+
+			for (var hi = 0; hi < headers.length; hi++) {
+				var content = headers[hi].textContent || headers[hi].innerText;
+				headerText.push(content.replace(/\r?\n|\r/, ""));
+			}
+
+			for (var ri = 0; ri < tableBody.rows.length; ri++) {
+				var row = tableBody.rows[ri];
+
+				if (row.classList.contains("mobile-labels")) {
+					for (var ci = 0; ci < row.cells.length; ci++) {
+						var col = row.cells[ci];
+
+						col.setAttribute("data-th", headerText[ci]);
+					}
+				}
+			}
+
+			return true;
+		});
+
+		return true;
 	}
+
+	responsiveTable();
 	
 	/*************************
 		TOOLTIP
