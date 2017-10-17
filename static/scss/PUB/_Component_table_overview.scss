@@ -342,6 +342,7 @@
 		tbody {
 			td { 
 				display: block;
+				min-height: 65px;
 				
 				&.mobile-hide {
 					display: none !important;
