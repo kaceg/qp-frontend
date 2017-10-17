@@ -325,6 +325,20 @@ ul.check-list.cta li:before {
     float: left
 }
 
+.vertical-align-wrapper {
+    display: table;
+    height: inherit;
+    width: 100%;
+
+    .align-bottom {
+        display: table-cell;
+    }
+
+    .align-bottom {
+        vertical-align: bottom;
+    }
+}
+
 
 /* Media Object - with Flexbox */
 
