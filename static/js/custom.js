@@ -264,7 +264,6 @@ $(document).ready(function($) {
 	
 	var headertext = [],
 	headers = document.querySelectorAll("table.tbl-overview th"),
-	tablerows = document.querySelectorAll("table.tbl-overview th"),
 	tablebody = document.querySelector("table.tbl-overview tbody");
 	
 	for(var i = 0; i < headers.length; i++) {
