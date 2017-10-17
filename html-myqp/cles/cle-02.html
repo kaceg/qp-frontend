@@ -11,8 +11,12 @@
 		<link rel="stylesheet" href="/static/css/publicwebsite.css">
 		
 		<script src="/static/js/jquery.2.2.4.min.js"></script>
+		<script src="/static/js/jquery-ui.min.js"></script>
 		<script src="/static/js/bootstrap.js"></script>
+		<script src="/static/js/moment.js"></script>
 		<script src="/static/js/jquery.matchHeight-min.js"></script>
+		<script src="/static/js/selectboxit.min.js"></script>
+		<script src="/static/js/bootstrap-datetimepicker.js"></script>
 		<script src="/static/js/custom.js"></script>
 	</head>
 
@@ -71,7 +75,7 @@
 			
 			<hr class="invisible-small">
 						
-			<section class="inpagenav">
+			<section class="breadnav">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -82,6 +86,18 @@
 									<li><a href="#"><span>Legal Entity Z</span></a></li>
 								</ul>
 							</nav>
+							
+							<div class="form mobile">
+								<div class="form-group">
+									<label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Legal entity</label>
+									<select class="form-control">
+										<option>Legal Entity X</option>
+										<option>Legal Entity Y</option>
+										<option>Legal Entity Z</option>
+									</select>
+								</div>
+							</div>							
+
 						</div>
 					</div>
 				</div>
@@ -113,7 +129,7 @@
 					<div class="row">
 						<div class="col-xs-12">
 						
-							<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="overview">
+							<table data-role="table" data-mode="columntoggle" class="ui-responsive tbl-overview">
 								<thead>
 									<tr>
 										<th class="min">&nbsp;</th>
@@ -184,42 +200,43 @@
 											<span class="price">&euro; 150,00</span>
 										</td>
 										<td class="right">
-											<a href="#" class="btn btn-success" disabled="disabled">Pay now</a>
+											<a href="#" class="btn btn-success mobile-full" disabled="disabled">Pay now</a>
+											<div class="notice hidden-md hidden-lg">Reason why disabled.</div>
 										</td>										
 									</tr>
 									
-									<tr class="clickable added">
-										<td><input type="checkbox" id="checkbox6" checked /><label for="checkbox6">Check</label></td>
+									<tr class="mobile-labels clickable added">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox6" checked /><label for="checkbox6">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
 										<td class="date">08/09/2017</td>
 										<td class="right text-nowrap">&euro; 50,00</td>
-										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
+										<td class="mobile-hide right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
 									</tr>
-									<tr class="clickable added">
-										<td><input type="checkbox" id="checkbox7" checked /><label for="checkbox7">Check</label></td>
+									<tr class="mobile-labels clickable added">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox7" checked /><label for="checkbox7">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
 										<td class="date">08/09/2017</td>
 										<td class="right text-nowrap">&euro; 50,00</td>
-										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
+										<td class="mobile-hide right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
 									</tr>
-									<tr class="clickable added">
-										<td><input type="checkbox" id="checkbox8" checked /><label for="checkbox8">Check</label></td>
+									<tr class="mobile-labels clickable added">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox8" checked /><label for="checkbox8">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
 										<td class="date">08/09/2017</td>
 										<td class="right text-nowrap">&euro; 50,00</td>
-										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
+										<td class="mobile-hide right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
 									</tr>
 									
 									<tr class="spacer"></tr>									
 									
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox1" /><label for="checkbox1">Check</label></td>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox1" /><label for="checkbox1">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
@@ -227,8 +244,8 @@
 										<td class="right text-nowrap">&euro; 50,00</td>
 										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
 									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox2" /><label for="checkbox2">Check</label></td>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox2" /><label for="checkbox2">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
@@ -236,35 +253,17 @@
 										<td class="right text-nowrap">&euro; 50,00</td>
 										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
 									</tr>
-									<tr class="no-pay tooltip-trigger" data-notice="This amount is scheduled to be paid automatically on expiration date.">
-										<td>&nbsp;</td>
+									<tr class="mobile-labels no-pay tooltip-trigger" data-notice="This amount is scheduled to be paid automatically on expiration date.">
+										<td class="mobile-hide"">&nbsp;</td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
 										<td class="date">08/09/2017</td>
 										<td class="right text-nowrap">&euro; 50,00</td>
-										<td>&nbsp;</td>
+										<td><div class="notice hidden-md hidden-lg">This amount is scheduled to be paid automatically on expiration date.</div></td>
 									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox3" /><label for="checkbox3">Check</label></td>
-										<td><span class="link">QH2016-1045</span></td>
-										<td>Invoice</td>
-										<td class="date">08/08/2017</td>
-										<td class="date">08/09/2017</td>
-										<td class="right text-nowrap">&euro; 50,00</td>
-										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
-									</tr>
-									<tr class="pending tooltip-trigger" data-notice="We're awaiting the completion of this payment.">
-										<td>&nbsp;</td>
-										<td><span class="link">QH2016-1045</span></td>
-										<td>Invoice</td>
-										<td class="date">08/08/2017</td>
-										<td class="date">08/09/2017</td>
-										<td class="right text-nowrap">&euro; 50,00</td>
-										<td class="right"><div class="btn btn-inactive">Pending</div></td>
-									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox4" /><label for="checkbox4">Check</label></td>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide""><input type="checkbox" id="checkbox3" /><label for="checkbox3">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
@@ -272,8 +271,29 @@
 										<td class="right text-nowrap">&euro; 50,00</td>
 										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
 									</tr>
-									<tr class="clickable">
-										<td><input type="checkbox" id="checkbox5" /><label for="checkbox5">Check</label></td>
+									<tr class="mobile-labels pending tooltip-trigger" data-notice="We're awaiting the completion of this payment.">
+										<td class="mobile-hide">&nbsp;</td>
+										<td><span class="link">QH2016-1045</span></td>
+										<td>Invoice</td>
+										<td class="date">08/08/2017</td>
+										<td class="date">08/09/2017</td>
+										<td class="right text-nowrap">&euro; 50,00</td>
+										<td class="right">
+											<div class="btn btn-inactive">Pending</div>
+											<div class="notice hidden-md hidden-lg">We're awaiting the completion of this payment.</div>
+										</td>
+									</tr>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox4" /><label for="checkbox4">Check</label></td>
+										<td><span class="link">QH2016-1045</span></td>
+										<td>Invoice</td>
+										<td class="date">08/08/2017</td>
+										<td class="date">08/09/2017</td>
+										<td class="right text-nowrap">&euro; 50,00</td>
+										<td class="right"><a href="#" class="btn btn-danger btn-line">Add</a></td>
+									</tr>
+									<tr class="mobile-labels clickable">
+										<td class="mobile-hide"><input type="checkbox" id="checkbox5" /><label for="checkbox5">Check</label></td>
 										<td><span class="link">QH2016-1045</span></td>
 										<td>Invoice</td>
 										<td class="date">08/08/2017</td>
