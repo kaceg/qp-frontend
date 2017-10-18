@@ -180,7 +180,7 @@
 .card--hero--small {
     .card__wrapper {
         color: $white;
-        margin: 65px 25px 80px;
+        margin: 40px 25px 40px;
     
         .card__title {
             font-family: $font-family-sans-serif-bold;
@@ -188,18 +188,33 @@
         }
     
         .card__body {
-            margin-top: 55px;
+            margin-top: 0;
             font-size: 1.222em;
         }
 
         .card__body.max-height {
-            height: calc(1em * #{$line-height-base} * 6);
             overflow-y: hidden;
         }
     
         .card__footer {
-            margin-top: 62px;
+            margin-top: 36px;
             text-align: center;
+        }
+    }
+}
+
+.card--hero {
+    .card__wrapper {
+        .card__body.max-height {
+            height: calc(1em * #{$line-height-base} * 6);
+        }
+    }
+}
+
+.card--hero--small {
+    .card__wrapper {
+        .card__body.max-height {
+            height: calc(1em * #{$line-height-base} * 8);
         }
     }
 }
@@ -256,7 +271,7 @@
         margin-bottom: 0;
 
         .card__image {
-            height: 305px;
+            height: 300px;
         }
 
         .card__wrapper {
@@ -268,7 +283,7 @@
             }
 
             .card__body {
-                font-size: 1.2em;
+                font-size: 1em;
             }
         }
     }
@@ -276,8 +291,6 @@
     .card--hero,
     .card--hero--small {
         .card__wrapper {
-            margin: 148px 65px 134px 0;
-
             .card__title {
                 font-size: 2.222em;
             }
@@ -291,10 +304,16 @@
                 text-align: left;
             }
         }
-
+    }
+    
+    .card--hero {
+        .card__wrapper {
+            margin: 40px 65px 40px 0;
+        }        
+            
         &.bg-gradient-right {
             .card__wrapper {
-                margin: 148px 0 134px 65px;
+                margin: 40px 0 40px 65px;
             }
         }
     }
