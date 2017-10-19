@@ -225,7 +225,15 @@
 							      timetable.setScope(0,24);	
 								  
 								  // Fixed - dagen van de week
-							      timetable.addLocations(['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag']);
+							      timetable.addLocations([
+							      	'Maandag',
+							      	'Dinsdag',
+							      	'Woensdag',
+							      	'Donderdag',
+							      	'Vrijdag',
+							      	'Zaterdag',
+							      	'Zondag'
+							      ]);
 							
 								  // Dynamic - blokken per dag
 							      timetable.addEvent('08:00 <i>-</i> 17:30', 'Maandag', new Date(2015,7,17,8,00), new Date(2015,7,17,17,30), { class: 'time-entry' });
