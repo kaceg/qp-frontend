@@ -141,10 +141,6 @@ $timetable-entry-padding: 0 !default;
         //border-bottom: $timetable-legend-row-separator;
       }
     }
-
-    .row-heading {
-      @include ellipsis;
-    }
   }
 
   ul {
@@ -305,4 +301,15 @@ $timetable-entry-padding: 0 !default;
       }
     }
   }
+}
+
+@media (max-width: $screen-md-min) {
+    .row-heading {
+      @include ellipsis;
+      visibility: hidden;
+    }
+    
+    .row-heading:first-letter {
+	    visibility: visible;
+    }
 }
