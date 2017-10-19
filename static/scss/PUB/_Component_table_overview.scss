@@ -2,12 +2,16 @@
 	h3 {
 		display: inline-block;
 	}
+	
+	table {
+		table-layout:fixed;
+		width: 100%;
+	}
 
 	> table,
 	> .container >.row > [class*="col-"] > table {
 		color: #333;
 		font-size: 1em;
-		width: 100%;
 	
 		> thead > tr > th {
 			background: $gray;
@@ -54,6 +58,12 @@
 			text-align: left;
 			vertical-align: top;
 			line-height: 1.75em;
+			
+			div {
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
 			
 			h2 {
 				font-size: 1.20em;
