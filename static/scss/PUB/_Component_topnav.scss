@@ -224,6 +224,13 @@
             }
 		}
 	}
+	
+    .language-select {
+        &,
+        & + ul {
+            text-transform: uppercase;
+        }
+    }
 
 	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 		ul.nav.navbar-nav li a { padding: 24px 12px; font-size: 0.9em; }

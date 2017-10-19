@@ -1,0 +1,20 @@
+.service-messages {
+    background-color: $black;
+    color: $white;
+
+    .service-message {
+        border-top: 1px solid $white;
+
+        &:first-child {
+            border: none;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a:hover {
+        color: $white;
+    }
+}

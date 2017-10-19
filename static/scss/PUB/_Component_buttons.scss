@@ -135,6 +135,14 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         // End reset        
     }
 
+    .btn-half {
+        display: inline-block;
+    
+        &.mobile-half {
+            width: 49%;
+        }
+    }
+
     .btn-line {
         //background-color: $white;
         background-color: transparent;
@@ -189,7 +197,6 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         }
         
         .btn-half {
-            display: inline-block;
             width: 49%;
         }
 

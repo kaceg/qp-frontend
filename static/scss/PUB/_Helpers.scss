@@ -320,9 +320,27 @@ ul.check-list.cta li:before {
     margin: 0 !important;
 }
 
+.no-min-height {
+    min-height: 0;
+}
+
 .full-width {
     width: 100%;
     float: left
+}
+
+.vertical-align-wrapper {
+    display: table;
+    height: inherit;
+    width: 100%;
+
+    .align-bottom {
+        display: table-cell;
+    }
+
+    .align-bottom {
+        vertical-align: bottom;
+    }
 }
 
 
@@ -394,6 +412,12 @@ ul.check-list.cta li:before {
 
 .moreinfo {
     margin-top: 1.25em;
+}
+
+.product-detail {
+    .product-detail__intro {
+        font-size: 1.222em;
+    }
 }
 
 /**** Badge - TODO: Where? ****/
