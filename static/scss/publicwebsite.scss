@@ -124,6 +124,11 @@
 @import 'PUB/_Component_service-profile.scss';
 @import 'PUB/_Component_select-multi.scss';
 
+// Components: Stylings used in Sitecore "Page Editor" mode
+// --------------------------------------------------
+
+@import "PUB/_Component_page-editor.scss";
+
 // Temporary Overrides (dev team)
 // --------------------------------------------------
 @import 'PUB/__TmpOverrides.scss';
