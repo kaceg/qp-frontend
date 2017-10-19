@@ -206,7 +206,14 @@ $(document).ready(function($) {
 	console.log('load includes');
     $("#cookieInc").load("/inc/cookie.html", function() {
     	console.log('Cookie notification was loaded');
-    });
+	});
+	$("#headerInc").load("/inc/header.html", function() {
+		console.log('header was loaded');
+		
+		if($(".myqp-new select").length){
+			$(".myqp-new select").selectBoxIt();
+		}
+	});
     $("#navInc").load("/inc/nav.html", function() {
       	console.log('nav was loaded');
     });
