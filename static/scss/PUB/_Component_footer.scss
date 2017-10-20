@@ -1,0 +1,68 @@
+.qp-footer {
+    padding: 35px 15px 25px;
+    background-color: $black;
+
+    .navbar-brand {
+        margin-bottom: 12px;
+        padding: 0;
+        height: auto;
+    }
+
+    .qp-doormat {
+        .qp-doormat__category {
+            padding: 8px 0;
+
+            h4 {
+                margin: 0 0 20px;
+                font-size: 1.222em;
+            }
+
+            .qp-doormat__navigation {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 2px 0;
+                    font-size: 1.111em;
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .qp-footer {
+        .qp-doormat {
+            .qp-doormat__category {
+                margin: 0 -5px;
+
+                h4 {
+                    margin: 0;
+                    padding: 0 5px;
+                }
+
+                .qp-doormat__navigation {
+                    li {
+                        padding: 0 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .qp-footer {
+        .qp-doormat {
+            .qp-doormat__category {
+                margin: 0;
+                
+                h4 {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

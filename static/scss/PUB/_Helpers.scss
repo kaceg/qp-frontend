@@ -54,6 +54,15 @@ span.link {
     background-color: $gray-ultralightest;
 }
 
+a.white {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        color: $red;
+    }
+}
+
 /* Font */
 .no-underline {
     text-decoration: none;
