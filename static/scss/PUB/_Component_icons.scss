@@ -18,3 +18,13 @@
 	width: auto;
 	margin-top: -4px;
 }
+
+.qp-icon {
+    margin-right: 10px;
+    margin-left: 0;
+
+    &.icon-right {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}

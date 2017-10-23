@@ -314,8 +314,6 @@ ul.check-list.cta li:before {
   cursor: pointer;
 }
 
-
-
 .center {
 	text-align: center;
 }
@@ -343,6 +341,10 @@ ul.check-list.cta li:before {
     height: inherit;
     width: 100%;
 
+    .table-row {
+        display: table-row;
+    }
+
     .align-bottom {
         display: table-cell;
     }
@@ -351,7 +353,6 @@ ul.check-list.cta li:before {
         vertical-align: bottom;
     }
 }
-
 
 /* Media Object - with Flexbox */
 

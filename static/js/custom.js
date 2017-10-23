@@ -22,6 +22,7 @@ function resizeContent() {
 	$(".white-card .matchheight").matchHeight();
 	$(".fake-table .fake-header").matchHeight();
 	$(".service-message .matchheight").matchHeight();
+	$(".qp-footer .matchheight").matchHeight({byRow: false});
 	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent({offset_top: 10});
 	jQuery(".vertical-align").vAlign();
 }
