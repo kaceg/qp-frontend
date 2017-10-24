@@ -1,75 +1,80 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('/static/assets/fonts//icomoon.eot?cwdq4x');
-    src:  url('/static/assets/fonts//icomoon.eot?cwdq4x#iefix') format('embedded-opentype'),
-      url('/static/assets/fonts//icomoon.ttf?cwdq4x') format('truetype'),
-      url('/static/assets/fonts//icomoon.woff?cwdq4x') format('woff'),
-      url('/static/assets/fonts//icomoon.svg?cwdq4x#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="qp-icon-"], [class*=" qp-icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .qp-icon-arrow-down:before {
-    content: "\e900";
-  }
-  .qp-icon-arrow-up:before {
-    content: "\e901";
-  }
-  .qp-icon-calendar:before {
-    content: "\e902";
-  }
-  .qp-icon-close:before {
-    content: "\e903";
-  }
-  .qp-icon-delete:before {
-    content: "\e904";
-  }
-  .qp-icon-edit:before {
-    content: "\e905";
-  }
-  .qp-icon-navpopup-account:before {
-    content: "\e906";
-  }
-  .qp-icon-navpopup-credentials:before {
-    content: "\e907";
-  }
-  .qp-icon-navpopup-financial:before {
-    content: "\e908";
-  }
-  .qp-icon-navpopup-language:before {
-    content: "\e909";
-  }
-  .qp-icon-navpopup-logout:before {
-    content: "\e90a";
-  }
-  .qp-icon-navpopup-switch:before {
-    content: "\e90b";
-  }
-  .qp-icon-role-administrator:before {
-    content: "\e90c";
-  }
-  .qp-icon-role-landlord:before {
-    content: "\e90d";
-  }
-  .qp-icon-role-personal:before {
-    content: "\e90e";
-  }
-  .qp-icon-role-professional:before {
-    content: "\e90f";
-  }
-  
+  font-family: 'icomoon';
+  src:  url('/static/assets/fonts/icomoon.eot?v2qum');
+  src:  url('/static/assets/fonts/icomoon.eot?v2qum#iefix') format('embedded-opentype'),
+    url('/static/assets/fonts/icomoon.ttf?v2qum') format('truetype'),
+    url('/static/assets/fonts/icomoon.woff?v2qum') format('woff'),
+    url('/static/assets/fonts/icomoon.svg?v2qum#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="qp-icon-"], [class*=" qp-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.qp-icon-arrow-down:before {
+  content: "\e900";
+}
+.qp-icon-arrow-up:before {
+  content: "\e901";
+}
+.qp-icon-calendar:before {
+  content: "\e902";
+}
+.qp-icon-close:before {
+  content: "\e903";
+}
+.qp-icon-delete:before {
+  content: "\e904";
+}
+.qp-icon-download:before {
+  content: "\e905";
+}
+.qp-icon-edit:before {
+  content: "\e906";
+}
+.qp-icon-navpopup-account:before {
+  content: "\e907";
+}
+.qp-icon-navpopup-credentials:before {
+  content: "\e908";
+}
+.qp-icon-navpopup-financial:before {
+  content: "\e909";
+}
+.qp-icon-navpopup-language:before {
+  content: "\e90a";
+}
+.qp-icon-navpopup-logout:before {
+  content: "\e90b";
+}
+.qp-icon-navpopup-switch:before {
+  content: "\e90c";
+}
+.qp-icon-role-administrator:before {
+  content: "\e90d";
+}
+.qp-icon-role-landlord:before {
+  content: "\e90e";
+}
+.qp-icon-role-personal:before {
+  content: "\e90f";
+}
+.qp-icon-role-professional:before {
+  content: "\e910";
+}
+.qp-icon-search:before {
+  content: "\e911";
+}
