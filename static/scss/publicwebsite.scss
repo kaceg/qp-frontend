@@ -40,7 +40,6 @@
 // Components : standalone components  
 // --------------------------------------------------
 @import "vendor/Fontawesome/font-awesome.scss";
-@import "vendor/icomoon/icomoon.scss";
 //@import "vendor/bootstrap/tables";
 @import "vendor/bootstrap/forms";
 @import "vendor/bootstrap/buttons";
@@ -131,6 +130,11 @@
 // --------------------------------------------------
 
 @import "PUB/_Component_page-editor.scss";
+
+// Icons
+// --------------------------------------------------
+
+@import 'PUB/_Icons.scss';
 
 // Temporary Overrides (dev team)
 // --------------------------------------------------
