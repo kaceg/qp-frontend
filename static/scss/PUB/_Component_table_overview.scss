@@ -74,8 +74,9 @@
 				margin: 0;
 			}
 			
-			.qp-icon-download {
+			.qp-icon-download:before {
 				vertical-align: text-bottom;
+				line-height: normal;
 			}
 			
 			&.icons {
