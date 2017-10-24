@@ -7,8 +7,9 @@
             padding-left: 20px;
         }
 
-        & {
-            list-style-type: none;
+        &,
+        & > li {
+            list-style-type: none !important;
         }
 
         & + p {
