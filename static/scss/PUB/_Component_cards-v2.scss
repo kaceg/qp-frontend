@@ -1,14 +1,22 @@
 .card-v2,
 .card-v2--small,
+.card--big,
+.card--hero,
+.card--hero--small {
+    position: relative;
+}
+
+.card-v2,
+.card-v2--small,
 .card--big {
     display: block;
-    position: relative;
     margin-bottom: 1.667em;
     background-color: $gray-ultralightest;
     color: $black;    
     text-decoration: none;
 
     .card__image {
+        position: relative;
         width: 100%;
     }
     

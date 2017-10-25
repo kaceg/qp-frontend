@@ -89,6 +89,12 @@
 
 
 .google-maps-search {
+	position: relative;	
+		
+	.video-bg {
+		overflow: hidden;
+	}
+
 	.google-maps-search-input {
 		position: relative;
 		padding-top: 25px;
@@ -272,7 +278,26 @@
 @media (min-width: $screen-sm-min) {
 	.google-maps-search {
 		position: relative;
-		min-height: 501px;
+		height: 501px;
+		
+		@media (max-width: 890.67px) { // 501px * (9 / 16)
+			.video-bg {
+				.video-bg-wrapper {
+					width: calc(501px * (16 / 9)); // 890.67
+					height: 100%;
+					padding: 0;
+					transform: none;
+				}
+			}
+		}
+			
+		@media (min-aspect-ratio: 16/9) {
+			.video-bg {
+				.video-bg-wrapper {
+					transform: translateY(-28.125%); // 56.25% / 2
+				}
+			}
+		}
 
 		.google-maps-search-input {
 			padding: 0;
