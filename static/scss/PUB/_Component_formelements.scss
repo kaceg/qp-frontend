@@ -23,6 +23,32 @@ select:focus, input:focus, textarea:focus { background: $white}
 	NEW DESIGN - NOT YET VISIBLE
 **************************************/
 .myqp-new {
+    .form,
+    .navbar-form {
+        // Clear custom CSS defined above. Can be removed when new design is accepted.
+        .form-group:not(.form-group--boxed) {
+            .form-control {
+                padding: .5rem .75rem;
+                border: 1px solid $gray-light-worm;
+                box-shadow: none;
+            }
+        }
+        // End clear custom CSS
+        
+        .form-group {            
+            .form-control {
+                padding: 5px 12px !important;
+                border: 1px solid $gray-light-worm !important;
+                color: $black;
+                background: $white;
+                
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+        }
+    }
+
     .form {
         // Clear custom CSS defined above. Can be removed when new design is accepted.
         .form-group:not(.form-group--boxed) {
@@ -45,17 +71,6 @@ select:focus, input:focus, textarea:focus { background: $white}
             .no-edit {
                 font-weight: normal;
                 padding-top: 10px;
-            }
-
-            .form-control {
-	            padding: 5px 12px !important;
-                border: 1px solid $gray-light-worm !important;
-                color: $black;
-                background: $white;
-                
-                -webkit-appearance: none;
-				-moz-appearance: none;
-				appearance: none;
             }
 
             .inline-form-controls {
@@ -262,6 +277,14 @@ select:focus, input:focus, textarea:focus { background: $white}
    	.delete {
             margin-top: 0;
             margin-left: 8px;
+    }
+
+    .navbar-form {
+        .form-group {
+            &.block {
+                display: block;
+            }
+        }
     }
 
     @media(min-width: $screen-sm-min) {

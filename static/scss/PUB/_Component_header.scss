@@ -15,18 +15,37 @@
             .navbar-toggle {
                 margin-top: 27px;
                 margin-bottom: 27px;
+                
+                & + .navbar-toggle {
+                    margin-right: 0;
+                }
 
                 .icon-bar {
                     background-color: $gray-dark;
                     height: 3px;
                 }
 
+                &.search-toggle {
+                    font-size: 17px;
+                    line-height: 1;
+                }
+
                 &:not(.collapsed) {
-                    & .icon-bar {
+                    .icon-bar {
                         background-color: $red;
 
-                        &:nth-child(1) {
+                        &:nth-child(2) {
+                            height: 4px;
                             transform: rotate(45deg) translate(5px, 5px);
+                        }
+                        
+                        &:nth-child(3) {
+                            opacity: 0;
+                        }
+                        
+                        &:nth-child(4) {
+                            height: 4px;
+                            transform: rotate(-45deg) translate(5px, -6px);
                         }
                     }
                 }
@@ -66,18 +85,22 @@
                         }
                     }
                 }
+            }
+        }
 
-                .language-selector-wrapper {
-                    margin: 8px 15px;
-                    padding: 10px 15px;
+        .language-selector-wrapper {
+            margin: 8px 15px;
+            padding: 10px 15px;
 
-                    .language-selector {
-                        &.text-uppercase + ul {
-                            text-transform: uppercase;
-                        }
-                    }
+            .language-selector {
+                &.text-uppercase + ul {
+                    text-transform: uppercase;
                 }
             }
+        }
+
+        .search-box {
+            position: relative;
         }
     }
 
@@ -104,60 +127,59 @@
 
             .navbar-header {
                 .navbar-brand {
-                    padding: 0 15px;
+                    margin: 0;
+                    padding: 0;
                 }
             }
                 
             .navbar-collapse {
+                margin: 0 -15px;
+                padding: 0;
                 border: none;
 
                 .navbar-nav {
+                    margin: 0;
+
                     > li {
                         > a {
                             padding: 11px 15px 12px;
                             border-bottom: none;
                         }
                     }
+                }
+            }
+            
+            .language-selector-wrapper,
+            .selectboxit-container span,
+            .search .fa {
+                line-height: 25px;
+            }
 
-                    .language-selector-wrapper,
-                    .selectboxit-container span,
-                    .search .fa {
-                        line-height: 25px;
+            .language-selector-wrapper {
+                margin: 11px 0 12px;
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                border-left: 1px solid $gray-light-worm;
+
+                .language-selector {
+                    padding: 0 !important;
+                    border: none !important;
+                    font-family: $font-family-sans-serif;
+
+                    .selectboxit-text {
+                        margin: 0;
+                        padding-right: 30px;
+                        min-height: 0;
                     }
 
-                    .language-selector-wrapper {
-                        margin: 11px 0 12px;
-                        padding-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        border-left: 1px solid $gray-light-worm;
+                    .selectboxit-arrow-container {
+                        width: 9px;
+                        margin-top: 13px;
 
-                        .language-selector {
-                            padding: 0 !important;
-                            border: none !important;
-                            font-family: $font-family-sans-serif;
-
-                            .selectboxit-text {
-                                margin: 0;
-                                padding-right: 30px;
-                                min-height: 0;
-                            }
-
-                            .selectboxit-arrow-container {
-                                width: 9px;
-                                margin-top: 13px;
-
-                                i {
-                                    margin: 0;
-                                    transform: translateY(-50%);
-                                }
-                            }
-                        }
-                    }
-
-                    .search {
-                        .fa {
-                            font-size: 1em;
+                        i {
+                            margin: 0;
+                            transform: translateY(-50%);
                         }
                     }
                 }
