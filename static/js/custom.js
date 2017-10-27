@@ -415,8 +415,67 @@ $(document).ready(function($) {
 		$("body").on("click", deactivateSearchBox);
 		$(".qp-header .search-box .search-box__input").on("blur", deactivateSearchBox);
 	}
+
+	
+  	/*************************
+		YOUTUBE VIDEOS
+	*************************/
+	var ytApiLoaded = false;
+
+	function getYouTubeApi() {
+		if (ytApiLoaded ||$("#YouTubeIframeApi").length) {
+			return true;
+		}
+
+		var tag = document.createElement("script");
+        tag.id = "YouTubeIframeApi";
+		tag.src = "https://www.youtube.com/iframe_api";
+		
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	}
+
+	getYouTubeApi();
 });
 
+function onPlayerReady(event) {
+	event.target.mute();
+	event.target.playVideo();
+}
+
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING) {
+		$(event.target.getIframe()).addClass("active");
+	}
+}
+
+function onYouTubeIframeAPIReady() {
+	apiLoaded = true;
+
+	var player = new YT.Player("youtube-main", {
+		height: "100%",
+		width: "100%",
+		videoId: "RiA5U2g5dNo",
+		playerVars: {
+			autoplay: 1,
+			controls: 0,
+			disablekb: 1,
+			enablejsapi: 1,
+			fs: 0,
+			loop: 1,
+			modestbranding: 1,
+			playlist: "RiA5U2g5dNo",
+			rel: 0,
+			showinfo: 0
+		},
+		events: {
+			"onReady": onPlayerReady,
+			"onStateChange": onPlayerStateChange
+		}
+	});
+
+	//player.mute();
+}
 
 /*************************
 	LOAD/RESIZE/SCROLL/...
