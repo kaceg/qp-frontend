@@ -354,6 +354,30 @@ ul.check-list.cta li:before {
     }
 }
 
+/* Collapse */
+.desktop-dropdown {
+    display: block;
+    position: relative;
+}
+
+.desktop-dropdown-toggle {
+    display: none !important;
+}
+
+@media (min-width: $screen-md-min) {
+    .desktop-dropdown {
+        display: none;
+        position: absolute;
+    }
+
+    .desktop-dropdown-toggle,
+    .desktop-dropdown.in,
+    .desktop-dropdown.collapsing {
+        display: block !important;
+        height: auto;
+    }
+}
+
 /* Media Object - with Flexbox */
 
 @media (min-width: 795px) {

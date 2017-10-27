@@ -214,6 +214,17 @@ $(document).ready(function($) {
 		if($(".myqp-new select").length){
 			$(".myqp-new select").selectBoxIt();
 		}
+
+		initHeaderSearch();
+	});
+	$("#headerIncMyQP").load("/inc/header-myqp.html", function() {
+		console.log('header was loaded');
+		
+		if($(".myqp-new select").length){
+			$(".myqp-new select").selectBoxIt();
+		}
+
+		initHeaderSearch();
 	});
     $("#navInc").load("/inc/nav.html", function() {
       	console.log('nav was loaded');
@@ -380,6 +391,30 @@ $(document).ready(function($) {
 			$(value).css("background-image", "url('" + url + "')");
 		}
 	});
+
+
+  	/*************************
+		HEADER SEARCH
+	*************************/
+	function initHeaderSearch() {
+		$(".qp-header .search-box .search-box__input, .qp-header .search-box .search-box__button").on("mouseover", function(e) {
+			e.preventDefault();
+
+			$(".qp-header .search-box").addClass("active");
+
+			return false; 
+		});
+
+		function deactivateSearchBox() {
+			if (!$(".qp-header .search-box .search-box__input").is(":focus")) {
+				$(".qp-header .search-box").removeClass("active");
+			}
+		}
+
+		$("body").on("mouseover", deactivateSearchBox);
+		$("body").on("click", deactivateSearchBox);
+		$(".qp-header .search-box .search-box__input").on("blur", deactivateSearchBox);
+	}
 });
 
 
