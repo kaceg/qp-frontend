@@ -450,7 +450,7 @@ function onPlayerStateChange(event) {
 }
 
 function onYouTubeIframeAPIReady() {
-	apiLoaded = true;
+	ytApiLoaded = true;
 
 	var player = new YT.Player("youtube-main", {
 		height: "100%",
