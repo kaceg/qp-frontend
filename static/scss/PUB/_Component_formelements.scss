@@ -284,6 +284,10 @@ select:focus, input:focus, textarea:focus { background: $white}
             &.block {
                 display: block;
             }
+
+            .form-control {
+                width: 100%;
+            }
         }
     }
 

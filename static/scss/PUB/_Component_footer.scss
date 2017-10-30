@@ -10,7 +10,7 @@
 
     .qp-doormat {
         .qp-doormat__category {
-            padding: 8px 0;
+            padding: 15px 0;
 
             h4 {
                 margin: 0 0 20px;
@@ -27,8 +27,10 @@
                     list-style-type: none;
                 }
             }
-
-            &:last-child {
+        }
+        
+        > .row > div {
+            &:last-child > .qp-doormat__category {
                 padding-bottom: 0;
             }
         }
@@ -38,12 +40,12 @@
         margin-top: 54px;
 
         .btn + .btn {
-            margin-top: 15px;
+            margin-top: 25px;
         }
     }
 
     .qp-disclaimer {
-        margin-top: 54px;
+        margin-top: 36px;
 
         &,
         a {
@@ -53,6 +55,11 @@
         a:hover {
             color: $white;
         }
+    }
+
+    .qp-copyright {
+        margin-top: 36px;
+        font-family: $font-family-sans-serif-bold;
     }
 
     .environment-info {
@@ -113,19 +120,22 @@
         }
         
         .qp-doormat-buttons {
-            margin-top: -15;
+            margin-top: -10px;
 
             .btn {
                 margin-top: 15px;
             }
             
             .btn + .btn {
+                margin-top: 15px;
                 margin-right: 20px;
                 margin-left: 18px;
             }
         }
 
         .qp-disclaimer {
+            text-align: right;
+
             ul {
                 padding-bottom: 8px;
 
@@ -141,6 +151,10 @@
                     }
                 }
             }
+        }
+        
+        .qp-copyright {
+            margin-top: 0;
         }
         
         .environment-info {            
@@ -165,7 +179,13 @@
                 margin: 0;
                 
                 h4 {
+                    margin-bottom: 1em;
                     padding: 0;
+                }
+                
+                .qp-doormat__navigation li {
+                    display: block;
+                    padding: 2.5px 0;
                 }
             }
         }
@@ -173,6 +193,23 @@
         .qp-doormat-buttons {            
             .btn + .btn {
                 margin-left: 54px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    .qp-footer {
+        .qp-doormat {
+            .qp-doormat__category {
+                padding: 0;
+            }
+        }
+        
+        .qp-doormat-buttons {            
+            .btn + .btn {
+                //margin-left: 36px;
             }
         }
     }
