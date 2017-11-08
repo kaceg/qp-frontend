@@ -59,7 +59,7 @@
 			vertical-align: top;
 			line-height: 1.75em;
 			
-			div:not(.datepicker) {
+			div:not(.datepicker):not(.license-plate):not(.country-prefix) {
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
