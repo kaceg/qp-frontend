@@ -72,6 +72,12 @@
     .card__body {
         font-size: 1em;
     }
+
+    &.no-bg {
+        .card__inner {
+            padding: 10px 0;
+        }
+    }
 }
 
 .card-v2--small {
@@ -147,6 +153,8 @@
 }
 
 .card-grid,
+.parking-facility-results,
+.poi-results,
 .side-by-side-cards,
 .three-column-cards {
     // Align buttons
@@ -160,6 +168,7 @@
 
             .card-v2,
             .card--big,
+            .card--image--small,
             .card--extra-small,
             .card__wrapper,
             .card__wrapper .card__inner {

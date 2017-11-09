@@ -46,6 +46,12 @@
 
 //== Margins
 // --------------------------------------------------
+/* Vertical */
+.no-vertical-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* Horizontal */
 .padding-horizontal-xs {
     padding-top: $whitespace-xs;
