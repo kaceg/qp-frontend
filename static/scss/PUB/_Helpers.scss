@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+.relative {
+    position: relative;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -632,10 +636,6 @@ ul.check-list.cta li:before {
         &.no-background {
             background: none;
         }
-    }
-
-    .relative {
-        position: relative;
     }
 
     .bottom-right {
