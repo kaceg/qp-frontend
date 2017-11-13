@@ -51,8 +51,10 @@
 @import "vendor/bootstrap/close";
 @import "vendor/selectboxit/selectboxit";
 @import "PUB/_Component_selectboxit.scss";
+@import "kiosk/_Component_selectboxit.scss";
 @import "PUB/_Component_header.scss";
 @import "kiosk/_Component_navbar.scss";
+@import "kiosk/_Component_wells.scss";
 
 // Components w/ JavaScript
 //@import "vendor/bootstrap/modals";
@@ -63,4 +65,5 @@
 // Utility classes
 @import "vendor/bootstrap/utilities";
 @import "vendor/bootstrap/responsive-utilities";
-@import 'PUB/_Helpers.scss';
+@import "PUB/_Helpers.scss";
+@import "PUB/_Component_whitespaces.scss";

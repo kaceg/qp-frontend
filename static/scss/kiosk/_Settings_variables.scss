@@ -4,3 +4,10 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
 //** Point at which .dl-horizontal becomes horizontal
 $dl-horizontal-breakpoint:    $grid-float-breakpoint;
+
+
+//== Wells
+// --------------------------------------------------
+
+$well-bg:                     $gray-ultralightest;
+$well-border:                 $gray-light-worm;
