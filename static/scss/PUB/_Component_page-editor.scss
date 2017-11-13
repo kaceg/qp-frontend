@@ -1,4 +1,11 @@
 .qp-page-editor {
+    .card--hero,
+    .card--hero--small {
+        .card__wrapper {
+            color: $black;
+        }
+    }
+    
     .card--big {
         .card__image.img-bg {
             display: none;
