@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /* Titles & Lead */
 
 h1, .h1, h2, .h2, h3, .h3, b, strong, .strong {
@@ -20,6 +24,21 @@ h1.big-h1 {
 h2 {
 	font-size: 1.5em;
 	margin: 0 0 0.75em;
+}
+
+.title-button-wrapper {
+    h1 {
+        margin: 0;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .title-button-wrapper {
+        h1 {
+            display: inline;
+            margin-right: 18px;
+        }
+    }
 }
 
 p.lead {
