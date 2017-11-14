@@ -35,6 +35,7 @@
 //@import "vendor/bootstrap/input-groups";
 @import "vendor/bootstrap/navs";
 @import "vendor/bootstrap/navbar";
+@import "kiosk/_Component_navbar.scss";
 //@import "vendor/bootstrap/breadcrumbs";
 //@import "vendor/bootstrap/pagination";
 //@import "vendor/bootstrap/pager";
@@ -49,13 +50,13 @@
 //@import "vendor/bootstrap/panels";
 //@import "vendor/bootstrap/responsive-embed";
 @import "vendor/bootstrap/wells";
+@import "kiosk/_Component_wells.scss";
 @import "vendor/bootstrap/close";
 @import "vendor/selectboxit/selectboxit";
 @import "PUB/_Component_selectboxit.scss";
 @import "kiosk/_Component_selectboxit.scss";
 @import "PUB/_Component_header.scss";
-@import "kiosk/_Component_navbar.scss";
-@import "kiosk/_Component_wells.scss";
+@import "kiosk/_Component_select-card.scss";
 
 // Components w/ JavaScript
 //@import "vendor/bootstrap/modals";

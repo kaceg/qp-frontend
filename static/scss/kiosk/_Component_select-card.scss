@@ -1,0 +1,43 @@
+.select-card {
+    display: flex;
+    margin: 1em 0;
+    border: 1px solid $gray-light-worm;
+
+    
+    &__select,
+    &__body {
+        padding: 34px 0;
+    }
+
+    &__select {
+        flex: 0 0 auto;
+        width: 90px;
+        background-color: $gray-ultralightest;
+        text-align: center;
+    }
+
+    &__body {
+        flex: 1 0 0; 
+
+        dl {
+            dt,
+            dd {
+                float: left;
+                padding: 5px;
+                line-height: calc(20px * #{$line-height-base}); // 20px ~= 1.111em
+            }
+
+            dt {
+                width: 30%;
+                font-size: 0.667em;
+                font-weight: normal;
+                text-align: right;
+            }
+
+            dd {
+                width: 70%;
+                font-size: 1.111em;
+            }
+        }
+    }
+}
