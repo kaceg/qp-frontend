@@ -3,16 +3,14 @@
 //   Custom Mixins
 // ===============================================
 
-@mixin button-hover-variant($color, $background, $background-hover, $border) {
-    color: $color;
-    background-color: $background;
-    border-color: $border;
+@mixin button-hover-variant($color, $background, $background-hover) {
+    border-color: transparent;
     
     &:focus,
     &.focus {
         color: $color;
         background-color: $background;
-        border-color: $border;
+        border-color: transparent;
     }
 
     &:hover {

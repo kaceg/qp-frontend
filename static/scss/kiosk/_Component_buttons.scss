@@ -10,5 +10,5 @@
 }
 
 .btn-success {
-    @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark, $btn-success-border);
+    @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark);
 }
