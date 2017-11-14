@@ -6,7 +6,7 @@
     
     &__select,
     &__body {
-        padding: 34px 0;
+        padding: 25px 30;
     }
 
     &__select {
@@ -23,21 +23,25 @@
             dt,
             dd {
                 float: left;
-                padding: 5px;
+                padding: 0;
                 line-height: calc(20px * #{$line-height-base}); // 20px ~= 1.111em
             }
 
             dt {
                 width: 30%;
+                padding-right: 5px;
                 font-size: 0.667em;
                 font-weight: normal;
                 text-align: right;
+                clear: left;
             }
 
             dd {
                 width: 70%;
+                padding-left: 5px;
                 color: $gray-dark;
                 font-size: 1.111em;
+                clear: right;
             }
         }
     }
