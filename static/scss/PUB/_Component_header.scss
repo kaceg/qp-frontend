@@ -21,3 +21,11 @@
         background-color: $red;
     }
 }
+
+@media (min-width: $screen-md-min) {
+    .qp-header {
+        .qp-header__line {
+            right: calc(100% - 15px); // Compensate for gutter
+        }
+    }
+}
