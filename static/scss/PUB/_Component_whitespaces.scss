@@ -21,6 +21,27 @@
     margin-top: $whitespace-xl;
 }
 
+/* Right */
+.margin-right-xs {
+    margin-right: $whitespace-xs;
+}
+
+.margin-right-sm {
+    margin-right: $whitespace-sm;
+}
+
+.margin-right-md {
+    margin-right: $whitespace-md;
+}
+
+.margin-right-lg {
+    margin-right: $whitespace-lg;
+}
+
+.margin-right-xl {
+    margin-right: $whitespace-xl;
+}
+
 /* Bottom */
 .margin-bottom-xs {
     margin-bottom: $whitespace-xs;
@@ -46,6 +67,12 @@
 
 //== Margins
 // --------------------------------------------------
+/* Vertical */
+.no-vertical-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* Horizontal */
 .padding-horizontal-xs {
     padding-top: $whitespace-xs;

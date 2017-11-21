@@ -6,7 +6,7 @@
     
 // Settings : contain font, colors definitions, etc.
 // --------------------------------------------------
-@import "PUB/_Settings_variables.scss";   
+@import "shared/_Settings_variables.scss";   
 @import "shared/_Settings_variables_fontawesome.scss";    
 
 // Tools : globally used mixins and functions. These do not output CSS. 
@@ -83,6 +83,7 @@
 @import "PUB/_Component_overlay.scss";
 @import "PUB/_Component_service-messages.scss";
 @import "PUB/_Component_header.scss";
+@import "PUB/_Component_navbar.scss";
 @import "PUB/_Component_footer.scss";
 @import "PUB/_Component_background-images.scss";
 @import "PUB/_Component_roles.scss";

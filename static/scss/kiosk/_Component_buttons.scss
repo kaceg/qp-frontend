@@ -1,0 +1,14 @@
+.btn {
+    width: 100%;
+    padding: 16px $padding-base-horizontal;
+    text-transform: uppercase;
+
+    &:active,
+    &.active {
+        box-shadow: none;
+    }
+}
+
+.btn-success {
+    @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark);
+}

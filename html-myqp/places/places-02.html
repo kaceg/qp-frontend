@@ -1,91 +1,96 @@
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		
-		<title>Permit Overview | My Q-Park</title>
-		
-		<link rel="stylesheet" href="/static/css/publicwebsite.css">
-		
-		<script src="/static/js/jquery.2.2.4.min.js"></script>
-		<script src="/static/js/jquery-ui.min.js"></script>
-		<script src="/static/js/bootstrap.js"></script>
-		<script src="/static/js/moment.js"></script>
-		<script src="/static/js/jquery.matchHeight-min.js"></script>
-		<script src="/static/js/selectboxit.min.js"></script>
-		<script src="/static/js/bootstrap-datetimepicker.js"></script>
-		<script src="/static/js/custom.js"></script>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<body id="body" class="myqp-new">
+	<title>Permit Overview | My Q-Park</title>
 
-		<!-- COOKIE -->
-		<!-- <div id="cookieInc"></div> -->
-		<!-- COOKIE -->
+	<link rel="stylesheet" href="/static/css/publicwebsite.css">
 
-		<!-- NAV -->
-		<div id="navIncMyQP"></div>
-		<!-- NAV -->
+	<script src="/static/js/jquery.2.2.4.min.js"></script>
+	<script src="/static/js/jquery-ui.min.js"></script>
+	<script src="/static/js/bootstrap.js"></script>
+	<script src="/static/js/moment.js"></script>
+	<script src="/static/js/jquery.matchHeight-min.js"></script>
+	<script src="/static/js/selectboxit.min.js"></script>
+	<script src="/static/js/bootstrap-datetimepicker.js"></script>
+	<script src="/static/js/custom.js"></script>
+</head>
 
-		<!-- BIGSEARCH -->
-		<!-- <div id="bigsearchInc"></div> -->
-		<!-- BIGSEARCH -->
+<body id="body" class="myqp-new">
 
-		<!-- CONTENT -->
-		<div class="qcontentpane">
-		
-			<section class="breadnav">
-				<div class="container">
-					<div class="row bread">
-						<div class="col-xs-12">
-							<nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
-								<ol>
-							    	<li><a href="/" title="Home">Home</a>
-							    		<ol>
-								    		<li>
-								    			<a href="/html-myqp/cle-01.html" title="About us">Places</a>
-								    			<ol>
-									    			<li class="is-current">Armauer Hansegate Outside</li>
-									    		</ol>
-								    		</li>
-								    	</ol>
-								    </li>
-								</ol>
-							</nav>
-						</div>
+	<!-- COOKIE -->
+	<!-- <div id="cookieInc"></div> -->
+	<!-- COOKIE -->
+
+	<!-- NAV -->
+	<div id="headerIncMyQP"></div>
+	<!-- NAV -->
+
+	<!-- BIGSEARCH -->
+	<!-- <div id="bigsearchInc"></div> -->
+	<!-- BIGSEARCH -->
+
+	<!-- CONTENT -->
+	<div class="qcontentpane">
+
+		<section class="breadnav">
+			<div class="container">
+				<div class="row bread">
+					<div class="col-xs-12">
+						<nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
+							<ol>
+								<li><a href="/" title="Home">Home</a>
+									<ol>
+										<li>
+											<a href="/html-myqp/cle-01.html" title="About us">Places</a>
+											<ol>
+												<li class="is-current">Armauer Hansegate Outside</li>
+											</ol>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</nav>
 					</div>
 				</div>
-			</section>
-			
-			<section class="pageintro">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-	
-							<h4 class="strong text-uppercase primary-color no-margin">Places</h4>
+			</div>
+		</section>
+
+		<section class="pageintro">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+
+						<h4 class="strong text-uppercase primary-color no-margin">Places</h4>
+
+						<div class="title-button-wrapper">
 							<h1 class="strong big-h1 no-margin">Armauer Hansegate Outside</h1>
-
+							<span class="no-edit">
+								<a href="javascript:void(0);" data-toggle="collapse" data-target="#overview-details" class="collapsed">
+									<span class="if-collapsed">More details</span>
+									<span class="if-not-collapsed">Less details</span>
+								</a>
+							</span>
 						</div>
+
 					</div>
 				</div>
-			</section>
-			
-			<hr class="invisible-small">
-						
-			<section class="form">
-				<div class="container">
+			</div>
+		</section>
+
+		<hr class="invisible-small">
+
+		<section class="form">
+			<div class="container">
+				<div id="overview-details" class="collapse">
 					<div class="form-group row">
 						<label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Manager</label>
 						<div class="col-sm-12 col-md-6 col-lg-4">
-							<span class="no-edit">
-								<a href="#" class="togglehide" data-target="managers" title="show managers">
-									<span class="target-hidden">show manager</span>
-								</a>
-							</span>
-							
+
 							<div class="managers hidden">
 								<div class="item">
 									<span class="name">Johnny Johanssen</span> <span class="title">Region Manager</span>
@@ -101,12 +106,12 @@
 									<span class="name">Johnny Johanssen</span> <span class="title">Region Manager</span>
 									<span class="tel">Telephone: <a href="tel:+324567876543" title="Call Johnny Johanssen">+32 4567 87 65 43</a></span>
 									<span class="email">Email: <a href="mailt:johnny.johanssen@q-park.se" title="Mail Johnny Johanssen">johnny.johanssen@q-park.se</a></span>
-								</div>																
+								</div>
 							</div>
-							
+
 						</div>
 					</div>
-					
+
 					<div class="form-group row">
 						<label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">UID</label>
 						<div class="col-sm-12 col-md-6 col-lg-4">
@@ -120,14 +125,14 @@
 							<span class="no-edit">Oslo</span>
 						</div>
 					</div>
-					
+
 					<div class="form-group row">
 						<label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Places</label>
 						<div class="col-sm-12 col-md-6 col-lg-4">
 							<span class="no-edit">20</span>
 						</div>
 					</div>
-					
+
 					<div class="form-group row">
 						<label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Notes</label>
 						<div class="col-sm-12 col-md-6 col-lg-4">
@@ -135,216 +140,218 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			
-			<hr class="invisible">
+			</div>
+		</section>
 
-			<section class="overview-table">
-				<div class="container">	
-					<div class="row">
-						<div class="col-xs-12">
-							
-							<h3>Permits</h3>
-							<!-- <a href="#" class="btn btn-grey btn-line small">Export</a> -->
-						
-							<table data-role="table" data-mode="columntoggle" class="ui-responsive tbl-overview">
-								<thead>
-									<tr>
-										<th class="sortable">
-											Permit nr
-											<span class="sort">
+		<hr class="invisible">
+
+		<section class="overview-table">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+
+						<h3 class="margin-right-xs">Permits</h3>
+						<a href="#" class="btn btn-info btn-line small">Export</a>
+
+						<table data-role="table" data-mode="columntoggle" class="ui-responsive tbl-overview">
+							<thead>
+								<tr>
+									<th class="sortable">
+										Permit nr
+										<span class="sort">
 												<div class="active"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
 												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-											</span>											
-										</th>
-										<th class="sortable" data-priority="2">
-											Service profile
-											<div class="sort">
-												<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-											</div>											
-										</th>
-										<th class="sortable" data-priority="3">
-											Customer
-											<div class="sort">
-												<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-											</div>											
-										</th>
-										<th class="sortable" data-priority="4">
-											License plate
-											<div class="sort">
-												<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-											</div>											
-										</th>
-										<th class="sortable" data-priority="1">
-											Valid from
-											<div class="sort">
-												<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-											</div>											
-										</th>
-										<th class="sortable" data-priority="1">
-											Valid to
-											<div class="sort">
-												<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-												<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-											</div>											
-										</th>
-										<th data-priority="5"></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="form links filter">
-										<td class="form-group">
-											<input type="text" placeholder="Permit" class="form-control" />
-										</td>
-										<td class="form-group">
-											<select>
+											</span>
+									</th>
+									<th class="sortable" data-priority="2">
+										Service profile
+										<div class="sort">
+											<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+											<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										</div>
+									</th>
+									<th class="sortable" data-priority="3">
+										Customer
+										<div class="sort">
+											<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+											<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										</div>
+									</th>
+									<th class="sortable" data-priority="4">
+										License plate
+										<div class="sort">
+											<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+											<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										</div>
+									</th>
+									<th class="sortable" data-priority="1">
+										Valid from
+										<div class="sort">
+											<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+											<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										</div>
+									</th>
+									<th class="sortable" data-priority="1">
+										Valid to
+										<div class="sort">
+											<div><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+											<div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										</div>
+									</th>
+									<th data-priority="5"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="form links filter">
+									<td class="form-group">
+										<input type="text" placeholder="Permit" class="form-control" />
+									</td>
+									<td class="form-group">
+										<select>
 												<option>24x5</option>
 											</select>
-										</td>
-										<td class="form-group" colspan="2">
-											<select>
+									</td>
+									<td class="form-group" colspan="2">
+										<select>
 												<option>Customer</option>
 											</select>
-										</td>
-										<td class="form-group">
-											<div class="datepicker">
-												<input type="text" class="form-control" id="input-start-date">
-											</div>
-										</td>
-										<td class="form-group">
-											<div class="datepicker">
-												<input type="text" class="form-control" id="input-end-date">
-											</div>
-										</td>
-										<td class="vertical-middle right">
-											<a href="#" class="add-entry">Filter</a>
-										</td>
-									</tr>
-									<tr class="mobile-labels">
-										<td>0000015</td>
-										<td>24x7</td>
-										<td>
-											<div>Jan Johansen</div>
-											<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
-										</td>
-										<td>N-012-ABC</td>
-										<td>
-											<div>01/09/17</div>
-											<div class="grey">08:00</div>
-										</td>
-										<td>
-											<div>30/09/17</div>
-											<div class="grey">23:45</div>
-										</td>
-										<td class="icons">
-											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
-											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
-										</td>
-									</tr>
-									<tr class="mobile-labels">
-										<td>0000015</td>
-										<td>24x7</td>
-										<td>
-											<div>Jan Johansen <a href="#"><img src="/static/assets/svg/icon-role_personal.svg" class="inline-icon" alt="Registered"></a></div>
-											<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
-										</td>
-										<td>N-012-ABC</td>
-										<td>
-											<div>01/09/17</div>
-											<div class="grey">08:00</div>
-										</td>
-										<td>
-											<div>30/09/17</div>
-											<div class="grey">23:45</div>
-										</td>
-										<td class="icons">
-											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
-											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
-										</td>
-									</tr>
-									<tr class="mobile-labels">
-										<td>0000015</td>
-										<td>24x7</td>
-										<td>
-											<div>Jan Johansen</div>
-											<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
-										</td>
-										<td>N-012-ABC</td>
-										<td>
-											<div>01/09/17</div>
-											<div class="grey">08:00</div>
-										</td>
-										<td>
-											<div>30/09/17</div>
-											<div class="grey">23:45</div>
-										</td>
-										<td class="icons">
-											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
-											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+									</td>
+									<td class="form-group">
+										<div class="datepicker">
+											<input type="text" class="form-control" id="input-start-date">
+										</div>
+									</td>
+									<td class="form-group">
+										<div class="datepicker">
+											<input type="text" class="form-control" id="input-end-date">
+										</div>
+									</td>
+									<td class="vertical-middle right">
+										<a href="#" class="add-entry">Filter</a>
+									</td>
+								</tr>
+								<tr class="mobile-labels">
+									<td>0000015</td>
+									<td>24x7</td>
+									<td>
+										<div>Jan Johansen</div>
+										<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
+									</td>
+									<td>N-012-ABC</td>
+									<td>
+										<div>01/09/17</div>
+										<div class="grey">08:00</div>
+									</td>
+									<td>
+										<div>30/09/17</div>
+										<div class="grey">23:45</div>
+									</td>
+									<td class="icons">
+										<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
+										<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
+									</td>
+								</tr>
+								<tr class="mobile-labels">
+									<td>0000015</td>
+									<td>24x7</td>
+									<td>
+										<div>Jan Johansen <a href="#"><img src="/static/assets/svg/icon-role_personal.svg" class="inline-icon" alt="Registered"></a></div>
+										<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
+									</td>
+									<td>N-012-ABC</td>
+									<td>
+										<div>01/09/17</div>
+										<div class="grey">08:00</div>
+									</td>
+									<td>
+										<div>30/09/17</div>
+										<div class="grey">23:45</div>
+									</td>
+									<td class="icons">
+										<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
+										<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
+									</td>
+								</tr>
+								<tr class="mobile-labels">
+									<td>0000015</td>
+									<td>24x7</td>
+									<td>
+										<div>Jan Johansen</div>
+										<div><a href="mailto:name@company.com" title="Mail name" class="link-grey">name@company.com</a></div>
+									</td>
+									<td>N-012-ABC</td>
+									<td>
+										<div>01/09/17</div>
+										<div class="grey">08:00</div>
+									</td>
+									<td>
+										<div>30/09/17</div>
+										<div class="grey">23:45</div>
+									</td>
+									<td class="icons">
+										<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
+										<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
-							<hr class="invisible-small">
-			
-							<div class="pager-add">
-								<div class="row">
-									<div class="col-xs-6 col-md-4">
-										<div>
-											<div class="pager-label">
-												items per page
-											</div>
-											<ul class="pager-items">
-												<li><a href="#" class="active">10</a></li>
-												<li><a href="#">20</a></li>
-												<li><a href="#">50</a></li>
-											</ul>
+						<hr class="invisible-small">
+
+						<div class="pager-add">
+							<div class="row">
+								<div class="col-xs-6 col-md-4">
+									<div>
+										<div class="pager-label">
+											items per page
 										</div>
-									</div>
-									<div class="col-xs-6 col-md-4 center mobileright">
-										<div>
-											<div class="pager-label">
-												page
-											</div>
-											<ul class="pager-items">
-												<li><a href="#" class="active">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-xs-12 col-md-4 right">
-										<a href="#" class="btn btn-success btn-line double"><span class="plus-icon">Add permit</span></a>
+										<ul class="pager-items">
+											<li><a href="#" class="active">10</a></li>
+											<li><a href="#">20</a></li>
+											<li><a href="#">50</a></li>
+										</ul>
 									</div>
 								</div>
+								<div class="col-xs-6 col-md-4 center mobileright">
+									<div>
+										<div class="pager-label">
+											page
+										</div>
+										<ul class="pager-items">
+											<li><a href="#" class="active">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-4 right">
+									<a href="#" class="btn btn-success btn-line double"><span class="plus-icon">Add permit</span></a>
+								</div>
 							</div>
-							
 						</div>
+
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-		</div>
+	</div>
 
-		<!-- TOOLTIP -->
-		<div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
+	<!-- TOOLTIP -->
+	<div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
 
-		<!-- BACK TO TOP -->
-		<a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+	<!-- BACK TO TOP -->
+	<a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
-		<!-- CONTENT -->
+	<!-- CONTENT -->
 
 
-		<!-- FOOTER -->
-		<div id="footerIncMyQP"></div>
-		<!-- FOOTER -->
+	<!-- FOOTER -->
+	<div id="footerIncMyQP"></div>
+	<!-- FOOTER -->
 
-		</script>
+	</script>
 
-	</body>
+</body>
+
 </html>

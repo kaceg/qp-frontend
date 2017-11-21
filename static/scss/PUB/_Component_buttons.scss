@@ -143,21 +143,6 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         }
     }
 
-    .btn-line {
-        //background-color: $white;
-        background-color: transparent;
-
-        &.btn-success {
-            color: $lime;
-            
-            &:hover,
-            &:active:hover {
-                background-color: $lime_dark;
-                border-color: transparent;
-            }
-        }
-    }
-
     .btn-info {
         color: $white;
         background-color: $gray-dark;
@@ -179,6 +164,40 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
             color: $white;
             background-color: $black;
             border-color: $black;
+        }
+    }
+    
+    .btn-line {
+        //background-color: $white;
+        background-color: transparent;
+
+        &.btn-success {
+            color: $lime;
+            
+            &:hover,
+            &:active:hover {
+                background-color: $lime_dark;
+                border-color: transparent;
+            }
+        }
+
+        &.btn-info {
+            color: $gray-dark;
+            
+            &:hover,
+            &:active:hover {
+                color: $white;
+                background-color: $gray-dark;
+                border-color: transparent;
+            }
+        }
+
+        &.small {
+            margin-top: -4px;
+            padding: 2px 10px;
+            font-size: 0.72em;
+            font-family: $font-family-sans-serif;
+            text-transform: uppercase;
         }
     }
 

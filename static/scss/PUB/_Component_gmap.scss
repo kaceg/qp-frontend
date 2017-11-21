@@ -129,7 +129,8 @@
 		color: $gray-light-worm;
 		text-decoration: none;
 
-		.qp-icon {
+		.qp-icon,
+		.fa {
 			margin-left: 23px;
 			font-weight: bold;
 		}
@@ -279,6 +280,10 @@
 	.google-maps-search {
 		position: relative;
 		height: 501px;
+
+		&.has-searched {
+			height: auto;
+		}
 		
 		@media (max-width: 890.67px) { // 501px * (9 / 16)
 			.video-bg {

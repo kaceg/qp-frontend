@@ -1,0 +1,53 @@
+
+// ===============================================
+//   Custom Mixins
+// ===============================================
+
+@mixin button-hover-variant($color, $background, $background-hover) {
+    border-color: transparent;
+    
+    &:focus,
+    &.focus {
+        color: $color;
+        background-color: $background;
+        border-color: transparent;
+    }
+
+    &:hover {
+        color: $color;
+        background-color: $background-hover;
+        border-color: transparent;
+    }
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: $color;
+        background-color: $background;
+        border-color: transparent;
+
+        &:hover {
+            color: $color;
+            background-color: $background-hover;
+            border-color: transparent;
+        }
+
+        &:focus,
+        &.focus {
+            color: $color;
+            background-color: $background;
+            border-color: transparent;
+        }
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: $background;
+                border-color: transparent;
+        }
+    }
+}

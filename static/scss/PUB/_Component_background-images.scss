@@ -15,7 +15,6 @@
             top: 0;
             left: 0;
             background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
             //background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
         }
 
@@ -51,6 +50,13 @@
             &.active {
                 opacity: 1;
             }
+        }
+    }
+
+    &.bg-gradient,
+    &.bg-gradient-half {
+        &:before {
+            z-index: 1;
         }
     }
 }

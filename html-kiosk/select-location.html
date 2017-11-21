@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Select Location | Kiosk</title>
+
+    <link rel="stylesheet" href="/static/css/kiosk.css">
+
+    <script src="/static/js/jquery.2.2.4.min.js"></script>
+    <script src="/static/js/jquery-ui.min.js"></script>
+    <script src="/static/js/selectboxit.min.js"></script>
+    <script src="/static/js/custom-kiosk.js"></script>
+</head>
+
+<body>
+    <div id="headerInc"></div>
+
+    <div class="qp-kiosk-content">
+        <section class="pageintro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <h1 class="primary-color">Select location</h1>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="invisible-small">
+
+        <section class="kiosk-select-location">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="introduction">
+                            <div class="qp-rte">
+                                This kiosk account is linked to multiple locations. Please specify the place, PMC and duration.
+                            </div>
+                        </div>
+
+                        <form class="form">
+                            <a href="javascript:void(0);">
+                                <div class="form-group select-card">
+                                    <div class="select-card__select">
+                                        <label class="checkable-element radio">                                        
+                                            <input type="radio" name="location">
+                                            <span class="checkable-element__placeholder"></span>
+                                        </label>
+                                    </div>
+                                    <div class="select-card__body">
+                                        <dl class="no-margin clearfix">
+                                            <dt class="primary-color text-uppercase">Place</dt>
+                                            <dd>Armauer Hansegate Outside</dd>
+
+                                            <dt class="primary-color text-uppercase">Service Profile</dt>
+                                            <dd>24x5 - 9:00 - 19:00</dd>
+
+                                            <dt class="primary-color text-uppercase">Duration</dt>
+                                            <dd>2u00</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="javascript:void(0);">
+                                <div class="form-group select-card">
+                                    <div class="select-card__select">
+                                        <label class="checkable-element radio">                                        
+                                            <input type="radio" name="location">
+                                            <span class="checkable-element__placeholder"></span>
+                                        </label>
+                                    </div>
+                                    <div class="select-card__body">
+                                        <dl class="no-margin clearfix">
+                                            <dt class="primary-color text-uppercase">Place</dt>
+                                            <dd>Armauer Hansegate Front</dd>
+
+                                            <dt class="primary-color text-uppercase">Service Profile</dt>
+                                            <dd>24x7 - 9:00 - 19:00</dd>
+
+                                            <dt class="primary-color text-uppercase">Duration</dt>
+                                            <dd>1u30</dd>
+                                        </dl>
+                                    </div>
+                                </div> 
+                            </a>
+
+                            <div class="form-save">
+                                <button type="submit" class="btn btn-success">Confirm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

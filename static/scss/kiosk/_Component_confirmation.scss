@@ -1,0 +1,12 @@
+.confirmation-summary {
+    &__icon,
+    &__message {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__icon {
+        width: 58px;
+        margin-right: 15px;
+    }
+}
