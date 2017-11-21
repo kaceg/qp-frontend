@@ -38,11 +38,11 @@ $(document).ready(function($) {
 		var title = $(this).closest('.multiSelect').find('input[type="checkbox"]').val(),
 		title = $(this).val();
 		if ($(this).is(':checked')) {
-			var html = '<span title="' + title + '">' + title + '<i>, </i></span>';
+			var html = '<div title="' + title + '">' + title + '</div>';
 			$('.multiSel').append(html);
 			$(".hida").hide();
 		} else {
-			$('span[title="' + title + '"]').remove();
+			$('div[title="' + title + '"]').remove();
 			var ret = $(".hida");
 			$('.multiselect-dropdown dt a').append(ret);
 		}
