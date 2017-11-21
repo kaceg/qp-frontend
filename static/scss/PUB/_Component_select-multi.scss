@@ -79,20 +79,9 @@
 	}
 	
 	 dt a span,
-	.multiSel span {
+	.multiSel div {
 	  cursor: pointer;
-	  display: inline-block;
 	  padding: 0 3px 2px 0;
-	  	  
-	  i {
-		  font-style: normal;
-	  }
-	  
-	  &:last-child {
-		  i {
-			  display: none;
-		  }
-	  }
 	}
 	
 	 dd ul {
