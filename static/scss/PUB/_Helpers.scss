@@ -30,6 +30,14 @@ h2 {
 	margin: 0 0 0.75em;
 }
 
+.heading-description {
+    display: block;
+    margin-top: 0.5em;
+    font-family: $font-family-sans-serif;
+    font-size: 0.75em;
+	font-weight: normal;
+}
+
 .title-button-wrapper {
     h1 {
         margin: 0;
@@ -202,7 +210,12 @@ hr.invisible {
 	margin: 1em 0 !important;
 	visibility: hidden;
 }
-hr.invisible-big {    
+hr.invisible-bigger {
+	padding: 0 !important;
+	margin: 1.389em 0 !important;
+	visibility: hidden;
+}
+hr.invisible-big {
 	padding: 0 !important;
 	margin: 2.5em 0 !important;
 	visibility: hidden;
@@ -520,6 +533,16 @@ ul.check-list.cta li:before {
     display: none;
 }
 
+.block-xs {
+    display: block;
+}
+
+@media (min-width: $screen-sm-min) {
+    .block-xs {
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 795px) {
     .desktop {
         display: none !important;
@@ -528,6 +551,21 @@ ul.check-list.cta li:before {
     .mobile,
     .mobile-block {
         display: block;
+    }
+}
+
+/* E-Shop flow - Floating box */
+.order-summary {
+    .summary-line {
+        position: relative;
+        margin: 1em 0;
+        padding-left: 1.5em;
+
+        img {
+            position: absolute;
+            width: 1em;
+            left: 0;
+        }
     }
 }
 

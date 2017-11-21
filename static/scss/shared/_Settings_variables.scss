@@ -177,7 +177,7 @@ $dropdown-caret-color:           $black;
 $zindex-navbar:            1000 !default;
 $zindex-dropdown:          1000 !default;
 $zindex-popover:           1060 !default;
-$zindex-tooltip:           1070 !default;
+$zindex-tooltip:           99999 !default;//1070 !default;
 $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
@@ -721,3 +721,10 @@ $whitespace-sm:             $whitespace-xs * 2;     // 36px
 $whitespace-md:             $whitespace-xs * 2.5;   // 45px
 $whitespace-lg:             $whitespace-xs * 3;     // 54px
 $whitespace-xl:             $whitespace-xs * 5;     // 90px
+
+
+//== Step Indicator
+// --------------------------------------------------
+$step-indicator-bubble-size:                20px;
+$step-indicator-bubble-spacing:             $step-indicator-bubble-size / 2;
+$step-indicator-line-size:                  6px

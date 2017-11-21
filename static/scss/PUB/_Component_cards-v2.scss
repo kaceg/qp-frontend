@@ -35,11 +35,15 @@
     }
 
     .card__header {
-        font-family: $font-family-sans-serif-bold;
+        .card__title,
+        .card__subtitle,
+        .card__description {
+            display: block;
+        }
 
         .card__title,
         .card__subtitle {
-            display: block;
+            font-family: $font-family-sans-serif-bold;
         }
 
         .card__title {

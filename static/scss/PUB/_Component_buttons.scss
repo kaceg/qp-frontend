@@ -218,6 +218,10 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         .btn-half {
             width: 49%;
         }
+        
+        .btn-full {
+            width: 100%;
+        }
 
         .btn-half:nth-child(2) {
             float: right;

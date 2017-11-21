@@ -1,0 +1,65 @@
+.select-card {
+    border: 0 solid $gray-light-worm;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-top: -1px;
+
+    .select-card__summary label,
+    .select-card__details {
+        padding: 25px 15px;
+    }
+
+    .select-card__summary {
+        position: relative;
+        font-size: 1.111em;
+
+        .checkable-element {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+        }
+
+        label {
+            display: block;
+            padding-left: 52px;
+            cursor: pointer;
+        }
+    }
+
+    .select-card__details {
+        display: none;
+        padding-top: 0;
+    }
+
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+    
+    &.selected {
+        border-width: 1px;
+        
+        .select-card__details {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .select-card {
+        .select-card__summary {
+            .product-name {
+                max-width: 80%;
+            }
+
+            .price {
+                float: right;
+                font-family: $font-family-sans-serif-bold;
+            }
+        }
+
+        .select-card__details {
+            padding-left: 52px;
+        }
+    }
+}

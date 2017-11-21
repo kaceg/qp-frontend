@@ -16,15 +16,19 @@ $.fn.vAlign = function() {
 
 function resizeContent() {
 	jQuery(".map .sh").matchHeight();
-	jQuery(".scroll-match-height").matchHeight();
 	jQuery(".maintenance .matchheight").matchHeight();
 	$(".login .matchheight").matchHeight();
 	$(".white-card .matchheight").matchHeight();
 	$(".fake-table .fake-header").matchHeight();
 	$(".service-message .matchheight").matchHeight();
 	$(".qp-footer .matchheight").matchHeight({byRow: false});
-	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent({offset_top: 10});
+	initScrollInParent();
 	jQuery(".vertical-align").vAlign();
+}
+
+function initScrollInParent() {
+	jQuery(".scroll-match-height").matchHeight();
+	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent({offset_top: 10});
 }
 
 function pagescroll(pageElement) {
@@ -277,6 +281,8 @@ $(document).ready(function($) {
 		var panBy;
 		jQuery(".infoPanes").removeClass("shown");
 	});
+
+	$(".scroll-match-height").on("click", initScrollInParent);
 	
 	/*************************
 		MOBILE TABLES
@@ -323,22 +329,6 @@ $(document).ready(function($) {
 
 	responsiveTable();
 	
-	/*************************
-		TOOLTIP
-	*************************/
-
-	$(".tooltip-trigger").on('mousemove', function(e) {
-		var notice = $(this).data("notice");
-		$('#tooltip').attr('title', notice)
-          .tooltip('fixTitle')
-          .tooltip('show')
-          .css({top: e.pageY, left: e.pageX });
-	});
-	
-	$(".tooltip-trigger").on('mouseleave', function(e) {
-	    $('#tooltip').tooltip('hide');
-	});
-	
   	/*************************
 		BACK TO TOP
 	*************************/
@@ -356,10 +346,45 @@ $(document).ready(function($) {
 			$back_to_top.addClass('cd-fade-out');
 		}
 	});
+	
+	/*************************
+		SELECTBOXIT
+	*************************/
 
 	if($(".myqp-new select").length){
 		$(".myqp-new select").selectBoxIt();
 	}
+	
+	/*************************
+		TOOLTIP
+	*************************/
+
+	$(".tooltip-trigger").on('mousemove', function(e) {
+		var notice = $(this).data("notice");
+		var top = e.pageY;
+		var left = e.pageX;
+
+		if ($(this).hasClass("sticky")) {
+			var offset = $(this).offset();
+			var halfWidth = $(this).outerWidth() / 2;
+
+			top = offset.top;
+			left = offset.left + halfWidth;
+		}
+
+		$('#tooltip').attr('title', notice)
+          .tooltip('fixTitle')
+          .tooltip('show')
+          .css({top: top, left: left });
+	});
+	
+	$(".tooltip-trigger").on('mouseleave', function(e) {
+	    $('#tooltip').tooltip('hide');
+	});
+	
+	/*************************
+		DATETIME PICKER
+	*************************/
 	
 	if($(".datepicker").length){
 		$(".datepicker > input").datetimepicker({

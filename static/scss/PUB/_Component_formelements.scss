@@ -64,12 +64,23 @@ select:focus, input:focus, textarea:focus { background: $white}
             margin-bottom: 1.25em;
         }
 
+        label,
+        .no-edit {
+            font-weight: normal;
+        }
+
+        label {
+
+            &.align-middle {
+                vertical-align: middle;
+            }
+        }
+
         .form-group {
             margin-bottom: 25px;
 
             label,
             .no-edit {
-                font-weight: normal;
                 padding-top: 10px;
             }
 
@@ -172,7 +183,7 @@ select:focus, input:focus, textarea:focus { background: $white}
 
         .infotext {
             font-size: 0.889em;
-            color: $gray;
+            color: $gray-dark;
         }
         
         .error {
