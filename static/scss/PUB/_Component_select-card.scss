@@ -14,10 +14,13 @@
         font-size: 1.111em;
 
         .checkable-element {
-            position: absolute;
-            top: 50%;
-            left: 15px;
-            transform: translateY(-50%);
+            &:before {
+                left: 15px;
+            }
+
+            .checkable-element__placeholder {
+                left: calc(0.5em + 15px);
+            }
         }
 
         label {
@@ -32,7 +35,7 @@
         padding-top: 0;
     }
 
-    .form-group:last-child {
+    .form-group:last-of-type {
         margin-bottom: 0;
     }
     

@@ -1,20 +1,36 @@
 .checkable-element {
     position: relative;
     display: inline-block;
-    height: 1em;
-    width: 1em;
     margin: 0;
-    background-color: white;
-    border: 1px solid $gray-light-worm;
-    outline: none;
-    cursor: pointer;
+    padding: 0 0 0 1.75em;
 
+    & + & {
+        margin-top: 15px;
+    }
+    
+    &:before,
     .checkable-element__placeholder {
         position: absolute;
-        width: 125%;
-        height: 125%;
-        top: 50%;
-        left: 50%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 1em;
+        width: 1em;
+        margin: 0;
+        top: calc(((1em * #{$line-height-base}) - 1em) / 2);
+        left: 0;
+        background-color: white;
+        border: 1px solid $gray-light-worm;
+    }
+
+    .checkable-element__placeholder {    
+        position: absolute;
+        width: 0.95em;
+        height: 0.95em;
+        top: calc((((1em * #{$line-height-base}) - 1em) / 2) + 0.5em);
+        left: 0.5em;
         background-image: url("/static/assets/svg/check.svg");
         background-position: center center;
         background-repeat: no-repeat;
@@ -22,26 +38,7 @@
         transform: translate(-35%, -70%);
         opacity: 0;
     }
-
-    &.no-bg {
-        background-color: transparent;
-    }
     
-    &.radio {
-        height: 1.1em;
-        width: 1.1em;
-        border-radius: 50%;
-
-        .checkable-element__placeholder {
-            width: 110%;
-            height: 110%;
-        }
-    }
-
-    &.align-middle {
-        vertical-align: middle;
-    }
-
     input[type="radio"],
     input[type="checkbox"] {
         display: none;
@@ -50,6 +47,37 @@
             + .checkable-element__placeholder {
                 opacity: 1;
             }
+        }
+    }
+
+    &.no-text {
+        padding-left: 1em;
+    }
+
+    &.element-center {
+        &:before,
+        .checkable-element__placeholder {
+            top: 50%;
+        }
+
+        &:before {
+            transform: translateY(-50%);
+        }
+    }
+
+    &.radio {
+        &:before {            
+            height: 1.1em;
+            width: 1.1em;
+            border-radius: 50%;
+        }
+        
+        .checkable-element__placeholder {
+            transform: translate(-30%, -60%);
+        }
+
+        &.no-text {
+            padding-left: 1.1em;
         }
     }
 }
