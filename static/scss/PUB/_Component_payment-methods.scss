@@ -1,0 +1,20 @@
+.payment-method {
+    display: inline-block;
+    padding: 10px;
+
+    .logo {
+        display: block;
+        width: 64px;
+        height: auto;
+        margin: 0;
+    }
+
+    &:hover,
+    &.selected  {
+        background-color: $gray-ultralightest;
+    }
+
+    &.selected {
+        border: 1px solid $gray-lighter;
+    }
+}
