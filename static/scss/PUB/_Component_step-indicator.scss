@@ -43,6 +43,7 @@
             &.current:before,
             &.current .step-text:before,
             &.completed .step-text:before,
+            &.completed:before,
             &.completed:after {
                 background-color: $lime;
             }
