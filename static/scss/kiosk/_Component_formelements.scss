@@ -21,6 +21,12 @@ form,
             box-shadow: none;
         }
     }
+    
+    .error {
+        .form-control {
+            border-color: $red !important;
+        }
+    }
 
     .form-save .btn {
         margin-top: 1em;
