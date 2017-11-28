@@ -101,9 +101,21 @@
     &:hover {
         background-color: $gray-ultralight;
     }
+
+    &.no-bg {
+        .card__wrapper {
+            padding: 10px 0;
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }
 
-.card--extra-small {    
+.card--extra-small {
+    margin-bottom: 1.667em;
+
     .card__header {
         font-family: $font-family-sans-serif-bold;
 
@@ -171,6 +183,7 @@
             flex-direction: column;
 
             .card-v2,
+            .card-v2--small,
             .card--big,
             .card--image--small,
             .card--extra-small,
@@ -178,12 +191,21 @@
             .card__wrapper .card__inner {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 1;
             }
 
+            .card-v2,
+            .card-v2--small,
+            .card--big,
+            .card--image--small,
+            .card--extra-small,
             .card__wrapper,
+            .card__wrapper .card__inner, 
             .card__wrapper .card__body {
                 flex-grow: 1;
+                
+                &.no-grow {
+                    flex-grow: 0;
+                }
             }
         }
     }
@@ -286,6 +308,20 @@
                 }
             }
         }
+
+        &.no-bg {
+            .card__wrapper {
+                padding: 0 15px;
+            }
+        }
+
+        &.min-height {
+            min-height: 175px;
+        }
+    }
+
+    .card--extra-small {
+        margin-bottom: 0;
     }
 
     .card--big {

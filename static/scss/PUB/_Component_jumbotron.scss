@@ -1,0 +1,56 @@
+.jumbotron {
+    margin: 0;
+    padding: 30px 0;
+    background-color: $gray-lightest;
+    text-align: center;
+
+    .jumbotron__inner {
+        .jumbotron__header {
+            font-size: 2em;
+        }
+
+        .jumbotron__body {
+            margin-top: 0.5em;
+            font-size: 1.389em;
+        }
+
+        .jumbotron__footer {
+            margin-top: 0.75em;
+            font-size: 1.333em;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .jumbotron {
+        background-color: transparent;
+
+        .jumbotron__inner {
+            position: relative;
+            padding: 50px 30px;
+            border: 1px solid $gray-lighter;
+
+            
+            .jumbotron__header,
+            .jumbotron__body,
+            .jumbotron__footer {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            
+            .jumbotron__header {      
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin: 0;
+                padding: 0 25px;
+                background: white;
+                transform: translateX(-50%) translateY(calc(-50% - 1px));
+            }
+            
+            .jumbotron__footer {
+                margin-top: 1.75em;
+            }
+        }
+    }
+}
