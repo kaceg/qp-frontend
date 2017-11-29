@@ -177,6 +177,33 @@ select:focus, input:focus, textarea:focus { background: $white}
             }
         }
 
+        .form-control.no-edit,
+        .form-group .form-control.no-edit,
+        .datepicker.no-edit .form-control {
+            display: inline-block;
+            padding: 0;
+            background-color: transparent;
+            border: none !important;
+            color: inherit;
+            box-shadow: none;
+    
+            &.auto-height {
+                height: auto;
+            }
+    
+            &.selectable {
+                cursor: text;
+            }
+        }
+
+        .datepicker.no-edit{
+            padding-top: 0;
+            
+            &:after {
+                display: none;
+            }
+        }
+
         .required {
             color: $red;
         }
