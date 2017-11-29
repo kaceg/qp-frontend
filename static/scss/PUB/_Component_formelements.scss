@@ -290,18 +290,6 @@ select:focus, input:focus, textarea:focus { background: $white}
             margin-left: 8px;
     }
 
-    .navbar-form {
-        .form-group {
-            &.block {
-                display: block;
-            }
-
-            .form-control {
-                width: 100%;
-            }
-        }
-    }
-
     @media(min-width: $screen-sm-min) {
 	   .cancel,
        .delete {

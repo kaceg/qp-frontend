@@ -143,10 +143,14 @@
         .search-box__input {
             visibility: hidden;
             position: absolute;
-            width: 300px;
             top: 50%;
             right: 0;
             transform: translateY(-50%);
+
+            &,
+            &.form-control {
+                width: 300px;
+            }
         }
 
         .search-box__button {

@@ -3,6 +3,18 @@
     border: none;
     margin-bottom: 0;
     padding-top: 4px;
+    
+    .navbar-form {
+        .form-group {
+            &.block {
+                display: block;
+            }
+
+            .form-control {
+                width: 100%;
+            }
+        }
+    }
 
     .navbar-header {
         .navbar-toggle {
