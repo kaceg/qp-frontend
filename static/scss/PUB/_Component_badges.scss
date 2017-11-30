@@ -1,0 +1,39 @@
+
+/**** Badge ****/
+/* .badge {
+    border-radius: 0;
+    font-size: .8em;
+    line-height: 1.4;
+    padding: 0 .3571428571rem;
+    display: inline-block;
+    font-weight: 600;
+    min-width: .7142857143rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    top:-2px;
+    position: relative;
+}
+
+.badge-green {
+    background-color: #8bb611;
+    color: #fff;
+} */
+
+.badge {
+    padding: 0;
+    
+    &.transparent {
+        background-color: transparent;
+    }
+
+    &.badge-line {
+        border: 1px solid;
+    }
+
+    &.badge-grey {
+        border-color: $gray-dark;
+        color: $gray-dark;
+    }
+}
+  

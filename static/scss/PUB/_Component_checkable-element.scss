@@ -49,7 +49,24 @@
             }
         }
     }
+    
+    &.radio {
+        &:before {            
+            height: 1.1em;
+            width: 1.1em;
+            top: calc(((1em * #{$line-height-base}) - 1.1em) / 2);
+            border-radius: 50%;
+        }
+        
+        .checkable-element__placeholder {
+            transform: translate(-30%, -60%);
+        }
 
+        &.no-text {
+            padding-left: 1.1em;
+        }
+    }
+    
     &.no-text {
         padding-left: 1em;
     }
@@ -62,22 +79,6 @@
 
         &:before {
             transform: translateY(-50%);
-        }
-    }
-
-    &.radio {
-        &:before {            
-            height: 1.1em;
-            width: 1.1em;
-            border-radius: 50%;
-        }
-        
-        .checkable-element__placeholder {
-            transform: translate(-30%, -60%);
-        }
-
-        &.no-text {
-            padding-left: 1.1em;
         }
     }
 }

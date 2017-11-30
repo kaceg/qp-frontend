@@ -45,6 +45,10 @@
         .select-card__details {
             display: block;
         }
+
+        .selected-hidden {
+            display: none;
+        }
     }
 }
 
@@ -62,7 +66,7 @@
         }
 
         .select-card__details {
-            padding-left: 52px;
+            padding: 0 52px 25px;
         }
     }
 }

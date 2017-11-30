@@ -60,7 +60,8 @@
 //@import "vendor/bootstrap/pagination";
 //@import "vendor/bootstrap/pager";
 //@import "vendor/bootstrap/labels";
-//@import "vendor/bootstrap/badges";
+@import "vendor/bootstrap/badges";
+@import "PUB/_Component_badges.scss";
 @import "vendor/bootstrap/jumbotron";
 @import "PUB/_Component_jumbotron";
 //@import "vendor/bootstrap/thumbnails";
@@ -124,7 +125,9 @@
 // Components E-Shop (make separate file?)
 // --------------------------------------------------
 @import "PUB/_Component_step-indicator.scss";
+@import "PUB/_Component_quantity-selector.scss";
 @import "PUB/_Component_table_payment.scss";
+@import "PUB/_Component_eshop.scss";
 
 // Components My Q-Park (make separate file?)
 // --------------------------------------------------

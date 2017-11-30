@@ -521,28 +521,6 @@ ul.check-list.cta li:before {
     }
 }
 
-/**** Badge - TODO: Where? ****/
-
-.badge {
-  border-radius: 0;
-  font-size: .8em;
-  line-height: 1.4;
-  padding: 0 .3571428571rem;
-  display: inline-block;
-  font-weight: 600;
-  min-width: .7142857143rem;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-  top:-2px;
-  position: relative;
-}
-
-.badge-green {
-  background-color: #8bb611;
-  color: #fff;
-}
-
 /* Grid */
 
 .row.no-gutter {
@@ -583,21 +561,6 @@ ul.check-list.cta li:before {
     .mobile,
     .mobile-block {
         display: block;
-    }
-}
-
-/* E-Shop flow - Floating box */
-.order-summary {
-    .summary-line {
-        position: relative;
-        margin: 1em 0;
-        padding-left: 1.5em;
-
-        img {
-            position: absolute;
-            width: 1em;
-            left: 0;
-        }
     }
 }
 

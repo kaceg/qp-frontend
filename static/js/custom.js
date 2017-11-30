@@ -416,7 +416,82 @@ $(document).ready(function($) {
 			$(value).css("background-image", "url('" + url + "')");
 		}
 	});
+	
+	/*************************
+		QUANTITY SELECTOR
+	*************************/
+	function validateQuantityInput(input, value) {
+		if (value === input.attr("data-value")) {
+			return false;
+		}
 
+		var quantitySelector = input.closest(".quantity-selector");
+		var minVal = parseInt(input.attr("min"));
+		
+		if (isNaN(minVal)) {
+			minVal = 1;
+		}
+
+		if (isNaN(value) || value < minVal) {
+			input.val(minVal);
+			quantitySelector.find(".quantity-validation").addClass("hidden");
+
+			return false;
+		}
+
+		var maxVal = parseInt(input.attr("max"));
+
+		if (isNaN(maxVal)) {
+			maxVal = 5;
+		}
+
+		if (value > maxVal) {
+			input.val(maxVal);
+			quantitySelector.find(".quantity-validation").removeClass("hidden");
+
+			return false;
+		}
+
+		input.val(value);
+		quantitySelector.find(".quantity-validation").addClass("hidden");
+	}
+
+	$(".quantity-selector .increase").on("click", function(e) {
+		var quantitySelector = $(e.currentTarget).closest(".quantity-selector");
+		var input = quantitySelector.find("input");
+
+		var currentVal = input.val();
+		var newVal = currentVal * 1 + 1;
+
+		validateQuantityInput(input, newVal);
+	});
+
+	$(".quantity-selector .decrease").on("click", function(e) {
+		var quantitySelector = $(e.currentTarget).closest(".quantity-selector");
+		var input = quantitySelector.find("input");
+		
+		var currentVal = input.val();
+		var newVal = currentVal - 1;
+
+		validateQuantityInput(input, newVal);
+	});
+
+	$(".quantity-selector input").on("focus", function(e) {
+		$(e.currentTarget).attr("data-value", $(e.currentTarget).val());
+	});
+
+	$(".quantity-selector input").on("blur", function(e) {
+		validateQuantityInput($(e.currentTarget), $(e.currentTarget).val());
+	});
+	
+	$(".quantity-selector input").on("keypress", function(e) {
+		if (e.which === 13) {
+			e.preventDefault();
+
+			validateQuantityInput($(e.currentTarget), $(e.currentTarget).val());
+			$(e.currentTarget).attr("data-value", $(e.currentTarget).val());
+		}
+	});
 
   	/*************************
 		HEADER SEARCH
