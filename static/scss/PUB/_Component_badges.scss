@@ -21,9 +21,24 @@
 } */
 
 .badge {
+    height: 1.667em;
+    width: 1.667em;
+    margin-right: 10px;
     padding: 0;
+    font-size: 0.833em;
+    font-weight: normal;
+    line-height: 1.667em;
+    border-radius: 0;
+
+    & + span {
+        vertical-align: middle;
+    }
+
+    &.badge-circle {
+        border-radius: 50%;
+    }
     
-    &.transparent {
+    &.badge-transparent {
         background-color: transparent;
     }
 
