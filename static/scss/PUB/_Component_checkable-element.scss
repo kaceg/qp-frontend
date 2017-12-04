@@ -44,7 +44,8 @@
         display: none;
 
         &:checked {
-            + .checkable-element__placeholder {
+            + .checkable-element__placeholder,
+            + input[type="hidden"] + .checkable-element__placeholder {
                 opacity: 1;
             }
         }
