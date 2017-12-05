@@ -18,13 +18,13 @@
 
         & > li {
             position: relative;
-            margin: 9px 0 9px -17px;
+            margin: 1em 0 em -17px;
             padding-left: 17px;
 
             &:before {
                 content: "";
                 display: inline-block;
-                background-color: $red;
+                background-color: $red !important;
 
                 position: absolute;
                 width: 4px;

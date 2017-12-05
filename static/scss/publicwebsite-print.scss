@@ -1,0 +1,40 @@
+@import "publicwebsite.scss";
+
+@media print {
+    .corner-ribbon,
+    .service-messages,
+    .breadcrumbs,
+    .qp-footer,
+    .qfooter,
+    .smoothscroll,
+    .your-ticket-usage {
+        display: none;
+    }
+
+    .qp-header {
+        .navbar {
+            display: block;
+
+            .navbar-brand:after,
+            .navbar-collapse {
+                display: none !important;
+            }
+        }
+    }
+
+    .grey {
+        color: $gray-dark !important;
+    }
+
+    .qp-rte {
+        ul {
+            & > li {
+                padding-left: 0;
+
+                &:before {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
