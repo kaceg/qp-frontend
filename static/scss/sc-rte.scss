@@ -1,4 +1,9 @@
-﻿/* Sitecore Default Stylesheet */
+﻿@import "shared/_Settings_variables.scss";
+
+@import "vendor/bootstrap/mixins"; 
+@import "shared/_Tools_mixins.scss";
+
+/* Sitecore Default Stylesheet */
 
 html {
     height: 100%;

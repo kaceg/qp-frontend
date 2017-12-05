@@ -68,5 +68,80 @@
 // @markup {scss}
 // unicode("e655"); // "\e655"
 @function unicode($str) {
-    @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+    @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"");
+}
+
+
+// Cleanup everthing before this point.
+// ====================================
+@mixin button() {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2px;
+	padding: 8px 18px;
+	border: 1px solid transparent;
+	font-family: $font-family-sans-serif-bold;
+	font-weight: normal;
+	text-decoration: none;
+	white-space: normal;
+	overflow: hidden;
+	
+    @media(min-width: $screen-sm-min) {
+		width: auto;
+	}
+}
+
+@mixin button-line-variant($color) {
+	background-color: transparent;
+	border-color: $color;
+	color: $color;
+}
+
+@mixin button-hover-variant($color, $background, $background-hover) {
+    border-color: $background;
+    
+    &:focus,
+    &.focus {
+        color: $color;
+        background-color: $background;
+        border-color: $background;
+    }
+
+    &:hover {
+        color: $color;
+        background-color: $background-hover;
+        border-color: transparent;
+    }
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: $color;
+        background-color: $background;
+        border-color: $background;
+
+        &:hover {
+            color: $color;
+            background-color: $background-hover;
+            border-color: transparent;
+        }
+
+        &:focus,
+        &.focus {
+            color: $color;
+            background-color: $background;
+            border-color: $background;
+        }
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: $background;
+                border-color: $background;
+        }
+    }
 }

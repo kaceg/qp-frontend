@@ -1,8 +1,18 @@
-﻿
-.GreenOutlineButton {
-    border: 1px solid green;
+﻿// General Button
+.GreenOutlineButton,
+.FullGreenButton {
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+    @include user-select(none);
+    @include button();
 }
 
-.FullGreenButton {
-    background-color: green;
+// Success buttons
+.FullGreenButton,
+.GreenOutlineButton {
+    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+    @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark);
+}
+
+.GreenOutlineButton {
+    @include button-line-variant($btn-success-bg);
 }
