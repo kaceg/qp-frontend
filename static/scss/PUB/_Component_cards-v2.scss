@@ -176,7 +176,7 @@
     // Align buttons
     > .container > .row {
         display: flex;
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
 
         > div {
             display: flex;
@@ -216,6 +216,12 @@
 
     .row > div:last-child .card--big {
         margin-bottom: 0;
+    }
+}
+
+.card-grid {    
+    > .container > .row {   
+        flex-wrap: wrap;
     }
 }
 
