@@ -26,8 +26,22 @@
                 }
 
                 &:nth-child(1) {
-                    color: black;
+                    color: $black;
                 }
+            }
+        }
+
+        &.borderless {
+            thead {
+                border-bottom-width: 1px;
+            }
+    
+            tfoot {
+                border-top-width: 1px;
+            }
+            
+            tr {
+                border-width: 0;
             }
         }
     }
