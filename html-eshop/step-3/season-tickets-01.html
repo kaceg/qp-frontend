@@ -356,28 +356,154 @@
                                 <hr class="invisible">
 
                                 <section class="document-selection">
+                                    <h3>Upload your document(s)</h3>
+
                                     <div class="upload-documents">
-                                        <div>
-                                            <div>
+                                        <div class="drag-and-drop-area pointer">
+                                            <div class="upload-description-area">
                                                 <h4 class="primary-color">Pasport copy</h4>
-                                                <div>
+                                                <div class="upload-description">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem nisi, hendrerit nec molestie sed, aliquet ac ipsum.
                                                     Integer sed nulla cursus lectus
                                                 </div>
+                                                <div class="external-note margin-top-xs">
+                                                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#external-note-1">View external note</a>
+                                                    <div id="external-note-1" class="erxternal-note-details collapse">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ornare sapien. Maecenas non ex elementum est pellentesque
+                                                        pulvinar in ut orci. Etiam interdum leo sit amet lorem auctor finibus.
+                                                        Pellentesque eleifend placerat luctus. Ut tempus sit amet nibh ac
+                                                        eleifend. Curabitur quis dapibus quam. Ut mattis maximus ligula.
+                                                    </div>
+                                                </div>
+                                                <div class="upload-validation primary-color margin-top-xs">
+                                                    <span class="display-block js-upload-error-extension">You are trying to upload a file wich is not supported. W only support files with extensions: .docx, .xlsx, .pdf</span>
+                                                    <span class="display-block js-upload-error-size">You are trying to upload a file wich exceeds the maximum size of 25MB.</span>
+                                                </div>
+
+                                                <input type="file" id="upload-files" name="upload-files" class="hidden" multiple="multiple">
+                                                <label for="upload-files" class="btn btn-success margin-top-xs mobile">Upload</label>
                                             </div>
-                                            <div class="">
-                                                <img src="/static/assets/svg/upload.svg">
-                                                <span>Drop here or browse</span>
+                                            <div class="upload-icon-area desktop">
+                                                <img src="/static/assets/svg/upload.svg" class="upload-icon">
+                                                <div class="upload-icon-description">
+                                                    Drop here or browse
+                                                </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div>
-                                                <h4>Uploads</h4>
-                                                <ul>
-                                                    <li>
-                                                        <span>uploaded_document_1</span>
-                                                        <a href="javascript"></a>
-                                                        <img src="/static/assets/svg/icon_delete.svg">
+                                        <div class="file-overview">
+                                            <div class="uploaded-files file-overview__section">
+                                                <strong>Uploads</strong>
+                                                <ul class="file-list">
+                                                    <li class="file-item">
+                                                        <img src="/static/assets/svg/icon_delete.svg" class="delete pull-right pointer">
+                                                        <span class="file-name">lorem_ipsum_1.pdf</span>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <img src="/static/assets/svg/icon_delete.svg" class="delete pull-right pointer">
+                                                        <span class="file-name">lorem_ipsum_2_with_a_long_title.pdf</span>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <img src="/static/assets/svg/icon_delete.svg" class="delete pull-right pointer">
+                                                        <span class="file-name">lorem ipsum 3.pdf</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="saved-files file-overview__section">
+                                                <strong>Saved files</strong>
+                                                <ul class="file-list">
+                                                    <li class="file-item">
+                                                        <a href="#">
+                                                            <span class="file-name">lorem_ipsum_4_with_a_very_long_title.pdf</span>
+                                                            <span class="file-size grey">1.2MB</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <a href="#">
+                                                            <span class="file-name">lorem_ipsum_5.pdf</span>
+                                                            <span class="file-size grey">12kb</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <a href="#">
+                                                            <span class="file-name">lorem ipsum 6.pdf</span>
+                                                            <span class="file-size grey">567kb</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="upload-documents error">
+                                        <div class="drag-and-drop-area pointer">
+                                            <div class="upload-description-area">
+                                                <h4 class="primary-color">Pasport copy</h4>
+                                                <div class="upload-description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem nisi, hendrerit nec molestie sed, aliquet ac ipsum.
+                                                    Integer sed nulla cursus lectus
+                                                </div>
+                                                <div class="external-note margin-top-xs">
+                                                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#external-note-2">View external note</a>
+                                                    <div id="external-note-2" class="erxternal-note-details collapse">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ornare sapien. Maecenas non ex elementum est pellentesque
+                                                        pulvinar in ut orci. Etiam interdum leo sit amet lorem auctor finibus.
+                                                        Pellentesque eleifend placerat luctus. Ut tempus sit amet nibh ac
+                                                        eleifend. Curabitur quis dapibus quam. Ut mattis maximus ligula.
+                                                    </div>
+                                                </div>
+                                                <div class="upload-validation primary-color margin-top-xs">
+                                                    <span class="display-block js-upload-error-extension">You are trying to upload a file wich is not supported. W only support files with extensions: .docx, .xlsx, .pdf</span>
+                                                    <span class="display-block js-upload-error-size">You are trying to upload a file wich exceeds the maximum size of 25MB.</span>
+                                                </div>
+
+                                                <input type="file" id="upload-files-2" name="upload-files-2" class="hidden" multiple="multiple">
+                                                <label for="upload-files-2" class="btn btn-success margin-top-xs mobile">Upload</label>
+                                            </div>
+                                            <div class="upload-icon-area desktop">
+                                                <img src="/static/assets/svg/upload.svg" class="upload-icon">
+                                                <div class="upload-icon-description">
+                                                    Drop here or browse
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="file-overview hidden">
+                                            <div class="uploaded-files file-overview__section">
+                                                <strong>Uploads</strong>
+                                                <ul class="file-list">
+                                                    <li class="file-item">
+                                                        <img src="/static/assets/svg/icon_delete.svg" class="delete pull-right pointer">
+                                                        <span class="file-name">lorem_ipsum_1.pdf</span>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <img src="/static/assets/svg/icon_delete.svg" class="delete pull-right pointer">
+                                                        <span class="file-name">lorem_ipsum_2_with_a_long_title.pdf</span>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <img src="/static/assets/svg/icon_delete.svg" class="delete pull-right pointer">
+                                                        <span class="file-name">lorem ipsum 3.pdf</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="saved-files file-overview__section">
+                                                <strong>Saved files</strong>
+                                                <ul class="file-list">
+                                                    <li class="file-item">
+                                                        <a href="#">
+                                                            <span class="file-name">lorem_ipsum_4_with_a_very_long_title.pdf</span>
+                                                            <span class="file-size grey">1.2MB</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <a href="#">
+                                                            <span class="file-name">lorem_ipsum_5.pdf</span>
+                                                            <span class="file-size grey">12kb</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="file-item">
+                                                        <a href="#">
+                                                            <span class="file-name">lorem ipsum 6.pdf</span>
+                                                            <span class="file-size grey">567kb</span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>

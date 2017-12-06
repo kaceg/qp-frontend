@@ -1,87 +1,145 @@
 .upload-documents {
+    border: 1px solid $gray-light-worm;
 
-    .color-primary {
-        color: $red !important;
+    .drag-and-drop-area .upload-description-area,
+    .drag-and-drop-area .upload-icon-area,
+    .file-overview {
+        padding: 30px;
     }
 
-    .color-secondary {
-        color: $lime !important;
+    .drag-and-drop-area {
+        font-size: 1.111em;
+
+        .upload-description-area {
+            h4 {
+                font-size: 1.222em;
+            }
+
+            .upload-validation {
+                display: none;
+            }
+        }
+
+        .upload-icon-area {
+            border-left: 1px solid $gray-light-worm;
+
+            .upload-icon {
+                width: 65px;
+            }
+        }
     }
+
+    .file-overview {
+        background-color: $gray-ultralight;
+        border-top: 1px solid $gray-light-worm;
+
+        .file-overview__section {
+            .file-list {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
     
-    .fa,
-    .flat-list li,
-    .flat-list li a {
-        color: $gray-dark;
+                .file-item {
+                    display: block;
+                    padding: 0.889em 0;
+                    border-bottom: 1px solid $gray-light-worm;
+    
+                    .file-name,
+                    .file-size {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    a {                       
+                        color: inherit;
+                        text-decoration: none;
+                    }
+    
+                    .file-name {
+                        max-width: 100%;
+                        margin-right: 5px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+    
+                    .delete {
+                        width: 22px;
+                        margin: 2px 10px 0 0;
+                    }
+    
+                    .delete + .file-name {
+                        max-width: calc(100% - 42px);
+                    }
+                }
+            }
+
+            + .file-overview__section {
+                margin-top: 30px;
+            
+                .file-list {
+                    .file-item {
+                        &:last-child {
+                            padding-bottom: 0;
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
-    &.paddBtm1em {
-        padding-bottom: 1em !important;
+    &.error {
+        border-color: $red;
+
+        .upload-description-area {
+            .upload-validation {
+                display: block;
+            }
+        }
     }
 
-    .paddTop0em5 {
-        padding-top: 0.5em;
+    + .upload-documents {
+        margin-top: 40px;
     }
+}
 
-    .paddBtm0em5 {
-        padding-bottom: 0.5em;
-    }
-
-    .file-upload {
-        min-height: 5em;
-        border: 1px dashed $gray-lighter;
-        margin-bottom: 0;
-        
-        &.single {
+@media (min-width: $screen-md-min) {
+    .upload-documents {
+        .drag-and-drop-area {
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .upload-icon {
-            width: 20%;
-            display: inline-block;
+            flex-direction: row;
 
-            svg {
-                fill: $gray-lighter;
-            }
-        }
-    }
-
-    .file-list {
-        border-top-width: 0;
-        padding: 1em;
-
-        .remove-icon {
-            float: right;
-        }
-    }
-
-    .flat-list {
-        margin-bottom: 0;
-        padding: 0;
-        list-style: none none outside;
-
-        li {
-            padding-left: 0;
-
-            &:before {
-                content: none;
+            .upload-description-area,
+            .upload-icon-area {
+                display: flex;
+                flex-direction: column;
             }
 
-            a {
-                text-decoration: none;
+            .upload-description-area {
+                width: 60%;
+            }
+
+            .upload-icon-area {
+                width: 40%;
+                justify-content: center;
+
+                .upload-icon,
+                .upload-icon-description {
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .upload-icon-description {
+                    width: 85px;
+                    margin-top: 10px;
+                }
             }
         }
     }
 }
 
-.gradient-bg .upload-documents {
-    .fa,
-    .flat-list li,
-    .flat-list li a {
-        color: $white;
-    }
-}
+
 
 .myqp-new {
     .document {
