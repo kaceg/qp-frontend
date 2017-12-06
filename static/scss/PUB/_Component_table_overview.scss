@@ -325,13 +325,18 @@
 			> tbody > tr > td {
 				padding-top: 0;
 				padding-bottom: 5px;
+			}
 
-				&:first-child {
-					padding-left: 0;
-				}
-
-				&:last-child {
-					padding-right: 0;
+			&:not(.tbl-overview) {
+				> thead > tr > th,
+				> tbody > tr > td {					
+					&:first-child {
+						padding-left: 0;
+					}
+	
+					&:last-child {
+						padding-right: 0;
+					}
 				}
 			}
 		}
@@ -346,6 +351,7 @@
 				padding: 17px 20px 15px;
 			}
 		}
+		
 		td {
 			width: 100%;
 			border: 0;
