@@ -416,7 +416,7 @@ $(document).ready(function($) {
 			$(value).css("background-image", "url('" + url + "')");
 		}
 	});
-	
+
 	/*************************
 		QUANTITY SELECTOR
 	*************************/

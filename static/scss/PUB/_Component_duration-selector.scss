@@ -1,0 +1,102 @@
+.duration-selector {
+    .duration-input {
+        display: flex;
+        flex-flow: row wrap;
+
+        .input-group,
+        .duration-separator {
+            display: inline-block;
+        }
+
+        .input-group {
+            position: relative;
+            width: calc((100% - 42px) / 3);
+
+            input[type=number],
+            .input-group-btn {
+                display: block;
+                width: 100%;
+                float: none;
+                box-shadow: none;
+                -moz-appearance: textfield;
+    
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+
+            .input-group-btn {
+                .btn {
+                    width: 100%;
+                    padding: 8px;
+                    background-color: transparent;
+                    color: $gray-dark;
+
+                    &,
+                    .btn-icon {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+
+                    &.increase {
+                        padding-top: 0;
+                    }
+
+                    &.decrease {
+                        padding-bottom: 0;
+                    }
+
+                    &:active {
+                        box-shadow: none;
+                    }
+                }
+            }
+            
+            input[type=number] {
+                height: 46px;
+                border: 1px solid $gray-light-worm;
+                font-family: $font-family-sans-serif-bold;
+                text-align: center;
+                box-shadow: none;
+            }
+
+            .input-description {
+                text-align: center;
+            }
+
+            + .input-group {
+                margin-left: 21px;
+
+                &:before {
+                    content: ":";
+                    position: absolute;
+                    width: 21px;
+                    top: calc(28px + (46px / 2));
+                    right: 100%;
+                    text-align: center;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .duration-separator {
+            width: 21px;
+            text-align: center;
+            align-self: 20px;
+
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .duration-selector {
+        .duration-input {
+            .input-group {
+                width: 46px;
+            }
+        }
+    }
+}

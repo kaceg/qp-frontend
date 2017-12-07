@@ -1,5 +1,4 @@
 .quantity-selector {
-
     .input-group {
         border: 1px solid $gray-light-worm;
 
@@ -49,6 +48,12 @@
     .quantity-selector {
         .input-group {
             width: 140px; // 46px * 3 + 2px border
+        }
+
+        &.bigger {
+            .input-group {
+                width: 150px;
+            }
         }
     }
 }
