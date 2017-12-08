@@ -168,62 +168,82 @@
     }
 }
 
-.card-grid,
-.parking-facility-results,
-.poi-results,
-.side-by-side-cards,
-.three-column-cards {
-    // Align buttons
-    > .container > .row {
-        display: flex;
-        //flex-wrap: wrap;
+/* @media (min-width: $screen-sm-min) {
+    .card-grid,
+    .parking-facility-results,
+    .poi-results,
+    .side-by-side-cards,
+    .three-column-cards {
+        // Align buttons
+        > .container > .card-container {
+            margin: 0 -15px;
+            -webkit-flex-wrap: wrap !important;
+            //flex-wrap: wrap;
 
-        > div {
-            display: flex;
-            flex-direction: column;
+            > .card-placeholder {
+                //display: flex;
+                padding: 0 15px;
+                -webkit-flex: 0 0 50%;
+                flex-basis: 50%;
 
-            .card-v2,
-            .card-v2--small,
-            .card--big,
-            .card--image--small,
-            .card--extra-small,
-            .card__wrapper,
-            .card__wrapper .card__inner {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .card-v2,
-            .card-v2--small,
-            .card--big,
-            .card--image--small,
-            .card--extra-small,
-            .card__wrapper,
-            .card__wrapper .card__inner, 
-            .card__wrapper .card__body {
-                flex-grow: 1;
-                
-                &.no-grow {
-                    flex-grow: 0;
+                .card-v2,
+                .card-v2--small,
+                .card--big,
+                .card--image--small,
+                .card--extra-small,
+                .card__wrapper,
+                .card__wrapper .card__inner {
+                    //display: flex;
+                    //flex-direction: column;
                 }
+
+                .card-v2,
+                .card-v2--small,
+                .card--big,
+                .card--image--small,
+                .card--extra-small,
+                .card__wrapper,
+                .card__wrapper .card__inner, 
+                .card__wrapper .card__body {
+                   //flex-grow: 1;
+                    
+                    &.no-grow {
+                        //flex-grow: 0;
+                    }
+                }
+            }
+        }
+
+        .card--big {
+            margin-bottom: 60px;
+        }
+
+        .flex-container > .flex-item:last-child .card--big {
+            margin-bottom: 0;
+        }
+    }
+
+    .card-grid .card-container .card-placeholder {
+        width: 50%;
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .side-by-side-cards {
+        .card-container {
+            .card-placeholder {
+                width: 50%;
             }
         }
     }
 
-    .card--big {
-        margin-bottom: 60px;
+    .card-grid,
+    .three-column-cards {
+        .card-container .card-placeholder {
+            width: 33.33333%;
+        }
     }
-
-    .row > div:last-child .card--big {
-        margin-bottom: 0;
-    }
-}
-
-.card-grid {    
-    > .container > .row {   
-        flex-wrap: wrap;
-    }
-}
+} */
 
 .card--hero,
 .card--hero--small {

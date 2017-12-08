@@ -24,6 +24,13 @@ function resizeContent() {
 	$(".qp-footer .matchheight").matchHeight({byRow: false});
 	initScrollInParent();
 	jQuery(".vertical-align").vAlign();
+
+	// Cards
+	$(".card-grid .card-v2").matchHeight({byRow: true});
+	$(".side-by-side-cards .card--big, .side-by-side-cards .card-v2--small").matchHeight({byRow: false});
+	$(".three-column-cards .card--extra-small").matchHeight({byRow: false});
+	$(".parking-facility-results .card-v2").matchHeight({byRow: true});
+	$(".poi-results .card--image--small").matchHeight({byRow: true});
 }
 
 function initScrollInParent() {
