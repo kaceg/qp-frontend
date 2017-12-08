@@ -22,9 +22,9 @@
 
 .badge {
     height: 1.667em;
-    width: 1.667em;
+    min-width: 1.667em;
     margin-right: 10px;
-    padding: 0;
+    padding: 0 5px;
     font-size: 0.833em;
     font-weight: normal;
     line-height: 1.667em;
@@ -35,7 +35,7 @@
     }
 
     &.badge-circle {
-        border-radius: 50%;
+        border-radius: 12px;
     }
     
     &.badge-transparent {
