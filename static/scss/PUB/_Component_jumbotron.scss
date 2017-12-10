@@ -6,17 +6,20 @@
 
     .jumbotron__inner {
         .jumbotron__header {
-            font-size: 2em;
+            font-size: 1.6em;
+        }
+        
+        .jumbotron__body,
+        .jumbotron__footer {
+            font-size: 1.2em;
         }
 
         .jumbotron__body {
             margin-top: 0.5em;
-            font-size: 1.389em;
         }
 
         .jumbotron__footer {
             margin-top: 0.75em;
-            font-size: 1.333em;
         }
     }
 }
