@@ -25,15 +25,28 @@
 			//background: $gray-ultralightest;
 		}
 	}
+	
 	span {
 		height: auto;
 		line-height: 31px;
 	}
+	
 	.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
 		top: 50%;
 		margin-top: -2px;
 		margin-right: 8px;
 		border-top-color: #000000;
+	}
+	
+	.selectboxit-optgroup-header {
+		font-family: $font-family-sans-serif;
+		font-size: 0.9em;
+		line-height: 30px !important;
+		padding: 5px 7px !important;
+		background: $gray-lightest;
+		min-height: 31px;
+		border-left: 1px solid $gray-light-worm !important;
+		border-right: 1px solid $gray-light-worm !important;
 	}
 	
 	.selectboxit-text {
@@ -46,7 +59,6 @@
 		width: 100%;
 		white-space: nowrap;
 		min-height: 31px;
-
 		max-width: 100% !important;
 	}
 	
@@ -84,27 +96,37 @@
 		text-indent: 0;
 	}
 	
-	.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+	.selectboxit-container span,
+	.selectboxit-container .selectboxit-options a {
 		height: auto !important;
 		clear: both;
 	}
 
-	.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:focus {
+	.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor,
+	.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:hover,
+	.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:active,
+	.selectboxit-list > .selectboxit-option > .selectboxit-option-anchor:focus {
 		font-family: $font-family-sans-serif;	
 		color: $black;
 		text-decoration: none;
 		line-height: 30px !important;
-		padding: 5px 12px !important;
-		padding-bottom: 1.83em !important;
+		padding: 5px 12px 1.83em !important;
 		overflow: visible;
 	}
 	
-	.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:hover, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:active, .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:focus {
+	.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor,
+	.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:hover,
+	.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:active,
+	.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor:focus {
 		background-color: $gray-ultralightest;
 		background-image: none;
 		line-height: 30px !important;
 		color: $black !important;
 		text-decoration: none;
+	}
+	
+	.selectboxit-list > .selectboxit-optgroup-option.selectboxit-option > .selectboxit-option-anchor {
+		padding: 5px 12px 1.83em 30px !important;
 	}
 
 	.selectboxit.big {
