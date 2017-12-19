@@ -11,7 +11,7 @@
     }
     
     .qp-header__line {
-        right: calc(100% - 30px); // Compensate for gutter
+        right: calc(100% - 15px); // Compensate for gutter
         background-color: $black;
         z-index: 1;
     }
@@ -19,13 +19,5 @@
     &:after {
         content: " ";
         background-color: $red;
-    }
-}
-
-@media (min-width: $screen-md-min) {
-    .qp-header {
-        .qp-header__line {
-            right: calc(100% - 15px); // Compensate for gutter
-        }
     }
 }
