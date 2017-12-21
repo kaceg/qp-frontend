@@ -1,6 +1,10 @@
 .navbar-qp {
-    padding-top: 44px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+	-webkit-transition: padding 0.2s ease-in;
+	-moz-transition: padding 0.2s ease-in;
+	-o-transition: padding 0.2s ease-in;
+	transition: padding 0.2s ease-in;
 
     .navbar-header {
         .navbar-brand {
@@ -168,4 +172,11 @@
             }
         }
     }
+}
+
+body.fixedscroll header {
+	.navbar-qp {
+	    padding-top: 12px;
+		padding-bottom: 14px;
+	}
 }

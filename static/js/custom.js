@@ -43,6 +43,26 @@ function pagescroll(pageElement) {
 	jQuery('html, body').animate({scrollTop: pageElement.offset().top}, scroll_duration);
 }
 
+/*************************
+	FIXED NAV
+*************************/
+
+function positionNav($){
+
+	var mainH	= $("header").outerHeight();
+	var startH	= 18;
+	
+	if($(document).scrollTop() > startH) {
+		$("body").addClass("fixedscroll");
+		var mainReducedH	= $("header").outerHeight();
+		var newPaddingContent = mainReducedH + 30 + 18;
+		$(".qcontentpane").css("padding-top", newPaddingContent);		
+	} else {
+		$("body").removeClass("fixedscroll");
+		$(".qcontentpane").css("padding-top", 30);
+	}	
+	
+}
 
 /*************************
 	GMAP
@@ -592,10 +612,16 @@ $(document).ready(function() {
 
 	$(window).load(function() {
 		resizeContent($);
+		positionNav($);
 	});
 
 	$(window).resize(function() {
 		resizeContent($);
+		positionNav($);
+	});
+
+	$(document).scroll(function() {
+		positionNav($);
 	});
 
 });

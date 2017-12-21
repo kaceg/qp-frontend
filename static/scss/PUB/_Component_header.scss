@@ -7,7 +7,7 @@
         height: 4px;
         width: 100%;
         position: absolute;
-        top: 0;
+        bottom: 0;
     }
     
     .qp-header__line {
@@ -20,4 +20,13 @@
         content: " ";
         background-color: $red;
     }
+}
+
+@media (min-width: $screen-md-min) {
+	body.fixedscroll header {
+		position: fixed;
+		width: 100%;
+		z-index: 9999;
+		background: $white;
+	}
 }
