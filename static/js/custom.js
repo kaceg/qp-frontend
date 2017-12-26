@@ -27,8 +27,8 @@ function resizeContent() {
 
 	// Cards
 	$(".card-grid .card-v2").matchHeight({byRow: true});
-	$(".side-by-side-cards .card--big, .side-by-side-cards .card-v2--small").matchHeight({byRow: false});
-	$(".three-column-cards .card--extra-small").matchHeight({byRow: false});
+	$(".side-by-side-cards .card--big, .side-by-side-cards .card-v2--small").matchHeight({byRow: true});
+	$(".three-column-cards .card--extra-small").matchHeight({byRow: true});
 	$(".parking-facility-results .card-v2").matchHeight({byRow: true});
 	$(".poi-results .card--image--small").matchHeight({byRow: true});
 }
