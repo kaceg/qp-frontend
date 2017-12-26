@@ -98,6 +98,8 @@
 }
 
 @mixin button-hover-variant($color, $background, $background-hover) {
+    color: $color;
+    background-color: $background;
     border-color: $background;
     
     &:focus,
