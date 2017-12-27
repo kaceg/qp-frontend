@@ -61,10 +61,17 @@
     }
 }
 
+.content-right {
+    .bg-gradient:before {
+        right: 0;
+        left: auto;
+    }
+}
+
 @media (min-width: $screen-md-min) {
     .img-bg,
     .video-bg {
-        .bg-gradient-half:before {
+        &.bg-gradient-half:before {
             width: 50%;
         }
     }

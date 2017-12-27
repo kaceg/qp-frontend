@@ -36,50 +36,18 @@
     <!-- CONTENT -->
     <div class="qcontentpane">
 
-        <section class="breadnav">
-            <div class="container">
-                <div class="row bread">
-                    <div class="col-xs-12">
-                        <nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
-                            <ol>
-                                <li><a href="/" title="Home">Home</a>
-                                    <ol>
-                                        <li class="is-current">Products</li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pageintro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-
-                        <h4 class="strong text-uppercase primary-color no-margin">Products</h4>
-                        <h1 class="strong big-h1 no-margin">Why have I received a fine?</h1>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="invisible-small">
-
         <section class="card--hero--small">
-            <div class="img-bg bg-gradient-half bg-gradient-right" data-background-image="http://www.q-park-resa.fr/uploader/img_dyna/g-photo_park-car_park_boulogne_billancourt_bois-en-291.jpg"></div>
+            <div class="img-bg bg-gradient bg-gradient-half" data-background-image="http://www.q-park-resa.fr/uploader/img_dyna/g-photo_park-car_park_boulogne_billancourt_bois-en-291.jpg"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <div class="card__wrapper">
                             <div class="card__inner">
                                 <div class="card__header">
-                                    <span class="card__title">Parking with maximum comfort</span>
+                                    <h4 class="card__subtitle text-uppercase no-margin">Products</h4>
+                                    <h1 class="card__title margin-bottom-xs">Parking with maximum comfort</h1>
                                 </div>
-                                <div class="card__body qp-rte max-height">
+                                <div class="card__body max-height">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius euismod mi a blandit. Donec non orci non urna vestibulum
                                     luctus. Pellentesque egestas eget tortor ac viverra. Donec gravida ipsum eget ipsum malesuada
                                     rutrum. Vivamus tincidunt, ipsum vitae tempor ultrices, augue libero tempor ligula, non
@@ -94,6 +62,25 @@
             </div>
         </section>
 
+        <section class="breadnav">
+            <div class="container">
+                <div class="row bread">
+                    <div class="col-xs-12">
+                        <nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
+                            <ol>
+                                <li>
+                                    <a href="/" title="Home">Home</a>
+                                    <ol>
+                                        <li class="is-current">Products</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="products-overview margin-top-lg">
             <div class="jump-to-navigation">
                 <div class="container">
@@ -102,9 +89,15 @@
                             <h3 class="primary-color">Select a product category</h3>
 
                             <div class="jump-to-navigation__items">
-                                <a href="#season-tickets" class="grey"><span class="text-underline">Season Tickets</span></a>
-                                <a href="#value-cards" class="grey"><span class="text-underline">Value Card</span></a>
-                                <a href="#other-products" class="grey"><span class="text-underline">Other Products</span></a>
+                                <a href="#season-tickets" class="grey">
+                                    <span class="text-underline">Season Tickets</span>
+                                </a>
+                                <a href="#value-cards" class="grey">
+                                    <span class="text-underline">Value Card</span>
+                                </a>
+                                <a href="#other-products" class="grey">
+                                    <span class="text-underline">Other Products</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -463,7 +456,9 @@
     <div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
 
     <!-- BACK TO TOP -->
-    <a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <a href="#body" class="smoothscroll cd-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </a>
 
     <!-- LOADING OVERLAY -->
     <div class="loading-overlay">

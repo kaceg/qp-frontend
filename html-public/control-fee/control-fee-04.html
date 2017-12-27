@@ -35,53 +35,17 @@
 
     <!-- CONTENT -->
     <div class="qcontentpane">
-
-        <section class="breadnav">
-            <div class="container">
-                <div class="row bread">
-                    <div class="col-xs-12">
-                        <nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
-                            <ol>
-                                <li><a href="/" title="Home">Home</a>
-                                    <ol>
-                                        <li><a href="control-fee-01.hml">Control Fee</a>
-                                            <ol>
-                                                <li class="is-current">Why have I received a fine?</li>
-                                            </ol>
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pageintro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-
-                        <h4 class="strong text-uppercase primary-color no-margin">Control Fee</h4>
-                        <h1 class="strong big-h1 no-margin">Why have I received a fine?</h1>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="invisible-small">
-
+        
         <section class="card--hero--small">
-            <div class="img-bg bg-gradient-half" data-background-image="http://www.q-park-resa.fr/uploader/img_dyna/g-photo_park-car_park_boulogne_billancourt_bois-en-291.jpg"></div>
+            <div class="img-bg bg-gradient bg-gradient-half" data-background-image="http://www.q-park-resa.fr/uploader/img_dyna/g-photo_park-car_park_boulogne_billancourt_bois-en-291.jpg"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <div class="card__wrapper">
                             <div class="card__inner">
                                 <div class="card__header">
-                                    <span class="card__title">Why have I received a fine?</span>
+                                    <h4 class="card__subtitle text-uppercase no-margin">Control Fee</h4>
+                                    <h1 class="card__title margin-bottom-xs">Why have I received a fine?</h1>
                                 </div>
                                 <div class="card__body max-height">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius euismod mi a blandit. Donec non orci non urna vestibulum
@@ -98,6 +62,30 @@
             </div>
         </section>
 
+        <section class="breadnav">
+            <div class="container">
+                <div class="row bread">
+                    <div class="col-xs-12">
+                        <nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
+                            <ol>
+                                <li>
+                                    <a href="/" title="Home">Home</a>
+                                    <ol>
+                                        <li>
+                                            <a href="control-fee-01.hml">Control Fee</a>
+                                            <ol>
+                                                <li class="is-current">Why have I received a fine?</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="control-fee-wizard myqp-new">
             <div class="container">
                 <div class="offense-number form">
@@ -107,7 +95,8 @@
                                 Select the offense number the tax has been issued for
                             </div>
                             <div class="offense-number-text">
-                                Please read <a href="#">this</a> page if you need help finding your control fee number.
+                                Please read
+                                <a href="#">this</a> page if you need help finding your control fee number.
                             </div>
                             <div class="offense-number-select">
                                 <select class="form-control big text-left">
@@ -153,7 +142,7 @@
             <div id="control-fee-form" class="modal overlay gradient-bg fade" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        
+
                         <a href="#" class="btn btn-link modal-close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">
                                 <img src="/static/assets/svg/icon_close-white.svg" />
@@ -174,17 +163,19 @@
                                                 <div class="col-xs-12">
                                                     <div class="qp-rte">
                                                         <p>
-                                                            NOTICE:<br /> Once we have received your complaint, the case
-                                                            will be suspended until it is finalized. You do not need to do
-                                                            any further once the complaint has been sent and you has received
-                                                            a confirmation of our receipt of the complaint. Here after treats
-                                                            We of course, your opposition as soon as possible, but it may
-                                                            take some time before you hear from us. We reserve the right
-                                                            not to respond to a complaint if it does not have a substantive
-                                                            content that refers to a specific check fee.<br /> Repeated inquiries
-                                                            regarding a previously treated objection, where we have maintained
-                                                            the requirement, will also not be answered. If you need help
-                                                            finding your Control Fee violation number, click here.
+                                                            NOTICE:
+                                                            <br /> Once we have received your complaint, the case will be suspended
+                                                            until it is finalized. You do not need to do any further once
+                                                            the complaint has been sent and you has received a confirmation
+                                                            of our receipt of the complaint. Here after treats We of course,
+                                                            your opposition as soon as possible, but it may take some time
+                                                            before you hear from us. We reserve the right not to respond
+                                                            to a complaint if it does not have a substantive content that
+                                                            refers to a specific check fee.
+                                                            <br /> Repeated inquiries regarding a previously treated objection,
+                                                            where we have maintained the requirement, will also not be answered.
+                                                            If you need help finding your Control Fee violation number, click
+                                                            here.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -230,7 +221,8 @@
                                                 <div class="col-xs-12 col-md-9">
                                                     <input type="text" class="form-control">
                                                     <span class="infotext">
-                                                        First &amp; Last name of the person who was driving the car at the time the control fee was issued. Not the owner of the car.
+                                                        First &amp; Last name of the person who was driving the car at the time the control fee was issued. Not the owner of the
+                                                        car.
                                                     </span>
                                                 </div>
                                             </div>
@@ -281,7 +273,8 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="paddTop0em5 paddBtm0em5 col-sm-8">
-                                                                    <strong class="color-primary">Name</strong>&nbsp;<i class="fa fa-info-circle pointer"></i>
+                                                                    <strong class="color-primary">Name</strong>&nbsp;
+                                                                    <i class="fa fa-info-circle pointer"></i>
                                                                     <p>
                                                                         Om in aanmerking te komen voor dit tarief dient de aanvrager een bewijs dat hij of zij in dienst is van Vodafone te overleggen
                                                                     </p>
@@ -310,7 +303,8 @@
 
                                                             <input type="file" class="hidden" multiple="multiple">
                                                             <span class="hidden color-primary">
-                                                                It’s not possible to upload a document of this format. Please use one of the allowed formats (doc, docx, gif, jpg, jpeg, bmp, pdf, txt, png)
+                                                                It’s not possible to upload a document of this format. Please use one of the allowed formats (doc, docx, gif, jpg, jpeg,
+                                                                bmp, pdf, txt, png)
                                                             </span>
                                                             <span class="hidden color-primary">The size of this document is too large and can’t be uploaded</span>
                                                         </div>
@@ -354,7 +348,9 @@
     <div id="tooltip" data-toggle="tooltip" title="" data-animation="false" data-trigger="manual"></div>
 
     <!-- BACK TO TOP -->
-    <a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <a href="#body" class="smoothscroll cd-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </a>
 
     <!-- LOADING OVERLAY -->
     <div class="loading-overlay">

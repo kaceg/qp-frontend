@@ -249,7 +249,10 @@
 .card--hero--small {
     .card__wrapper {
         color: $white;
-        margin: 40px 25px 40px;
+
+        .card__subtitle {
+            font-size: 1.222em;
+        }
     
         .card__title {
             font-family: $font-family-sans-serif-bold;
@@ -258,7 +261,6 @@
     
         .card__body {
             margin-top: 0;
-            font-size: 1.222em;
         }
 
         .card__body.max-height {
@@ -274,7 +276,10 @@
 
 .card--hero {
     .card__wrapper {
-        .card__body.max-height {
+        margin: 40px 25px 40px;
+
+        .card__body {
+            font-size: 1.222em;
             height: calc(1em * #{$line-height-base} * 6);
         }
     }
@@ -282,8 +287,12 @@
 
 .card--hero--small {
     .card__wrapper {
-        .card__body.max-height {
-            height: calc(1em * #{$line-height-base} * 8);
+        margin: 34px 0 40px;
+        
+        .card__body {
+            font-size: 1.333em;
+            line-height: 1.26;
+            height: calc(1em * 1.25 * 6);
         }
     }
 }
@@ -370,10 +379,11 @@
             }
         }
     }
-
-    .card--hero,
-    .card--hero--small {
+    
+    .card--hero {
         .card__wrapper {
+            margin: 40px 65px 40px 0;
+
             .card__title {
                 font-size: 2.222em;
             }
@@ -386,15 +396,9 @@
                 margin-top: 10px;
                 text-align: left;
             }
-        }
-    }
-    
-    .card--hero {
-        .card__wrapper {
-            margin: 40px 65px 40px 0;
         }        
             
-        &.bg-gradient-right {
+        &.content-right {
             .card__wrapper {
                 margin: 40px 0 40px 65px;
             }
@@ -403,12 +407,12 @@
     
     .card--hero--small {
         .card__wrapper {
-            margin: 75px 65px 75px 0;
+            margin: 78px 93px 78px 0;
         }        
             
-        &.bg-gradient-right {
+        &.content-right {
             .card__wrapper {
-                margin: 75px 0 75px 65px;
+                margin: 75px 0 75px 93px;
             }
         }
     }
