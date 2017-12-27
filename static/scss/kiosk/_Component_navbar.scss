@@ -1,1 +1,14 @@
 @import "../PUB/_Component_navbar-inline.scss";
+
+.navbar-qp {
+    .language-selector-wrapper {
+        margin: 11px 0 12px;
+        padding: 0;
+        padding-left: 15px;
+        border-left: 1px solid $gray-light-worm;
+        
+        .selectboxit-options {
+            margin-left: -16px;
+        }
+    }
+}

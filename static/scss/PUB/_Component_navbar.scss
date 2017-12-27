@@ -136,12 +136,14 @@
         }
 
         .user-icon {
-            left: 0;
-            font-size: 1.45em;
+            left: -25px;
+            padding-left: 25px;
+            border-left: 1px solid $gray-light-worm;
+            font-size: 1.222em;
         }
 
         .user-info {
-            margin: 0 15px 0 38px;
+            margin: 0 23px 0 39px;
             max-width: 140px;
             font-size: 0.89em;
 
@@ -150,6 +152,7 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                line-height: 1.125;
             }
         }
 
@@ -159,7 +162,9 @@
         }
 
         .user-menu-dropdown {
+            width: 325px;
             padding: 0;
+            right: 0;
             border: none;
             border-top: 1px solid $gray-worm;
             border-bottom: 1px solid $gray-worm;
@@ -212,4 +217,19 @@
 
 @media (min-width: $screen-md-min) {
     @import "_Component_navbar-inline.scss";
+}
+
+@media (min-width: 1563px) { //1563px, otherwise the dropdown gets pushed off screen.
+    .navbar-qp {
+        .navbar-collapse {
+            .navbar-nav {
+                .user-menu {
+                    .user-menu-dropdown {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
 }
