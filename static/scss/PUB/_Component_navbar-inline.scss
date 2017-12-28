@@ -38,8 +38,13 @@
 
             .user-menu {
                 margin: 5px 0 7px;
-                padding: 0 15px 0 25px;
+                padding: 0;
+                padding-left: 25px;
                 text-align: left;
+
+                .user-menu-dropdown-toggle {
+                    height: 36px;
+                }
                 
                 .user-menu-dropdown-toggle,
                 &.business-account .user-menu-dropdown-toggle {
@@ -94,6 +99,12 @@
                                 background-image: url("/static/assets/svg/font/navpopup-logout.svg");
                             }
                         }
+                    }
+                }
+
+                &.only-icon {
+                    .user-menu-dropdown-toggle {
+                        margin-right: 26px;
                     }
                 }
             }
