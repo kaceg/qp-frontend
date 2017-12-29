@@ -78,6 +78,19 @@
                 }
             }
         }
+        
+        .environment-info {            
+            span {
+                &:after {
+                    content: " | ";
+                    display: inline;
+                }
+    
+                &:last-child:after {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
