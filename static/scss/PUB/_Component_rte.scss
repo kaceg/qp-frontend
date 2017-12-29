@@ -1,5 +1,9 @@
 //:not(.navbar-nav):not(.inpagenav-list):not(.pager-items):not(.check-list):not(.selectboxit-list):not(.multiSelect-list):not(.list-unstyled):not(.list-inline):not(.list--lined)
 .qp-rte {
+    ol {
+        padding-left: 18px;
+    }
+
     ul {
         &,
         & + p {
