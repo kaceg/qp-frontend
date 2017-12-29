@@ -1,0 +1,104 @@
+.online-info {
+    padding: 35px 0 40px;
+    background-color: $gray-ultralight;
+    border-top: 1px solid $gray-light-worm;
+    text-align: center;
+
+    .online-payment-methods {
+        .payment-method-title {
+            margin-bottom: 10px;
+            font-size: 0.889em;
+        }
+
+        .payment-methods {
+            .payment-method {
+                height: 40px;
+                padding: 0 7px;                
+
+                img {
+                    max-width: none;
+                    height: 100%;
+                }
+            }
+        }
+
+        & + .review-rating {
+            margin-top: 40px;
+        }
+    }
+
+    .review-rating {
+        .review-rating__inner {
+            display: inline-block;
+            position: relative;
+
+            .rating-value {
+                left: 0;
+                height: 40px;
+                width: 40px;
+                background-color: $lime;
+                border-radius: 50%;
+                color: $white;
+                transform: translateY(-50%);
+
+                &,
+                .value {
+                    position: absolute;
+                    top: 50%;
+                }
+
+                .value {
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .rating-text {
+                margin-left: 50px;
+                text-align: left;
+
+                .total-reviews {
+                    font-size: 0.889em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    .online-info {
+        padding: 20px 0;
+        text-align: initial;
+
+        .online-payment-methods {
+            margin-top: 4px;
+            .payment-method-title, 
+            .payment-methods {
+                vertical-align: top;
+            }
+
+            .payment-method-title {
+                max-width: 39%;
+                margin: 10px 0 0;
+                padding-right: 20px;
+            }
+
+            .payment-methods {
+                display: inline-block;
+                max-width: 60%;
+
+                .payment-method {
+                    padding: 0 10px;
+                }
+            }
+            
+            & + .review-rating {
+                margin-top: 0;
+            }
+        }
+
+        .review-rating {
+            text-align: right;
+        }
+    }
+}

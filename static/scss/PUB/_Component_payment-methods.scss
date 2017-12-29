@@ -17,4 +17,10 @@
     &.selected {
         border: 1px solid $gray-lighter;
     }
+
+    &.no-hover {
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }
