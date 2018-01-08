@@ -78,8 +78,12 @@
     }
 
     &.no-bg {
-        .card__inner {
+        .card__wrapper {
             padding: 10px 0;
+
+            .card__inner {
+                padding: 0;
+            }
         }
     }
 }
