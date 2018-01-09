@@ -46,6 +46,20 @@ table {
 			}
 		}
 	}
+
+	&.clean-table {
+		color: inherit;
+
+		tr {
+			td {
+				vertical-align: bottom;
+
+				&:nth-child(1) {
+					color: inherit;
+				}
+			}
+		}
+	}
 }
 
 .extra-note {

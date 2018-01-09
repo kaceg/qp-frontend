@@ -334,6 +334,10 @@ $(document).ready(function($) {
 		jQuery(".infoPanes").removeClass("shown");
 	});
 
+	$(".navigate-select").change(function () {
+        window.location = $(this).val();
+    });
+
 	$(".scroll-match-height").on("click", initScrollInParent);
 	
 	/*************************

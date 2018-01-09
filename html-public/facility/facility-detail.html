@@ -1,588 +1,661 @@
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Facility Page Detail | Q-Park</title>	
-		
-		<link rel="stylesheet" href="/static/css/publicwebsite.css">
-				
-		<script src="/static/js/jquery.2.2.4.min.js"></script>
-		<script src="/static/js/jquery.matchHeight-min.js"></script>
-		<script src="/static/js/jquery.sticky-kit.js"></script>
-		<script src="/static/js/custom.js"></script>
-	</head>
-	
-	<body id="body">
+	<title>Facility Page Detail | Q-Park</title>
 
-		<!-- COOKIE -->
-		<!-- <div id="cookieInc"></div> -->
-		<!-- COOKIE -->
+	<link rel="stylesheet" href="/static/css/publicwebsite.css">
 
-		<!-- NAV -->
-		<div id="headerInc"></div>
-		<!-- NAV -->
+	<script src="/static/js/jquery.2.2.4.min.js"></script>
+	<script src="/static/js/jquery-ui.min.js"></script>
+	<script src="/static/js/bootstrap.js"></script>
+	<script src="/static/js/moment.js"></script>
+	<script src="/static/js/jquery.matchHeight-min.js"></script>
+	<script src="/static/js/selectboxit.min.js"></script>
+	<script src="/static/js/custom.js"></script>
+</head>
 
-		<!-- BIGSEARCH -->
-		<!-- <div id="bigsearchInc"></div> -->
-		<!-- BIGSEARCH -->
+<body id="body" class="myqp-new">
 
-		<!-- CONTENT -->
-		<div class="qcontentpane">
-			
-			<section class="breadnav">
-				<div class="container">
-					<div class="row bread">
-						<div class="col-xs-12">
-							<nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
-								<ol>
-							    	<li><a href="/" title="Home">Home</a>
-								    	<ol>
-									    	<li><a href="#" title="Parking in Antwerp">Parking in Antwerp</a>
-											    <ol>
-													<li class="is-current">Q-Park Godefriduskaai</li>
-												</ol>
-											</li>
-										</ol>
-									</li>
-								</ol>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</section>
+	<!-- COOKIE -->
+	<!-- <div id="cookieInc"></div> -->
+	<!-- COOKIE -->
 
-			<section class="pageinfo">
-				<div class="container">
-					<div class="row">
+	<!-- NAV -->
+	<div id="headerInc"></div>
+	<!-- NAV -->
 
-						<!-- LEFT COLUMN -->
-						<div class="col-xs-12 col-sm-8">
-							<div class="scroll-match-height">
-								<!-- PAGE INTRO -->						
-								<div id="pf_intro">
-									<h4 class="strong text-uppercase primary-color no-margin">Helsingborg</h4>
-									<h1 class="strong big-h1 no-margin">Q-Park Getingen</h1>
-		
-									<nav role="navigation" class="inpagenav desktop" aria-label="breadcrumbs">
-										<ul class="inpagenav-list">
-											<li><a class="is-active smoothscroll" href="#pf_details"><span>Details</span></a></li>
-											<li><a class="smoothscroll" href="#pf_services"><span>Services</span></a></li>
-											<li><a class="smoothscroll" href="#pf_seasontickets"><span>Season Tickets</span></a></li>
-											<li><a class="smoothscroll" href="#pf_destinations"><span>Popular Destinations</span></a></li>
-											<li><a class="smoothscroll" href="#pf_facilitiesnearby"><span>Nearby Parking Facilities</span></a></li>
-										</ul>
-									</nav>
-		
-									<img src="/static/images-dummy/dummy_200x132.jpg" class="stacked float-left desktop" alt="" >
-		
-									<div class="dontflow">
-										<p class="lead">
-											Want to see the magnificent Tropikariet, one of the nicest animal parks in Sweden. Park comfortably nearby and safe..
-										</p>
-									</div>
+	<!-- BIGSEARCH -->
+	<!-- <div id="bigsearchInc"></div> -->
+	<!-- BIGSEARCH -->
+
+	<!-- CONTENT -->
+	<div class="qcontentpane">
+
+		<section class="card--hero--small">
+			<div class="img-bg bg-gradient bg-gradient-half" data-background-image=""></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="card__wrapper">
+							<div class="card__inner">
+								<div class="card__header">
+									<h4 class="card__subtitle text-uppercase no-margin">Antwerp</h4>
+									<h1 class="card__title margin-bottom-xs">Godefriduskaai</h1>
 								</div>
-								
-								<!-- MAP & CTA's (idem aan rechter kolom, maar voor mobile) -->
-								
-								<div class="mapinfocta mobile">
-									<img src="/static/images-dummy/googlemap-3x2.jpg" alt="">
-									<div class="mapinfocta-text">
-										<p class="mapinfocta-text-address">Terminalgatan 1, 252 78 Helsingborg, Sweden</p>
-		
-										<div class="mapinfocta-meta">
-											<span class="spots">
-												400 spots
-											</span>
-											<span class="mapinfocta-meta-icons">
-												<i class="icon fa fa-plug" aria-hidden="true"></i>
-												<i class="icon fa fa-wheelchair" aria-hidden="true"></i>
-												<i class="icon fa fa-heartbeat" aria-hidden="true"></i>
-												<i class="icon fa fa-users" aria-hidden="true"></i>
-											</span>
-										</div>
-		
-										<div class="cta">
-											<a class="btn btn-success btn-block" href="#">Reserve Your Parking Spot Now<span class="fa fa-angle-right"></span></a>	
-											<a class="btn btn-secondary btn-half" href="#">Season Tickets</span></a>
-											<a class="btn btn-secondary btn-half" href="#">Value Card</span></a>
-										</div>
-		
-										<p class=""><a class="link-grey" href="">GPS: Streetname number - Find directions</a></p>
-									</div>
-								</div>
-	
-								<!-- GENERAL INFORMATION -->
-								<div id="pf_details">
-									<hr />
-									<div class="row">
-										<div class="col-sm-12 col-md-3">
-											<h4 class="no-topmargin">General Information</h4>
-										</div>
-										<div class="col-sm-12 col-md-9">
-											<table class="triple-column table-style1">
-												<tbody>
-													<tr class="seperator">
-														<td>Entrance hours <span class="asterisk">*</span></td>
-														<td>Monday - Sunday</td>
-														<td>0:00 - 24:00</td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>Tuesday</td>
-														<td>7:00 - 23:00</td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>Wednesday</td>
-														<td>7:00 - 23:00</td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>Thursday</td>
-														<td>7:00 - 23:00</td>
-													</tr>
-													<tr class="seperator">
-														<td>Exit hours</td>
-														<td>Monday - Sunday</td>
-														<td>0:00 - 24:00</td>
-													</tr>
-													<tr class="seperator">
-														<td>Parking spaces</td>
-														<td colspan="2">400 parking spaces</td>
-													</tr>
-													<tr class="seperator">
-														<td>Disabled parking spaces</td>
-														<td colspan="2">6</td>
-													</tr>
-													<tr class="seperator">
-														<td>Electric charging points</td>
-														<td colspan="2">4</td>
-													</tr>
-													<tr class="seperator">
-														<td>Max. vehicle height</td>
-														<td colspan="2">2m00</td>
-													</tr>
-												</tbody>
-											</table>
-											<div class="extra-note">
-												<p>Outside Magasin (department store) opening hours it is not possible to get wheelchair or stroller to ground level by elevator. </p>
-												<p><span class="asterisk">* Extra information</span></p>
-											</div>
-										</div>
-									</div>
-								</div>
-	
-								<!-- SERVICES -->
-								<div id="pf_services">
-									<hr />
-									<div class="row">
-										<div id="pf_services">
-											<div class="col-sm-12 col-md-3">
-												<h4 class="no-topmargin">Services</h4>
-											</div>
-	
-											<div class="col-sm-12 col-md-9">
-						
-												<div class="row">
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-plug" aria-hidden="true"></i> Battery Charger</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-heartbeat" aria-hidden="true"></i> AED</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-taxi" aria-hidden="true"></i> Buggy</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-info" aria-hidden="true"></i> Information</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-shower" aria-hidden="true"></i> Shoepolisher</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-umbrella" aria-hidden="true"></i> Umbrella</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-bicycle" aria-hidden="true"></i> Bicycle Parking</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-users" aria-hidden="true"></i> Elevator</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-user" aria-hidden="true"></i> Toilets</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-video-camera" aria-hidden="true"></i> Video Surveillance</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-wheelchair" aria-hidden="true"></i> Parking space for disabled</div>
-													</div>
-													<div class="col-xs-12 col-sm-6">
-														<div class="service"><i class="icon fa fa-users" aria-hidden="true"></i> Family parking</div>
-													</div>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-	
-								<!-- PAYMENT INFO -->
-								<div id="pf_paymentinfo">
-									<hr />
-									<div class="row">
-										<div class="col-sm-12 col-md-3">
-											<h4 class="no-topmargin">Parking Facility Payment Methods</h4>
-										</div>
-										<div class="col-sm-12 col-md-9">
-											<div class="payment-options">
-												<p>These payment methods are available in this parking facility.</p>
-												<img src="/static/assets/svg/payment_visa.svg" title="Visa" data-pin-nopin="true"> <small>Visa</small>
-												<span class="divider">/</span>
-												<img src="/static/assets/svg/payment_maestro.svg" title="Maestro" data-pin-nopin="true"> <small>Maestro</small>
-												<span class="divider">/</span>
-												<img src="/static/assets/svg/payment_mastercard.svg" title="Mastercard" data-pin-nopin="true"> <small>MasterCard</small>
-											</div>
-										</div>
-									</div>
-								</div>
-	
-								<!-- SEASON TICKETS -->
-								<div id="pf_seasontickets">
-									<hr />
-									<div class="row">
-										<div class="col-sm-12 col-md-3">
-											<h4 class="no-topmargin">Season Tickets</h4>
-										</div>
-										<div class="col-sm-12 col-md-9">
-											
-											<div class="seasontickets clearfix">
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">7x24</div>
-												</div>
-												
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">6x24</div>
-												</div>
-												
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">5x24</div>
-												</div>
-												
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">Office</div>
-												</div>
-												
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">Night</div>
-												</div>
-												
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">Night + WE</div>
-												</div>
-												
-												<div class="item">
-													<img src="/static/images-dummy/ios_application_placeholder1600.png">
-													<div class="name">Residents</div>
-												</div>
-											</div>
-											
-											<div class="moreinfo">
-												<a href="">See all available Season Tickets</a>
-											</div>
-											
-										</div>
-									</div>
+								<div class="card__body max-height">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius euismod mi a blandit. Donec non orci non urna vestibulum
+									luctus. Pellentesque egestas eget tortor ac viverra. Donec gravida ipsum eget ipsum malesuada rutrum. Vivamus tincidunt,
+									ipsum vitae tempor ultrices, augue libero tempor ligula, non facilisis orci nisl in metus. Cras quis magna sit amet
+									sapien gravida ultricies. Vivamus pulvinar viverra ornare. Ut sodales odio sit amet nunc bibendum, sed condimentum
+									urna feugiat.
 								</div>
 							</div>
 						</div>
-
-						<!-- RIGHT COLUMN -->
-
-						<div class="col-sm-4 desktop">
-							<div class="scroll-match-height">
-								<div class="mapinfocta scroll-in-parent">
-									<img src="/static/images-dummy/googlemap-3x2.jpg" alt="">
-									<div class="mapinfocta-text">
-										<p class="mapinfocta-text-address">Terminalgatan 1, 252 78 Helsingborg, Sweden</p>
-		
-										<div class="mapinfocta-meta">
-											<span class="spots">
-												400 spots
-											</span>
-											<span class="mapinfocta-meta-icons">
-												<i class="icon fa fa-plug" aria-hidden="true"></i>
-												<i class="icon fa fa-wheelchair" aria-hidden="true"></i>
-												<i class="icon fa fa-heartbeat" aria-hidden="true"></i>
-												<i class="icon fa fa-users" aria-hidden="true"></i>
-											</span>
-										</div>
-		
-										<div class="cta">
-											<a class="btn btn-success btn-block" href="#">Reserve Your Parking Spot Now<span class="fa fa-angle-right"></span></a>	
-											<a class="btn btn-secondary btn-half" href="#">Season Tickets</span></a>
-											<a class="btn btn-secondary btn-half" href="#">Value Card</span></a>
-										</div>
-		
-										<p class=""><a class="link-grey" href="">GPS: Streetname number - Find directions</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
 					</div>
 				</div>
-			</section>
-
-			<hr class="invisible">
-
-			<section class="destinations" id="pf_destinations">
-				<div class="container">
-					<div class="row">
-					
-						<div class="col-xs-12">
-							<h2>Popular destinations nearby</h2>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--image">
-								<div class="card-body">
-									<img src="/static/images-dummy/dum_tropikariet-385x255.jpg" alt="">
-								</div>
-								<header class="card-heading">
-									<span class="card-title">Tropikariet animal zoo</span>
-								</header>
-								<footer class="card-footer">
-									<p>
-										Tourist 12, Helsingborg
-										<span class="float-right"><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>200m</small></span>
-									</p>
-								</footer>
-							</section>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--image">
-								<div class="card-body">
-									<img src="/static/images-dummy/dum_helsingborg_castle2_385x255.jpg" alt="">
-								</div>
-								<header class="card-heading">
-									<span class="card-title">Sofiero Castle</span>
-								</header>
-								<footer class="card-footer">
-									<p>
-										Tourist 12, Helsingborg
-										<span class="float-right"><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>200m</small></span>
-									</p>
-								</footer>
-							</section>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--image">
-								<div class="card-body">
-									<img src="/static/images-dummy/dum_helsingborg_castle_385x255.jpg" alt="">
-								</div>
-								<header class="card-heading">
-									<span class="card-title">
-										Kärnan
-									</span>
-								</header>
-								<footer class="card-footer">
-									<p>
-										Tourist 12, Helsingborg
-										<span class="float-right"><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>200m</small></span>
-									</p>
-								</footer>
-							</section>
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--small">
-								<header class="card-heading">
-									<span class="card-title">Kärnan</span>
-								</header>
-								<div class="card-body">
-									<p>
-										Tourist 12, Helsingborg
-										<span class=""><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>700m</small></span>
-									</p>
-								</div>
-							</section>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--small">
-								<header class="card-heading">
-									<span class="card-title">Citygaraget</span>
-								</header>
-								<div class="card-body">
-									<p>
-										Less prominent POI 12, Stockholm
-										<span class=""><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>800m</small></span>
-									</p>
-								</div>
-							</section>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--small">
-								<header class="card-heading">
-									<span class="card-title">Less interesting POI</span>
-								</header>
-								<div class="card-body">
-									<p>
-										Another Street 12, Helsingborg
-										<span class=""><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>1240m</small></span>
-									</p>
-								</div>
-							</section>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--small">
-								<header class="card-heading">
-									<span class="card-title">Less interesting POI</span>
-								</header>
-								<div class="card-body">
-									<p>
-										Another Street 12, Helsingborg
-										<span class=""><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>1240m</small></span>
-									</p>
-								</div>
-							</section>
-						</div>
-
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--small">
-								<header class="card-heading">
-									<span class="card-title">Less interesting POI</span>
-								</header>
-								<div class="card-body">
-									<p>
-										Another Street 12, Helsingborg
-										<span class=""><img src="/static/assets/svg/person-walking.svg" alt="distance" width="16px"> <small>1240m</small></span>
-									</p>
-								</div>
-							</section>
-						</div>
-							
-					</div>
-				</div>
-			</section>
-				
-			<hr class="invisible">
-
-			<section class="facilities" id="pf_facilitiesnearby">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<h2>Nearby Parking Facilities</h2>
-						</div>
-						
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<section class="card--image">
-								<div class="card-body">
-									<div class="card-banner">Bookable online</div>
-									<img src="/static/images-dummy/dum_parking1_385x255.jpg" alt="">
-								</div>
-	   							<header class="card-heading">
-									<span class="card-title">Q-Park Karlsgatan 9</span>
-								</header>
-								<footer class="card-footer">
-									<p>Karlsgatan 12, Stockholm</p>
-									<div class="mapinfocta-meta">
-										<span class="spots">400 spots</span>
-										<span class="mapinfocta-meta-icons">
-											<i class="icon fa fa-plug" aria-hidden="true"></i>
-											<i class="icon fa fa-wheelchair" aria-hidden="true"></i>
-											<i class="icon fa fa-heartbeat" aria-hidden="true"></i>
-											<i class="icon fa fa-users" aria-hidden="true"></i>
-											<img src="/static/assets/svg/person-walking.svg" alt="distance" width="12px"> <small>200m</small>
-										</span>
-									</div>
-								</footer>
-							</section>
-						</div>
-										
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							
-							<section class="card--image">
-								<div class="card-body">
-									<img src="/static/images-dummy/dum_parking2_385x255.jpg" alt="">
-								</div>
-	   							<header class="card-heading">
-									<span class="card-title">Q-Park Magnus Stenbock</span>
-								</header>
-								<footer class="card-footer">
-									<p>Norra Storgatan 15, Stockholm</p>
-									<div class="mapinfocta-meta">
-										<span class="spots">400 spots</span>
-										<span class="mapinfocta-meta-icons">
-											<i class="icon fa fa-plug" aria-hidden="true"></i>
-											<i class="icon fa fa-wheelchair" aria-hidden="true"></i>
-											<i class="icon fa fa-heartbeat" aria-hidden="true"></i>
-											<i class="icon fa fa-users" aria-hidden="true"></i>
-											<img src="/static/assets/svg/person-walking.svg" alt="distance" width="12px"> <small>200m</small>
-										</span>
-									</div>
-								</footer>
-							</section>
-							
-						</div>
-					
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							
-							<section class="card--image">
-								<div class="card-body">
-									<div class="card-banner">Bookable online</div>
-									<img src="/static/images-dummy/dum_parking3_385x255.jpg" alt="">
-								</div>
-	   							<header class="card-heading">
-									<span class="card-title">Q-Park Östergatan 58-66</span>
-								</header>
-								<footer class="card-footer">
-									<p>Karlsgatan 12, Stockholm</p>
-									<div class="mapinfocta-meta">
-										<span class="spots">400 spots</span>
-										<span class="mapinfocta-meta-icons">
-											<i class="icon fa fa-plug" aria-hidden="true"></i>
-											<i class="icon fa fa-wheelchair" aria-hidden="true"></i>
-											<i class="icon fa fa-heartbeat" aria-hidden="true"></i>
-											<i class="icon fa fa-users" aria-hidden="true"></i>
-											<img src="/static/assets/svg/person-walking.svg" alt="distance" width="12px"> <small>200m</small>
-										</span>
-									</div>
-								</footer>
-							</section>
-							
-						</div>
-						
-				</div>
-
 			</div>
-		</div>
-		
-		<a href="#body" class="smoothscroll cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-		
-		<!-- CONTENT -->
+		</section>
+
+		<section class="breadnav">
+			<div class="container">
+				<div class="row bread">
+					<div class="col-xs-12">
+						<nav role="navigation" class="breadcrumbs" aria-label="breadcrumbs">
+							<ol>
+								<li>
+									<a href="/" title="Home">Home</a>
+									<ol>
+										<li>
+											<a href="#" title="Parking in Antwerp">Parking in Antwerp</a>
+											<ol>
+												<li class="is-current">Godefriduskaai</li>
+											</ol>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="breadnav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<nav role="navigation" class="inpagenav desktop" aria-label="breadcrumbs">
+							<ul class="inpagenav-list">
+								<li>
+									<a class="is-active smoothscroll" href="#pf_details">
+										<span>General</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_tarrifs">
+										<span>Tarrifs</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_openinghours">
+										<span>Opening hours</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_services">
+										<span>Services</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_paymentinfo">
+										<span>Services</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="form mobile">
+							<div class="form-group">
+								<!-- <label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Product</label> -->
+								<select class="form-control navigate-select">
+									<option value="#pf_details">General</option>
+									<option value="#pf_tarrifs">Tarrifs</option>
+									<option value="#pf_openinghours">Opening hours</option>
+									<option value="#pf_services">Services</option>
+									<option value="#pf_paymentinfo">Services</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="facility-detail">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 float-right">
+						<div class="scroll-match-height"></div>
+					</div>
+
+					<div class="col-xs-12 col-md-8">
+						<div class="scroll-match-height">
+							<!-- DETAILS -->
+							<div id="pf_details">
+								<div class="row">
+									<div class="col-xs-12 col-md-3">
+										<h4 class="no-topmargin">General</h4>
+									</div>
+									<div class="col-xs-12 col-md-8">
+										<table class="clean-table">
+											<tbody>
+												<tr>
+													<td>Parking spaces</td>
+													<td class="text-right">450</td>
+												</tr>
+												<tr>
+													<td>Disabled spaces</td>
+													<td class="text-right">0</td>
+												</tr>
+												<tr>
+													<td>Electric charging points</td>
+													<td class="text-right">0</td>
+												</tr>
+												<tr>
+													<td>Drive through height (in metres) Drive through height (in metres)</td>
+													<td class="text-right">2.05</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<div class="row">
+											<div class="col-xs-12">&nbsp;</div>
+											<div class="col-xs-12">
+												<div class="qp-rte">
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci eu eros vulputate luctus. Suspendisse accumsan
+														lorem et ultricies viverra. Quisque eget tellus cursus, facilisis leo ut, rhoncus magna. Vestibulum eget dapibus
+														arcu. Pellentesque a urna convallis, venenatis purus non, vehicula ligula. Quisque imperdiet non leo eget fringilla.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- TARRIFS -->
+							<div id="pf_tarrifs">
+								<div class="row">
+									<div class="col-xs-12 col-md-3">
+										<h4 class="no-topmargin">Tarrifs</h4>
+									</div>
+									<div class="col-xs-12 col-md-8">
+										<table class="clean-table">
+											<tbody>
+												<tr>
+													<td>Daily rate</td>
+													<td class="text-right">SEK 14.00</td>
+												</tr>
+												<tr>
+													<td>Weekend rate</td>
+													<td class="text-right">SEK 28.00</td>
+												</tr>
+												<tr>
+													<td>Season ticket rate</td>
+													<td class="text-right">SEK 20.00</td>
+												</tr>
+												<tr>
+													<td>Promotional rate</td>
+													<td class="text-right">SEK 30.00</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- OPENING HOURS -->
+							<div id="pf_openinghours">
+								<div class="row">
+									<div class="col-xs-12 col-md-3">
+										<h4 class="no-topmargin">Opening hours</h4>
+									</div>
+									<div class="col-xs-12 col-md-8">
+										<!-- 24/7 -->
+										<table class="clean-table">
+											<thead>
+												<tr>
+													<th class="text-left">Day</th>
+													<th class="text-left">Entry</th>
+													<th class="text-left">Exit</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Monday - Sunday</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<!-- EXIT 24/7 -->
+										<table class="clean-table">
+											<thead>
+												<tr>
+													<th class="text-left">Day</th>
+													<th class="text-left">Entry</th>
+													<th class="text-left">Exit</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Monday - Sunday</td>
+													<td>
+														06:00
+													</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<!-- WEEKLY -->
+										<table class="clean-table">
+											<thead>
+												<tr>
+													<th class="text-left">Day</th>
+													<th class="text-left">Entry</th>
+													<th class="text-left">Exit</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Monday - Sunday</td>
+													<td>
+														06:00
+													</td>
+													<td>
+														21:00
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<!-- DAILY -->
+										<table class="clean-table">
+											<thead>
+												<tr>
+													<th class="text-left">Day</th>
+													<th class="text-left">Entry</th>
+													<th class="text-left">Exit</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Monday</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+													<td>
+														21:00
+													</td>
+												</tr>
+												<tr>
+													<td>Tuesday</td>
+													<td>
+														06:00
+													</td>
+													<td>
+														21:00
+													</td>
+												</tr>
+												<tr>
+													<td>Wednesday</td>
+													<td>
+														06:00
+													</td>
+													<td>
+														21:00
+													</td>
+												</tr>
+												<tr>
+													<td>Thursday</td>
+													<td>
+														06:00
+													</td>
+													<td>
+														21:00
+													</td>
+												</tr>
+												<tr>
+													<td>Friday</td>
+													<td>
+														06:00
+													</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+												</tr>
+												<tr>
+													<td>Saturday</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+												</tr>
+												<tr>
+													<td>Sunday</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+													<td>
+														<abbr title="24 hours a day, 7 days a week">24/7</abbr>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- SERVICES -->
+							<div id="pf_services">
+								<div class="row">
+									<div class="col-xs-12 col-md-3">
+										<h4 class="no-topmargin">Services</h4>
+									</div>
+									<div class="col-xs-12 col-md-8">
+										<div class="row">
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon aed"></div>
+													<div class="service-label">AED</div>
+												</div>
+											</div>
+
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon alcohol-tester"></div>
+													<div class="service-label">Alcohol tester</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon bicycle-parking"></div>
+													<div class="service-label">Bicycle parking</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon buggy-available"></div>
+													<div class="service-label">Buggy available</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon cambio-car-sharing"></div>
+													<div class="service-label">Cambio car-sharing</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon car-rental"></div>
+													<div class="service-label">Car rental</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon car-repair"></div>
+													<div class="service-label">Car repair</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon car-wash"></div>
+													<div class="service-label">Car wash</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon changing-table"></div>
+													<div class="service-label">Changing table</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon coin-payment"></div>
+													<div class="service-label">Coin payment</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon credit-card-payment"></div>
+													<div class="service-label">Credit card payment</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon disabled"></div>
+													<div class="service-label">Disabled</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon disabled-toilet"></div>
+													<div class="service-label">Disabled toilet</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon drinking-water"></div>
+													<div class="service-label">Drinking water</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon electric-charging-point"></div>
+													<div class="service-label">Electric charging point</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon elevator"></div>
+													<div class="service-label">Elevator</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon family-parking-spots"></div>
+													<div class="service-label">Family parking spots</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon hearing-aid-loop"></div>
+													<div class="service-label">Hearing aid loop</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon help-point"></div>
+													<div class="service-label">Help point</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon information"></div>
+													<div class="service-label">Information</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon jump-starter"></div>
+													<div class="service-label">Jump starter</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon mobile-payment"></div>
+													<div class="service-label">Mobile payment</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon mobile-phone-coverage"></div>
+													<div class="service-label">Mobile phone coverage</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon motorcycle-parking"></div>
+													<div class="service-label">Motorcycle parking</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon multipass"></div>
+													<div class="service-label">Multipass</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon newspaper-magazines"></div>
+													<div class="service-label">Newspaper-magazines</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon pick-up-point"></div>
+													<div class="service-label">Pick-up point</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon public-transportation"></div>
+													<div class="service-label">Public transportation</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon service-car"></div>
+													<div class="service-label">Service car</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon shoe-polisher"></div>
+													<div class="service-label">Shoe polisher</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon shopping-trolley"></div>
+													<div class="service-label">Shopping trolley</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon surveillance-at-night"></div>
+													<div class="service-label">Surveillance at night</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon toilet"></div>
+													<div class="service-label">Toilet</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon tyre-pump"></div>
+													<div class="service-label">Tyre pump</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon umbrella-available"></div>
+													<div class="service-label">Umbrella available</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon vending-machine"></div>
+													<div class="service-label">Vending machine</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon video-surveillance"></div>
+													<div class="service-label">Video surveillance</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="service clearfix">
+													<div class="service-icon wifi"></div>
+													<div class="service-label">WiFi</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- PAYMENT INFO -->
+							<div id="pf_paymentinfo">
+								<div class="row">
+									<div class="col-xs-12 col-md-3">
+										<h4 class="no-topmargin">Payment Methods</h4>
+									</div>
+									<div class="col-xs-12 col-md-8">
+									</div>
+									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<a href="#body" class="smoothscroll cd-top">
+		<i class="fa fa-angle-up" aria-hidden="true"></i>
+	</a>
+
+	<!-- CONTENT -->
 
 
-		<!-- FOOTER -->
-		<div id="footerInc"></div>
-		<!-- FOOTER -->
+	<!-- FOOTER -->
+	<div id="footerInc"></div>
+	<!-- FOOTER -->
 
-	</body>
+</body>
+
 </html>

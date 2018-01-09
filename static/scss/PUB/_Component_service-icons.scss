@@ -1,0 +1,208 @@
+.service {
+}
+
+.service-icon {
+    margin-right: 16px;
+    float: left;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.65;
+
+    &.aed {
+        background-image: url("/static/assets/svg/services/service-aed.svg");
+        background-size: auto 71.08%;
+    }
+
+    &.alcohol-tester {
+        background-image: url("/static/assets/svg/services/service-alcohol-tester.svg");
+        background-size: 50.6% auto;
+    }
+
+    &.bicycle-parking {
+        background-image: url("/static/assets/svg/services/service-bicycle-parking.svg");
+        background-size: auto 55%;
+    }
+
+    &.buggy-available {
+        background-image: url("/static/assets/svg/services/service-buggy-available.svg");
+        background-size: auto 91.2%;
+    }
+
+    &.cambio-car-sharing {
+        background-image: url("/static/assets/svg/services/service-cambio-car-sharing.svg");
+        background-size: auto 64.48%;
+    }
+
+    &.car-rental {
+        background-image: url("/static/assets/svg/services/service-car-rental.svg");
+        background-size: auto 89.84%;
+    }
+
+    &.car-repair {
+        background-image: url("/static/assets/svg/services/service-car-repair.svg");
+        background-size: auto 87.88%;
+    }
+
+    &.car-wash {
+        background-image: url("/static/assets/svg/services/service-car-wash.svg");
+        background-size: auto 88.16%;
+    }
+
+    &.changing-table {
+        background-image: url("/static/assets/svg/services/service-changing-table.svg");
+        background-size: auto 65.84%;
+    }
+    
+    &.coin-payment {
+        background-image: url("/static/assets/svg/services/service-coin-payment.svg");
+        background-size: 80% auto;
+    }
+    
+    &.credit-card-payment {
+        background-image: url("/static/assets/svg/services/service-credit-card-payment.svg");
+        background-size: 80% auto;
+    }
+    
+    &.disabled {
+        background-image: url("/static/assets/svg/services/service-disabled.svg");
+        background-size: 61.04% auto;
+    }
+    
+    &.disabled-toilet {
+        background-image: url("/static/assets/svg/services/service-disabled-toilet.svg");
+        background-size: auto 77.2%;
+    }
+    
+    &.drinking-water {
+        background-image: url("/static/assets/svg/services/service-drinking-water.svg");
+        background-size: 37.8% auto;
+    }
+    
+    &.electric-charging-point {
+        background-image: url("/static/assets/svg/services/service-electric-charging-point.svg");
+        background-size: auto 87.08%;
+    }
+    
+    &.elevator {
+        background-image: url("/static/assets/svg/services/service-elevator.svg");
+        background-size: auto 92.84%;
+    }
+    
+    &.family-parking-spots {
+        background-image: url("/static/assets/svg/services/service-family-parking-spots.svg");
+        background-size: auto 70.84%;
+    }
+    
+    &.hearing-aid-loop {
+        background-image: url("/static/assets/svg/services/service-hearing-aid-loop.svg");
+        background-size: 91.48% auto;
+    }
+    
+    &.help-point {
+        background-image: url("/static/assets/svg/services/service-help-point.svg");
+        background-size: 83.08% auto;
+    }
+    
+    &.information {
+        background-image: url("/static/assets/svg/services/service-information.svg");
+        background-size: 83.08% auto;
+    }
+    
+    &.jump-starter {
+        background-image: url("/static/assets/svg/services/service-jump-starter.svg");
+        background-size: auto 98.16%;
+    }
+    
+    &.mobile-payment {
+        background-image: url("/static/assets/svg/services/service-mobile-payment.svg");
+        background-size: 56.68% auto;
+    }
+    
+    &.mobile-phone-coverage {
+        background-image: url("/static/assets/svg/services/service-mobile-phone-coverage.svg");
+    }
+    
+    &.motorcycle-parking {
+        background-image: url("/static/assets/svg/services/service-motorcycle-parking.svg");
+        background-size: auto 58.32%;
+    }
+    
+    &.multipass {
+        background-image: url("/static/assets/svg/services/service-multipass.svg");
+        background-size: auto 73.32%;
+    }
+    
+    &.newspaper-magazines {
+        background-image: url("/static/assets/svg/services/service-newspaper-magazines.svg");
+        background-size: auto 88.24%;
+    }
+    
+    &.pick-up-point {
+        background-image: url("/static/assets/svg/services/service-pick-up-point.svg");
+        background-size: auto 98.12%;
+    }
+    
+    &.public-transportation {
+        background-image: url("/static/assets/svg/services/service-public-transportation.svg");
+        background-size: 77.12% auto;
+    }
+    
+    &.service-car {
+        background-image: url("/static/assets/svg/services/service-service-car.svg");
+        background-size: auto 71.04%;
+    }
+    
+    &.shoe-polisher {
+        background-image: url("/static/assets/svg/services/service-shoe-polisher.svg");
+        background-size: auto 66.6%;
+    }
+    
+    &.shopping-trolley {
+        background-image: url("/static/assets/svg/services/service-shopping-trolley.svg");
+        background-size: auto 79.96%;
+    }
+    
+    &.surveillance-at-night {
+        background-image: url("/static/assets/svg/services/service-surveillance-at-night.svg");
+        background-size: 76.68% auto;
+    }
+    
+    &.toilet {
+        background-image: url("/static/assets/svg/services/service-toilet.svg");
+        background-size: 88.96% auto;
+    }
+    
+    &.tyre-pump {
+        background-image: url("/static/assets/svg/services/service-tyre-pump.svg");
+        background-size: 72.36% auto;
+    }
+    
+    &.umbrella-available {
+        background-image: url("/static/assets/svg/services/service-umbrella-available.svg");
+        background-size: 95.68% auto;
+    }
+    
+    &.vending-machine {
+        background-image: url("/static/assets/svg/services/service-vending-machine.svg");
+        background-size: 80.56% auto;
+    }
+    
+    &.video-surveillance {
+        background-image: url("/static/assets/svg/services/service-video-surveillance.svg");
+        background-size: auto 76.68%;
+    }
+    
+    &.wifi {
+        background-image: url("/static/assets/svg/services/service-wifi.svg");
+        background-size: auto 78.56%;
+    }
+}
+
+.service-label {
+    display: block;
+    float: left;
+    line-height: 25px;
+}
