@@ -46,22 +46,24 @@ function pagescroll(pageElement) {
 /*************************
 	FIXED NAV
 *************************/
+var headerTop = 0;
+
+function initHeaderTop() {
+	var offset = $(".qp-header").offset();
+
+	if (offset) {
+		headerTop = $(".qp-header").offset().top;
+	}
+}
 
 function positionNav($){
+	var mainH = $(".qp-header").outerHeight();
 
-	var mainH	= $("header").outerHeight();
-	var startH	= 18;
-	
-	if($(document).scrollTop() > startH) {
+	if ($(document).scrollTop() > headerTop) {
 		$("body").addClass("fixedscroll");
-		var mainReducedH	= $("header").outerHeight();
-		var newPaddingContent = mainReducedH + 30 + 18;
-		$(".qcontentpane").css("padding-top", newPaddingContent);		
 	} else {
 		$("body").removeClass("fixedscroll");
-		$(".qcontentpane").css("padding-top", 30);
 	}	
-	
 }
 
 /*************************
@@ -233,14 +235,28 @@ function initialize() {
     
 }
 
-$(document).ready(function($) {
-	
-	console.log('load includes');
-    $("#cookieInc").load("/inc/cookie.html", function() {
-    	console.log('Cookie notification was loaded');
+function addCloseCookieEvent() {
+	$("#cookie-warning .btn").on("click", function() {
+		$("#cookie-warning").addClass("hidden");
+		initHeaderTop();
 	});
+}
+
+$(document).ready(function($) {	
+	console.log('load includes');
+
+	addCloseCookieEvent();
+
+    $("#cookieInc").load("/inc/cookie.html", function() {
+		console.log('Cookie notification was loaded');
+		
+		addCloseCookieEvent();
+	});
+
 	$("#headerInc").load("/inc/header.html", function() {
 		console.log('header was loaded');
+
+		initHeaderTop();
 		
 		if($(".myqp-new select").length){
 			$(".myqp-new select").selectBoxIt();
@@ -248,30 +264,39 @@ $(document).ready(function($) {
 
 		initHeaderSearch();
 	});
+
 	$("#headerIncMyQP").load("/inc/header-myqp.html", function() {
 		console.log('header was loaded');
 		
+		initHeaderTop();
+
 		if($(".myqp-new select").length){
 			$(".myqp-new select").selectBoxIt();
 		}
 
 		initHeaderSearch();
 	});
+
     $("#navInc").load("/inc/nav.html", function() {
       	console.log('nav was loaded');
-    });
+	});
+	
     $("#navIncMyQP").load("/inc/nav-myqp.html", function() {
       	console.log('nav was loaded');
-    });
+	});
+	
     $("#bigsearchInc").load("/inc/bigsearch_inpage.html", function() {
       	console.log('bigsearch was loaded');
-    });
+	});
+	
     $("#footerInc").load("/inc/footer.html", function() {
       	console.log('footer was loaded');
-    });
+	});
+	
     $("#footerIncMyQP").load("/inc/footer-myqp.html", function() {
       	console.log('footer was loaded');
-    });
+	});
+	
     $('#toggle-refinementfilter').click( function() {
       console.log('toggle clicked');
       $('#refinementfilter').toggle( "slow", function() {
@@ -609,6 +634,7 @@ function onYouTubeIframeAPIReady() {
 *************************/
 
 $(document).ready(function() {
+	initHeaderTop();
 
 	$(window).load(function() {
 		resizeContent($);
