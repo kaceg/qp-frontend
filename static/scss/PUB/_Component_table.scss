@@ -85,6 +85,8 @@ table {
 					display: table-row;
 		
 					td {
+						text-align: inherit;
+						
 						&:before {					
 							display: none;
 						}
