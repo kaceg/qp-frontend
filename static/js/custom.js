@@ -14,7 +14,19 @@ $.fn.vAlign = function() {
 };
 })(jQuery);
 
+function alignValutas(selector) {
+	var valutaWidths = $(selector).map(function() {
+		return $(this).outerWidth();
+	});
+
+	var maxWidth = Math.max.apply(null, valutaWidths.get()) + 1; // +1 to compensate for decimals in e.g. Chrome
+	
+	$(selector).css("width", maxWidth + "px");
+}
+
 function resizeContent() {
+	alignValutas(":not(.floating-box) .align-valuta .valuta-value");
+
 	jQuery(".map .sh").matchHeight();
 	jQuery(".maintenance .matchheight").matchHeight();
 	$(".login .matchheight").matchHeight();
