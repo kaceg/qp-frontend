@@ -506,6 +506,49 @@ ul.check-list.cta li:before {
     display: none;
 }
 
+.facility-detail {
+    .payment-methods {
+        .payment-method {
+            height: 73px;
+            padding-top: 0;
+        }
+    }
+}
+
+.floating-box-container {
+    display: flex;
+    flex-direction: column;
+
+    > [class*="col-"] {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row;
+
+        .scroll-match-height {
+            flex: 0 0 100%;
+            border: 1px solid green;
+        }
+    }
+
+    .floating-box {
+        .card-v2 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .floating-box-container {
+        flex-direction: row;
+        
+        > .floating-box {
+            &.float-right {
+                order: 1;
+            }
+        }
+    }
+}
+
 /* Season Tickets */
 
 .seasontickets .item {

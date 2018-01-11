@@ -34,8 +34,13 @@ function resizeContent() {
 }
 
 function initScrollInParent() {
-	jQuery(".scroll-match-height").matchHeight();
-	if(jQuery(".scroll-in-parent").length) jQuery(".scroll-in-parent").stick_in_parent({offset_top: 10});
+	//jQuery(".scroll-match-height").matchHeight();
+	if(jQuery(".scroll-in-parent").length) {		
+		var offset = $(".qp-header").offset();
+		var offsetTop = offset ? $(".qp-header").outerHeight() : 10;
+
+		jQuery(".scroll-in-parent").stick_in_parent({offset_top: offsetTop})
+	};
 }
 
 function pagescroll(pageElement) {
@@ -52,13 +57,11 @@ function initHeaderTop() {
 	var offset = $(".qp-header").offset();
 
 	if (offset) {
-		headerTop = $(".qp-header").offset().top;
+		headerTop = offset.top;
 	}
 }
 
 function positionNav($){
-	var mainH = $(".qp-header").outerHeight();
-
 	if ($(document).scrollTop() > headerTop) {
 		$("body").addClass("fixedscroll");
 	} else {
