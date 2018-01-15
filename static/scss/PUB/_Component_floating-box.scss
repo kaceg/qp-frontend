@@ -16,6 +16,11 @@
         .card-v2 {
             margin-bottom: 0;
 
+            .card__map {
+                height: 183px;
+                width: 100%;
+            }
+
             .order-summary {
                 .summary-line {
                     .bg-icon {
