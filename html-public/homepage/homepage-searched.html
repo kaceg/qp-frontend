@@ -1,6 +1,104 @@
 <html lang="en">
 
 <head>
+    <style type="text/css">
+        .pac-container {
+            background-color: #fff;
+            position: absolute!important;
+            z-index: 1000;
+            border-radius: 2px;
+            border-top: 1px solid #d9d9d9;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden
+        }
+
+        .pac-logo:after {
+            content: "";
+            padding: 1px 1px 1px 0;
+            height: 16px;
+            text-align: right;
+            display: block;
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 120px 14px
+        }
+
+        .hdpi.pac-logo:after {
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)
+        }
+
+        .pac-item {
+            cursor: default;
+            padding: 0 4px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 30px;
+            text-align: left;
+            border-top: 1px solid #e6e6e6;
+            font-size: 11px;
+            color: #999
+        }
+
+        .pac-item:hover {
+            background-color: #fafafa
+        }
+
+        .pac-item-selected,
+        .pac-item-selected:hover {
+            background-color: #ebf2fe
+        }
+
+        .pac-matched {
+            font-weight: 700
+        }
+
+        .pac-item-query {
+            font-size: 13px;
+            padding-right: 3px;
+            color: #000
+        }
+
+        .pac-icon {
+            width: 15px;
+            height: 20px;
+            margin-right: 7px;
+            margin-top: 6px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+            background-size: 34px
+        }
+
+        .hdpi .pac-icon {
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
+        }
+
+        .pac-icon-search {
+            background-position: -1px -1px
+        }
+
+        .pac-item-selected .pac-icon-search {
+            background-position: -18px -1px
+        }
+
+        .pac-icon-marker {
+            background-position: -1px -161px
+        }
+
+        .pac-item-selected .pac-icon-marker {
+            background-position: -18px -161px
+        }
+
+        .pac-placeholder {
+            color: gray
+        }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,7 +192,7 @@
                             <h2 class="strong big-h1 no-margin">Waar wil je naartoe?</h2>
                         </div>
                     </div>
-                    <div class="google-maps-search-input-control form-group row">
+                    <div class="google-maps-search-input-control collapsed form-group row">
                         <div class="col-xs-12">
                             <input type="text" class="form-control google-autocomplete" placeholder="Where do you want to go?">
                             <div class="google-maps-search-buttons-wrapper">
@@ -354,8 +452,7 @@
                                 <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
                                     <div style="z-index: -202; cursor: pointer; display: none;">
                                         <div style="width: 30px; height: 27px; overflow: hidden; position: absolute;">
-                                            <img alt="" src="https://maps.gstatic.com/mapfiles/undo_poly.png" draggable="false"
-                                                style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 90px; height: 27px;">
+                                            <img alt="" src="https://maps.gstatic.com/mapfiles/undo_poly.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 90px; height: 27px;">
                                         </div>
                                     </div>
                                 </div>
@@ -365,8 +462,7 @@
                             <a target="_blank" href="https://maps.google.com/maps?ll=50.85034,4.35171&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3"
                                 title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;">
                                 <div style="width: 66px; height: 26px; cursor: pointer;">
-                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png" draggable="false"
-                                        style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
                                 </div>
                             </a>
                         </div>
@@ -374,8 +470,7 @@
                             <div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div>
                             <div style="font-size: 13px;">Map data ©2017 Google</div>
                             <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;">
-                                <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false"
-                                    style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                             </div>
                         </div>
                         <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;">
@@ -402,8 +497,7 @@
                                 <a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a>
                             </div>
                         </div>
-                        <button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button"
-                            style="background: none; border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; top: 0px; right: 0px;">
+                        <button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" style="background: none; border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; top: 0px; right: 0px;">
                             <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false" class="gm-fullscreen-control"
                                 style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
                         </button>
@@ -430,16 +524,13 @@
                                 <div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;">
                                     <button draggable="false" title="Zoom in" aria-label="Zoom in" type="button" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;">
                                         <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;">
-                                            <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false"
-                                                style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
+                                            <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
                                         </div>
                                     </button>
                                     <div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div>
-                                    <button draggable="false" title="Zoom out" aria-label="Zoom out" type="button"
-                                        style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;">
+                                    <button draggable="false" title="Zoom out" aria-label="Zoom out" type="button" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;">
                                         <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;">
-                                            <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false"
-                                                style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
+                                            <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
                                         </div>
                                     </button>
                                 </div>
@@ -448,27 +539,22 @@
                                 <div style="position: absolute; left: 1px; top: 1px;"></div>
                                 <div style="position: absolute; left: 1px; top: 1px;">
                                     <div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
-                                        <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false"
-                                            style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                        <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                                     </div>
                                     <div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;">
-                                        <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false"
-                                            style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                        <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                                     </div>
                                     <div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;">
-                                        <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false"
-                                            style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                        <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                                     </div>
                                 </div>
                             </div>
                             <div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;">
                                 <div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; cursor: pointer; background-color: rgb(255, 255, 255); display: none;">
-                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false"
-                                        style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                                 </div>
                                 <div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);">
-                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false"
-                                        style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                                 </div>
                             </div>
                         </div>
@@ -480,8 +566,7 @@
                                     <div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;">
                                         <span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
                                             <div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
-                                                <img alt="" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false"
-                                                    style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;">
+                                                <img alt="" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;">
                                             </div>
                                         </span>
                                         <label style="vertical-align: middle; cursor: pointer;">Terrain</label>
@@ -495,8 +580,7 @@
                                     <div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;">
                                         <span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
                                             <div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;">
-                                                <img alt="" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false"
-                                                    style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;">
+                                                <img alt="" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;">
                                             </div>
                                         </span>
                                         <label style="vertical-align: middle; cursor: pointer;">Labels</label>
@@ -942,6 +1026,39 @@
     <!-- FOOTER -->
 
     </script>
+
+    <div class="pac-container pac-logo" style="width: 1138px; position: absolute; left: 382px; top: 281px;">
+        <div class="pac-item">
+            <span class="pac-icon pac-icon-marker"></span>
+            <span class="pac-item-query">
+                <span class="pac-matched">West</span>erlo</span>
+            <span>Belgium</span>
+        </div>
+        <div class="pac-item">
+            <span class="pac-icon pac-icon-marker"></span>
+            <span class="pac-item-query">
+                <span class="pac-matched">West</span>ende</span>
+            <span>Middelkerke, Belgium</span>
+        </div>
+        <div class="pac-item">
+            <span class="pac-icon pac-icon-marker"></span>
+            <span class="pac-item-query">
+                <span class="pac-matched">West</span>vleteren</span>
+            <span>Vleteren, Belgium</span>
+        </div>
+        <div class="pac-item">
+            <span class="pac-icon pac-icon-marker"></span>
+            <span class="pac-item-query">
+                <span class="pac-matched">West</span> Flanders</span>
+            <span>Belgium</span>
+        </div>
+        <div class="pac-item">
+            <span class="pac-icon pac-icon-marker"></span>
+            <span class="pac-item-query">
+                <span class="pac-matched">West</span>malle</span>
+            <span>Malle, Belgium</span>
+        </div>
+    </div>
 
 </body>
 
