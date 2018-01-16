@@ -84,10 +84,42 @@
 
 
 
+/* Autocomplete */
+.pac-container {
+    font-family: $font-family-sans-serif;
+    margin-top: -1px;
+    margin-left: 1px;
+    border-top: 0;
+    z-index: 0;
 
+    .pac-item {
+        padding: 6px 4px;
+        color: $gray;
+        font-size: 1em;
+        line-height: $line-height-base;
 
+        .pac-icon {
+            width: 10px;
+            margin: 3px 8px 0 8px;
+            background-image: url("/static/assets/svg/gmap-marker-red.svg");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
 
+        .pac-item-query {
+            font-size: 1em;
+            margin-right: 5px;
 
+            .pac-matched {
+                font-family: $font-family-sans-serif-bold;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+/* Big Search */
 .google-maps-search {
 	position: relative;	
 		
