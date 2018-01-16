@@ -24,8 +24,32 @@ function alignValutas(selector) {
 	$(selector).css("width", maxWidth + "px");
 }
 
+function initCarousels() {
+	if ($.fn.slick) {
+		$(".card-slider").slick({
+			accessibility: false,
+			mobileFirst: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			responsive: [{
+				breakpoint: 768,
+				settings : {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			}]
+		});
+	}
+}
+
 function resizeContent() {
 	alignValutas(":not(.floating-box) .align-valuta .valuta-value");
+	initCarousels();
 
 	jQuery(".map .sh").matchHeight();
 	jQuery(".maintenance .matchheight").matchHeight();
@@ -51,7 +75,8 @@ function initScrollInParent() {
 		var offset = $(".qp-header").offset();
 		var offsetTop = offset ? $(".qp-header").outerHeight() : 10;
 
-		jQuery(".scroll-in-parent").stick_in_parent({offset_top: offsetTop})
+		jQuery(".scroll-in-parent:not(.mobile-scroll)").stick_in_parent({offset_top: offsetTop});
+		jQuery(".scroll-in-parent.mobile-scroll").stick_in_parent({offset_top: 10});
 	};
 }
 
