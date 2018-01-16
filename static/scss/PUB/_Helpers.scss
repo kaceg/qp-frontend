@@ -124,6 +124,12 @@ a.white {
     text-decoration: none;
 }
 
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* Icons */
 
 i.fa {
