@@ -131,6 +131,7 @@
                 margin: 0;
                 padding-right: 30px;
                 min-height: 0;
+                color: $gray-dark;
             }
 
             .selectboxit-arrow-container {
@@ -140,12 +141,14 @@
                 i {
                     margin: 0;
                     transform: translateY(-50%);
+                    opacity: 0.65;
                 }
             }
         }
 
         .selectboxit-options {
             min-width: 68px !important;
+            padding-top: 1px;
         }
     }
     
