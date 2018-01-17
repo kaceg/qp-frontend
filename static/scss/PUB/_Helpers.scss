@@ -317,6 +317,18 @@ hr.primary.short {
     }
 }
 
+.scroll-anchor {
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: $screen-md-min) {
+    .scroll-anchor {
+        top: -140px
+    }
+}
+
+
 /* QR Code - Floating box */
 
 .qr-code {
@@ -628,7 +640,7 @@ ul.check-list.cta li:before {
     }
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: $screen-sm-max) {
     .desktop {
         display: none !important;
     }

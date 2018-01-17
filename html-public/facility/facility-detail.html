@@ -114,25 +114,21 @@
 								</li>
 								<li>
 									<a class="smoothscroll" href="#pf_paymentinfo">
-										<span>Services</span>
+										<span>Payment info</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_destinations">
+										<span>Popular destinations</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_facilitiesnearby">
+										<span>Nearby parking facilities</span>
 									</a>
 								</li>
 							</ul>
 						</nav>
-
-						<div class="form mobile">
-							<div class="form-group">
-								<!-- <label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Product</label> -->
-								<select class="form-control navigate-select">
-									<option value="#pf_details">General</option>
-									<option value="#pf_tarrifs">Tarrifs</option>
-									<option value="#pf_openinghours">Opening hours</option>
-									<option value="#pf_services">Services</option>
-									<option value="#pf_paymentinfo">Services</option>
-								</select>
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</div>
@@ -198,7 +194,8 @@
 					<div class="col-xs-12 col-md-8">
 						<div class="scroll-match-height">
 							<!-- DETAILS -->
-							<div id="pf_details">
+							<div class="relative">
+								<div id="pf_details" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">General</h4>
@@ -245,7 +242,8 @@
 							<hr>
 
 							<!-- TARRIFS -->
-							<div id="pf_tarrifs">
+							<div class="relative">
+								<div id="pf_tarrifs" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Tarrifs</h4>
@@ -279,7 +277,8 @@
 							<hr>
 
 							<!-- OPENING HOURS -->
-							<div id="pf_openinghours">
+							<div class="relative">
+								<div id="pf_openinghours" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Opening hours</h4>
@@ -434,7 +433,8 @@
 							<hr>
 
 							<!-- SERVICES -->
-							<div id="pf_services">
+							<div class="relative">
+								<div id="pf_services" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Services</h4>
@@ -679,7 +679,8 @@
 							<hr>
 
 							<!-- PAYMENT INFO -->
-							<div id="pf_paymentinfo">
+							<div class="relative">
+								<div id="pf_paymentinfo" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Payment Methods</h4>
@@ -706,7 +707,8 @@
 			</div>
 		</section>
 
-		<section id="pf_destinations" class="margin-top-lg">
+		<section class="margin-top-lg relative">
+			<div id="pf_destinations" class="scroll-anchor"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -840,7 +842,8 @@
 			</div>
 		</section>
 
-		<section id="pf_facilitiesnearby" class="margin-top-lg">
+		<section class="margin-top-lg relative">
+			<div id="pf_facilitiesnearby" class="scroll-anchor"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
