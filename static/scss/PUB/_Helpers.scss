@@ -557,6 +557,14 @@ ul.check-list.cta li:before {
     }
 }
 
+.transparent-unselected-prices {
+    .select-card:not(.selected) {
+        .price {
+            opacity: 0.2;
+        }
+    }
+}
+
 .cities-list {
     .list-columns {
         font-size: 1.111em;

@@ -17,6 +17,10 @@
     .overview-line {
         margin: 0.15em 0;
 
+        &.price-period {
+            margin: 0.15em 0 0.5em;
+        }
+
         &.has-badge {
             position: relative;
             padding-left: 35px;
