@@ -1,3 +1,61 @@
 .soft-grey {
     color: $gray;
 }
+
+.checkable-element {
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked {
+            + .checkable-element__placeholder,
+            + .color-primary-important + .checkable-element__placeholder,
+            + input[type=hidden] + .checkable-element__placeholder,
+            + .color-primary-important + input[type=hidden] + .checkable-element__placeholder {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+.field-validation-error {
+    color: $red;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.payment-methods {
+    input[type="radio"] {
+        display: none;
+
+        + img {
+            cursor: pointer;
+            pointer-events: none;
+            padding: 0 1em;
+            border: 1px solid transparent;
+        }
+
+        &:checked {
+            + img {
+                border-color: $gray-lighter;
+            }
+        }
+    }
+}
+
+.modal-body {
+    .dynamic-form {
+        label {
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    a:hover,
+    a:focus {
+        color: $gray-lighter; //for Kristof: to check if this is OK or needs another color
+    }
+}
