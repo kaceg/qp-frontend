@@ -27,6 +27,14 @@
 }
 
 .payment-methods {
+    label {
+        cursor: pointer;
+
+        &:hover {
+            background-color: $gray-ultralightest;
+        }
+    }
+
     input[type="radio"] {
         display: none;
 
