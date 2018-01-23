@@ -186,6 +186,13 @@
         & .modal-title {
             color: $white;
         }
+
+        a {
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
     }
 }
 
