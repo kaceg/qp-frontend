@@ -2,7 +2,7 @@
     background-color: transparent;
     border: none;
     margin-bottom: 0;
-    padding-top: 4px;
+    padding-bottom: 4px;
     
     .navbar-form {
         .form-group {
@@ -119,6 +119,22 @@
                         color: $red;
                     }
                 }
+
+                &.language-selector-wrapper {
+                    border-bottom: 0;
+                }
+            }
+
+            &.main-nav {
+                li {
+                    &:last-child {
+                        border-bottom: 0;
+
+                        > a {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
             }
         }
     }
@@ -128,18 +144,10 @@
             background-color: transparent;
         }
 
-        .user-icon,
         .user-arrow {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-        }
-
-        .user-icon {
-            left: -25px;
-            padding-left: 25px;
-            border-left: 1px solid $gray-light-worm;
-            font-size: 1.222em;
         }
 
         .user-info {
@@ -163,11 +171,10 @@
 
         .user-menu-dropdown {
             width: 325px;
+            margin-top: 0;
             padding: 0;
             right: 0;
             border: none;
-            border-top: 1px solid $gray-worm;
-            border-bottom: 1px solid $gray-worm;
             box-shadow: none;
             text-align: center;
 
@@ -183,11 +190,31 @@
                 }
             }                
         }
+
+        &.only-icon {
+            padding: 18px 0;
+
+            .user-icon {
+                display: inline-block;
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-right: 10px;
+                padding-left: 0;
+                border-left: 0;
+                transform: none;
+
+                &,
+                + span {
+                    vertical-align: middle
+                }
+            }
+        }
     }
 
     .language-selector-wrapper {
         margin: 0;
-        padding: $whitespace-xs 0;
+        padding: $whitespace-xs 0 0;
 
         .language-selector {
             &.text-uppercase + ul {

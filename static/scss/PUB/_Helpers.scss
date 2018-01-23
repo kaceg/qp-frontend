@@ -13,6 +13,22 @@
     display: inline-block;
 }
 
+@media (max-width: $screen-xs-max) {
+    .inline-block {
+        &.visible-xs {
+            display: inline-block !important;
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .inline-block {
+        &.visible-sm {
+            display: inline-block !important;
+        }
+    }
+}
+
 .inline-block-important {
     display: inline-block !important;
 }

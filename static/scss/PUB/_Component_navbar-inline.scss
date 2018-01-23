@@ -101,6 +101,16 @@
                         }
                     }
                 }
+        
+                .user-icon {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -25px;
+                    padding-left: 25px;
+                    border-left: 1px solid $gray-light-worm;
+                    font-size: 1.222em;
+                }
 
                 &.only-icon {
                     .user-menu-dropdown-toggle {
