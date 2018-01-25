@@ -80,6 +80,17 @@
                                 flex: 0 0 auto;
                             }
 
+                            .current-location {
+                                height: 28px;
+                                width: 28px;
+
+                                &:hover {
+                                    svg path {
+                                        fill: $red;
+                                    }
+                                }
+                            }
+
                             .search {
                                 height: 58px;
                                 margin: 0;
