@@ -24,3 +24,14 @@
         }
     }
 }
+
+.payment-methods {
+    &.same-height {
+        .payment-method {
+            img {
+                max-width: none;
+                height: 100%;
+            }
+        }
+    }
+}

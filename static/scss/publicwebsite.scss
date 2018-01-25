@@ -44,12 +44,16 @@
 @import "vendor/bootstrap/forms";
 @import "vendor/bootstrap/buttons";
 @import "PUB/_Component_buttons.scss";
+@import "PUB/_Component_search-box.scss";
 @import "vendor/bootstrap/component-animations";
 @import "vendor/bootstrap/dropdowns";
 @import "vendor/bootstrap/button-groups";
 @import "vendor/bootstrap/input-groups"; 
 @import "vendor/bootstrap/navs";
 @import "vendor/bootstrap/navbar";
+@import "vendor/slick/slick.scss";
+@import "PUB/_Component_slick.scss";
+@import "PUB/_Component_card-slider.scss";
 @import "PUB/_Component_icons.scss";
 @import "PUB/_Component_service-icons.scss";
 @import "PUB/_Component_formelements.scss";
@@ -84,6 +88,7 @@
 @import 'vendor/bootstrap-datetimepicker/_bootstrap-datetimepicker.scss';
 @import "PUB/_Component_datetimepicker.scss";
 @import "PUB/_Component_wells.scss"; // This is a customisation of : "vendor/bootstrap/wells";
+@import "PUB/_Component_ratio.scss";
 
 @import "PUB/_Component_overlay.scss";
 @import "PUB/_Component_service-messages.scss";
@@ -107,6 +112,8 @@
 @import 'PUB/_Component_video.scss';
 @import "PUB/_Component_loading.scss";
 @import "PUB/_Component_documents.scss";
+@import "PUB/_Component_floating-box.scss";
+@import "PUB/_Component_floating-pager.scss"; 
 @import "PUB/_Component_wizard.scss";
 @import "PUB/_Component_control-fee.scss";
 @import "PUB/_Component_payment-methods.scss";
@@ -119,6 +126,7 @@
 @import 'PUB/_Component_card';
 @import 'PUB/_Component_corner-ribbon';
 @import 'PUB/_Component_gmap.scss';
+@import "PUB/_Component_big-search.scss";
 @import 'PUB/_Component_inpage-nav.scss';
 @import 'PUB/_Component_maintenance.scss';
 @import 'PUB/_Component_mapinfo-cta';

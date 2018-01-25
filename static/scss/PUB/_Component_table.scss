@@ -25,7 +25,6 @@ table {
 				td {
 					display: block;
 					width: 100%;
-					text-align: right;
 
 					&:before {					
 						content: attr(data-th);
@@ -73,6 +72,20 @@ table {
 	font-size: .9em;
 }
 
+@media (max-width: $screen-sm-max) {
+	table {
+		&.tbl-overview {	
+			tr {
+				&.mobile-labels {		
+					td {
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: $screen-md-min) {
 	table {		
 		&.tbl-overview {
@@ -85,7 +98,7 @@ table {
 					display: table-row;
 		
 					td {
-						text-align: inherit;
+						//text-align: inherit;
 						
 						&:before {					
 							display: none;

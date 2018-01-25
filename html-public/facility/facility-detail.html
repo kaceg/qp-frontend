@@ -16,7 +16,7 @@
 	<script src="/static/js/moment.js"></script>
 	<script src="/static/js/jquery.matchHeight-min.js"></script>
 	<script src="/static/js/selectboxit.min.js"></script>
-    <script src="/static/js/jquery.sticky-kit.js"></script>
+	<script src="/static/js/jquery.sticky-kit.js"></script>
 	<script src="/static/js/custom.js"></script>
 </head>
 
@@ -114,25 +114,21 @@
 								</li>
 								<li>
 									<a class="smoothscroll" href="#pf_paymentinfo">
-										<span>Services</span>
+										<span>Payment info</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_destinations">
+										<span>Popular destinations</span>
+									</a>
+								</li>
+								<li>
+									<a class="smoothscroll" href="#pf_facilitiesnearby">
+										<span>Nearby parking facilities</span>
 									</a>
 								</li>
 							</ul>
 						</nav>
-
-						<div class="form mobile">
-							<div class="form-group">
-								<!-- <label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Product</label> -->
-								<select class="form-control navigate-select">
-									<option value="#pf_details">General</option>
-									<option value="#pf_tarrifs">Tarrifs</option>
-									<option value="#pf_openinghours">Opening hours</option>
-									<option value="#pf_services">Services</option>
-									<option value="#pf_paymentinfo">Services</option>
-								</select>
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</div>
@@ -140,12 +136,12 @@
 
 		<section class="facility-detail">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-4 float-right">
+				<div class="row floating-box-container">
+					<div class="col-xs-12 col-md-4 float-right floating-box">
 						<div class="scroll-match-height">
 							<div class="scroll-in-parent">
 								<section class="card-v2">
-									<div class="card__image img-bg" data-background-image=""></div>
+									<div class="card__map"></div>
 									<div class="card__wrapper">
 										<div class="card__inner clearfix">
 											<div class="card__header">
@@ -161,9 +157,23 @@
 														<span class="display-block">Zeevaartstraat 11</span>
 														<span class="display-block">2000 Antwerp</span>
 													</div>
+													<div class="summary-line">
+														<!-- <img src="/static/assets/svg/map.svg" class="icon map" /> -->
+														<div class="bg-icon map"></div>
+														<a href="#" class="link-grey text-underline display-block">Open in Google Maps</a>
+													</div>
+													<div class="summary-line">
+														<div class="bg-icon phone"></div>
+														<a href="javascript:void(0);" class="link-grey text-underline display-block" data-toggle="collapse" data-target="#qr-code"
+														 target="_blank">Send to phone</a>
+													</div>
+													<div id="qr-code" class="collapse qr-code">
+														<img src="data:image/gif;base64,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"
+														 alt="qr-code">
+													</div>
 												</div>
 											</div>
-											<div class="card__body margin-top-xs">
+											<div class="card__body margin-top-sm">
 												<span class="spots">450 Spots</span>
 												<span class="strong">210 available</span>
 											</div>
@@ -179,31 +189,34 @@
 						</div>
 					</div>
 
+					<hr class="invisible visible-xs visible-sm">
+
 					<div class="col-xs-12 col-md-8">
 						<div class="scroll-match-height">
 							<!-- DETAILS -->
-							<div id="pf_details">
+							<div class="relative">
+								<div id="pf_details" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">General</h4>
 									</div>
-									<div class="col-xs-12 col-md-8">
+									<div class="col-xs-12 col-md-7">
 										<table class="clean-table">
 											<tbody>
 												<tr>
-													<td>Parking spaces</td>
+													<td class="word-break">Parking spaces</td>
 													<td class="text-right">450</td>
 												</tr>
 												<tr>
-													<td>Disabled spaces</td>
+													<td class="word-break">Disabled spaces</td>
 													<td class="text-right">0</td>
 												</tr>
 												<tr>
-													<td>Electric charging points</td>
+													<td class="word-break">Electric charging points</td>
 													<td class="text-right">0</td>
 												</tr>
 												<tr>
-													<td>Drive through height (in metres) Drive through height (in metres)</td>
+													<td class="word-break">Drive through height (in metres) Drive through height (in metres)</td>
 													<td class="text-right">2.05</td>
 												</tr>
 											</tbody>
@@ -222,48 +235,50 @@
 											</div>
 										</div>
 									</div>
-									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+									<div class="hidden-xs hidden-sm col-md-2">&nbsp;</div>
 								</div>
 							</div>
 
 							<hr>
 
 							<!-- TARRIFS -->
-							<div id="pf_tarrifs">
+							<div class="relative">
+								<div id="pf_tarrifs" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Tarrifs</h4>
 									</div>
-									<div class="col-xs-12 col-md-8">
+									<div class="col-xs-12 col-md-7">
 										<table class="clean-table">
 											<tbody>
 												<tr>
-													<td>Daily rate</td>
+													<td class="word-break">Daily rate</td>
 													<td class="text-right">SEK 14.00</td>
 												</tr>
 												<tr>
-													<td>Weekend rate</td>
+													<td class="word-break">Weekend rate</td>
 													<td class="text-right">SEK 28.00</td>
 												</tr>
 												<tr>
-													<td>Season ticket rate</td>
+													<td class="word-break">Season ticket rate</td>
 													<td class="text-right">SEK 20.00</td>
 												</tr>
 												<tr>
-													<td>Promotional rate</td>
+													<td class="word-break">Promotional rate</td>
 													<td class="text-right">SEK 30.00</td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
-									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
+									<div class="hidden-xs hidden-sm col-md-2">&nbsp;</div>
 								</div>
 							</div>
 
 							<hr>
 
 							<!-- OPENING HOURS -->
-							<div id="pf_openinghours">
+							<div class="relative">
+								<div id="pf_openinghours" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Opening hours</h4>
@@ -418,7 +433,8 @@
 							<hr>
 
 							<!-- SERVICES -->
-							<div id="pf_services">
+							<div class="relative">
+								<div id="pf_services" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Services</h4>
@@ -663,16 +679,247 @@
 							<hr>
 
 							<!-- PAYMENT INFO -->
-							<div id="pf_paymentinfo">
+							<div class="relative">
+								<div id="pf_paymentinfo" class="scroll-anchor"></div>
 								<div class="row">
 									<div class="col-xs-12 col-md-3">
 										<h4 class="no-topmargin">Payment Methods</h4>
 									</div>
 									<div class="col-xs-12 col-md-8">
+										<div class="payment-methods same-height">
+											<div class="payment-method no-hover">
+												<img src="/static/assets/svg/payment_visa.svg">
+											</div>
+											<div class="payment-method no-hover">
+												<img src="/static/assets/svg/payment_maestro.svg">
+											</div>
+											<div class="payment-method no-hover">
+												<img src="/static/assets/svg/payment_mastercard.svg">
+											</div>
+										</div>
 									</div>
 									<div class="hidden-xs hidden-sm col-md-1">&nbsp;</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="margin-top-lg relative">
+			<div id="pf_destinations" class="scroll-anchor"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Popular destinations nearby</h2>
+					</div>
+				</div>
+
+				<div class="poi-results margin-top-xs">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card--image--small-v2 clearfix">
+								<div class="card__image">
+									<div class="img-bg new ratio--square" data-background-image=""></div>
+								</div>
+								<div class="card__wrapper">
+									<div class="card__inner">
+										<div class="card__header">
+											<span class="card__subtitle text-uppercase text-ellipsis">POI</span>
+											<span class="card__title text-ellipsis">Helpoort</span>
+										</div>
+										<div class="card__body">
+											<p class="no-margin text-ellipsis">
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1km lopen</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card--image--small-v2 clearfix">
+								<div class="card__image">
+									<div class="img-bg new ratio--square" data-background-image=""></div>
+								</div>
+								<div class="card__wrapper">
+									<div class="card__inner">
+										<div class="card__header">
+											<span class="card__subtitle text-uppercase text-ellipsis">POI</span>
+											<span class="card__title text-ellipsis">Helpoort</span>
+										</div>
+										<div class="card__body">
+											<p class="no-margin text-ellipsis">
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1km lopen</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card--image--small-v2 clearfix">
+								<div class="card__image">
+									<div class="img-bg new ratio--square" data-background-image=""></div>
+								</div>
+								<div class="card__wrapper">
+									<div class="card__inner">
+										<div class="card__header">
+											<span class="card__subtitle text-uppercase text-ellipsis">POI</span>
+											<span class="card__title text-ellipsis">Helpoort</span>
+										</div>
+										<div class="card__body">
+											<p class="no-margin text-ellipsis">
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1km lopen</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card--image--small-v2 clearfix">
+								<div class="card__image">
+									<div class="img-bg new ratio--square" data-background-image=""></div>
+								</div>
+								<div class="card__wrapper">
+									<div class="card__inner">
+										<div class="card__header">
+											<span class="card__subtitle text-uppercase text-ellipsis">POI</span>
+											<span class="card__title text-ellipsis">Helpoort</span>
+										</div>
+										<div class="card__body">
+											<p class="no-margin text-ellipsis">
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1km lopen</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card--image--small-v2 clearfix">
+								<div class="card__image">
+									<div class="img-bg new ratio--square" data-background-image=""></div>
+								</div>
+								<div class="card__wrapper">
+									<div class="card__inner">
+										<div class="card__header">
+											<span class="card__subtitle text-uppercase text-ellipsis">POI</span>
+											<span class="card__title text-ellipsis">Helpoort</span>
+										</div>
+										<div class="card__body">
+											<p class="no-margin text-ellipsis">
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1km lopen</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card--image--small-v2 clearfix">
+								<div class="card__image">
+									<div class="img-bg new ratio--square" data-background-image=""></div>
+								</div>
+								<div class="card__wrapper">
+									<div class="card__inner">
+										<div class="card__header">
+											<span class="card__subtitle text-uppercase text-ellipsis">POI</span>
+											<span class="card__title text-ellipsis">Helpoort</span>
+										</div>
+										<div class="card__body">
+											<p class="no-margin text-ellipsis">
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1km lopen</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="margin-top-lg relative">
+			<div id="pf_facilitiesnearby" class="scroll-anchor"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Parking facilities nearby</h2>
+					</div>
+				</div>
+
+				<div class="card-grid margin-top-xs">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card-v2 no-bg">
+								<div class="card__image img-bg" data-background-image="">
+								</div>
+								<div class="card__wrapper clearfix">
+									<div class="card__inner no-vertical-padding">
+										<div class="card__header">
+											<span class="card__title">Q-Park Vrijthof</span>
+										</div>
+										<div class="card__body margin-top-xs">
+											<p>
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1,6km lopen tot Bonnefantenmuseum
+											</p>
+										</div>
+										<div class="card__footer margin-top-sm">
+											<a href="#" class="btn btn-link secondary-color text-uppercase button-align btn-half-max">Details</a>
+											<a href="#" class="btn btn-success btn-half-max pull-right">Boek nu</a>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card-v2 no-bg">
+								<div class="card__image img-bg" data-background-image="">
+								</div>
+								<div class="card__wrapper clearfix">
+									<div class="card__inner no-vertical-padding">
+										<div class="card__header">
+											<span class="card__title">Q-Park Vrijthof</span>
+										</div>
+										<div class="card__body margin-top-xs">
+											<p>
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1,6km lopen tot Bonnefantenmuseum
+											</p>
+										</div>
+										<div class="card__footer margin-top-sm">
+											<a href="#" class="btn btn-link secondary-color text-uppercase button-align btn-half-max">Details</a>
+											<a href="#" class="btn btn-success btn-half-max pull-right">Boek nu</a>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<section class="card-v2 no-bg">
+								<div class="card__image img-bg" data-background-image="">
+								</div>
+								<div class="card__wrapper clearfix">
+									<div class="card__inner no-vertical-padding">
+										<div class="card__header">
+											<span class="card__title">Q-Park Vrijthof</span>
+										</div>
+										<div class="card__body margin-top-xs">
+											<p>
+												<img src="/static/assets/svg/font/person-walking.svg" alt="distance" width="9px">1,6km lopen tot Bonnefantenmuseum
+											</p>
+										</div>
+										<div class="card__footer margin-top-sm">
+											<a href="#" class="btn btn-link secondary-color text-uppercase button-align btn-half-max">Details</a>
+											<a href="#" class="btn btn-success btn-half-max pull-right">Boek nu</a>
+										</div>
+									</div>
+								</div>
+							</section>
 						</div>
 					</div>
 				</div>

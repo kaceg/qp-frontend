@@ -13,6 +13,22 @@
     display: inline-block;
 }
 
+@media (max-width: $screen-xs-max) {
+    .inline-block {
+        &.visible-xs {
+            display: inline-block !important;
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .inline-block {
+        &.visible-sm {
+            display: inline-block !important;
+        }
+    }
+}
+
 .inline-block-important {
     display: inline-block !important;
 }
@@ -117,6 +133,17 @@ a.white {
 /* Font */
 .no-underline {
     text-decoration: none;
+}
+
+.no-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Icons */
@@ -305,6 +332,18 @@ hr.primary.short {
         }
     }
 }
+
+.scroll-anchor {
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: $screen-md-min) {
+    .scroll-anchor {
+        top: -140px
+    }
+}
+
 
 /* QR Code - Floating box */
 
@@ -506,6 +545,15 @@ ul.check-list.cta li:before {
     display: none;
 }
 
+.facility-detail {
+    .payment-methods {
+        .payment-method {
+            height: 73px;
+            padding-top: 0;
+        }
+    }
+}
+
 /* Season Tickets */
 
 .seasontickets .item {
@@ -525,6 +573,47 @@ ul.check-list.cta li:before {
     }
 }
 
+.transparent-unselected-prices {
+    .select-card:not(.selected) {
+        .price {
+            opacity: 0.2;
+        }
+    }
+}
+
+.cities-list {
+    .list-columns {
+        font-size: 1.111em;
+    }
+    
+    .pf-number {
+        color: $gray-light-worm;
+    }
+}
+
+/* Whitespaces */
+.city-description {
+    + .cities-spotlight {
+        margin-top: 40px;
+    }
+}
+
+.city-description,
+.cities-spotlight {
+    + .cities-overview {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .city-description,
+    .cities-spotlight {
+        + .cities-overview {
+            margin-top: 90px;
+        }
+    }
+}
+
 /* Grid */
 
 .row.no-gutter {
@@ -536,6 +625,24 @@ ul.check-list.cta li:before {
 .row.no-gutter > [class*=" col-"] {
     padding-left: 0;
     padding-right: 0;
+}
+
+/* Columns */
+.list-columns {
+    column-count: auto;
+
+    li {
+        padding: 5px 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        column-count: 2;
+        column-gap: $grid-gutter-width;
+    }
+
+    @media (min-width: $screen-md-min) {
+        column-count: 3;
+    }
 }
 
 .clear {
@@ -557,7 +664,7 @@ ul.check-list.cta li:before {
     }
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: $screen-sm-max) {
     .desktop {
         display: none !important;
     }

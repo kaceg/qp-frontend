@@ -1,9 +1,32 @@
 .card-v2,
 .card-v2--small,
+.card--image--small-v2,
 .card--big,
 .card--hero,
 .card--hero--small {
     position: relative;
+}
+
+.card-v2,
+.card-v2--small,
+.card--image--small-v2,
+.card--big {
+    .card__header {
+        .card__title,
+        .card__subtitle,
+        .card__description {
+            display: block;
+        }
+
+        .card__title,
+        .card__subtitle {
+            font-family: $font-family-sans-serif-bold;
+        }
+
+        .card__subtitle {
+            color: $red;
+        }
+    }
 }
 
 .card-v2,
@@ -35,23 +58,8 @@
     }
 
     .card__header {
-        .card__title,
-        .card__subtitle,
-        .card__description {
-            display: block;
-        }
-
-        .card__title,
-        .card__subtitle {
-            font-family: $font-family-sans-serif-bold;
-        }
-
         .card__title {
             font-size: 1.2em;
-        }
-
-        .card__subtitle {
-            color: $red;
         }
     }
 
@@ -113,6 +121,30 @@
 
         &:hover {
             background-color: transparent;
+        }
+    }
+}
+
+.card--image--small-v2 {
+    margin-bottom: 1em;
+
+    .card__image,
+    .card__wrapper {
+        float: left;
+    }
+
+    .card__image {
+        width: 100px;
+    }
+
+    .card__wrapper {
+        width: calc(100% - 100px);
+        padding: 14px 0 15px 27px;
+    }
+
+    .card__header {
+        .card__subtitle {
+            font-size: 0.833em;
         }
     }
 }
@@ -290,6 +322,8 @@
 }
 
 .card--hero--small {
+    margin-bottom: 40px;
+
     .card__wrapper {
         margin: 34px 0 40px;
         
@@ -410,6 +444,8 @@
     }
     
     .card--hero--small {
+        margin-bottom: 0;
+        
         .card__wrapper {
             margin: 78px 93px 78px 0;
         }        

@@ -119,8 +119,8 @@
         <section class="step-1">
             <div class="container">
                 <form class="form">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4 float-right desktop">
+                    <div class="row floating-box-container">
+                        <div class="col-xs-12 col-md-4 float-right floating-box desktop">
                             <div class="scroll-match-height">
                                 <div class="scroll-in-parent">
                                     <section class="card-v2">
@@ -152,16 +152,19 @@
                                                 </div>
                                                 <div class="card__body margin-top-xs">
                                                     <div class="order-overview currency-align">
-                                                        <div class="overview-line clearfix">
+                                                        <div class="overview-line price-period grey clearfix">
+                                                            <span class="pull-right">Billed monthly</span>                                                            
+                                                        </div>
+                                                        <div class="overview-line has-badge clearfix">
                                                             <span class="pull-right">€ 597.94</span>
-                                                            <span class="badge badge-grey badge-line badge-transparent">2</span>
-                                                            <span class="product-name">7x24 <span class="grey">Monthly</span></span>
+                                                            <span class="badge badge-grey light-border badge-line badge-transparent">2</span>
+                                                            <span class="product-name">This here is A very long description</span>
                                                         </div>
                                                         <div class="overview-line clearfix">
                                                             <span class="pull-right">€ 0.00</span>
                                                             <span class="product-name">Short parking</span>
                                                         </div>
-                                                        <div class="overview-line strong clearfix">
+                                                        <div class="overview-line margin-top-xs strong clearfix">
                                                             <span class="pull-right">€ 597.94</span>
                                                             <span class="product-name">Total</span>
                                                         </div>
@@ -332,14 +335,17 @@
                                         <span class="heading-description grey">All prices including VAT</span>
                                     </h3>
 
-                                    <div class="products">
+                                    <div class="products transparent-unselected-prices align-valuta">
                                         <div class="select-card">
                                             <div class="select-card__summary">
                                                 <label for="evening-pass" class="checkable-element radio element-center">
                                                                 <input id="evening-pass" type="radio" name="product">
                                                                 <span class="checkable-element__placeholder"></span>
                                                                 <span class="product-name strong block-xs">5x24</span>
-                                                                <span class="price block-xs selected-hidden"><span class="primary-color margin-right-xs">Monthly</span>€ 245.67</span>
+                                                                <span class="price block-xs selected-hidden">
+                                                                    <span class="primary-color margin-right-xs">Monthly</span>
+                                                                    <span class="inline-block valuta-value">€ 245.67</span>
+                                                                </span>
                                                             </label>
                                             </div>
                                             <div class="select-card__details">
@@ -428,7 +434,10 @@
                                                                 <input id="evening-pass" type="radio" name="product">
                                                                 <span class="checkable-element__placeholder"></span>
                                                                 <span class="product-name strong block-xs">6x24</span>
-                                                                <span class="price block-xs selected-hidden"><span class="primary-color margin-right-xs">Monthly</span>€ 280.17</span>
+                                                                <span class="price block-xs selected-hidden">
+                                                                    <span class="primary-color margin-right-xs">Monthly</span>
+                                                                    <span class="inline-block valuta-value">€ 280.17</span>
+                                                                </span>
                                                             </label>
                                             </div>
                                             <div class="select-card__details">
@@ -516,7 +525,10 @@
                                                             <input id="evening-pass" type="radio" name="product" checked="checked">
                                                             <span class="checkable-element__placeholder"></span>
                                                             <span class="product-name strong block-xs">7x24</span>
-                                                            <span class="price block-xs selected-hidden"><span class="primary-color margin-right-xs">Monthly</span>€ 298.97</span>
+                                                            <span class="price block-xs selected-hidden">
+                                                                <span class="primary-color margin-right-xs">Monthly</span>
+                                                                <span class="inline-block valuta-value">€ 298.97</span>
+                                                            </span>
                                                         </label>
                                             </div>
                                             <div class="select-card__details">
@@ -604,7 +616,10 @@
                                                                     <input id="evening-pass" type="radio" name="product">
                                                                     <span class="checkable-element__placeholder"></span>
                                                                     <span class="product-name strong block-xs">Nacht</span>
-                                                                    <span class="price block-xs selected-hidden"><span class="primary-color margin-right-xs">Monthly</span>€ 107.76</span>
+                                                                    <span class="price block-xs selected-hidden">
+                                                                        <span class="primary-color margin-right-xs">Monthly</span>
+                                                                        <span class="inline-block valuta-value">€ 107.76</span>
+                                                                    </span>
                                                                 </label>
                                             </div>
                                             <div class="select-card__details">
@@ -696,14 +711,16 @@
                                         <span class="heading-description grey">All prices including VAT</span>
                                     </h3>
 
-                                    <div class="addons">
+                                    <div class="addons align-valuta">
                                         <div class="select-card">
                                             <div class="select-card__summary">
                                                 <label for="administration-fee" class="checkable-element element-center">
                                                             <input id="administration-fee" type="checkbox" name="addons">
                                                             <span class="checkable-element__placeholder"></span>
                                                             <span class="product-name strong block-xs">Administration fee</span>
-                                                            <span class="price block-xs">€ 11.18</span>
+                                                            <span class="price block-xs">
+                                                                <span class="inline-block valuta-value">€ 11.18</span>
+                                                            </span>
                                                         </label>
                                             </div>
                                             <div class="select-card__details">
@@ -734,7 +751,9 @@
                                                                 <input id="short-parking" type="checkbox" name="addons" checked="checked">
                                                                 <span class="checkable-element__placeholder"></span>
                                                                 <span class="product-name strong block-xs">Short parking</span>
-                                                                <span class="price block-xs">€ 0.00</span>
+                                                                <span class="price block-xs">
+                                                                        <span class="inline-block valuta-value">€ 0.00</span>
+                                                                    </span>
                                                             </label>
                                             </div>
                                             <div class="select-card__details">

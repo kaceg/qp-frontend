@@ -1,0 +1,28 @@
+.card-slider {
+    .slick-slide {
+        height: auto;
+
+        img {
+            display: initial;
+        }
+    }
+
+    .slick-track {
+        .card-v2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: calc(235px / 2); // Height of card image
+    }
+
+    .slick-prev {
+        left: 15px;
+    }
+    
+    .slick-next {
+        right: 15px;
+    }
+}

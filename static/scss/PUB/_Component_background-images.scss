@@ -25,6 +25,12 @@
     }
 }
 
+.img-bg.new {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
 .img-bg {
     background-repeat: no-repeat;
     background-position: center center;

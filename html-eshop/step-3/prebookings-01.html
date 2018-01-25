@@ -151,15 +151,15 @@
                                                 </div>
                                                 <div class="card__body margin-top-xs">
                                                     <div class="order-overview currency-align">
-                                                        <div class="overview-line strong clearfix">
+                                                        <div class="overview-line clearfix">
                                                             <span class="pull-right">€ 34.00</span>
                                                             <span class="product-name">VIP evening pass</span>
                                                         </div>
-                                                        <div class="overview-line strong clearfix">
+                                                        <div class="overview-line clearfix">
                                                             <span class="pull-right">€ 2.50</span>
                                                             <span class="product-name">Cancellation fee</span>
                                                         </div>
-                                                        <div class="overview-line strong clearfix">
+                                                        <div class="overview-line margin-top-xs strong clearfix">
                                                             <span class="pull-right">€ 36.50</span>
                                                             <span class="product-name">Total</span>
                                                         </div>
@@ -255,18 +255,18 @@
                                                     <span class="grey display-block">Parking on weekdays from 17pm until 03am, 1 x in and out.</span>
                                                 </td>
                                                 <td class="text-center">1</td>
-                                                <td>€ 34.00</td>
+                                                <td class="text-right">€ 34.00</td>
                                             </tr>
                                             <tr class="mobile-labels">
                                                 <td class="text-left">Cancellation fee</td>
                                                 <td class="text-center">1</td>
-                                                <td>€ 2.50</td>
+                                                <td class="text-right">€ 2.50</td>
                                             </tr>
                                         </tbody>
                                         <tfoot class="strong">
                                             <tr class="mobile-labels">
                                                 <td class="text-left mobile-hide" colspan="2">Total</td>
-                                                <td data-th="Total">€ 36.50</td>
+                                                <td class="text-right" data-th="Total">€ 36.50</td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -278,17 +278,20 @@
                                     <h3>Payment methods<span class="heading-description grey">Please choose a payment method and pay now</span></h3>
 
                                     <div>
-                                        <a href="javascript:void(0);" class="payment-method selected">
+                                        <label for="visa">
+                                            <input id="visa" type="radio" name="paymentMethod" class="choose-method">
                                             <img src="/static/assets/svg/payment_visa.svg">
-                                        </a>
+                                        </label>
 
-                                        <a href="javascript:void(0);" class="payment-method">
+                                        <label for="mastercard">
+                                            <input id="mastercard" type="radio" name="paymentMethod" class="choose-method">
                                             <img src="/static/assets/svg/payment_mastercard.svg">
-                                        </a>
+                                        </label>
 
-                                        <a href="javascript:void(0);" class="payment-method">
+                                        <label for="maestro">
+                                            <input id="maestro" type="radio" name="paymentMethod" class="choose-method">
                                             <img src="/static/assets/svg/payment_maestro.svg">
-                                        </a>
+                                        </label>
                                     </div>
                                 </section>
 

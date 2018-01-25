@@ -160,3 +160,20 @@
         }
     }
 }
+
+.overlay.gradient-bg {
+    border-color: $white;
+
+    .upload-documents {
+        .drag-and-drop-area {
+            .upload-icon-area {
+                border-left-color: $white;
+            }
+        }
+        
+        .file-overview {
+            border-top-color: $white;
+            background-color: transparent;
+        }
+    }
+}

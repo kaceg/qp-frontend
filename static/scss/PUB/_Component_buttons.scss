@@ -199,6 +199,10 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
             font-family: $font-family-sans-serif;
             text-transform: uppercase;
         }
+
+        &.borderless {
+            border-color: transparent;
+        }
     }
 
     .btn-link {
@@ -207,6 +211,11 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 
         &.normal {
             font-family: $font-family-sans-serif;
+        }
+
+        &.button-align {
+            margin-bottom: 2px;
+            padding: 8px 0;
         }
     }
 
@@ -217,6 +226,10 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         
         .btn-half {
             width: 49%;
+        }
+
+        .btn-half-max {
+            max-width: 49%;
         }
         
         .btn-full {

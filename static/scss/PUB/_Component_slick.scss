@@ -1,0 +1,38 @@
+.slick-slider {
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        outline: none;
+        color: transparent;
+        font-size: 0;
+        line-height: 0;
+        z-index: 1;
+
+        &:before {
+            content: "\E002";
+            display: block;
+            color: white;
+            font-family: "qp-icons";
+            font-size: 6px;
+        }
+    }
+
+    .slick-prev {
+        &:before {
+            transform: rotate(-90deg);
+        }
+    }
+    
+    .slick-next {
+        &:before {
+            transform: rotate(90deg);
+        }
+    }
+}
