@@ -119,8 +119,10 @@
 }
 
 /* Big Search */
-.google-maps-search {
-	position: relative;	
+/* .google-maps-search {
+	position: relative;
+	height: auto;
+	min-height: 0;
 		
 	.video-bg {
 		overflow: hidden;
@@ -142,10 +144,15 @@
 	}
 
 	.google-maps {
-		height: 528px;
-		z-index: 0;
+		min-height: 0;
+		z-index: 0;		
+		transition: min-height 0.35s linear 0.26s;
 	}
-}
+
+	&.has-searched {
+		min-height: 528px;
+	}
+} */
 
 .google-maps-search-results {
 	.city-results {
@@ -308,13 +315,9 @@
 }
 
 @media (min-width: $screen-sm-min) {
-	.google-maps-search {
+	/* .google-maps-search {
 		position: relative;
-		height: 501px;
-
-		&.has-searched {
-			height: auto;
-		}
+		min-height: 501px;
 		
 		@media (max-width: 890.67px) { // 501px * (9 / 16)
 			.video-bg {
@@ -344,11 +347,13 @@
 		.google-maps-search-input {
 			padding: 0;
 			background-color: transparent;
+			transition: background-color 0.01s linear 0.25s;
 
 			.google-maps-search-input-control {
 				position: absolute;
 				width: 100%;
 				top: 50px;
+				transition: top 0.25s linear;
 
 				input.form-control {
 					height: 88px;
@@ -406,10 +411,26 @@
 					color: $white;
 				}
 			}
-		}
-		
-		.google-maps {
-			height: 695px;
+		}		
+
+		&.has-searched {
+			min-height: 0;
+
+			.google-maps-search-input {
+				background-color: #F2F2F2;
+
+				.google-maps-search-input-control {
+					position: relative;
+					margin-top: 15px;
+					margin-bottom: 15px;
+					top: 0;
+					width: auto;
+				}
+			}
+
+			.google-maps {
+				min-height: 695px;
+			}
 		}
 	}
 
@@ -424,5 +445,5 @@
 		.parking-facility-results {
 			padding-top: 90px;
 		}
-	}
+	} */
 }

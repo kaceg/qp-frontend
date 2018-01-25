@@ -723,6 +723,11 @@ $whitespace-lg:             $whitespace-xs * 3;     // 54px
 $whitespace-xl:             $whitespace-xs * 5;     // 90px
 
 
+//== Animations
+// --------------------------------------------------
+$animation-duration-collapse: 0.35s !default;
+$animation-duration-maps: 0.25s !default;
+
 //== Step Indicator
 // --------------------------------------------------
 $step-indicator-bubble-size:                20px;

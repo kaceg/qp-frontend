@@ -1,0 +1,161 @@
+.google-maps-search {
+    background-color: $gray-ultralightest;
+
+    .google-maps-search-collapse {
+        position: relative;
+
+        .bg-gradient {
+            display: none;
+        }
+
+        .google-maps-search-input {
+            padding-top: 25px;
+
+            .google-maps-search-input-control {
+                .google-maps-search-buttons-wrapper {
+                    margin-top: 25px;
+                }
+            }
+
+            .search-messages {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .google-maps {
+        min-height: 0;
+        transition: min-height $animation-duration-maps linear;
+    }
+
+    &.has-searched {
+        .google-maps {
+            min-height: 528px;
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .google-maps-search {
+        .google-maps-search-collapse {
+            min-height: 501px;
+            overflow: hidden;
+            transition: min-height $animation-duration-collapse linear $animation-duration-maps;
+
+            .bg-gradient {
+                display: block;
+                opacity: 1;
+                transition: opacity $animation-duration-collapse linear $animation-duration-maps;
+            }
+
+            .google-maps-search-input {
+                position: relative;
+                padding-top: 0;
+                z-index: 1;
+
+                .google-maps-search-input-control {
+                    margin-top: 50px;
+                    transition: margin $animation-duration-collapse linear $animation-duration-maps;
+
+                    input.form-control {
+                        height: 88px;
+                        padding-left: 30px !important;
+                        font-family: $font-family-sans-serif-bold;
+                        font-size: 1.222em;
+                        color: $gray-dark;
+                    }
+
+                    .google-maps-search-buttons-wrapper {
+                        position: absolute;
+                        top: 15px;
+                        right: 30px;
+                        margin: 0;
+
+                        .google-maps-search-buttons {
+                            display: flex;
+                            align-items: center;
+
+                            .current-location,
+                            .search {
+                                flex: 0 0 auto;
+                            }
+
+                            .search {
+                                height: 58px;
+                                margin: 0;
+                                margin-left: 20px;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+
+                .search-messages {
+                    margin-top: 65px;
+                    font-family: $font-family-sans-serif-bold;
+                    font-size: 1.444em;
+
+                    .search-message {
+                        max-width: 50%;
+                        margin: 0 auto;
+                        color: $white;
+                    }
+                }
+            }
+
+            @media (max-width: 890.67px) { // 501px * (9 / 16)
+                .video-bg {
+                    .video-bg-wrapper {
+                        width: 100%;
+                        height: 100%;
+                        padding: 0;
+                        transform: none;
+    
+                        iframe {
+                            width: calc(501px * (16 / 9)); // 890.67
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+                
+            @media (min-aspect-ratio: 16/9) {
+                .video-bg {
+                    .video-bg-wrapper {
+                        transform: translateY(-28.125%); // 56.25% / 2
+                    }
+                }
+            }
+        }
+
+        .google-maps {
+            transition: min-height $animation-duration-maps linear;
+        }
+
+        &.has-searched {
+            .google-maps-search-collapse {
+                min-height: 0;
+                transition: min-height $animation-duration-collapse linear;
+
+                .bg-gradient {
+                    opacity: 0;
+                    transition: opacity $animation-duration-collapse linear;
+                }
+
+                .google-maps-search-input {
+                    .google-maps-search-input-control {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        transition: margin $animation-duration-collapse linear;
+                    }
+                }
+            }
+
+            .google-maps {
+                min-height: 695px;
+                transition: min-height $animation-duration-maps linear $animation-duration-collapse;
+            }
+        }
+    }
+}
