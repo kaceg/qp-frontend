@@ -1,8 +1,11 @@
 .google-maps-search {
     background-color: $gray-ultralightest;
+    overflow: hidden;
 
     .google-maps-search-collapse {
         position: relative;
+        background-color: $gray-ultralightest;
+        z-index: 1;
 
         .bg-gradient {
             display: none;
@@ -24,14 +27,40 @@
     }
 
     .google-maps {
-        min-height: 0;
-        transition: min-height $animation-duration-maps linear;
+        height: 528px;
+        margin-top: -528px;
+        transition: margin-top $animation-duration-maps linear;
     }
 
     &.has-searched {
         .google-maps {
-            min-height: 528px;
+            margin-top: 0;
         }
+    }
+}
+
+.google-maps-search-results {    
+    .parking-facility-results {
+        padding-top: 15px;
+    }
+
+	.close-results {
+		display: inline-block;
+		margin-bottom: 30.5px;
+		font-family: $font-family-sans-serif-bold;
+		font-size: 1.5em;
+		color: $gray-light-worm;
+		text-decoration: none;
+
+		.qp-icon,
+		.fa {
+			margin-left: 23px;
+			font-weight: bold;
+		}
+		
+		&:hover {
+			color: $red;
+		}
     }
 }
 
@@ -141,7 +170,9 @@
         }
 
         .google-maps {
-            transition: min-height $animation-duration-maps linear;
+            height: 695px;
+            margin-top: -695px;
+            transition: margin-top $animation-duration-maps linear;
         }
 
         &.has-searched {
@@ -164,9 +195,17 @@
             }
 
             .google-maps {
-                min-height: 695px;
-                transition: min-height $animation-duration-maps linear $animation-duration-collapse;
+                transition: margin-top $animation-duration-maps linear $animation-duration-collapse;
             }
+        }
+    }
+
+    .google-maps-search-results {
+        background-color: $gray-ultralightest;
+		border-bottom: 1px solid $gray-lightest;
+
+		.parking-facility-results {
+			padding-top: 90px;
         }
     }
 }
