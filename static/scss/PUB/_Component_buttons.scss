@@ -241,3 +241,36 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
         }
     }
 }
+
+
+
+
+
+.btn-underline {
+    &,
+    &:hover {
+        background-color: transparent;
+    }
+
+    @include button-size($padding-base-vertical, 0, $font-size-base, $line-height-base, $btn-border-radius-base);
+    
+    margin-bottom: 8px;
+    padding-bottom: 2px;
+
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+    &.double {
+        border-width: 2px;
+    }
+
+    &.btn-success {
+        color: $lime;
+
+        &:hover {
+            color: $lime-dark;
+            border-bottom-color: $lime-dark;
+        }
+    }
+}

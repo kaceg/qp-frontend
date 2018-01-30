@@ -54,6 +54,15 @@ h2 {
 	margin: 0 0 0.75em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    .subtitle {
+        display: block;
+        margin-bottom: 0.25em;
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
+}
+
 .heading-description {
     display: block;
     margin-top: 0.5em;
