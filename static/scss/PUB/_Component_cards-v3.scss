@@ -12,10 +12,11 @@
     }
 
     .card__inner {
-        padding: 25px;
+        padding: 1em;
 
         .card__body,
         .card__footer {
+            margin-top: 0.5em;
             font-size: 1.111em;
         }
 
@@ -31,15 +32,11 @@
             }
         }
 
-        .card__body {
-            margin-top: 0.667em;
-        }
-
         .card__footer {
-            margin-top: 0.222em;
-
             .btn {
+                width: auto;
                 margin-bottom: 0;
+                padding-top: 0;
             }
 
             a {
@@ -47,7 +44,10 @@
                     .btn-underline {
                         &.btn-success {
                             color: $lime-dark;
-                            border-bottom-color: $lime-dark;
+                            
+                            .line-placeholder {
+                                border-bottom-color: $lime-dark;
+                            }
                         }
                     }
                 }
@@ -70,7 +70,7 @@
             padding: 0;
 
             .card__header {
-                margin-top: 10px;
+                margin-top: 0.6em;
             }
         }
     }

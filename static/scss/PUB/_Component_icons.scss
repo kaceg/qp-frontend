@@ -30,8 +30,36 @@
 }
 
 .icon-line {
-    .icon,
+    display: table;
+    
+    .icon-wrapper,
     .icon-text {
-        float: left;
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .icon-wrapper {
+        .icon {
+            height: 25px;
+            width: 25px;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &.walking {
+                background-image: url("/static/assets/svg/font/person-walking.svg");
+                background-size: auto 80%;
+                opacity: 0.65;
+            }
+
+            &.ticket {
+                background-image: url("/static/assets/svg/ticket.svg");
+                background-size: 85.56% 85.56%;
+            }
+        }
+    }
+
+    + .icon-line {
+        margin-top: 0.25em;
     }
 }

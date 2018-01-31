@@ -122,6 +122,13 @@ span.link {
     text-decoration: none;
 }
 
+.lime-hover {
+    &:hover {
+        color: $lime;
+        text-decoration: underline;
+    }
+}
+
 .bg-lightgrey {
 	background: $gray-lightest;
 }
@@ -419,6 +426,33 @@ ul.check-list.cta li:before {
 }
 .list--lined li a {
   text-decoration: none;
+}
+
+ul.tag-list {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        &:after,
+        .tag-name {            
+            display: inline-block;
+            float: left;
+        }
+
+        &:after {
+            content: ", ";
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
 }
 
 .toggle-link {

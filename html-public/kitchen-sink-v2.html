@@ -223,8 +223,76 @@
 
     <!-- CONTENT -->
     <div class="qcontentpane">
+        <!-- INPAGE NAVIGATION -->
+        <div id="inpage-navigation" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Inpage Navigation</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <section class="breadnav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <nav role="navigation" class="inpagenav desktop" aria-label="breadcrumbs">
+                            <ul class="inpagenav-list">
+                                <li>
+                                    <a class="is-active smoothscroll" href="#breakpoints">
+                                        <span>Breakpoints</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="smoothscroll" href="#buttons">
+                                        <span>Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="smoothscroll" href="#forms">
+                                        <span>Forms</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="smoothscroll" href="#cards">
+                                        <span>Cards</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="smoothscroll" href="#page-headers">
+                                        <span>Page Headers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="smoothscroll" href="#big-search">
+                                        <span>Big Search</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="form mobile">
+                            <div class="form-group">
+                                <label for="select-customer-type" class="col-form-label col-sm-12 col-md-2">Section</label>
+                                <select class="form-control">
+                                    <option value="#breakpoints">Breakpoints</option>
+                                    <option value="#buttons">Buttons</option>
+                                    <option value="#forms">Forms</option>
+                                    <option value="#cards">Cards</option>
+                                    <option value="#page-headers">Page Headers</option>
+                                    <option value="#big-search">Big Search</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- BREAKPOINTS -->
-        <div class="container-fluid">
+        <div id="breakpoints" class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Breakpoints</h1>
@@ -244,7 +312,7 @@
         </div>
 
         <!-- BUTTONS -->
-        <div class="container-fluid margin-top-xl">
+        <div id="buttons" class="container-fluid margin-top-xl">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Buttons</h1>
@@ -258,7 +326,9 @@
                     <a class="btn btn-default" href="#">Default</a>
                     <a class="btn btn-primary" href="#">Primary</a>
                     <a class="btn btn-line double btn-success" href="#">Line</a>
-                    <a class="btn btn-underline double btn-success" href="#">Underline</a>
+                    <a class="btn btn-underline double btn-success" href="#">
+                        <span class="line-placeholder">Underline</span>
+                    </a>
                     <a class="btn btn-success" href="#">Success</a>
                     <a class="btn btn-info" href="#">Info</a>
                     <a class="btn btn-warning" href="#">Warning</a>
@@ -277,7 +347,7 @@
         </div>
 
         <!-- FORMS -->
-        <div class="container-fluid margin-top-xl">
+        <div id="forms" class="container-fluid margin-top-xl">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Forms</h1>
@@ -624,7 +694,8 @@
                                                         <span class="display-block js-upload-error-extension">You are trying to upload a file wich is not supported. W only support
                                                             files with extensions: .docx, .xlsx, .pdf</span>
                                                         <span class="display-block js-upload-error-size">You are trying to upload a file wich exceeds the maximum size of
-                                                            25MB.</span>
+                                                            25MB.
+                                                        </span>
                                                     </div>
 
                                                     <input type="file" id="upload-files" name="upload-files" class="hidden" multiple="multiple">
@@ -1025,7 +1096,8 @@
                                                         <span class="display-block js-upload-error-extension">You are trying to upload a file wich is not supported. W only support
                                                             files with extensions: .docx, .xlsx, .pdf</span>
                                                         <span class="display-block js-upload-error-size">You are trying to upload a file wich exceeds the maximum size of
-                                                            25MB.</span>
+                                                            25MB.
+                                                        </span>
                                                     </div>
 
                                                     <input type="file" id="upload-files" name="upload-files" class="hidden" multiple="multiple">
@@ -1428,7 +1500,8 @@
                                                         <span class="display-block js-upload-error-extension">You are trying to upload a file wich is not supported. W only support
                                                             files with extensions: .docx, .xlsx, .pdf</span>
                                                         <span class="display-block js-upload-error-size">You are trying to upload a file wich exceeds the maximum size of
-                                                            25MB.</span>
+                                                            25MB.
+                                                        </span>
                                                     </div>
 
                                                     <input type="file" id="upload-files" name="upload-files" class="hidden" multiple="multiple">
@@ -1829,7 +1902,8 @@
                                                         <span class="display-block js-upload-error-extension">You are trying to upload a file wich is not supported. W only support
                                                             files with extensions: .docx, .xlsx, .pdf</span>
                                                         <span class="display-block js-upload-error-size">You are trying to upload a file wich exceeds the maximum size of
-                                                            25MB.</span>
+                                                            25MB.
+                                                        </span>
                                                     </div>
 
                                                     <input type="file" id="upload-files" name="upload-files" class="hidden" multiple="multiple">
@@ -1895,7 +1969,7 @@
         </div>
 
         <!-- CARDS -->
-        <div class="container-fluid margin-top-xl">
+        <div id="cards" class="container-fluid margin-top-xl">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Cards</h1>
@@ -1917,28 +1991,51 @@
                             <a href="#" class="no-link display-block">
                                 <div class="card__header">
                                     <h3 class="card__title">
-                                        <span class="subtitle">Card Subtitle</span>
+                                        <span class="subtitle primary-color">Card Subtitle</span>
                                         <strong>Card Title</strong>
                                     </h3>
                                 </div>
                             </a>
                             <div class="card__body">
-                                <div class="icon-line clearfix">
-                                    <div class="icon walking"></div>
+                                <div class="icon-line">
+                                    <div class="icon-wrapper">
+                                        <div class="icon walking"></div>
+                                    </div>
                                     <div class="icon-text">1,6km walk to Bonnefantenmuseum</div>
                                 </div>
-                                <div class="icon-line clearfix">
-                                    <div class="icon walking"></div>
-                                    <div class="icon-text">prebook, value card, season ticket</div>
+                                <div class="icon-line">
+                                    <div class="icon-wrapper">
+                                        <div class="icon ticket"></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <ul class="tag-list clearfix">
+                                            <li>
+                                                <a href="#" class="tag-name link-grey lime-hover">prebook</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="tag-name link-grey lime-hover">value card</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="tag-name link-grey lime-hover">season ticket</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card__footer">
                                 <a href="#" class="no-link display-block">
-                                    <span class="btn btn-underline btn-success double text-uppercase">More info</span>
+                                    <span class="btn btn-underline btn-success double text-uppercase">
+                                        <span class="line-placeholder">More info</span>
+                                    </span>
                                 </a>
                             </div>
                         </div>
                     </section>
+                </div>
+            </div>
+            <div class="row margin-top-xs">
+                <div class="col-xs-12">
+                    <h2>Default cards (No background)</h2>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <section class="card-v3 no-bg">
@@ -1951,42 +2048,52 @@
                             <a href="#" class="no-link display-block">
                                 <div class="card__header">
                                     <h3 class="card__title">
-                                        <span class="subtitle">Card Subtitle</span>
+                                        <span class="subtitle primary-color">Card Subtitle</span>
                                         <strong>Card Title</strong>
                                     </h3>
                                 </div>
                             </a>
                             <div class="card__body">
-                                <div class="icon-line clearfix">
-                                    <div class="icon walking"></div>
+                                <div class="icon-line">
+                                    <div class="icon-wrapper">
+                                        <div class="icon walking"></div>
+                                    </div>
                                     <div class="icon-text">1,6km walk to Bonnefantenmuseum</div>
                                 </div>
-                                <div class="icon-line clearfix">
-                                    <div class="icon walking"></div>
-                                    <div class="icon-text">prebook, value card, season ticket</div>
+                                <div class="icon-line">
+                                    <div class="icon-wrapper">
+                                        <div class="icon ticket"></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <ul class="tag-list clearfix">
+                                            <li>
+                                                <a href="#" class="tag-name link-grey lime-hover">prebook</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="tag-name link-grey lime-hover">value card</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="tag-name link-grey lime-hover">season ticket</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card__footer">
                                 <a href="#" class="no-link display-block">
-                                    <span class="btn btn-underline btn-success double text-uppercase">More info</span>
+                                    <span class="btn btn-underline btn-success double text-uppercase">
+                                        <span class="line-placeholder">More info</span>
+                                    </span>
                                 </a>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
-            <div class="row margin-top-xs">
-                <div class="col-md-7">
-                    <h2>Sitecore buttons</h2>
-
-                    <a class="GreenOutlineButton" href="#">GreenOutlineButton</a>
-                    <a class="FullGreenButton" href="#">FullGreenButton</a>
-                </div>
-            </div>
         </div>
 
         <!-- PAGE HEADERS -->
-        <div class="container-fluid margin-top-xl">
+        <div id="page-headers" class="container-fluid margin-top-xl">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Page Headers</h1>
@@ -2062,7 +2169,7 @@
         </section>
 
         <!-- BIG SEARCH -->
-        <div class="container-fluid margin-top-xl">
+        <div id="big-search" class="container-fluid margin-top-xl">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Big Search</h1>

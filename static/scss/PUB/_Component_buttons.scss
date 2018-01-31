@@ -247,30 +247,50 @@ button[disabled] { background: $gray-light-worm; border-color: $gray-light-worm;
 
 
 .btn-underline {
-    &,
-    &:hover {
-        background-color: transparent;
-    }
-
     @include button-size($padding-base-vertical, 0, $font-size-base, $line-height-base, $btn-border-radius-base);
-    
-    margin-bottom: 8px;
-    padding-bottom: 2px;
 
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
+    padding: 8px 0 4px;
+    background-color: transparent;
+    border-color: transparent;
+
+    .line-placeholder {
+        display: inline-block;
+        padding-bottom: 2px;
+        border-bottom: 1px solid transparent;
+    }
 
     &.double {
         border-width: 2px;
+
+        .line-placeholder {
+            border-bottom-width: 2px;
+        }
     }
-
+    
     &.btn-success {
-        color: $lime;
+        .line-placeholder {
+            border-bottom-color: $lime;
+        }
 
-        &:hover {
+        &,        
+        &:focus:active {
+            color: $lime;
+            border-color: transparent;
+        }
+
+        &:focus,
+        &:active {
+            background-color: transparent;
+        }
+
+        &:hover,
+        &:focus:active:hover {
+            background-color: transparent;
             color: $lime-dark;
-            border-bottom-color: $lime-dark;
+
+            .line-placeholder {
+                border-bottom-color: $lime-dark;
+            }
         }
     }
 }
