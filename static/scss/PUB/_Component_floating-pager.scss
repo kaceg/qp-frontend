@@ -1,108 +1,51 @@
-/* .floating-pager {
-    float: right;
-    margin-right: -15px;
-    border: 1px solid $gray-lightest;
-    border-right-width: 0;
-    text-align: center;
-
-    li {
-        padding: 5px 0;
-
-        .active {
-            color: $red;
-            font-family: $font-family-sans-serif-bold;
+.floating-pager {
+    .search-box {
+        .qp-icon-close {
+            font-size: 0.556em;
         }
     }
-} */
 
-.floating-pager-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-
-    > div {
-        flex: 0 0 auto;
+    .floating-pager-container {
+        position: relative;
         display: flex;
         flex-direction: row;
 
-        .scroll-match-height {
-            flex: 0 0 100%;
-        }
-    }
-
-    .floating-pager-scroll {
-        position: absolute;
-        top: 0;
-        right: -15px;
-        height: 100%;
-        order: 1;
-
-        .floating-pager {
-            width: 68px;
-            padding: 5px 0;
-            background-color: $white;
-            border: 1px solid $gray-lightest;
-            border-right-width: 0;
-
-            ul {
-                margin: 0;
-
-                li {
-                    padding: 5px 0;
-                    text-align: center;
-
-                    &.active {
-                        a {
-                            color: $red;
-                            font-family: $font-family-sans-serif-bold;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .floating-pager-content {
-        width: 100%;
-    }
-}
-
-@media (min-width: $screen-sm-min) {
-    .floating-pager-container {
-        display: block;
-
         > div {
-            display: block;
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+
+            .scroll-match-height {
+                flex: 0 0 100%;
+            }
         }
 
         .floating-pager-scroll {
-            position: relative;
-            top: auto;
-            right: auto;
-            height: auto;
+            position: absolute;
+            top: 0;
+            right: -15px;
+            height: 100%;
+            order: 1;
 
             .floating-pager {
-                width: 100%;
-                padding: 0;
-                background-color: transparent;
-                border: 0;
+                width: 68px;
+                padding: 5px 0;
+                background-color: $white;
+                border: 1px solid $gray-lightest;
+                border-right-width: 0;
 
                 ul {
+                    margin: 0;
+
                     li {
-                        margin: 0 0.65em;
-                        padding: 8px 0;
-                        display: inline-block;
+                        padding: 5px 0;
+                        text-align: center;
 
                         &.active {
-                            border-bottom: 3px solid $red;
-                        }
-
-                        &:first-child {
-                            margin-left: 0;
-                        }
-
-                        &:last-child {
-                            margin-right: 0;
+                            a {
+                                color: $red;
+                                font-family: $font-family-sans-serif-bold;
+                            }
                         }
                     }
                 }
@@ -110,7 +53,57 @@
         }
 
         .floating-pager-content {
-            margin-top: 48px;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .floating-pager{
+        .floating-pager-container {
+            display: block;
+
+            > div {
+                display: block;
+            }
+
+            .floating-pager-scroll {
+                position: relative;
+                top: auto;
+                right: auto;
+                height: auto;
+
+                .floating-pager {
+                    width: 100%;
+                    padding: 0;
+                    background-color: transparent;
+                    border: 0;
+
+                    ul {
+                        li {
+                            margin: 0 0.65em;
+                            padding: 8px 0;
+                            display: inline-block;
+
+                            &.active {
+                                border-bottom: 3px solid $red;
+                            }
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .floating-pager-content {
+                margin-top: 48px;
+            }
         }
     }
 }

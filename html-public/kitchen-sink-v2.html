@@ -17,6 +17,7 @@
     <script src="/static/js/jquery.matchHeight-min.js"></script>
     <script src="/static/js/selectboxit.min.js"></script>
     <script src="/static/js/bootstrap-datetimepicker.js"></script>
+    <script src="/static/js/jquery.sticky-kit.js"></script>
     <script src="/static/js/custom.js"></script>
 </head>
 
@@ -269,6 +270,11 @@
                                         <span>Big Search</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a class="smoothscroll" href="#floating-pager">
+                                        <span>Floating Pager</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
@@ -282,6 +288,7 @@
                                     <option value="#cards">Cards</option>
                                     <option value="#page-headers">Page Headers</option>
                                     <option value="#big-search">Big Search</option>
+                                    <option value="#floating-pager">Paged List</option>
                                 </select>
                             </div>
                         </div>
@@ -2711,6 +2718,320 @@
             </div>
 
         </section>
+
+        <!-- FLOATING PAGER -->
+        <div id="floating-pager" class="container-fluid margin-top-xl">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Floating Pager</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-xs-12">
+                    <h2>Unfiltered List</h2>
+                </div>
+            </div>
+            <div class="cities-list floating-pager">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="visible-xs">
+                            <form class="form search-box">
+                                <div class="form-group block">
+                                    <input type="text" class="form-control search-box__input">
+
+                                    <button type="submit" class="search-box__button">
+                                        <i class="qp-icon qp-icon-search no-margin"></i>
+                                    </button>
+
+                                    <button type="submit" class="search-box__button hidden">
+                                        <i class="qp-icon qp-icon-close no-margin"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="floating-pager-container">
+                            <div class="floating-pager-scroll">
+                                <div class="scroll-match-height">
+                                    <div class="scroll-in-parent mobile-scroll">
+                                        <div class="floating-pager">
+                                            <ul class="list-unstyled">
+                                                <li class="active">
+                                                    <a href="javascript:void(0);" class="link-grey">A - F</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="link-grey">G - L</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="link-grey">M - R</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="link-grey">S - Z</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-pager-content">
+                                <div class="scroll-match-height">
+                                    <ul class="list-unstyled list-columns">
+                                        <li>
+                                            <a href="#" class="link-grey">Alkmaar&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Alphen a/d Rijn&nbsp;
+                                                <span class="pf-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amersfoort&nbsp;
+                                                <span class="pf-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amstelveen&nbsp;
+                                                <span class="pf-number">2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amsterdam&nbsp;
+                                                <span class="pf-number">20</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amsterdam Rochdale&nbsp;
+                                                <span class="pf-number">5</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Apeldoorn&nbsp;
+                                                <span class="pf-number">4</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Arnhem&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Assen&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Baarn&nbsp;
+                                                <span class="pf-number">4</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Beilen&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Bergen Op Zoom&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <!-- -->
+                                        <li>
+                                            <a href="#" class="link-grey">Beverwijk&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Bilthoven&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Blerick&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Bodegraven&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Boxtel&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Breda&nbsp;
+                                                <span class="pf-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Bussum Zuid&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Cuijk&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Den Bosch&nbsp;
+                                                <span class="pf-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Den Haag&nbsp;
+                                                <span class="pf-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Den Haag Stallingsgarages&nbsp;
+                                                <span class="pf-number">15</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Deventer&nbsp;
+                                                <span class="pf-number">20</span>
+                                            </a>
+                                        </li>
+                                        <!-- -->
+                                        <li>
+                                            <a href="#" class="link-grey">Didam&nbsp;
+                                                <span class="pf-number">5</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Dordrecht&nbsp;
+                                                <span class="pf-number">4</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Driebergen-Zeist&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Duivendrecht&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Echt&nbsp;
+                                                <span class="pf-number">4</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Ede&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Eindhoven&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Emmen&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Enschede&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Ermelo&nbsp;
+                                                <span class="pf-number">1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-xs-12">
+                    <h2>Filtered List</h2>
+                </div>
+            </div>
+            <div class="cities-list floating-pager visible-xs">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="visible-xs">
+                            <form class="form search-box">
+                                <div class="form-group block">
+                                    <input type="text" class="form-control search-box__input" value="Am">
+
+                                    <button type="submit" class="search-box__button hidden">
+                                        <i class="qp-icon qp-icon-search no-margin"></i>
+                                    </button>
+
+                                    <button type="submit" class="search-box__button">
+                                        <i class="qp-icon qp-icon-close no-margin"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="floating-pager-container">
+                            <div class="floating-pager-scroll">
+                                <div class="scroll-match-height">
+                                    <div class="scroll-in-parent mobile-scroll">
+                                        <div class="floating-pager hidden">
+                                            <ul class="list-unstyled">
+                                                <li class="active">
+                                                    <a href="javascript:void(0);" class="link-grey">A - F</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="link-grey">G - L</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="link-grey">M - R</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="link-grey">S - Z</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-pager-content">
+                                <div class="scroll-match-height">
+                                    <ul class="list-unstyled list-columns">
+                                        <li>
+                                            <a href="#" class="link-grey">Amersfoort&nbsp;
+                                                <span class="pf-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amstelveen&nbsp;
+                                                <span class="pf-number">2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amsterdam&nbsp;
+                                                <span class="pf-number">20</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-grey">Amsterdam Rochdale&nbsp;
+                                                <span class="pf-number">5</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
