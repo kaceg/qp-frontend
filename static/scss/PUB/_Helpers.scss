@@ -591,7 +591,7 @@ ul.tag-list {
 .facility-detail {
     .payment-methods {
         .payment-method {
-            height: 73px;
+            height: 55px;
             padding-top: 0;
         }
     }
@@ -699,6 +699,10 @@ ul.tag-list {
 .display-block,
 .block-xs {
     display: block;
+}
+
+.display-flex {
+    display: flex;
 }
 
 @media (min-width: $screen-sm-min) {
