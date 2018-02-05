@@ -7,5 +7,9 @@
 }
 
 .ratio--16by9 {
-    padding-top: 56.25%;
+    @include aspect-ratio(16, 9);
+}
+
+.ratio--2\.35by1 {
+    @include aspect-ratio(2.35, 1);
 }

@@ -117,6 +117,12 @@
                         margin-right: 26px;
                     }
                 }
+
+                &:first-child {
+                    .user-icon {
+                        border-left: 0;
+                    }
+                }
             }
         }
     }

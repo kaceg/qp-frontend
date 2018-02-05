@@ -148,6 +148,10 @@
     }
 }
 
+@mixin aspect-ratio($width, $height) {
+    padding-top: ($height / $width) * 100%;
+}
+
 @mixin max-lines($lines, $line-height) {
     max-height: calc(1em * #{$line-height} * #{$lines});
     overflow: hidden;
