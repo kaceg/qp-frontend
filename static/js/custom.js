@@ -450,6 +450,10 @@ $(document).ready(function($) {
 	if($(".myqp-new select").length){
 		$(".myqp-new select").selectBoxIt();
 	}
+
+	$(".navigate-select").change(function () {
+        window.location = $(this).val();
+    });
 	
 	/*************************
 		TOOLTIP

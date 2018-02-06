@@ -28,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/kaceg/qp-frontend/issues"
   },
-  "homepage": "https://github.com/kaceg/qp-frontend#readme"
+  "homepage": "https://github.com/kaceg/qp-frontend#readme",
+  "browserslist": ["> 0%", "last 4 versions", "Firefox ESR"]
 }
