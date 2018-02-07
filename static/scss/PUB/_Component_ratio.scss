@@ -1,9 +1,9 @@
 .ratio--square {
-    padding-top: 100%;
+    @include aspect-ratio(1, 1);
 }
 
 .ratio--4by3 {
-    padding-top: 75%;
+    @include aspect-ratio(3, 4);
 }
 
 .ratio--16by9 {
