@@ -12,16 +12,16 @@
         }
 
         .qp-logo {
-            margin: 20px 0 0;
+            margin: 0;
 
-            .qp-tagline {
-                margin-left: 10px;
-                font-size: 1.111em;
+            img {
+                height: 79px;
+                width: auto;
             }
         }
 
         .qp-disclaimer {
-            margin: 40px 0 0;
+            margin: 22px 0 0;
             font-size: 0.889em;
 
             .qp-copyright {
@@ -116,11 +116,11 @@
             }
     
             .qp-logo {
-                margin-top: 0;
+                margin-right: -15px;
             }
     
             .qp-disclaimer {
-                margin: 35px 0 0;
+                margin: 15px 0 0;
             }
         }
     }
