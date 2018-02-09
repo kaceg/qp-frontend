@@ -72,7 +72,9 @@
 
 .card--horizontal,
 .card--horizontal-small {
-    .display-flex {
+    .card-block {
+        display: flex;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -123,7 +125,7 @@
 }
 
 .card--horizontal {
-    .display-flex {
+    .card-block {
         flex-direction: column;
     }
 
@@ -183,21 +185,23 @@
             width: 100%;
             float: none;
 
+            &,
+            .card-v3,
+            .card-v3 .card-block,
+            .card-v3 .card-block .card__inner {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-v3,
+            .card-v3 .card-block,
+            .card-v3 .card-block .card__inner,
+            .card-v3 .card-block .card__inner .card__body {
+                flex: 1 0 auto;
+            }
+
             .card-v3 {
                 position: relative;
-                display: flex;
-                flex: 1 0 auto;
-                flex-direction: column;
-
-                .card__inner {
-                    flex: 1 0 auto;
-                    display: flex;
-                    flex-direction: column;
-
-                    .card__body {
-                        flex: 1 0 auto;
-                    }
-                }
             }
         }
     }
@@ -227,7 +231,7 @@
 
 @media (min-width: $screen-sm-min) {
     .card--horizontal {
-        .display-flex {
+        .card-block {
             flex-direction: row;
         }
     
