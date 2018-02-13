@@ -299,13 +299,3 @@
         }
     }
 }
-
-@media (min-width: $screen-lg-min) {
-    .card--horizontal {
-        .card__inner {    
-            .card__body {
-                @include max-lines(4, $line-height-base);
-            }
-        }
-    }
-}
