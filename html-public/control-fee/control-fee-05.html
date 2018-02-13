@@ -1,245 +1,53 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 
 <head>
-    <!-- utf-8 works for most cases -->
-    <meta charset="utf-8">
-    <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta name="viewport" content="width=device-width">
-    <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <meta name="x-apple-disable-message-reformatting">
-    <!-- The title tag shows in email notifications, like Android 4.4. -->
-    <title></title>
-
-    <!-- Web Font / @font-face : BEGIN -->
-    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
-
-    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
-    <!--[if mso]>
-        <style>
-            * {
-                font-family: sans-serif !important;
-            }
-        </style>
-    <![endif]-->
-
-    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
-    <!--[if !mso]><!-->
-    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
-    <!--<![endif]-->
-
-    <!-- Web Font / @font-face : END -->
-
-    <!-- CSS Reset : BEGIN -->
-    <style>
-        /* What it does: Remove spaces around the email design added by some email clients. */
-        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-
-        html,
-        body {
-            margin: 0 auto !important;
-            padding: 0 !important;
-            height: 100% !important;
-            width: 100% !important;
-        }
-        /* What it does: Stops email clients resizing small text. */
-
-        * {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-        /* What it does: Centers email on Android 4.4 */
-
-        div[style*="margin: 16px 0"] {
-            margin: 0 !important;
-        }
-        /* What it does: Stops Outlook from adding extra spacing to tables. */
-
-        table,
-        td {
-            mso-table-lspace: 0pt !important;
-            mso-table-rspace: 0pt !important;
-        }
-        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
-
-        table {
-            border-spacing: 0 !important;
-            border-collapse: collapse !important;
-            table-layout: fixed !important;
-            margin: 0 auto !important;
-        }
-
-        table table table {
-            table-layout: auto;
-        }
-        /* What it does: Uses a better rendering method when resizing images in IE. */
-
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-        /* What it does: A work-around for email clients meddling in triggered links. */
-
-        *[x-apple-data-detectors],
-        /* iOS */
-
-        .x-gmail-data-detectors,
-        /* Gmail */
-
-        .x-gmail-data-detectors *,
-        .aBn {
-            border-bottom: 0 !important;
-            cursor: default !important;
-            color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-        }
-        /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
-
-        .a6S {
-            display: none !important;
-            opacity: 0.01 !important;
-        }
-        /* If the above doesn't work, add a .g-img class to any image in question. */
-
-        img.g-img+div {
-            display: none !important;
-        }
-        /* What it does: Prevents underlining the button text in Windows 10 */
-
-        .button-link {
-            text-decoration: none !important;
-        }
-        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-        /* Create one of these media queries for each additional viewport size you'd like to fix */
-        /* Thanks to Eric Lepetit (@ericlepetitsf) for help troubleshooting */
-
-        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-            /* iPhone 6 and 6+ */
-            .qp-mail-container {
-                min-width: 375px !important;
-            }
-        }
-    </style>
-    <!-- CSS Reset : END -->
-
-    <!-- Progressive Enhancements : BEGIN -->
-    <style>
-        /* What it does: Hover styles for buttons */
-
-        .button-td,
-        .button-a {
-            transition: all 100ms ease-in;
-        }
-
-        .button-td:hover,
-        .button-a:hover {
-            background: #555555 !important;
-            border-color: #555555 !important;
-        }
-        /* Media Queries */
-
-        @media screen and (max-width: 600px) {
-            /* What it does: Adjust typography on small screens to improve readability */
-            .qp-mail-container p {
-                font-size: 17px !important;
-                line-height: 22px !important;
-            }
-        }
-    </style>
-    <!-- Progressive Enhancements : END -->
-
-    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
-    <!--[if gte mso 9]>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
-
 </head>
 
-<body width="100%" bgcolor="#ffffff" style="margin: 0; mso-line-height-rule: exactly;">
-    <center style="width: 100%; background: #ffffff; text-align: center;">
-
-        <!-- Visually Hidden Preheader Text : BEGIN -->
-        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-            (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject
-            line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX
-            for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this
-            text is not included, email clients will automatically populate it using the text (including image alt text)
-            at the start of the email's body.
-        </div>
-        <!-- Visually Hidden Preheader Text : END -->
-
-        <!--
-            Set the email width. Defined in two places:
-            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
-            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
-        -->
-        <div style="max-width: 600px; margin: auto;" class="qp-mail-container">
-            <!--[if mso]>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+<body leftmargin="0" topmargin="0" yahoo="fix" style="font-family: Georgia, Times, serif" bgcolor="#eeeeee" marginheight="0"
+    marginwidth="0">
+    <table style="height: 16px; width: 600px;" border="0" cellspacing="0" align="center">
+        <tbody>
             <tr>
-            <td>
-            <![endif]-->
-
-            <!-- Email Header : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td aria-hidden="true" height="30" style="font-size: 0; line-height: 0;">
-                        &nbsp;
-                    </td>
-                </tr>
-                <!-- Clear Spacer : END -->
-                <tr>
-                    <td style="text-align: center;">
-                        <img src="http://be.qpark.online/static/assets/img/logo.png" width="225" height="88" alt="Q-Park" border="0"
-                            style="height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #000000;">
-                    </td>
-                </tr>
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td aria-hidden="true" height="30" style="font-size: 0; line-height: 0;">
-                        &nbsp;
-                    </td>
-                </tr>
-                <!-- Clear Spacer : END -->
-                <tr>
-                    <td style="text-align: center;">
-                        <h1 style="margin-top: 0; margin-bottom: 0; font-family: sans-serif; font-size: 25px; line-height: 25px; color: #000000; font-weight: normal;">
-                            Thank you for contacting us
-                        </h1>
-                    </td>
-                </tr>
-                
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td aria-hidden="true" height="55" style="font-size: 0; line-height: 0;">
-                        &nbsp;
-                    </td>
-                </tr>
-                <!-- Clear Spacer : END -->
-            </table>
-            <!-- Email Header : END -->
-
-            <!-- Email Body : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
-                <!-- Intro : BEGIN -->
-                <tr>
-                    <td bgcolor="#ffffff">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <td style="background-color: #ffffff; height: 105px;">
+                    <table border="0" cellspacing="0" align="right">
+                        <tbody>
                             <tr>
-                                <td style="text-align: center; font-family: sans-serif; font-size: 18px; line-height: 18px; color: #000000;">
+                                <td>
+                                    <table border="0" cellspacing="10">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="/static/assets/img/logo.png" alt="Q-Park" width="200" height="78" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="width: 25px;">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 5px;">
+                    <span style="font-family: arial, helvetica, sans-serif;" data-mce-mark="1">&nbsp;</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #D90327; background-color: #ffffff;">
+                    <table style="width: 598px;" border="0" cellspacing="30">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: medium; font-family: arial, helvetica, sans-serif;">
+                                    <h1 style="margin-bottom: 0;">Thank you for contacting us!</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: medium; font-family: arial, helvetica, sans-serif;" data-mce-mark="1">
                                     <p>
-                                        This is a copy of your contact form for your information. We tend to reply on your contact inquire in 3-5 business days
+                                        This is a copy of your contact form for your information. We tend to reply on your contact inquire in 3-5 business days.
                                     </p>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum consequat tempor. Maecenas cursus porta ante vitae vulputate.
@@ -249,101 +57,66 @@
                                     </p>
                                 </td>
                             </tr>
-                        </table>
-                    </td>
-                </tr>
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td aria-hidden="true" height="40" style="font-size: 0; line-height: 0;">
-                        &nbsp;
-                    </td>
-                </tr>
-                <!-- Clear Spacer : END -->
-                <!-- Intro : END -->
-
-                <!-- Data : BEGIN -->
-                <tr>
-                    <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px; table-layout: auto !important;">
                             <tr>
-                                <td style="text-align: right; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
-                                    Name:
-                                </td>
-                                <td style="text-align: left; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-left: 10px; padding-bottom: 5px;">
-                                    Denis Caeyers
+                                <td style="font-size: medium; font-family: arial, helvetica, sans-serif;">
+                                    <table width="100%" style="table-layout: fixed;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 25%; font-weight: bold;">Name:</td>
+                                                <td style="vertical-align: top; width: 75%;">Denis Caeyers</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 25%; font-weight: bold;">Telephone:</td>
+                                                <td style="vertical-align: top; width: 75%;">(not provided)</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 25%; font-weight: bold;">E-mail:</td>
+                                                <td style="vertical-align: top; width: 75%;">denis.caeyers@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 25%; font-weight: bold;">Subject:</td>
+                                                <td style="vertical-align: top; width: 75%;">Question regarding 7x24 season ticket</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 25%; font-weight: bold;">Body:</td>
+                                                <td style="vertical-align: top; width: 75%;">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum consequat tempor. Maecenas cursus porta ante vitae vulputate.
+                                                    Suspendisse nunc purus, vestibulum tempus bibendum ut, dignissim eu nisi.
+                                                    Pellentesque in libero vel sem consequat varius. Etiam elementum ultrices
+                                                    risus sed malesuada. In condimentum vel ante in laoreet. Nunc nulla
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                             </tr>
-                            <tr>
-                                <td style="text-align: right; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
-                                    Telephone:
-                                </td>
-                                <td style="text-align: left; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-left: 10px; padding-bottom: 5px;">
-                                    (not provided)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
-                                    E-mail:
-                                </td>
-                                <td style="text-align: left; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-left: 10px; padding-bottom: 5px;">
-                                    denis.caeyers@gmail.com
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
-                                    Subject:
-                                </td>
-                                <td style="text-align: left; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-left: 10px; padding-bottom: 5px;">
-                                    Question regarding 7x24 season ticket
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
-                                    Body:
-                                </td>
-                                <td style="text-align: left; vertical-align: top; font-family: sans-serif; font-size: 20px; line-height: 20px; color: #000000; padding-top: 5px; padding-left: 10px; padding-bottom: 5px;">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum consequat tempor. Maecenas cursus porta ante vitae vulputate.
-                                    Suspendisse nunc purus, vestibulum tempus bibendum ut, dignissim eu nisi.
-                                    Pellentesque in libero vel sem consequat varius. Etiam elementum ultrices
-                                    risus sed malesuada. In condimentum vel ante in laoreet. Nunc nulla
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td aria-hidden="true" height="40" style="font-size: 0; line-height: 0;">
-                        &nbsp;
-                    </td>
-                </tr>
-                <!-- Clear Spacer : END -->
-                <!-- Data : END -->
-
-            </table>
-            <!-- Email Body : END -->
-
-            <!-- Email Footer : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px; font-family: sans-serif; color: #000000; line-height:18px;">
-                <tr>
-                    <td style="text-align: center; font-family: sans-serif; font-size: 16px; line-height: 16px; color: #000000;">
-                        <p>
-                            This is an automatic e-mail. Reply's to this e-mail will not be read or handled in any way. If you have any further questions,
-                            please read our FAQ on the following link: http://www.q-park.se/faq
-                        </p>
-                    </td>
-                </tr>
-            </table>
-            <!-- Email Footer : END -->
-
-            <!--[if mso]>
-            </td>
+                        </tbody>
+                    </table>
+                </td>
             </tr>
-            </table>
-            <![endif]-->
-        </div>
-
-    </center>
+            <tr>
+                <td style="font-family: arial, helvetica, sans-serif; font-size: small;">
+                    <table style="width: 598px;" border="0" cellspacing="30">
+                        <tbody>
+                            <tr>
+                                <td style="font-family: arial, helvetica, sans-serif; text-align: center;">
+                                    This is an automatic e-mail. Reply's to this e-mail will not be read or handled in any way. If you have any further questions,
+                                    please read our FAQ on the following link:
+                                    <a href="http://www.q-park.se/faq">http://www.q-park.se/faq</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 5px;" rowspan="2">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <span style="font-family: arial, helvetica, sans-serif;" data-mce-mark="1">&nbsp;</span>
+    </p>
 </body>
 
 </html>
