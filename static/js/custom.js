@@ -3,15 +3,83 @@
 *************************/
 
 (function ($) {
-// VERTICALLY ALIGN FUNCTION
-$.fn.vAlign = function() {
-	return this.each(function(i){
-	var ah = $(this).height();
-	var ph = $(this).parent().height();
-	var mh = Math.ceil((ph-ah) / 2);
-	$(this).css('padding-top', mh);
-	});
-};
+	var win = $(window);
+
+	// VERTICALLY ALIGN FUNCTION
+	$.fn.vAlign = function() {
+		return this.each(function(i){
+		var ah = $(this).height();
+		var ph = $(this).parent().height();
+		var mh = Math.ceil((ph-ah) / 2);
+		$(this).css('padding-top', mh);
+		});
+	};
+
+	// Sticky elements
+	$.fn.stick_in_parent = function(options) {
+		options = options || {};
+		
+		var offset_top = options.offset_top ? options.offset_top : 0;
+
+		fn = function(element) {
+			if (element.data("sticky_kit")) {
+				return;
+			}
+
+			element.data("sticky_kit", true);
+
+			var parent = element.parent();
+
+			tick = function() {
+				var scroll_top, parent_top, parent_bottom, element_height, element_width, bottomed, css;
+
+				scroll_top = win.scrollTop();
+
+				parent_top = parent.offset().top;
+				parent_bottom = parent_top + parent.outerHeight();
+
+				element_height = element.outerHeight(true);
+				element_width = element.css("box-sizing") === "border-box" ? element.outerWidth() + "px" : element.width() + "px";
+
+				bottomed = scroll_top > parent_bottom - element_height - offset_top;
+
+				css = {
+					top: "",
+					width: ""
+				};
+
+				if (scroll_top > parent_top - offset_top && !bottomed) {
+					css = {
+						top: offset_top,
+						width: element_width
+					};
+
+					element.addClass("is_sticky");
+					element.removeClass("bottomed");
+					element.css(css);
+				} else if (bottomed) {
+					element.addClass("bottomed");
+					element.css(css);
+				} else {
+					element.removeClass("is_sticky");
+					element.removeClass("bottomed");
+					element.css(css);
+				}
+			};
+
+			new ResizeSensor(parent, tick);
+
+			win.on("touchmove", tick);
+			win.on("scroll", tick);
+      		win.on("resize", tick);
+			
+			return setTimeout(tick, 0);
+		};
+
+		for (var i = 0; i < this.length; ++i) {
+			fn($(this[i]));
+		}
+	}
 })(jQuery);
 
 function alignValutas(selector) {
@@ -75,8 +143,8 @@ function initScrollInParent() {
 		var offset = $(".qp-header").offset();
 		var offsetTop = offset ? $(".qp-header").outerHeight() : 10;
 
-		jQuery(".scroll-in-parent:not(.mobile-scroll)").stick_in_parent({offset_top: offsetTop});
-		jQuery(".scroll-in-parent.mobile-scroll").stick_in_parent({offset_top: 10});
+		jQuery(".scroll-in-parent:not(.mobile-scroll)").stick_in_parent({ offset_top: 108 });
+		jQuery(".scroll-in-parent.mobile-scroll").stick_in_parent({ offset_top: 10 });
 	};
 }
 
@@ -378,7 +446,7 @@ $(document).ready(function($) {
         window.location = $(this).val();
     });
 
-	$(".scroll-match-height").on("click", initScrollInParent);
+	//$(".scroll-match-height").on("click", initScrollInParent);
 	
 	/*************************
 		MOBILE TABLES

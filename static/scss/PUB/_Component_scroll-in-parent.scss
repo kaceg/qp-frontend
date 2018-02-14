@@ -1,0 +1,19 @@
+.scroll-match-height {
+    position: relative;
+    
+    .scroll-in-parent {
+        position: static;
+        width: 100%;
+
+        &.is_sticky {
+            position: fixed;
+            top: 0;
+
+            &.bottomed {
+                position: absolute;
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+}

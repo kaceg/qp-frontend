@@ -25,10 +25,11 @@
             top: 0;
             right: -15px;
             height: 100%;
+            width: 68px;
             order: 1;
 
             .floating-pager {
-                width: 68px;
+                width: 100%;
                 padding: 5px 0;
                 background-color: $white;
                 border: 1px solid $gray-lightest;
@@ -72,9 +73,9 @@
                 top: auto;
                 right: auto;
                 height: auto;
+                width: auto;
 
                 .floating-pager {
-                    width: 100%;
                     padding: 0;
                     background-color: transparent;
                     border: 0;
