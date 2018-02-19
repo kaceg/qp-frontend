@@ -70,3 +70,72 @@ table.align-top {
         }
     }
 }
+
+.tariffs-table {
+    margin-right: -10px;
+    margin-left: -10px;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+
+    tbody {
+        tr {
+            td {
+                width: 33.3333%;
+            }
+        }
+    }
+
+    &.no-descriptions {
+        tbody {
+            tr {
+                td {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .tariffs-table {
+        tbody {
+            tr {
+                td {
+                    &:nth-child(1) {
+                        width: 20%;
+                    }
+
+                    &:nth-child(2) {
+                        width: 15%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .tariffs-table {
+        tbody {
+            tr {
+                td {
+                    &:nth-child(1) {
+                        width: 30%;
+                    }
+
+                    &:nth-child(2) {
+                        width: 25%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+}
