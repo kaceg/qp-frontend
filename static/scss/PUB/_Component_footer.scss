@@ -12,12 +12,13 @@
         }
 
         .qp-logo {
+            display: block;
+            height: 79px;
             margin: 0;
-
-            img {
-                height: 79px;
-                width: auto;
-            }
+            background-image: url("/static/assets/svg/logo-tagline-diapositive.svg");
+            background-repeat: no-repeat;
+            background-size: auto 49px;
+            background-position: center center;
         }
 
         .qp-disclaimer {
@@ -116,7 +117,7 @@
             }
     
             .qp-logo {
-                margin-right: -15px;
+                background-position: center right;
             }
     
             .qp-disclaimer {
