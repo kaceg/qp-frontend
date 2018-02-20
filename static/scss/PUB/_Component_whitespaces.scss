@@ -65,7 +65,7 @@
 
 
 
-//== Margins
+//== Paddings
 // --------------------------------------------------
 /* Vertical */
 .no-vertical-padding {
@@ -97,4 +97,25 @@
 .padding-horizontal-xl {
     padding-top: $whitespace-xl;
     padding-bottom: $whitespace-xl;
+}
+
+/* Top */
+.padding-top-xs {
+    padding-top: $whitespace-xs;
+}
+
+.padding-top-sm {
+    padding-top: $whitespace-sm;
+}
+
+.padding-top-md {
+    padding-top: $whitespace-md;
+}
+
+.padding-top-lg {
+    padding-top: $whitespace-lg;
+}
+
+.padding-top-xl {
+    padding-top: $whitespace-xl;
 }

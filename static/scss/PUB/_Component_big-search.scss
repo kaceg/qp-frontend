@@ -207,5 +207,11 @@
 		.parking-facility-results {
 			padding-top: 90px;
         }
+
+        .jumbotron {
+            .jumbotron__header {
+                background-color: $gray-ultralightest;
+            }
+        }
     }
 }
