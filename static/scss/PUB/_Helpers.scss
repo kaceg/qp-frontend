@@ -634,6 +634,24 @@ ul.tag-list {
     }
 }
 
+/* Whitelistings */
+.line-errors {
+    max-height: 400px;
+    padding: 1em;
+    border: 1px solid $gray-light-worm;
+    overflow: auto;
+}
+
+.import-error {
+    margin-top: 1em;
+}
+
+@media (min-width: $screen-sm-min) {
+    .import-error {
+        margin-top: 0;
+    }
+}
+
 /* Whitespaces */
 .city-description {
     + .cities-spotlight {
