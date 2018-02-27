@@ -91,61 +91,51 @@
 	}
 }
 
-@mixin button-line-variant($color) {
-	background-color: transparent;
-	border-color: $color;
-	color: $color;
-}
+@mixin button-hover-variant(
+    $color, 
+    $background-color, 
+    $background-color-hover, 
+    $border-color: $background-color,
+    $border-color-hover: transparent,
+    $color-hover: $color) {
 
-@mixin button-hover-variant($color, $background, $background-hover) {
-    color: $color;
-    background-color: $background;
-    border-color: $background;
-    
-    &:focus,
-    &.focus {
+        background-color: $background-color;
+        border-color: $border-color;
         color: $color;
-        background-color: $background;
-        border-color: $background;
-    }
-
-    &:hover {
-        color: $color;
-        background-color: $background-hover;
-        border-color: transparent;
-    }
-
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-        color: $color;
-        background-color: $background;
-        border-color: $background;
+        
+        &:focus,
+        &.focus {
+            background-color: $background-color;
+            border-color: $border-color;
+            color: $color;
+        }
 
         &:hover {
-            color: $color;
-            background-color: $background-hover;
-            border-color: transparent;
+            background-color: $background-color-hover;
+            border-color: $border-color-hover;
+            color: $color-hover;
         }
 
-        &:focus,
-        &.focus {
+        &:active,
+        &.active,
+        .open > &.dropdown-toggle {
+            background-color: $background-color;
+            border-color: $border-color;
             color: $color;
-            background-color: $background;
-            border-color: $background;
-        }
-    }
 
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &:hover,
-        &:focus,
-        &.focus {
-            background-color: $background;
-                border-color: $background;
+            &:focus,
+            &.focus {
+                background-color: $background-color;
+                border-color: $border-color;
+                color: $color;
+            }
+
+            &:hover {
+                background-color: $background-color-hover;
+                border-color: $border-color-hover;
+                color: $color-hover;
+            }
         }
-    }
 }
 
 @mixin aspect-ratio($width, $height) {

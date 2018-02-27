@@ -17,7 +17,7 @@
     <script src="/static/js/jquery.matchHeight-min.js"></script>
     <script src="/static/js/selectboxit.min.js"></script>
     <script src="/static/js/bootstrap-datetimepicker.js"></script>
-	<script src="/static/js/ResizeSensor.js"></script>
+    <script src="/static/js/ResizeSensor.js"></script>
     <script src="/static/js/custom.js"></script>
 </head>
 
@@ -338,29 +338,328 @@
                     <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-7">
-                    <h2>Default buttons</h2>
 
-                    <a class="btn btn-default" href="#">Default</a>
-                    <a class="btn btn-primary" href="#">Primary</a>
-                    <a class="btn btn-line double btn-success" href="#">Line</a>
-                    <a class="btn btn-underline double btn-success" href="#">
-                        <span class="line-placeholder">Underline</span>
-                    </a>
-                    <a class="btn btn-success" href="#">Success</a>
-                    <a class="btn btn-info" href="#">Info</a>
-                    <a class="btn btn-warning" href="#">Warning</a>
-                    <a class="btn btn-danger" href="#">Danger</a>
-                    <a class="btn btn-link" href="#">Link</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Default</h2>
+                    </div>
+
+                    <div class="row padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Buttons on a light background. Nice to know: Buttons have a subtle margin below.</div>
+
+                            <button class="btn btn-default">Default</button>
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-success">Success</button>
+                            <button class="btn btn-info">Info</button>
+                            <button class="btn btn-warning">Warning</button>
+                            <button class="btn btn-danger">Danger</button>
+                            <button class="btn btn-link">Link</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>These can also be applied to A tags.</div>
+
+                            <a class="btn btn-default">Default</a>
+                            <a class="btn btn-primary">Primary</a>
+                            <a class="btn btn-success">Success</a>
+                            <a class="btn btn-info">Info</a>
+                            <a class="btn btn-warning">Warning</a>
+                            <a class="btn btn-danger">Danger</a>
+                            <a class="btn btn-link">Link</a>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>Buttons can be disabled by setting the "disabled" attribute.</div>
+                            <button class="btn btn-default" disabled="disabled">Default</button>
+                            <button class="btn btn-primary" disabled="disabled">Primary</button>
+                            <button class="btn btn-success" disabled="disabled">Success</button>
+                            <button class="btn btn-info" disabled="disabled">Info</button>
+                            <button class="btn btn-warning" disabled="disabled">Warning</button>
+                            <button class="btn btn-danger" disabled="disabled">Danger</button>
+                            <button class="btn btn-link" disabled="disabled">Link</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>Or by adding the class "disabled"</div>
+                            <button class="btn btn-default disabled">Default</button>
+                            <button class="btn btn-primary disabled">Primary</button>
+                            <button class="btn btn-success disabled">Success</button>
+                            <button class="btn btn-info disabled">Info</button>
+                            <button class="btn btn-warning disabled">Warning</button>
+                            <button class="btn btn-danger disabled">Danger</button>
+                            <button class="btn btn-link disabled">Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <h2>Default (Overlay)</h2>
+                    </div>
+
+                    <div class="row overlay gradient-bg padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Buttons on a dark background. Nice to know: Buttons have a subtle margin below.</div>
+
+                            <button class="btn btn-default" href="#">Default</button>
+                            <button class="btn btn-primary" href="#">Primary</button>
+                            <button class="btn btn-success" href="#">Success</button>
+                            <button class="btn btn-info" href="#">Info</button>
+                            <button class="btn btn-warning" href="#">Warning</button>
+                            <button class="btn btn-danger" href="#">Danger</button>
+                            <button class="btn btn-link" href="#">Link</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>These can also be applied to A tags.</div>
+
+                            <a class="btn btn-default">Default</a>
+                            <a class="btn btn-primary">Primary</a>
+                            <a class="btn btn-success">Success</a>
+                            <a class="btn btn-info">Info</a>
+                            <a class="btn btn-warning">Warning</a>
+                            <a class="btn btn-danger">Danger</a>
+                            <a class="btn btn-link">Link</a>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>Buttons can be disabled by setting the "disabled" attribute.</div>
+
+                            <button class="btn btn-default" disabled="disabled">Default</button>
+                            <button class="btn btn-primary" disabled="disabled">Primary</button>
+                            <button class="btn btn-success" disabled="disabled">Success</button>
+                            <button class="btn btn-info" disabled="disabled">Info</button>
+                            <button class="btn btn-warning" disabled="disabled">Warning</button>
+                            <button class="btn btn-danger" disabled="disabled">Danger</button>
+                            <button class="btn btn-link" disabled="disabled">Link</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>Or by adding the class "disabled"</div>
+
+                            <button class="btn btn-default disabled">Default</button>
+                            <button class="btn btn-primary disabled">Primary</button>
+                            <button class="btn btn-success disabled">Success</button>
+                            <button class="btn btn-info disabled">Info</button>
+                            <button class="btn btn-warning disabled">Warning</button>
+                            <button class="btn btn-danger disabled">Danger</button>
+                            <button class="btn btn-link disabled">Link</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row margin-top-xs">
-                <div class="col-md-7">
-                    <h2>Sitecore buttons</h2>
 
-                    <a class="GreenOutlineButton" href="#">GreenOutlineButton</a>
-                    <a class="FullGreenButton" href="#">FullGreenButton</a>
+            <div class="row margin-top-sm">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Outline</h2>
+                    </div>
+
+                    <div class="row padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Some buttons can also have an outline variant.</div>
+
+                            <button class="btn btn-line btn-success" href="#">Success</button>
+                            <button class="btn btn-line btn-info" href="#">Info</button>
+                            <button class="btn btn-line btn-danger" href="#">Danger</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>Which can be made smaller.</div>
+
+                            <button class="btn btn-line btn-success small" href="#">Success</button>
+                            <button class="btn btn-line btn-info small" href="#">Info</button>
+                            <button class="btn btn-line btn-danger small" href="#">Danger</button>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>The size of the border can also be increased.</div>
+
+                            <button class="btn btn-line btn-success double" href="#">Success</button>
+                            <button class="btn btn-line btn-info double" href="#">Info</button>
+                            <button class="btn btn-line btn-danger double" href="#">Danger</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>Which also can be made smaller.</div>
+
+                            <button class="btn btn-line btn-success double small" href="#">Success</button>
+                            <button class="btn btn-line btn-info double small" href="#">Info</button>
+                            <button class="btn btn-line btn-danger double small" href="#">Danger</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <h2>Outline (Overlay)</h2>
+                    </div>
+
+                    <div class="row overlay gradient-bg padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Some buttons can also have an outline variant.</div>
+
+                            <button class="btn btn-line btn-success">Success</button>
+                            <button class="btn btn-line btn-info">Info</button>
+                            <button class="btn btn-line btn-danger">Danger</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>Which can be made smaller.</div>
+
+                            <button class="btn btn-line btn-success small">Success</button>
+                            <button class="btn btn-line btn-info small">Info</button>
+                            <button class="btn btn-line btn-danger small">Danger</button>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>The size of the border can also be increased.</div>
+
+                            <button class="btn btn-line btn-success double">Success</button>
+                            <button class="btn btn-line btn-info double">Info</button>
+                            <button class="btn btn-line btn-danger double">Danger</button>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div>Which also can be made smaller.</div>
+
+                            <button class="btn btn-line btn-success double small" href="#">Success</button>
+                            <button class="btn btn-line btn-info double small" href="#">Info</button>
+                            <button class="btn btn-line btn-danger double small" href="#">Danger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-sm">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Underline</h2>
+                    </div>
+                    <div class="row padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Some buttons can also have an underline variant.</div>
+
+                            <button class="btn btn-underline btn-success">
+                                <span class="line-placeholder">Success</span>
+                            </button>
+                            <button class="btn btn-underline btn-info">
+                                <span class="line-placeholder">Info</span>
+                            </button>
+                            <button class="btn btn-underline btn-danger">
+                                <span class="line-placeholder">Danger</span>
+                            </button>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>The size of the line can also be increased.</div>
+
+                            <button class="btn btn-underline btn-success double">
+                                <span class="line-placeholder">Success</span>
+                            </button>
+                            <button class="btn btn-underline btn-info double">
+                                <span class="line-placeholder">Info</span>
+                            </button>
+                            <button class="btn btn-underline btn-danger double">
+                                <span class="line-placeholder">Danger</span>
+                            </button>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>And ofcourse you can place all these variants next to each other.</div>
+
+                            <button class="btn btn-default">Default</button>
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-line btn-success double">Success</button>
+                            <button class="btn btn-line btn-success">Success</button>
+                            <button class="btn btn-underline btn-success double">
+                                <span class="line-placeholder">Danger</span>
+                            </button>
+                            <button class="btn btn-link">Link</button>
+                            <button class="btn btn-success">Success</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2>Underline (Overlay)</h2>
+                    </div>
+                    <div class="row overlay gradient-bg padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Some buttons can also have an underline variant.</div>
+
+                            <button class="btn btn-underline btn-success">
+                                <span class="line-placeholder">Success</span>
+                            </button>
+                            <button class="btn btn-underline btn-info">
+                                <span class="line-placeholder">Info</span>
+                            </button>
+                            <button class="btn btn-underline btn-danger">
+                                <span class="line-placeholder">Danger</span>
+                            </button>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>The size of the line can also be increased.</div>
+
+                            <button class="btn btn-underline btn-success double">
+                                <span class="line-placeholder">Success</span>
+                            </button>
+                            <button class="btn btn-underline btn-info double">
+                                <span class="line-placeholder">Info</span>
+                            </button>
+                            <button class="btn btn-underline btn-danger double">
+                                <span class="line-placeholder">Danger</span>
+                            </button>
+                        </div>
+
+                        <div class="col-xs-12 margin-top-sm">
+                            <div>And ofcourse you can place all these variants next to each other.</div>
+
+                            <button class="btn btn-default">Default</button>
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-line btn-success double">Success</button>
+                            <button class="btn btn-line btn-success">Success</button>
+                            <button class="btn btn-underline btn-success double">
+                                <span class="line-placeholder">Danger</span>
+                            </button>
+                            <button class="btn btn-link">Link</button>
+                            <button class="btn btn-success">Success</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-sm">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Sitecore buttons</h2>
+                    </div>
+
+                    <div class="row padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Some buttons can even be used inside the Sitecore rich text field.</div>
+
+                            <button class="GreenOutlineButton">GreenOutlineButton</button>
+                            <button class="FullGreenButton">FullGreenButton</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2>Sitecore buttons (Overlay)</h2>
+                    </div>
+
+                    <div class="row overlay gradient-bg padding-horizontal-sm">
+                        <div class="col-xs-12">
+                            <div>Some buttons can even be used inside the Sitecore rich text field.</div>
+
+                            <button class="GreenOutlineButton">GreenOutlineButton</button>
+                            <button class="FullGreenButton">FullGreenButton</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -779,7 +1078,7 @@
 
                 <div class="col-md-6">
                     <div>
-                        <h2>Overlay</h2>
+                        <h2>Default (Overlay)</h2>
                     </div>
 
                     <div class="row overlay gradient-bg padding-horizontal-sm">
@@ -1183,7 +1482,7 @@
             <div class="row margin-top-sm">
                 <div class="col-md-6">
                     <div>
-                        <h2>Default (Errors)</h2>
+                        <h2>Errors</h2>
                     </div>
 
                     <div class="row padding-horizontal-sm">
@@ -1585,7 +1884,7 @@
 
                 <div class="col-md-6">
                     <div>
-                        <h2>Overlay (Errors)</h2>
+                        <h2>Errors (Overlay)</h2>
                     </div>
 
                     <div class="row overlay gradient-bg padding-horizontal-sm">
@@ -2165,9 +2464,10 @@
                                 <div class="card__body">
                                     <div class="qp-rte">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                        Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                        ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                        Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                        Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                        felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in
+                                        mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus
+                                        ut, bibendum tortor.
                                     </div>
                                 </div>
                                 <div class="card__footer">
@@ -2348,9 +2648,10 @@
                                 <div class="card__body">
                                     <div class="qp-rte">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                        Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                        ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                        Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                        Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                        felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in
+                                        mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus
+                                        ut, bibendum tortor.
                                     </div>
                                 </div>
                                 <div class="card__footer">
@@ -2553,7 +2854,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section class="side-by-side-cards">
             <div class="container">
                 <div class="row card-grid-group">
@@ -2576,9 +2877,10 @@
                                     <div class="card__body">
                                         <div class="qp-rte">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                            ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                            Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                            felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue,
+                                            in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula
+                                            metus ut, bibendum tortor.
                                         </div>
                                     </div>
                                     <div class="card__footer">
@@ -2635,7 +2937,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section class="side-by-side-cards">
             <div class="container">
                 <div class="row card-grid-group">
@@ -2658,9 +2960,10 @@
                                     <div class="card__body">
                                         <div class="qp-rte">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                            ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                            Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                            felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue,
+                                            in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula
+                                            metus ut, bibendum tortor.
                                         </div>
                                     </div>
                                     <div class="card__footer">
@@ -2740,9 +3043,10 @@
                                     <div class="card__body">
                                         <div class="qp-rte">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                            ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                            Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                            felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue,
+                                            in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula
+                                            metus ut, bibendum tortor.
                                         </div>
                                     </div>
                                     <div class="card__footer">
@@ -2803,9 +3107,10 @@
                                     <div class="card__body">
                                         <div class="qp-rte">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                            ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                            Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                            felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue,
+                                            in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula
+                                            metus ut, bibendum tortor.
                                         </div>
                                     </div>
                                     <div class="card__footer">
@@ -2846,9 +3151,10 @@
                                     <div class="card__body">
                                         <div class="qp-rte">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                            ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                            Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                            felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue,
+                                            in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula
+                                            metus ut, bibendum tortor.
                                         </div>
                                     </div>
                                     <div class="card__footer">
@@ -2899,9 +3205,10 @@
                                     <div class="card__body">
                                         <div class="qp-rte">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut magna sit amet augue faucibus euismod finibus quis nibh.
-                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum felis,
-                                            ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue, in mollis turpis.
-                                            Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula metus ut, bibendum tortor.
+                                            Ut vehicula a tortor et iaculis. Integer vel euismod quam. In volutpat condimentum
+                                            felis, ut dictum lacus cursus laoreet. Nulla facilisi. Duis eu convallis augue,
+                                            in mollis turpis. Praesent sit amet laoreet tortor. Cras eget sem dictum, vehicula
+                                            metus ut, bibendum tortor.
                                         </div>
                                     </div>
                                     <div class="card__footer">

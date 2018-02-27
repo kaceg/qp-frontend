@@ -2,15 +2,22 @@
     @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
     @include user-select(none);
     @include button();
-    //@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
-    @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark);
+    @include button-hover-variant(
+        $color: $btn-success-color,
+        $background-color: $btn-success-bg,
+        $background-color-hover: $lime_dark
+    );
 }
 
 .GreenOutlineButton {
     @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
     @include user-select(none);
     @include button();
-    //@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
-    @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark);
-    @include button-line-variant($btn-success-bg);
+    @include button-hover-variant(
+        $color: $lime,
+        $background-color: transparent,
+        $border-color: $lime,
+        $color-hover: $white,
+        $background-color-hover: $lime_dark
+    );
 }

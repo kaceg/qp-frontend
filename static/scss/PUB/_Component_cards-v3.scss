@@ -217,18 +217,6 @@
     }
 }
 
-@media (max-width: $screen-xs-max) {
-    .card-v3 {
-        .card__buttons {
-            .card__button {
-                @include button-hover-variant($btn-success-color, $btn-success-bg, $lime_dark);
-
-                text-decoration: none;
-            }
-        }
-    }
-}
-
 @media (min-width: $screen-sm-min) {
     .card--horizontal {
         .card-block {
