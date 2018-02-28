@@ -9,6 +9,7 @@
         position: relative;
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
 
         > div {
             flex: 0 0 auto;
@@ -21,10 +22,10 @@
         }
 
         .floating-pager-scroll {
-            position: absolute;
-            top: 0;
-            right: -15px;
-            height: 100%;
+            //position: absolute;
+            //top: 0;
+            //right: -15px;
+            //height: 100%;
             width: 68px;
             order: 1;
 
@@ -54,7 +55,7 @@
         }
 
         .floating-pager-content {
-            width: 100%;
+            width: calc(100% - 68px + 15px);
         }
     }
 }
@@ -69,10 +70,10 @@
             }
 
             .floating-pager-scroll {
-                position: relative;
-                top: auto;
-                right: auto;
-                height: auto;
+                //position: relative;
+                //top: auto;
+                //right: auto;
+                //height: auto;
                 width: auto;
 
                 .floating-pager {
@@ -104,6 +105,7 @@
 
             .floating-pager-content {
                 margin-top: 48px;
+                width: 100%;
             }
         }
     }
