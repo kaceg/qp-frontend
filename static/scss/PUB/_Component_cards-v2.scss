@@ -330,13 +330,22 @@
         .card__body {
             font-size: 1.333em;
             line-height: 1.26;
-            height: calc(1em * 1.25 * 6);
         }
     }
 }
 
 .card-list {
     margin: 0 -15px;
+}
+
+@media (min-width: $screen-sm-min) {
+    .card--hero--small {    
+        .card__wrapper {            
+            .card__body {
+                height: calc(1em * 1.25 * 6);
+            }
+        }
+    }
 }
 
 @media (min-width: $screen-md-min) {
