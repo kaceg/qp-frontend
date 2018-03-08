@@ -235,24 +235,22 @@
 			}
 		}
 
+		> thead {
+			.col-license-plate {
+				width: 18%;
+			}
+
+			.col-quantity {
+				width: 10%;
+			}
+		}
+
 		.right {
 			text-align: right;
 		}
 
 		.date {
 			color: $gray-dark;
-		}
-		
-        .form {
-				.license-plate {
-				.country-prefix {
-					width: 35%;
-				}
-
-				.plate-number {
-					width: 65%;
-				}
-			}
 		}
 		
 		.btn {

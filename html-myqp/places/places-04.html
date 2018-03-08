@@ -140,67 +140,121 @@
                             <table class="tbl-overview">
                                 <thead>
                                     <tr>
-                                        <th>Customer</th>
-                                        <th>Email</th>
-                                        <th>License plate</th>
-                                        <th>Telephone number</th>
+                                        <th class="text-ellipsis">First Name</th>
+                                        <th class="text-ellipsis">Last Name</th>
+                                        <th class="text-ellipsis">Email</th>
+                                        <th class="text-ellipsis col-license-plate">License plate</th>
+                                        <th class="text-ellipsis">Telephone number</th>
+                                        <th class="text-ellipsis col-quantity">Quantity</th>
                                         <th>&nbsp;</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="mobile-labels customer">
-                                        <td><span class="firstname">John</span> <span class="lastname">Doe</span></td>
-                                        <td><span class="email">john.doe@sony.com</span></td>
-                                        <td><span class="license-plate">N-345-DEF</span></td>
-                                        <td><span class="telephone">+44 123 45 67 89</span></td>
-										<td class="icons">
-											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
-											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
-										</td>
-                                    </tr>
-                                    <tr class="mobile-labels customer">
-                                        <td><span class="firstname">Olav</span> <span class="lastname">Erikson</span></td>
-                                        <td><span class="email">olav.erikson@siemans.com</span></td>
-                                        <td><span class="license-plate">N-678-GHI</span></td>
-                                        <td><span class="telephone">+44 123 45 67 90</span></td>                                        
-										<td class="icons">
-											<a href="#" title="Edit" class="edit"><img src="/static/assets/svg/icon_edit.svg" /></a>
-											<a href="#" title="Delete" class="delete"><img src="/static/assets/svg/icon_delete.svg" /></a>
-										</td>
-                                    </tr>
                                     <tr class="form">
                                         <td class="form-group">
-                                            <div class="inline-form-controls">
-                                                <input type="text" class="form-control" placeholder="First name">
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                            </div>
+                                            <input type="text" class="form-control" value="John" />
                                         </td>
-                                        <td class="form-group error">
-                                            <input type="text" class="form-control" placeholder="Email">
+                                        <td class="form-group">
+                                            <input type="text" class="form-control" value="Doe" />
+                                        </td>
+                                        <td class="form-group">
+                                            <input type="text" class="form-control" value="john.doe@sony.com" />
                                         </td>
                                         <td class="form-group">
                                             <div class="license-plate clearfix">
                                                 <div class="country-prefix">
-                                                    <select class="form-control" id="select-country-prefix">
+                                                    <select class="form-control">
                                                         <option>BE</option>
                                                         <option>GB</option>
                                                         <option selected>N</option>
                                                     </select>
                                                 </div>
-                                                <div class="plate-number error">
-                                                    <input type="text" class="form-control" id="input-license-plate">
+                                                <div class="plate-number">
+                                                    <input type="text" class="form-control" value="345-DEF" />
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="form-group">
-                                            <input type="tel" class="form-control" placeholder="Telephone number">
+                                            <input type="text" class="form-control" value="+44 123 45 67 89" />
                                         </td>
-                                        <td class="vertical-middle">
-                                            <button type="button" class="btn btn-success add">Add</a>
+                                        <td class="form-group desktop">&nbsp;</td>
+                                        <td class="right">
+                                            <button class="btn btn-success add">
+                                                Add
+                                            </button>
+                                            <a href="#" class="add-entry">
+                                                Cancel
+                                            </a>
                                         </td>
                                     </tr>
+
+                                    <tr class="mobile-labels customer">
+                                        <td class="text-ellipsis">Olav</td>
+                                        <td class="text-ellipsis">Erikson</td>
+                                        <td class="text-ellipsis">olav.erikson@siemans.com</td>
+                                        <td class="text-ellipsis">N-678-GHI</td>
+                                        <td class="text-ellipsis">+44 123 45 67 90</td>
+                                        <td>&nbsp;</td>
+                                        <td class="icons">
+                                            <a class="edit">
+                                                <img src="/static/assets/svg/icon_edit.svg">
+                                            </a>
+                                            <a class="delete">
+                                                <img src="/static/assets/svg/icon_delete.svg">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="mobile-labels customer">
+                                        <td class="text-ellipsis" colspan="2">John Doe</td>
+                                        <td class="text-ellipsis" colspan="3">john.doe@sony.com</td>
+                                        <td class="text-ellipsis">10</td>
+                                        <td class="icons">
+                                            <a class="delete">
+                                                <img src="/static/assets/svg/icon_delete.svg">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="form">
+                                        <td class="form-group" colspan="2">
+                                            <input type="text" class="form-control" placeholder="Name" />
+                                        </td>
+                                        <td class="form-group" colspan="3">
+                                            <input type="text" class="form-control" placeholder="E-mail Address" />
+                                        </td>
+                                        <td class="form-group desktop">&nbsp;</td>
+                                        <td class="right">
+                                            <button type="button" class="btn btn-success add">
+                                                Search
+                                            </button>
+                                            <a href="#" class="add-entry">
+                                                Cancel
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="primary-color-important" colspan="7">
+                                            This contact could not be found.
+                                        </td>
+                                    </tr>
+
+                                    <tr class="form customer">
+                                        <td class="text-ellipsis" colspan="2">John Doe</td>
+                                        <td class="text-ellipsis" colspan="3">john.doe@sony.com</td>
+                                        <td class="form-group">
+                                            <input type="text" class="form-control js-quantity" maxlength="3" value="10" />
+                                        </td>
+                                        <td class="right">
+                                            <button type="button" class="btn btn-success add">
+                                                Add
+                                            </button>
+                                        </td>
+                                    </tr>
+
                                     <tr class="no-border">
-                                        <td colspan="5">
+                                        <td colspan="7">
                                             <div class="right">
                                                 <a href="#" class="add-entry plus-icon">Add unregistered customer</a>
                                                 <a href="#" class="add-entry plus-icon">Add registered customer</a>
