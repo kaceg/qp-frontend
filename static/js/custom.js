@@ -159,7 +159,7 @@ function pagescroll(pageElement) {
 var headerTop = 0;
 
 function initHeaderTop() {
-	var offset = $(".qp-header").offset();
+	var offset = $(".qp-header .fixedscroll-start").offset();
 
 	if (offset) {
 		headerTop = offset.top;
@@ -172,6 +172,29 @@ function positionNav($){
 	} else {
 		$("body").removeClass("fixedscroll");
 	}	
+}
+
+/*************************
+  HEADER SEARCH
+*************************/
+function initHeaderSearch() {
+  $(".qp-header .search-box .search-box__input, .qp-header .search-box .search-box__button").on("mouseover", function(e) {
+	  e.preventDefault();
+
+	  $(".qp-header .search-box").addClass("active");
+
+	  return false; 
+  });
+
+  function deactivateSearchBox() {
+	  if (!$(".qp-header .search-box .search-box__input").is(":focus")) {
+		  $(".qp-header .search-box").removeClass("active");
+	  }
+  }
+
+  $("body").on("mouseover", deactivateSearchBox);
+  $("body").on("click", deactivateSearchBox);
+  $(".qp-header .search-box .search-box__input").on("blur", deactivateSearchBox);
 }
 
 /*************************
@@ -510,6 +533,18 @@ $(document).ready(function($) {
 			$back_to_top.addClass('cd-fade-out');
 		}
 	});
+
+  	/*************************
+		SIDEBAR
+	*************************/
+	$(".navbar-qp .navbar-header .navbar-toggle").click(function(e) {
+		e.preventDefault();
+		$(".qp-header").toggleClass("side-navbar-enabled");
+
+		$("#side-menu").on("show.bs.collapse", ".collapse", function() {
+			$("#side-menu").find(".collapse.in").collapse("hide");
+		});
+	});
 	
 	/*************************
 		SELECTBOXIT
@@ -661,29 +696,6 @@ $(document).ready(function($) {
 		}
 	});
 
-  	/*************************
-		HEADER SEARCH
-	*************************/
-	function initHeaderSearch() {
-		$(".qp-header .search-box .search-box__input, .qp-header .search-box .search-box__button").on("mouseover", function(e) {
-			e.preventDefault();
-
-			$(".qp-header .search-box").addClass("active");
-
-			return false; 
-		});
-
-		function deactivateSearchBox() {
-			if (!$(".qp-header .search-box .search-box__input").is(":focus")) {
-				$(".qp-header .search-box").removeClass("active");
-			}
-		}
-
-		$("body").on("mouseover", deactivateSearchBox);
-		$("body").on("click", deactivateSearchBox);
-		$(".qp-header .search-box .search-box__input").on("blur", deactivateSearchBox);
-	}
-
 	
   	/*************************
 		YOUTUBE VIDEOS
@@ -751,8 +763,10 @@ function onYouTubeIframeAPIReady() {
 
 $(document).ready(function() {
 	initHeaderTop();
+	initHeaderSearch();
 
 	$(window).load(function() {
+		initHeaderTop();
 		resizeContent($);
 		positionNav($);
 	});

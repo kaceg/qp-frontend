@@ -50,16 +50,6 @@ select:focus, input:focus, textarea:focus { background: $white}
     }
 
     .form {
-        // Clear custom CSS defined above. Can be removed when new design is accepted.
-        .form-group:not(.form-group--boxed) {
-            .form-control {
-                padding: .5rem .75rem;
-                border: 1px solid $gray-light-worm;
-                box-shadow: none;
-            }
-        }
-        // End clear custom CSS
-
         h3 {
             margin-bottom: 1.25em;
         }

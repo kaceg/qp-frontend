@@ -1,5 +1,11 @@
 .floating-pager {
     .search-box {
+        .form-group {
+            .search-box__input {
+                padding-right: 48px !important; // Important because of old formelements code that is overridden. Can be removed when cleanup is complete.
+            }
+        }
+
         .qp-icon-close {
             font-size: 0.556em;
         }
@@ -22,10 +28,6 @@
         }
 
         .floating-pager-scroll {
-            //position: absolute;
-            //top: 0;
-            //right: -15px;
-            //height: 100%;
             width: 68px;
             order: 1;
 

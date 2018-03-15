@@ -59,6 +59,52 @@
                 background-image: url("/static/assets/svg/ticket.svg");
                 background-size: 85.56% 85.56%;
             }
+
+            &.account {
+                background-image: url("/static/assets/svg/font/navpopup-account.svg");
+                opacity: 0.65;
+            }
+
+            &.financial {
+                background-image: url("/static/assets/svg/font/navpopup-financial.svg");
+                opacity: 0.65;
+            }
+
+            &.credentials {
+                background-image: url("/static/assets/svg/font/navpopup-credentials.svg");
+                opacity: 0.65;
+            }
+
+            &.switch {
+                background-image: url("/static/assets/svg/font/navpopup-switch.svg");
+                opacity: 0.65;
+            }
+
+            &.logout {
+                background-image: url("/static/assets/svg/font/navpopup-logout.svg");
+                opacity: 0.65;
+            }
+
+            &.language {
+                background-image: url("/static/assets/svg/font/navpopup-language.svg");
+                opacity: 0.65;
+            }
+        }
+    }
+    
+    &.vertical-center {
+        .icon-wrapper,
+        .icon-text {
+            vertical-align: middle;
+        }
+    }
+
+    &.small-icon {
+        .icon-wrapper {
+            .icon {
+                height: 20px;
+                width: 20px;
+            }
         }
     }
 

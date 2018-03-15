@@ -1,4 +1,84 @@
-@import "../PUB/_Component_navbar-inline.scss";
+.navbar-qp {
+    padding-top: 30px;
+    padding-bottom: 34px;
+	-webkit-transition: padding 0.2s ease-in;
+	-moz-transition: padding 0.2s ease-in;
+	-o-transition: padding 0.2s ease-in;
+	transition: padding 0.2s ease-in;
+
+    .navbar-header {
+        .navbar-brand {
+            margin: 0;
+            padding: 0;
+        }
+    }
+        
+    .navbar-collapse {
+        margin: 0 0 0 -30px;
+        padding: 0;
+        border: none;
+
+        .navbar-nav {
+            margin: 0;
+
+            li {
+                border-bottom: none;
+
+                > a {
+                    padding: 11px 15px 12px;
+                    font-family: $font-family-sans-serif-bold;
+                }
+            }
+
+            .grey {
+                > a {
+                    color: $gray-dark;
+                }
+            }
+        }
+    }
+
+    .language-selector-wrapper,
+    .selectboxit-container span,
+    .search .fa {
+        line-height: 25px;
+    }
+
+    .language-selector-wrapper {
+        margin: 11px 0 12px;
+        padding: 0;
+        padding-right: 15px;
+
+        .language-selector {
+            padding: 0 !important;
+            border: none !important;
+            font-family: $font-family-sans-serif;
+
+            .selectboxit-text {
+                margin: 0;
+                padding-right: 30px;
+                min-height: 0;
+                color: $gray-dark;
+            }
+
+            .selectboxit-arrow-container {
+                width: 9px;
+                margin-top: 13px;
+
+                i {
+                    margin: 0;
+                    transform: translateY(-50%);
+                    opacity: 0.65;
+                }
+            }
+        }
+
+        .selectboxit-options {
+            min-width: 68px !important;
+            padding-top: 1px;
+        }
+    }
+}
 
 .navbar-qp {
     margin-bottom: 0;

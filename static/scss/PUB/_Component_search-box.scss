@@ -1,12 +1,24 @@
 .search-box {
     position: relative;
-    
-    .search-box__button {
-        position: absolute;
-        top: 50%;
-        right: 7px;
-        background: transparent;
-        border: none;
-        transform: translateY(-50%);
+    height: 49px;
+
+    .form-group {
+        .search-box__input,
+        .search-box__button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .search-box__input {
+            right: 0;
+            padding-right: 48px !important; // Important because of old formelements code that is overridden. Can be removed when cleanup is complete.
+        }
+        
+        .search-box__button {
+            right: 7px;
+            background-color: transparent;
+            border: none;
+        }
     }
 }
