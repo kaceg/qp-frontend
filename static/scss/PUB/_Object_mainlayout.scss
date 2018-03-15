@@ -6,7 +6,7 @@
 }
 
 .fixedscroll .qcontentpane {
-    padding-top: 120px;
+    padding-top: 170px; // 50px (subnavigation) + 90px (main navigation) + 30px (whitespace)
 }
 
 @media (max-width: $screen-xs-max) {
