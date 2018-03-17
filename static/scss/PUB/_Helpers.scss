@@ -77,6 +77,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.heading-link-wrapper {
+    .heading,
+    .heading-link {
+        display: inline-block;
+        margin-right: 25px;
+        vertical-align: middle;
+    }
+
+    .heading {
+        margin-bottom: 0;
+    }
+
+    .heading-link {
+        text-decoration: none;
+    }
+
+    :last-child {
+        margin-right: 0;
+    }
+}
+
 .no-table-title {
     margin-bottom: 13px;
 }

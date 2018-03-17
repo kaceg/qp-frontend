@@ -16,6 +16,7 @@
     <script src="/static/js/moment.js"></script>
     <script src="/static/js/jquery.matchHeight-min.js"></script>
     <script src="/static/js/selectboxit.min.js"></script>
+    <script src="/static/js/multiselect-dropdown.js"></script>
     <script src="/static/js/bootstrap-datetimepicker.js"></script>
     <script src="/static/js/ResizeSensor.js"></script>
     <script src="/static/js/custom.js"></script>
@@ -127,64 +128,64 @@
                                     <li>
                                         <a href="#" class="link-grey">Contact us</a>
                                     </li>
-                                    
+
                                     <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-grey">Contact us</a>
-                                        </li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="social-links">
@@ -563,6 +564,11 @@
                                     </a>
                                 </li>
                                 <li>
+                                    <a class="smoothscroll" href="#results-filter">
+                                        <span>Results filter</span>
+                                    </a>
+                                </li>
+                                <li>
                                     <a class="smoothscroll" href="#floating-pager">
                                         <span>Floating Pager</span>
                                     </a>
@@ -582,6 +588,7 @@
                                     <option value="#content-blocks">Content Blocks</option>
                                     <option value="#card-grids">Card Grids</option>
                                     <option value="#big-search">Big Search</option>
+                                    <option value="#results-filter">Results filter</option>
                                     <option value="#floating-pager">Paged List</option>
                                 </select>
                             </div>
@@ -4701,6 +4708,143 @@
             </div>
 
         </section>
+
+        <!-- RESULTS FITLER -->
+        <div id="results-filter" class="container-fluid margin-top-xl">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Filter</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-filter show-options">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="results-filter__summary">
+                            <div class="heading-link-wrapper">
+                                <h2 class="heading">9 Parking facilities found</h2>
+                                <a href="#" class="heading-link smoothscroll">View on map</a>
+                                <a href="javascript:void(0);" class="heading-link">Refine results</a>
+                            </div>
+                        </div>
+                        <div class="results-filter__options">
+                            <div class="results-filter-header">
+                                <div class="heading-link-wrapper">
+                                    <h3 class="heading">Refine results</h3>
+                                    <a href="javascript:void(0);" class="heading-link">Clear filters</a>
+                                </div>
+                                <a href="javascript:void(0);" class="close-filter">
+                                    <i class="qp-icon qp-icon-close no-margin"></i>
+                                </a>
+                            </div>
+
+                            <form class="form">
+                                <div class="result-filter-option row">
+                                    <div class="col-xs-12">
+                                        <strong class="result-filter-option__header">Parking Facility Services</strong>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <label for="online-bookable" class="checkable-element">
+                                            <input id="online-bookable" type="checkbox" checked="checked">
+                                            <span class="checkable-element__placeholder"></span>
+                                            Online bookable
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <label for="high-clearance" class="checkable-element">
+                                            <input id="high-clearance" type="checkbox" checked="checked">
+                                            <span class="checkable-element__placeholder"></span>
+                                            High clearance
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <label for="electric-charging-station" class="checkable-element">
+                                            <input id="electric-charging-station" type="checkbox" checked="checked">
+                                            <span class="checkable-element__placeholder"></span>
+                                            Electric charging station
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="result-filter-option row">
+                                    <div class="col-xs-12">
+                                        <strong class="result-filter-option__header">Available Products</strong>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <label for="524" class="checkable-element">
+                                            <input id="524" type="checkbox" checked="checked">
+                                            <span class="checkable-element__placeholder"></span>
+                                            5x24
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <label for="624" class="checkable-element">
+                                            <input id="624" type="checkbox" checked="checked">
+                                            <span class="checkable-element__placeholder"></span>
+                                            6x24
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <label for="724" class="checkable-element">
+                                            <input id="724" type="checkbox" checked="checked">
+                                            <span class="checkable-element__placeholder"></span>
+                                            7x24
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="result-filter-option row">
+                                    <div class="col-xs-12">
+                                        <strong class="result-filter-option__header">Available Products</strong>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <dl class="multiselect-dropdown">
+                                            <dt>
+                                                <a href="#">
+                                                    <div class="arrow-container"></div>
+                                                    <span class="hida"> </span>
+                                                    <p class="multiSel"></p>
+                                                </a>
+                                            </dt>
+                                            <dd>
+                                                <div class="multiSelect">
+                                                    <ul class="multiSelect-list">
+                                                        <li>
+                                                            <label for="brussels" class="checkable-element">
+                                                                <input id="brussels" type="checkbox" value="Brussels">
+                                                                <span class="checkable-element__placeholder"></span>
+                                                                Brussels
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="antwerp" class="checkable-element">
+                                                                <input id="antwerp" type="checkbox" value="Antwerp">
+                                                                <span class="checkable-element__placeholder"></span>
+                                                                Antwerp
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="hasselt" class="checkable-element">
+                                                                <input id="hasselt" type="checkbox" value="Hasselt">
+                                                                <span class="checkable-element__placeholder"></span>
+                                                                Hasselt
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- FLOATING PAGER -->
         <div id="floating-pager" class="container-fluid margin-top-xl">

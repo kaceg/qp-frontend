@@ -128,5 +128,15 @@
 	
 	 dd ul li a:hover {
 	  background-color: #fff;
-	}	
+	}
+	
+	.checkable-element {
+		&:before {
+			top: calc((30px - 1em) / 2);
+		}
+
+		.checkable-element__placeholder {
+			top: calc(((30px - 1em) / 2) + 0.5em);
+		}
+	}
 }
