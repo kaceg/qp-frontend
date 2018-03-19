@@ -21,6 +21,24 @@
         }
     }
 
+    .user-menu {
+        > a {
+            .icon-line {
+                .icon-text {
+                    color: $gray-dark;
+                }
+            }
+
+            &:hover {
+                .icon-line {    
+                    .icon-text {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
     .language-selector {
         .language-selector-select {
             padding: 0 !important;
