@@ -197,12 +197,14 @@
         display: flex;
         width: 100%;
         flex-direction: row;
+        justify-content: flex-end;
 
         > li {
             flex: 0 0 auto;
 
-            &:first-child {
+            &.main-subnav {
                 flex: 1 1 0;
+                height: 49px;
                 white-space: nowrap;
                 overflow: hidden;
                 

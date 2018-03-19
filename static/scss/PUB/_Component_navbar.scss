@@ -264,6 +264,12 @@
     }
 }
 
+.subnavbar-qp {
+    min-height: 0;
+    margin: 0;
+    border: none;
+}
+
 .side-navbar-enabled {
     .navbar-qp {
         &:not(.side-navbar) {
