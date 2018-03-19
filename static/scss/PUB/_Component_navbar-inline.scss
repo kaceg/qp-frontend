@@ -29,10 +29,35 @@
     .navbar-right {
         li {
             padding: 6px 20px 7px;
+
+            &.user-menu {
+                &.only-icon {
+                    padding: 12px 20px;
+                }
+            }
         }
     }
 
     .user-menu {
+        > a {
+            .icon-line {
+                width: auto;
+
+                .icon-text {
+                    font-family: $font-family-sans-serif-bold;
+                    color: $gray-dark;
+                }
+            }
+
+            &:hover {
+                .icon-line {    
+                    .icon-text {
+                        color: $black;
+                    }
+                }
+            }
+        }
+
         .user-menu-dropdown-toggle {
             position: relative;
             color: $gray-dark;
@@ -50,6 +75,7 @@
             }
 
             .user-info {
+                max-width: 140px;
                 margin: 0 23px 0 39px;
                 font-size: 0.89em;
 
@@ -197,6 +223,7 @@
         display: flex;
         width: 100%;
         flex-direction: row;
+        align-items: center;
         justify-content: flex-end;
 
         > li {
@@ -204,7 +231,6 @@
 
             &.main-subnav {
                 flex: 1 1 0;
-                height: 49px;
                 white-space: nowrap;
                 overflow: hidden;
                 
@@ -218,18 +244,22 @@
     .language-selector {
         .selectboxit-container {
             padding-left: 20px;
+            vertical-align: middle;
+        }
+        
+        .selectboxit-option-icon-container {
+            height: 0;
         }
 
         .language-selector-select {
             .selectboxit-text {
-                //padding-right: 19px;
                 padding-right: 1px;
             }
 
             .selectboxit-arrow-container {
                 right: 0;
                 width: 9px;
-                margin-top: 13px;
+                margin-top: 12px;
 
                 .selectboxit-arrow {
                     margin: 0;
@@ -241,11 +271,21 @@
 
         .selectboxit-options {
             left: 0;
-            margin-top: -2px;
+            min-width: 75px !important;
+            margin-top: 12px;
 
             li {
                 display: list-item;
                 padding: 0;
+
+                .selectboxit-option-anchor {
+                    &,
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        padding-left: 20px !important;
+                    }
+                }
             }
         }
     }

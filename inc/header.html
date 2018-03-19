@@ -1,71 +1,215 @@
 <header class="qp-header">
-    <div class="container relative">
-        <div class="qp-header__line"></div>
-        <nav class="navbar navbar-qp">
-            <div class="row">
-                <div class="col-xs-12 col-md-2">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="/" class="navbar-brand">
-                            <img src="/static/assets/svg/logo.svg" alt="Q-Park" />
-                        </a>
+        <nav class="navbar subnavbar-qp desktop">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="main-subnav">
+                                <ul class="nav navbar-subnav">
+                                    <li>
+                                        <a href="#" class="link-grey">About Q-Park</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">Contact us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="social-links">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" class="link-grey">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-grey">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="language-selector">
+                                <select class="language-selector-select navigate-select">
+                                    <option>en</option>
+                                    <option>nl</option>
+                                    <option>fr</option>
+                                    <option>de</option>
+                                </select>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-10">
-                    <div id="navbar-collapse" class="collapse navbar-collapse">
+            </div>
+        </nav>
+
+        <div class="container relative fixedscroll-start">
+            <div class="qp-header__line"></div>
+            <nav class="navbar navbar-qp">
+                <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle"></button>
+                            <a href="/" class="navbar-brand">
+                                <img src="/static/assets/svg/logo.svg" alt="Q-Park" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Desktop navigation -->
+                    <div class="col-xs-12 col-md-10 desktop">
                         <ul class="nav navbar-nav main-nav">
                             <li>
                                 <a href="#">Parking</a>
                             </li>
                             <li class="active">
-                                <a href="#">Producten</a>
-                            </li>
-                            <li>
-                                <a href="#">Over Q-Park</a>
+                                <a href="#">Products</a>
                             </li>
                             <li>
                                 <a href="#">Business</a>
                             </li>
                             <li>
-                                <a href="#">Control Fee</a>
+                                <a href="#">Real Estate</a>
                             </li>
                         </ul>
+
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="language-selector-wrapper">
-                                <select class="language-selector navigate-select text-uppercase">
-                                    <option>en</option>
-                                    <option>nl</option>
-                                    <option>fr</option>
-                                </select>
-                            </li>
-                            <li class="user-menu only-icon clearfix">
-                                <a href="#" class="user-menu-dropdown-toggle">
-                                    <div class="user-icon">
-                                        <i class="qp-icon qp-icon-navpopup-account no-margin"></i>
+                            <li class="user-menu only-icon">
+                                <a href="#">
+                                    <div class="icon-line small-icon vertical-center">
+                                        <div class="icon-wrapper">
+                                            <div class="icon account"></div>
+                                        </div>
+                                        <div class="icon-text text-ellipsis">My Q-Park</div>
                                     </div>
-                                    <span class="inline-block strong visible-xs visible-sm">My Q-park</span>
                                 </a>
                             </li>
-                            <!-- <li>
-                                <form class="navbar-form search-box no-margin" role="search">
+                            <li class="search-box">
+                                <form class="navbar-form" role="search">
                                     <div class="form-group block">
-                                        <input type="text" class="form-control search-box__input" placeholder="What are you looking for?">
+                                        <input type="text" class="search-box__input form-control" placeholder="What are you looking for?">
 
                                         <button type="submit" class="search-box__button">
                                             <i class="qp-icon qp-icon-search no-margin"></i>
                                         </button>
                                     </div>
                                 </form>
-                            </li> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Sidebar navigation -->
+        <nav id="side-menu" class="side-navbar navbar-qp mobile">
+            <div class="side-navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"></button>
+                    <a href="/" class="navbar-brand">
+                        <img src="/static/assets/svg/logo.svg" alt="Q-Park" />
+                    </a>
+                </div>
+                <div class="navbar-body">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">Parking</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Business</a>
+                        </li>
+                        <li>
+                            <a href="#">Real Estate</a>
+                        </li>
+                        <li class="navbar-subnav-container">
+                            <a href="javascript:void(0);" class="subnav-toggle text-ellipsis" data-toggle="collapse" data-target="#subnav-container">
+                                More
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <div id="subnav-container" class="collapse">
+                                <ul class="nav navbar-subnav">
+                                    <li>
+                                        <a href="#">About Q-Park</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-footer">
+                    <ul class="nav navbar-nav">
+                        <li class="user-menu">
+                            <a href="#">
+                                <div class="icon-line small-icon vertical-center">
+                                    <div class="icon-wrapper">
+                                        <div class="icon account"></div>
+                                    </div>
+                                    <div class="icon-text text-ellipsis">My Q-Park</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="language-selector">
+                            <div class="icon-line small-icon vertical-center">
+                                <div class="icon-wrapper">
+                                    <div class="icon language"></div>
+                                </div>
+                                <div class="icon-text">
+                                    <select class="language-selector-select navigate-select">
+                                        <option>en</option>
+                                        <option>nl</option>
+                                        <option>fr</option>
+                                        <option>de</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="link-grey">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-grey">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-grey">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-grey">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-    </div>
-</header>
+    </header>
