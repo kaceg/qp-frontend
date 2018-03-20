@@ -20,6 +20,7 @@
 
             .card__title {
                 margin-bottom: 0;
+                font-size: 1.25em;
 
                 .subtitle,
                 strong {
@@ -55,7 +56,6 @@
         .card__body,
         .card__footer {
             margin-top: 0.5em;
-            font-size: 1.111em;
         }
 
         .btn {
@@ -136,6 +136,10 @@
 
     .card__inner {
         padding: 1em 30px;
+
+        .card__body {
+            font-size: 1.125em;
+        }
     }
 }
 
@@ -150,12 +154,6 @@
         width: calc(100% - 100px);
         padding: 0.722em 1.5em 0.722em 1.5em;
         background-color: $white;
-
-        .card__header {
-            .card__title {
-                font-size: 1.111em;
-            }
-        }
 
         .card__body {            
             margin-top: 0.5em;
@@ -283,6 +281,14 @@
                 .card-v3 {
                     .card__inner {
                         padding: 2em 2em 1.5em;
+
+                        .card__header {
+                            font-size: 1.375em;
+                        }
+
+                        .card__body {
+                            font-size: 1.125em;
+                        }
                     }
                 }
             }

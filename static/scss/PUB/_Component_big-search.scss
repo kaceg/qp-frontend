@@ -87,18 +87,19 @@
                     transition: margin $animation-duration-collapse linear $animation-duration-maps;
 
                     input.form-control {
-                        height: 88px;
+                        height: 3em;
                         padding-left: 30px !important;
                         font-family: $font-family-sans-serif-bold;
-                        font-size: 1.222em;
+                        font-size: 1.25em;
                         color: $gray-dark;
                     }
 
                     .google-maps-search-buttons-wrapper {
                         position: absolute;
-                        top: 15px;
+                        top: 50%;
                         right: 30px;
                         margin: 0;
+                        transform: translateY(-50%);
 
                         .google-maps-search-buttons {
                             display: flex;
@@ -121,7 +122,7 @@
                             }
 
                             .search {
-                                height: 58px;
+                                height: 2.5em;
                                 margin: 0;
                                 margin-left: 20px;
                                 line-height: 1;
@@ -170,8 +171,8 @@
         }
 
         .google-maps {
-            height: 695px;
-            margin-top: -695px;
+            height: 658px;
+            margin-top: -658px;
             transition: margin-top $animation-duration-maps linear;
         }
 
